@@ -1,2 +1,97 @@
-Pegá acá el texto de tu CV (copiá desde el PDF o desde Word).
-Incluí stack, años de experiencia, idiomas y roles que buscás.
+FULLSTACK DEVELOPER
+Proactive and forward-thinking engineer with strong analytical and
+communication skills, results-driven and customer-focused.
+Adept in user interface design, testing, debugging, and scalable system
+architecture. Fast-paced remote professional motivated by complex challenges
+and product evolution.
+Actively involved in AI-driven automation initiatives, building internal
+tools and workflow systems focused on operational scalability and process
+optimization.
+Vue.js, TypeScript, Node.js, Laravel, Vite, SSR, GraphQL, Docker,
+PostgreSQL, LangChain, AI Automation Workflows
+P R O F E S S I O N A L   E X P E R I E N C E
+Cabildo 480, Tigre
+Buenos Aires,
+Argentina
+pedrogabrielyaya92
+@gmail.com
+/in/pedro-yaya-vue-js/
++54 9 11 23928200
+PEDRO YAYA
+C O N T A C T
+D E T A I L S
+github.com/PedroYaya
+FULLSTACK AT CLOUDGEOMETRY
+CloudGeometry is an AI-oriented software engineering company focused
+on scalable cloud-native and enterprise solutions.
+Refactoring and modernizing legacy systems through modular
+architecture improvements and frontend/backend redesigns.
+Leading the Vue 2 → Vue 3 migration across enterprise applications,
+improving maintainability, scalability, and development workflows.
+Actively contributing to internal AI-driven automation initiatives,
+building intelligent tools and workflows to optimize operational
+processes and reporting pipelines.
+Vue.js, LangChain, Vite, Typescript, HTML, Sass
+Node, GraphQL, Docker, Git, Jira, S.C.R.U.M
+SAN FRANCISCO, USA | APRIL 2024 TO DATE
+FULLSTACK AT TMS
+Timeless Medical Systems is a global leader in developing innovative
+software solutions for maternal breast milk, donor human milk, and
+infant formula & nutritional supplement management.
+Revitalizing our software infrastructure, I spearheaded the migration
+of outdated legacy code to modern APIs.
+Leveraging Laravel for robust backend development and Vue.js for
+dynamic front-end interfaces, I have successfully enhanced system
+performance, scalability, and overall user experience.
+Moreover, I engineered a feature utilizing Elasticsearch, enhancing
+our system's search capabilities and further empowering our users with
+efficient data retrieval and management.
+Vue.js, Vite, Typescript, HTML, Sass, Elasticsearch
+Laravel, SSR, MySQL,Docker, Git, Jira, S.C.R.U.M
+CANADA | MAY 2023 TO APRIL 2024
+
+E D U C A T I O N , C O U R S E S   &   T R A I N I N G S
+DIGITAL HOUSE
+JAVA MOBILE ANDROID DEVELOPER | BUENOS AIRES | 2018
+CODELY TV
+PHP, S.O.L.I.D, VUE, TDD
+UDEMY
+REACT, VUE, JAVA, SPRING
+FRONTEND MASTERS
+TYPESCRIPT, JAVASCRIPT HARD PARTS I AND II
+L A N G U A G E S
+NATIVE SPANISH
+ADVANCED ENGLISH 
+FULLSTACK AT FLORAQUEEN
+In tandem with the engineering team at this expansive flowers 
+E-Commerce company, we orchestrated a significant uplift of almost 40%
+in the site's conversion rate. Innovatively simplifying and enhancing
+the purchase funnel, we identified bottlenecks through astute analysis
+of Google Tag Manager and Google Analytics events. Our strategic
+approach included implementing new features, rigorously validated
+through impactful A-B tests.
+Vue.js, Vite, Jest, HTML, Sass, JQuery, Bootstrap,
+PHP, MySQL, Jenkins, Bitbucket, Git, Jira, S.C.R.U.M
+BARCELONA | JANUARY 2019 TO JULY 2021 | 2.5 YEARS
+FRONTEND AT INARI
+Inari provides an advanced and integrated risk management platform for
+(re)insurance, offering streamlined solutions for MGA, Reinsurance, and
+Bordereaux management.
+- Built new modules from scratch.
+- Extended existent features and refactored-decoupled components.
+- Improved performance with GraphQL.
+Vue.js, Vite, HTML, Sass,
+GraphQL, Docker, Bitbucket, Git, Jira, S.C.R.U.M
+BARCELONA | AUGUST 2021 TO SEPTEMBER 2022 | 14 MONTHS
+FRONTEND AT BROADRIDGE
+Broadridge powers financial innovation and communication
+infrastructure globally.
+Collaborated with the engineering team to enhance an insurance
+application for an internal client. Through a meticulous refactoring
+of the existing codebase, I facilitated the seamless integration of
+diverse business rules specific to each state across the United
+States,  thereby enabling the product to scale rapidly and efficiently
+under intense business pressures.
+Vue.js, Vite, Typescript, HTML, Tailwind CSS, Sass, Jest
+Laravel, PostgreSQL, Gitlab, Git, Jira, S.C.R.U.M
+CANADA | SEPTEMBER 2022 TO MAY 2023 | 9 MONTHS
