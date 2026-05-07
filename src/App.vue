@@ -1,26 +1,53 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 
 const loading = ref(true)
 const error = ref('')
 const report = ref(null)
+const index = ref({ scans: [] })
+const selectedKey = ref('latest')
 
-onMounted(async () => {
+const reportUrl = computed(() => {
+  if (selectedKey.value === 'latest') return '/generated/latest.json'
+  const file = selectedKey.value
+  if (!file) return '/generated/latest.json'
+  return `/generated/${file}`
+})
+
+async function loadReport() {
+  loading.value = true
+  error.value = ''
   try {
-    const res = await fetch('/report-latest.json', { cache: 'no-store' })
+    const res = await fetch(reportUrl.value, { cache: 'no-store' })
     if (!res.ok) {
       error.value =
         res.status === 404
-          ? 'Todavía no hay reporte. En la raíz del proyecto ejecutá: npm run scan'
-          : `No se pudo cargar el reporte (${res.status})`
+          ? 'No hay reportes todavía. Ejecutá npm run scan (los datos vienen de config/generated/*-from-pdf.json).'
+          : `No se pudo cargar (${res.status})`
+      report.value = null
       return
     }
     report.value = await res.json()
   } catch (e) {
     error.value = String(e.message || e)
+    report.value = null
   } finally {
     loading.value = false
   }
+}
+
+onMounted(async () => {
+  try {
+    const idxRes = await fetch('/generated/index.json', { cache: 'no-store' })
+    if (idxRes.ok) index.value = await idxRes.json()
+  } catch {
+    /* sin índice aún */
+  }
+  await loadReport()
+})
+
+watch(selectedKey, () => {
+  loadReport()
 })
 
 function fitLabel(fit) {
@@ -29,6 +56,11 @@ function fitLabel(fit) {
   if (fit === 'low') return 'Bajo'
   return fit || '—'
 }
+
+function formatScanLabel(entry) {
+  if (!entry?.generatedAt) return entry?.file || '—'
+  return new Date(entry.generatedAt).toLocaleString('es')
+}
 </script>
 
 <template>
@@ -36,9 +68,20 @@ function fitLabel(fit) {
     <header class="header">
       <h1>Jobsp</h1>
       <p class="sub">
-        Reporte generado por <code>npm run scan</code> · datos en
-        <code>config/companies.json</code> y <code>config/cv.txt</code>
+        <strong>Entrada:</strong> CV y empresas solo desde
+        <code>config/generated/*-from-pdf.json</code> (exportados del PDF).
+        <strong>Estos reportes:</strong> cada <code>npm run scan</code> guarda un archivo en
+        <code>public/generated/</code> para revisar después qué te interesó.
       </p>
+      <div v-if="index.scans?.length" class="picker">
+        <label for="scan-select">Ver corrida</label>
+        <select id="scan-select" v-model="selectedKey">
+          <option value="latest">Última (latest.json)</option>
+          <option v-for="s in index.scans" :key="s.generatedAt" :value="s.file">
+            {{ formatScanLabel(s) }}
+          </option>
+        </select>
+      </div>
     </header>
 
     <main v-if="loading" class="card">Cargando…</main>
@@ -46,18 +89,28 @@ function fitLabel(fit) {
     <main v-else-if="report" class="stack">
       <section class="card meta">
         <p>
-          <strong>Última corrida:</strong>
+          <strong>Corrida:</strong>
           {{ new Date(report.generatedAt).toLocaleString('es') }}
         </p>
         <p>
           <strong>Análisis:</strong>
           {{ report.usedLLM ? 'OpenAI (OPENAI_API_KEY)' : 'Heurística local (sin API key)' }}
         </p>
+        <p v-if="report.concurrency">
+          <strong>Chrome en paralelo:</strong>
+          {{ report.concurrency }} pestañas
+        </p>
+        <template v-if="report.dataSources">
+          <p class="hint">
+            Datos PDF · CV: {{ report.dataSources.cvPdf || '—' }} · Listado:
+            {{ report.dataSources.listPdf || '—' }}
+          </p>
+        </template>
       </section>
 
       <section
         v-for="c in report.companies"
-        :key="c.id || c.name"
+        :key="(selectedKey || '') + (c.id || c.name)"
         class="card company"
       >
         <div class="company-head">
@@ -122,9 +175,27 @@ code {
   font-size: 1.75rem;
 }
 .sub {
-  margin: 0;
+  margin: 0 0 1rem;
   color: #475569;
   font-size: 0.95rem;
+}
+.picker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.25rem;
+}
+.picker label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.picker select {
+  min-width: 14rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
 }
 .stack {
   display: flex;

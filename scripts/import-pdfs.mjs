@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Lee todos los .pdf en /pdfs, identifica CV vs listado por nombre de archivo,
- * escribe JSON en config/generated/ y actualiza config/cv.txt + config/companies.json.
+ * escribe JSON solo en config/generated/ (cv-from-pdf.json, companies-from-pdf.json).
  */
 import { createRequire } from 'node:module'
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
@@ -224,10 +224,9 @@ async function main() {
       plainText: cvPlain,
     }
     await writeFile(join(genDir, 'cv-from-pdf.json'), JSON.stringify(cvMeta, null, 2), 'utf8')
-    await writeFile(join(root, 'config', 'cv.txt'), cvPlain + (cvPlain.endsWith('\n') ? '' : '\n'), 'utf8')
-    log(`CV → config/generated/cv-from-pdf.json + config/cv.txt (${cvPlain.length} chars)`)
+    log(`CV → config/generated/cv-from-pdf.json (${cvPlain.length} chars)`)
   } else {
-    log('No se encontró PDF de CV por nombre; no toco cv.txt')
+    log('No se encontró PDF de CV por nombre')
   }
 
   if (listName) {
@@ -243,9 +242,8 @@ async function main() {
       companies,
     }
     await writeFile(join(genDir, 'companies-from-pdf.json'), JSON.stringify(listMeta, null, 2), 'utf8')
-    await writeFile(join(root, 'config', 'companies.json'), JSON.stringify(companies, null, 2), 'utf8')
     log(
-      `Listado → config/generated/companies-from-pdf.json + config/companies.json (${companies.length} empresas, ${merged.length} URLs únicas)`,
+      `Listado → config/generated/companies-from-pdf.json (${companies.length} empresas, ${merged.length} URLs únicas)`,
     )
   } else {
     log('No se encontró PDF de listado')

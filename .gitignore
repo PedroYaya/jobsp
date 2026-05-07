@@ -2,5 +2,6 @@ node_modules
 dist
 .env
 .DS_Store
-public/report-latest.json
+public/generated/
 pdfs/*.pdf
+logs/*.txt

@@ -8,9 +8,15 @@
     "build": "vite build",
     "preview": "vite preview",
     "scan": "node scripts/scan.mjs",
-    "import-pdfs": "node scripts/import-pdfs.mjs"
+    "import-pdfs": "node scripts/import-pdfs.mjs",
+    "puppeteer:install": "npx puppeteer browsers install chrome",
+    "postinstall": "npx puppeteer browsers install chrome"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
+    "puppeteer": "^24.2.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {

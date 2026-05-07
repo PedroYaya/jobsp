@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-05-07T21:28:12.713Z",
+  "usedLLM": true,
+  "companies": [
+    {
+      "id": "example-remote",
+      "name": "Ejemplo (reemplazá con tus empresas del PDF)",
+      "careersUrl": "https://example.com/careers",
+      "finalUrl": "https://example.com/careers",
+      "ok": false,
+      "status": 404,
+      "error": "HTTP 404",
+      "relevantRoles": [],
+      "summary": "",
+      "heuristicScore": 0
+    }
+  ]
+}
