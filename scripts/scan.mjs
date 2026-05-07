@@ -1,14 +1,18 @@
 #!/usr/bin/env node
 /**
  * Entrada: solo datos extraídos de PDF → config/generated/cv-from-pdf.json y companies-from-pdf.json
- * Cada careersUrl se abre en Chrome vía Puppeteer (DOM real + JS), luego se analiza el texto.
- * Salida: public/generated/scans/…json, latest.json, index.json
+ * Chrome abre la página listado; con LLM se extraen avisos, se filtra por perfil técnico (fullstack/frontend),
+ * luego se abre cada URL de detalle y la IA confirma o descarta (evita PM “potable” solo por título).
+ * Salida: public/generated/scans/…json, latest.json, index.json, last-finished.json (al cerrar, ok o error)
  * Logs: logs/scan-<timestamp>.txt (todo el run + resumen al cierre)
  *
  * Uso: npm run scan
  * Opcional .env: OPENAI_API_KEY, JOBSP_CHROME_CHANNEL=chrome, JOBSP_NAV_TIMEOUT_MS,
  * JOBSP_CONCURRENCY=2 (páginas Chrome en paralelo, mismo browser; default 2)
  * JOBSP_MAX_COMPANIES=N (solo las primeras N empresas, para probar sin recorrer todo el PDF)
+ * JOBSP_CANDIDATE_PROFILE (texto libre, perfil buscado; default fullstack con foco frontend)
+ * JOBSP_MAX_DETAIL_VISITS=N (máx URLs de detalle a abrir por empresa, default 5)
+ * JOBSP_LIST_TITLE_KEYWORDS=a,b (extra para ponderar títulos en el listado)
  */
 import { readFile, writeFile, mkdir, appendFile } from 'node:fs/promises'
 import https from 'node:https'
@@ -228,32 +232,49 @@ async function fetchCareersWithChrome(browser, url) {
   }
 }
 
-async function analyzeWithOpenAI({ companyName, careersUrl, pageText, cvText }) {
+function candidateProfile() {
+  const custom = process.env.JOBSP_CANDIDATE_PROFILE?.trim()
+  if (custom) return custom
+  return (
+    'Perfil buscado: desarrollador/a fullstack con foco principal en frontend (JavaScript/TypeScript, React, Vue u otro framework web, UI, consumo de APIs). ' +
+    'Aplican ingeniería fullstack web y roles con implementación de producto. ' +
+    'No aplica liderar proyectos sin código, ni perfiles puramente de negocio o people management.'
+  )
+}
+
+/** Criterios de título en la vista listado (priorizar estos patrones al shortlistear). */
+function listTitlePositiveCriteria() {
+  let s =
+    'En el LISTADO, priorizá avisos cuyo título suene a rol de implementación / ingeniería de software (inglés o español). ' +
+    'Palabras y familias útiles (no exhaustivo; combinaciones cuentan): ' +
+    'Fullstack, Full-stack, Frontend, Front-end, FE, Backend, BE, Software, SWE, Engineer, Engineering, Developer, Desarrollador, Programador, Dev, Web, UI Engineer, ' +
+    'Application engineer, Staff / Principal / Senior / Mid / Junior / Graduate engineer, Tech Lead / Team Lead (si suena a IC con código), Platform engineer, ' +
+    'DevOps engineer, SRE (con implementación), API engineer, Mobile / iOS / Android developer, JavaScript / TypeScript / React / Vue / Angular, SDE, MTS, ' +
+    '"Member of Technical Staff", Programmer, Coder, Hacker (en contexto dev), Build engineer, Release engineer, Site engineer (web). ' +
+    'Evitá confundir "Engineer" en "Sales Engineer" o "Solutions Engineer" si el título es claramente preventa/ventas sin stack.'
+  const extra = process.env.JOBSP_LIST_TITLE_KEYWORDS?.trim()
+  if (extra) s += ` Priorizá también títulos que contengan (además del CV): ${extra}.`
+  return s
+}
+
+function resolveJobHref(href, base) {
+  try {
+    const u = new URL(String(href).trim(), base)
+    if (!/^https?:$/i.test(u.protocol)) return null
+    return u.href.replace(/\/$/, '')
+  } catch {
+    return null
+  }
+}
+
+async function openaiParseJson(model, system, user) {
   const key = process.env.OPENAI_API_KEY
-  if (!key) return null
-  const model = process.env.OPENAI_MODEL || 'gpt-4o-mini'
-  const truncated = pageText.slice(0, 14000)
-
-  const system = `Sos un asistente para búsqueda laboral. Respondé SOLO JSON válido, sin markdown.
-El JSON debe tener esta forma exacta:
-{"relevantRoles":[{"title":"string","fit":"high|medium|low","reason":"string breve en español","specificUrl":"url absoluta o null"}],"summary":"una línea en español"}`
-
-  const user = `Empresa: ${companyName}
-URL careers: ${careersUrl}
-
-CV del candidato:
-${cvText.slice(0, 8000)}
-
-Texto extraído de la página de careers (puede incluir ruido):
-${truncated}
-
-Listá puestos concretos donde tenga sentido que aplique. Si no hay match razonable, relevantRoles puede ser []. specificUrl solo si encontrás en el texto una URL de esa oferta; si no, null.`
-
+  if (!key) throw new Error('Falta OPENAI_API_KEY')
   const res = await httpPostJson(
     'https://api.openai.com/v1/chat/completions',
     {
       model,
-      temperature: 0.2,
+      temperature: 0.1,
       messages: [
         { role: 'system', content: system },
         { role: 'user', content: user },
@@ -266,13 +287,212 @@ Listá puestos concretos donde tenga sentido que aplique. Si no hay match razona
   }
   const data = JSON.parse(res.text)
   const content = data.choices?.[0]?.message?.content?.trim() || '{}'
-  let parsed
   try {
-    parsed = JSON.parse(content.replace(/^```json\s*|\s*```$/g, ''))
+    return JSON.parse(content.replace(/^```json\s*|\s*```$/g, ''))
   } catch {
-    parsed = { relevantRoles: [], summary: 'No se pudo parsear la respuesta del modelo.' }
+    return {}
   }
-  return parsed
+}
+
+async function llmExtractOpeningsWithUrls(companyName, listUrl, pageText) {
+  const model = process.env.OPENAI_MODEL || 'gpt-4o-mini'
+  const system = `Sos un extractor de listados de empleo. Respondé SOLO JSON válido, sin markdown.
+Formato: {"openings":[{"title":"string","url":"string|null"}]}
+- title: nombre del puesto o aviso.
+- url: enlace al detalle si aparece en el texto (http(s) o ruta /...). Si no hay URL clara para esa fila, null.
+Máximo 45 filas. Si no hay listado reconocible: {"openings":[]}.`
+
+  const user = `Empresa: ${companyName}
+URL de esta página (base para resolver rutas relativas): ${listUrl}
+
+Texto visible de la página:
+${pageText.slice(0, 24000)}`
+
+  const parsed = await openaiParseJson(model, system, user)
+  const raw = Array.isArray(parsed.openings) ? parsed.openings : []
+  const out = []
+  for (const row of raw) {
+    const title = typeof row.title === 'string' ? row.title.trim() : ''
+    const hrefRaw = typeof row.url === 'string' ? row.url.trim() : ''
+    if (!title) continue
+    if (!hrefRaw) {
+      out.push({ title, url: null })
+      continue
+    }
+    const abs = resolveJobHref(hrefRaw, listUrl)
+    if (abs) out.push({ title, url: abs })
+    else out.push({ title, url: null })
+  }
+  return out
+}
+
+async function llmShortlistTechnicalRoles(openingsWithUrl, cvText, profile, maxShort) {
+  const model = process.env.OPENAI_MODEL || 'gpt-4o-mini'
+  const titleHints = listTitlePositiveCriteria()
+  const system = `Sos filtro estricto (solo ingeniería de software alineada al perfil). Respondé SOLO JSON:
+{"shortlist":[{"title":"string","url":"string","why":"máx 140 chars español"}]}
+Máximo ${maxShort} ítems. Cada url DEBE ser exactamente una de las URLs del input (no inventar dominios).
+
+CRITERIO VISTA LISTADO (título del aviso):
+${titleHints}
+
+INCLUIR solo si el título encaja con implementación / código según lo anterior y el perfil+CV.
+
+EXCLUIR SIEMPRE aunque el título sea ambiguo:
+- Project / Program / Product Manager, Delivery Manager, TPM no dev
+- Scrum Master, Agile coach puro
+- Product Owner sin hands-on-code
+- Sales, AE, Marketing, BD, Customer Success no técnico
+- Recruiter, HR, People, Talent
+- Finance, Legal, Ops sin engineering
+- Diseño UX/UI puro sin código
+- QA manual sin automatización/código
+
+Si ninguno encaja: {"shortlist":[]}.`
+
+  const user = `Perfil buscado:
+${profile}
+
+CV (extracto):
+${cvText.slice(0, 9000)}
+
+Entradas (solo podés devolver URLs que aparezcan acá):
+${JSON.stringify(openingsWithUrl.slice(0, 65))}`
+
+  const parsed = await openaiParseJson(model, system, user)
+  const raw = Array.isArray(parsed.shortlist) ? parsed.shortlist : []
+  const allowedUrls = new Set(openingsWithUrl.map((o) => o.url))
+  const seen = new Set()
+  const out = []
+  for (const row of raw) {
+    const url = typeof row.url === 'string' ? row.url.trim() : ''
+    const title = typeof row.title === 'string' ? row.title.trim() : ''
+    const why = typeof row.why === 'string' ? row.why.trim() : ''
+    if (!url || seen.has(url) || !allowedUrls.has(url)) continue
+    seen.add(url)
+    out.push({ title, url, why })
+    if (out.length >= maxShort) break
+  }
+  return out
+}
+
+async function llmVerifyDetailPage({ detailText, cvText, profile, listTitle, jobUrl }) {
+  const model = process.env.OPENAI_MODEL || 'gpt-4o-mini'
+  const system = `Sos auditor estricto aviso vs candidato. SOLO JSON:
+{"include":true|false,"title":"string","fit":"high|medium|low","reason":"español conciso","redFlags":"texto o vacío"}
+
+include=true SOLO si el TEXTO del aviso describe trabajo principalmente de ingeniería software (implementación) acorde al perfil y al CV.
+
+include=false si el detalle es gestión/PM/PO/ventas/people, "stakeholder" como rol principal sin stack, consulting funcional, o el título decía dev pero el cuerpo no.`
+
+  const user = `Perfil buscado:
+${profile}
+
+CV (extracto):
+${cvText.slice(0, 8000)}
+
+URL: ${jobUrl}
+Título en listado: ${listTitle}
+
+Detalle del aviso:
+${detailText.slice(0, 16000)}`
+
+  return openaiParseJson(model, system, user)
+}
+
+async function analyzeListPageFallbackStrict({ companyName, careersUrl, pageText, cvText }) {
+  const model = process.env.OPENAI_MODEL || 'gpt-4o-mini'
+  const profile = candidateProfile()
+  const system = `No hay URLs de avisos parseables; analizás solo texto general de careers. SOLO JSON:
+{"relevantRoles":[{"title":"string","fit":"high|medium|low","reason":"","specificUrl":"string|null"}],"summary":"una línea"}
+
+Solo roles de ingeniería software (front/fullstack/web) si están explícitos. NO Project Manager, PM, PO, Scrum, ventas, marketing, HR. Si no hay señal dev clara: [].`
+
+  const user = `Empresa: ${companyName} · ${careersUrl}
+Perfil: ${profile}
+
+CV:
+${cvText.slice(0, 7000)}
+
+Página:
+${pageText.slice(0, 12000)}`
+
+  return openaiParseJson(model, system, user)
+}
+
+async function analyzeWithListAndDetailPages(browser, { companyName, careersUrl, finalUrl, pageText, cvText }) {
+  const profile = candidateProfile()
+  const maxVisit = Math.min(10, Math.max(1, Number(process.env.JOBSP_MAX_DETAIL_VISITS) || 5))
+
+  const openings = await llmExtractOpeningsWithUrls(companyName, finalUrl, pageText)
+  const withUrl = openings.filter((o) => o.url)
+  log(`  LLM: ${openings.length} filas listado (${withUrl.length} con URL)`)
+
+  if (withUrl.length === 0) {
+    log('  Sin URLs en listado → análisis estricto solo sobre texto de la página')
+    const fb = await analyzeListPageFallbackStrict({ companyName, careersUrl: finalUrl, pageText, cvText })
+    return {
+      relevantRoles: Array.isArray(fb.relevantRoles) ? fb.relevantRoles : [],
+      summary: typeof fb.summary === 'string' ? fb.summary : '',
+    }
+  }
+
+  const shortlist = await llmShortlistTechnicalRoles(withUrl, cvText, profile, maxVisit)
+  log(`  LLM: shortlist técnica ${shortlist.length} (máx ${maxVisit})`)
+
+  if (shortlist.length === 0) {
+    return {
+      relevantRoles: [],
+      summary:
+        'Hay avisos con URL pero ninguno pasó el filtro de ingeniería (p. ej. PM/PO/roles no dev excluidos).',
+    }
+  }
+
+  const relevantRoles = []
+  for (let i = 0; i < shortlist.length; i++) {
+    const s = shortlist[i]
+    log(`    Chrome detalle [${i + 1}/${shortlist.length}]`)
+    const det = await fetchCareersWithChrome(browser, s.url)
+    if (!det.ok) {
+      log(`    detalle falló: ${det.error || det.status}`)
+      continue
+    }
+    const detailText =
+      det.innerText && det.innerText.length > 200 ? det.innerText : htmlToText(det.html || '')
+    let verdict
+    try {
+      verdict = await llmVerifyDetailPage({
+        detailText,
+        cvText,
+        profile,
+        listTitle: s.title,
+        jobUrl: s.url,
+      })
+    } catch (e) {
+      log(`    error verificación: ${e.message}`)
+      continue
+    }
+    if (verdict.include !== true) {
+      log(`    descartado post-detalle: ${verdict.reason || verdict.redFlags || '—'}`)
+      continue
+    }
+    relevantRoles.push({
+      title: verdict.title || s.title,
+      fit: ['high', 'medium', 'low'].includes(verdict.fit) ? verdict.fit : 'medium',
+      reason:
+        String(verdict.reason || '').trim() +
+        (s.why ? ` · Listado: ${s.why}` : '') +
+        (verdict.redFlags ? ` · ${verdict.redFlags}` : ''),
+      specificUrl: s.url,
+      verifiedOnDetail: true,
+    })
+  }
+
+  const summary =
+    relevantRoles.length > 0
+      ? `Se abrieron ${shortlist.length} avisos en detalle; ${relevantRoles.length} recomendables tras verificar el texto completo.`
+      : 'Se revisaron avisos en detalle; ninguno cumplió criterio estricto de ingeniería para tu perfil.'
+  return { relevantRoles, summary }
 }
 
 /** Varias pestañas a la vez; mismo proceso Node = sin race en el contador. */
@@ -343,18 +563,19 @@ async function scanOneCompany(browser, c, idx, total, cvText, useLLM) {
   let summary = ''
 
   if (useLLM) {
-    log(`  LLM…`)
+    log(`  LLM (listado → filtro técnico → detalle Chrome → verificación)`)
     const tLlm = Date.now()
     try {
-      const ai = await analyzeWithOpenAI({
+      const ai = await analyzeWithListAndDetailPages(browser, {
         companyName: name,
-        careersUrl: fetched.finalUrl,
+        careersUrl: url,
+        finalUrl: fetched.finalUrl,
         pageText,
         cvText,
       })
       relevantRoles = Array.isArray(ai?.relevantRoles) ? ai.relevantRoles : []
       summary = typeof ai?.summary === 'string' ? ai.summary : ''
-      log(`  LLM OK (${Date.now() - tLlm}ms) roles=${relevantRoles.length}`)
+      log(`  LLM OK (${Date.now() - tLlm}ms) roles verificados=${relevantRoles.length}`)
     } catch (e) {
       summary = `Error LLM: ${e.message}`
       log(`  LLM error (${Date.now() - tLlm}ms): ${e.message}`)
@@ -449,6 +670,7 @@ async function main() {
   let browser
   let results = []
   let lastErr = null
+  let relScanFile = null
   const total = companies.length
   try {
     log('Lanzando Chrome (Puppeteer)…')
@@ -503,6 +725,8 @@ async function main() {
     const next = [entry, ...scans.filter((s) => s.generatedAt !== generatedAt)].slice(0, 100)
     await writeFile(join(genPublic, 'index.json'), JSON.stringify({ scans: next }, null, 2), 'utf8')
 
+    relScanFile = relScan
+
     log(`Salida (esta corrida): public/generated/${relScan}`)
     log(`Salida latest: public/generated/latest.json`)
     log(`Índice: public/generated/index.json (${next.length} corridas)`)
@@ -513,6 +737,22 @@ async function main() {
     log(`ERROR: ${e.message || e}`)
     process.exitCode = 1
   } finally {
+    const genPublic = join(root, 'public', 'generated')
+    try {
+      await mkdir(genPublic, { recursive: true })
+      const finishedAt = new Date().toISOString()
+      const meta = {
+        finishedAt,
+        ok: !lastErr,
+        runStartedAt: generatedAt,
+        latestScanFile: lastErr ? null : relScanFile,
+        error: lastErr ? String(lastErr.message || lastErr) : null,
+      }
+      await writeFile(join(genPublic, 'last-finished.json'), JSON.stringify(meta, null, 2), 'utf8')
+      log(`Fin de proceso registrado: public/generated/last-finished.json (${finishedAt}, ok=${meta.ok})`)
+    } catch (metaErr) {
+      console.error('[jobsp] No se pudo escribir last-finished.json:', metaErr.message || metaErr)
+    }
     try {
       await appendRunSummary(results, concurrency, useLLM, lastErr)
       log(`Resumen agregado al log: ${logFilePath}`)

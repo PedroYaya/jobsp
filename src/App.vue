@@ -1,11 +1,21 @@
 <script setup>
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 
 const loading = ref(true)
 const error = ref('')
 const report = ref(null)
 const index = ref({ scans: [] })
 const selectedKey = ref('latest')
+const lastFinished = ref(null)
+const resetBusy = ref(false)
+const resetMessage = ref('')
+const startBusy = ref(false)
+const startMessage = ref('')
+const scanWaiting = ref(false)
+const liveLogText = ref('')
+const liveLogPre = ref(null)
+let pollTimer = null
+let logPollTimer = null
 
 const reportUrl = computed(() => {
   if (selectedKey.value === 'latest') return '/generated/latest.json'
@@ -13,6 +23,29 @@ const reportUrl = computed(() => {
   if (!file) return '/generated/latest.json'
   return `/generated/${file}`
 })
+
+async function loadIndex() {
+  try {
+    const idxRes = await fetch('/generated/index.json', { cache: 'no-store' })
+    if (idxRes.ok) index.value = await idxRes.json()
+    else index.value = { scans: [] }
+  } catch {
+    index.value = { scans: [] }
+  }
+}
+
+async function loadLastFinished() {
+  try {
+    const res = await fetch('/generated/last-finished.json', { cache: 'no-store' })
+    if (!res.ok) {
+      lastFinished.value = null
+      return
+    }
+    lastFinished.value = await res.json()
+  } catch {
+    lastFinished.value = null
+  }
+}
 
 async function loadReport() {
   loading.value = true
@@ -22,7 +55,7 @@ async function loadReport() {
     if (!res.ok) {
       error.value =
         res.status === 404
-          ? 'No hay reportes todavía. Ejecutá npm run scan (los datos vienen de config/generated/*-from-pdf.json).'
+          ? 'No hay reportes todavía. Usá el botón Start again arriba (solo con npm run dev) o npm run scan en la terminal. Entrada: config/generated/*-from-pdf.json.'
           : `No se pudo cargar (${res.status})`
       report.value = null
       return
@@ -36,15 +69,139 @@ async function loadReport() {
   }
 }
 
-onMounted(async () => {
+async function refreshLiveLog() {
   try {
-    const idxRes = await fetch('/generated/index.json', { cache: 'no-store' })
-    if (idxRes.ok) index.value = await idxRes.json()
+    const r = await fetch('/generated/live-scan.log', { cache: 'no-store' })
+    if (!r.ok) {
+      if (!scanWaiting.value) liveLogText.value = ''
+      return
+    }
+    liveLogText.value = await r.text()
   } catch {
-    /* sin índice aún */
+    /* noop */
   }
+}
+
+onMounted(async () => {
+  await Promise.all([loadIndex(), loadLastFinished()])
   await loadReport()
+  void refreshLiveLog()
 })
+
+function stopScanPoll() {
+  if (pollTimer != null) {
+    clearTimeout(pollTimer)
+    pollTimer = null
+  }
+  if (logPollTimer != null) {
+    clearInterval(logPollTimer)
+    logPollTimer = null
+  }
+  scanWaiting.value = false
+  void refreshLiveLog()
+}
+
+watch(liveLogText, async () => {
+  await nextTick()
+  const el = liveLogPre.value
+  if (el) el.scrollTop = el.scrollHeight
+})
+
+onUnmounted(() => {
+  stopScanPoll()
+})
+
+const POLL_MS = 5000
+const POLL_MAX = 720
+
+async function refreshResults() {
+  await Promise.all([loadIndex(), loadLastFinished()])
+  await loadReport()
+}
+
+async function startScanAgain() {
+  startMessage.value = ''
+  stopScanPoll()
+  const baselineFinishedAt = lastFinished.value?.finishedAt ?? null
+  startBusy.value = true
+  try {
+    const res = await fetch('/__jobsp/api/start-scan', { method: 'POST' })
+    const body = await res.json().catch(() => ({}))
+    if (!res.ok || !body.ok) {
+      startMessage.value = body.error || `No se pudo arrancar (${res.status})`
+      return
+    }
+    startMessage.value = body.message || 'Scan en curso…'
+    liveLogText.value = ''
+    scanWaiting.value = true
+    logPollTimer = setInterval(() => void refreshLiveLog(), 900)
+    void refreshLiveLog()
+    let attempts = 0
+    const tick = async () => {
+      if (!scanWaiting.value) return
+      try {
+        attempts++
+        await Promise.all([loadLastFinished(), loadIndex()])
+        await loadReport()
+        const doneByFinish =
+          lastFinished.value?.finishedAt != null &&
+          lastFinished.value.finishedAt !== baselineFinishedAt
+        const doneByReport = report.value != null
+        if (doneByFinish || doneByReport || attempts >= POLL_MAX) {
+          if (attempts >= POLL_MAX) {
+            startMessage.value =
+              'Sigue sin aparecer el reporte tras ~1 h. Revisá la terminal o logs/scan-*.txt.'
+          } else if (doneByReport) {
+            startMessage.value = 'Listo: reporte cargado.'
+          } else {
+            startMessage.value = 'El proceso terminó; revisá el estado arriba o el mensaje de error.'
+          }
+          stopScanPoll()
+          return
+        }
+      } catch (e) {
+        startMessage.value = String(e.message || e)
+        stopScanPoll()
+        return
+      }
+      pollTimer = setTimeout(() => void tick(), POLL_MS)
+    }
+    pollTimer = setTimeout(() => void tick(), 600)
+  } catch (e) {
+    startMessage.value = String(e.message || e)
+  } finally {
+    startBusy.value = false
+  }
+}
+
+async function resetScan() {
+  resetMessage.value = ''
+  if (
+    !confirm(
+      '¿Borrar todos los resultados en public/generated (latest, índice, corridas) y empezar de cero? Esto no toca los JSON del PDF en config/generated.',
+    )
+  ) {
+    return
+  }
+  resetBusy.value = true
+  try {
+    const res = await fetch('/__jobsp/api/reset-scan', { method: 'POST' })
+    const body = await res.json().catch(() => ({}))
+    if (!res.ok || !body.ok) {
+      resetMessage.value = body.error || `Error al resetear (${res.status})`
+      return
+    }
+    resetMessage.value = body.message || 'Listo.'
+    selectedKey.value = 'latest'
+    liveLogText.value = ''
+    await Promise.all([loadIndex(), loadLastFinished()])
+    await loadReport()
+  } catch (e) {
+    resetMessage.value = String(e.message || e)
+  } finally {
+    resetBusy.value = false
+  }
+}
 
 watch(selectedKey, () => {
   loadReport()
@@ -61,6 +218,12 @@ function formatScanLabel(entry) {
   if (!entry?.generatedAt) return entry?.file || '—'
   return new Date(entry.generatedAt).toLocaleString('es')
 }
+
+function formatLastFinished(meta) {
+  if (!meta?.finishedAt) return ''
+  const when = new Date(meta.finishedAt).toLocaleString('es')
+  return meta.ok ? `${when} · OK` : `${when} · falló`
+}
 </script>
 
 <template>
@@ -68,10 +231,10 @@ function formatScanLabel(entry) {
     <header class="header">
       <h1>Jobsp</h1>
       <p class="sub">
-        <strong>Entrada:</strong> CV y empresas solo desde
-        <code>config/generated/*-from-pdf.json</code> (exportados del PDF).
-        <strong>Estos reportes:</strong> cada <code>npm run scan</code> guarda un archivo en
-        <code>public/generated/</code> para revisar después qué te interesó.
+        <strong>Entrada:</strong> CV y empresas desde
+        <code>config/generated/*-from-pdf.json</code>. El scan (con OpenAI) arma el listado de avisos, filtra por perfil
+        <strong>fullstack / frontend</strong>, abre cada URL en Chrome y solo muestra lo que sigue siendo match
+        <strong>leyendo el detalle</strong> (evita “Project Manager potable” solo por la página careers).
       </p>
       <div v-if="index.scans?.length" class="picker">
         <label for="scan-select">Ver corrida</label>
@@ -82,7 +245,53 @@ function formatScanLabel(entry) {
           </option>
         </select>
       </div>
+      <div class="scan-actions">
+        <p class="last-finished">
+          <strong>Último proceso terminó:</strong>
+          <template v-if="lastFinished">{{ formatLastFinished(lastFinished) }}</template>
+          <template v-else
+            ><span class="muted-inline">sin datos (vacío o después de reset)</span></template
+          >
+        </p>
+        <p v-if="lastFinished && !lastFinished.ok && lastFinished.error" class="hint err-inline">
+          {{ lastFinished.error }}
+        </p>
+        <div class="scan-buttons-row">
+          <button
+            type="button"
+            class="btn-start"
+            :disabled="startBusy || scanWaiting || resetBusy"
+            @click="startScanAgain"
+          >
+            {{ startBusy ? 'Arrancando…' : scanWaiting ? 'Scan en curso…' : 'Start again' }}
+          </button>
+          <button type="button" class="btn-refresh" :disabled="loading || resetBusy" @click="refreshResults">
+            Actualizar
+          </button>
+          <button type="button" class="btn-reset" :disabled="resetBusy || scanWaiting" @click="resetScan">
+            {{ resetBusy ? 'Reseteando…' : 'Reset job scan' }}
+          </button>
+        </div>
+        <p v-if="scanWaiting" class="hint poll-hint">Esperando resultados (revisión cada pocos segundos)…</p>
+        <p v-if="startMessage" class="hint start-msg">{{ startMessage }}</p>
+        <p v-if="resetMessage" class="hint reset-msg">{{ resetMessage }}</p>
+      </div>
     </header>
+
+    <section
+      v-if="scanWaiting || liveLogText.length > 0"
+      class="card live-log-card"
+      aria-live="polite"
+    >
+      <h2 class="live-log-title">Log en vivo</h2>
+      <p class="hint live-log-hint">
+        Salida del proceso (stdout/stderr). Se guarda en
+        <code>public/generated/live-scan.log</code>.
+      </p>
+      <pre ref="liveLogPre" class="live-log-pre">{{
+        liveLogText || (scanWaiting ? 'Esperando la primera línea…' : '')
+      }}</pre>
+    </section>
 
     <main v-if="loading" class="card">Cargando…</main>
     <main v-else-if="error" class="card err">{{ error }}</main>
@@ -134,6 +343,9 @@ function formatScanLabel(entry) {
               <div class="role-title">{{ r.title }}</div>
               <div class="role-meta">
                 Encaje: {{ fitLabel(r.fit) }}
+                <template v-if="r.verifiedOnDetail">
+                  · <span class="tag-verified">Detalle Chrome + IA</span>
+                </template>
                 <template v-if="r.specificUrl">
                   ·
                   <a :href="r.specificUrl" target="_blank" rel="noreferrer">URL oferta</a>
@@ -196,6 +408,97 @@ code {
   border-radius: 6px;
   border: 1px solid #cbd5e1;
   background: #fff;
+}
+.scan-actions {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e2e8f0;
+}
+.last-finished {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: #334155;
+}
+.muted-inline {
+  color: #94a3b8;
+  font-weight: normal;
+}
+.err-inline {
+  color: #b91c1c;
+  margin-top: 0.25rem;
+}
+.scan-buttons-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+.btn-start,
+.btn-refresh,
+.btn-reset {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  color: #0f172a;
+  cursor: pointer;
+}
+.btn-start {
+  border-color: #22c55e;
+  background: #f0fdf4;
+  color: #14532d;
+}
+.btn-start:hover:not(:disabled) {
+  background: #dcfce7;
+}
+.btn-refresh {
+  font-weight: 500;
+}
+.btn-reset:hover:not(:disabled),
+.btn-refresh:hover:not(:disabled) {
+  border-color: #94a3b8;
+  background: #f8fafc;
+}
+.btn-start:disabled,
+.btn-refresh:disabled,
+.btn-reset:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+.poll-hint {
+  margin: 0.35rem 0 0;
+}
+.start-msg {
+  margin: 0.35rem 0 0;
+}
+.reset-msg {
+  margin: 0.5rem 0 0;
+}
+.live-log-card {
+  margin-bottom: 1rem;
+}
+.live-log-title {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+.live-log-hint {
+  margin: 0 0 0.5rem;
+}
+.live-log-pre {
+  margin: 0;
+  max-height: min(40vh, 320px);
+  overflow: auto;
+  padding: 0.65rem 0.75rem;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  background: #0f172a;
+  color: #e2e8f0;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 .stack {
   display: flex;
@@ -282,5 +585,13 @@ code {
   color: #94a3b8;
   font-size: 0.9rem;
   margin: 0.75rem 0 0;
+}
+.tag-verified {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1d4ed8;
+  background: #dbeafe;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
 }
 </style>
