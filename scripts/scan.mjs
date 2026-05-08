@@ -3,7 +3,7 @@
  * Entrada: solo datos extraídos de PDF → config/generated/cv-from-pdf.json y companies-from-pdf.json
  * Chrome abre la página listado; con LLM se extraen avisos, se filtra por perfil técnico (fullstack/frontend),
  * luego se abre cada URL de detalle y la IA confirma o descarta (evita PM “potable” solo por título).
- * Salida: public/generated/scans/…json, latest.json, index.json, last-finished.json (al cerrar, ok o error)
+ * Salida: public/generated/scans/…json, latest.json, live-progress.json (parcial durante el scan), index.json, last-finished.json (al cerrar, ok o error)
  * Logs: logs/scan-<timestamp>.txt (todo el run + resumen al cierre)
  *
  * Uso: npm run scan
@@ -14,7 +14,7 @@
  * JOBSP_MAX_DETAIL_VISITS=N (máx URLs de detalle a abrir por empresa, default 5)
  * JOBSP_LIST_TITLE_KEYWORDS=a,b (extra para ponderar títulos en el listado)
  */
-import { readFile, writeFile, mkdir, appendFile } from 'node:fs/promises'
+import { readFile, writeFile, mkdir, appendFile, unlink } from 'node:fs/promises'
 import https from 'node:https'
 import puppeteer from 'puppeteer'
 import { dirname, join } from 'node:path'
@@ -540,19 +540,37 @@ async function analyzeWithListAndDetailPages(browser, { companyName, careersUrl,
   return { relevantRoles, summary }
 }
 
-/** Varias pestañas a la vez; mismo proceso Node = sin race en el contador. */
-async function mapWithConcurrency(items, limit, fn) {
+/**
+ * Varias pestañas a la vez; mismo proceso Node = sin race en el contador.
+ * Si `onProgress`, se llama tras cada ítem (encolado en serie para escrituras a disco).
+ */
+async function mapWithConcurrency(items, limit, fn, onProgress) {
   const results = new Array(items.length)
   let next = 0
+  let progressTail = Promise.resolve()
+  const queueProgress = () => {
+    if (!onProgress) return
+    progressTail = progressTail
+      .then(() => onProgress(results))
+      .catch((e) => {
+        try {
+          log(`[live-progress] ${e.message || e}`)
+        } catch {
+          /* noop */
+        }
+      })
+  }
   async function worker() {
     while (true) {
       const idx = next++
       if (idx >= items.length) break
       results[idx] = await fn(items[idx], idx)
+      queueProgress()
     }
   }
   const n = Math.max(1, Math.min(limit, items.length || 1))
   await Promise.all(Array.from({ length: n }, () => worker()))
+  if (onProgress) await progressTail
   return results
 }
 
@@ -717,6 +735,33 @@ async function main() {
   let lastErr = null
   let relScanFile = null
   const total = companies.length
+  const publicDir = join(root, 'public')
+  const genPublic = join(publicDir, 'generated')
+  const liveProgressPath = join(genPublic, 'live-progress.json')
+
+  async function writeLiveProgressSnapshot(resultsArr) {
+    const completed = resultsArr.reduce((acc, r) => acc + (r !== undefined ? 1 : 0), 0)
+    const companiesPartial = resultsArr.map((r) => (r === undefined ? null : r))
+    const partial = {
+      partial: true,
+      generatedAt,
+      usedLLM: useLLM,
+      concurrency,
+      dataSources: {
+        cvPdf: cvPack.sourceFile || null,
+        cvExportedAt: cvPack.generatedAt || null,
+        listPdf: listPack.sourceFile || null,
+        listExportedAt: listPack.generatedAt || null,
+        companiesCount: companies.length,
+        companiesTotalInPdf,
+      },
+      scanProgress: { completed, total: companies.length },
+      companies: companiesPartial,
+    }
+    await mkdir(genPublic, { recursive: true })
+    await writeFile(liveProgressPath, JSON.stringify(partial, null, 2), 'utf8')
+  }
+
   try {
     log('Lanzando Chrome (Puppeteer)…')
     try {
@@ -729,8 +774,14 @@ async function main() {
       throw e
     }
 
-    results = await mapWithConcurrency(companies, concurrency, (c, idx) =>
-      scanOneCompany(browser, c, idx, total, cvText, useLLM),
+    await mkdir(genPublic, { recursive: true })
+    await writeLiveProgressSnapshot(Array.from({ length: companies.length }))
+
+    results = await mapWithConcurrency(
+      companies,
+      concurrency,
+      (c, idx) => scanOneCompany(browser, c, idx, total, cvText, useLLM),
+      writeLiveProgressSnapshot,
     )
 
     const out = {
@@ -749,8 +800,6 @@ async function main() {
     }
 
     const json = JSON.stringify(out, null, 2)
-    const publicDir = join(root, 'public')
-    const genPublic = join(publicDir, 'generated')
     const scansDir = join(genPublic, 'scans')
     await mkdir(scansDir, { recursive: true })
 
@@ -758,6 +807,11 @@ async function main() {
     const relScan = `scans/${scanFile}`
     await writeFile(join(scansDir, scanFile), json, 'utf8')
     await writeFile(join(genPublic, 'latest.json'), json, 'utf8')
+    try {
+      await unlink(liveProgressPath)
+    } catch {
+      /* ya borrado o no existía */
+    }
 
     let index = { scans: [] }
     try {
@@ -782,7 +836,11 @@ async function main() {
     log(`ERROR: ${e.message || e}`)
     process.exitCode = 1
   } finally {
-    const genPublic = join(root, 'public', 'generated')
+    try {
+      await unlink(liveProgressPath)
+    } catch {
+      /* noop */
+    }
     try {
       await mkdir(genPublic, { recursive: true })
       const finishedAt = new Date().toISOString()

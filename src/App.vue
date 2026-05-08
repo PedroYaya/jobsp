@@ -24,11 +24,11 @@ const reportUrl = computed(() => {
   return `/generated/${file}`
 })
 
-/** Solo encajes con ≥1 rol sugerido (nada de “ninguno cumplió…”). */
+/** Solo encajes con ≥1 rol sugerido (nada de “ninguno cumplió…”). Ignora slots null (scan parcial). */
 const companiesInReport = computed(() => {
   const list = report.value?.companies
   if (!Array.isArray(list)) return []
-  return list.filter((c) => Array.isArray(c.relevantRoles) && c.relevantRoles.length > 0)
+  return list.filter((c) => c && Array.isArray(c.relevantRoles) && c.relevantRoles.length > 0)
 })
 
 async function loadIndex() {
@@ -73,6 +73,22 @@ async function loadReport() {
     report.value = null
   } finally {
     loading.value = false
+  }
+}
+
+/** Durante el scan: snapshot parcial (no usar latest.json, puede ser de una corrida vieja). */
+async function loadLiveProgressIfPartial() {
+  try {
+    const res = await fetch('/generated/live-progress.json', { cache: 'no-store' })
+    if (!res.ok) return false
+    const j = await res.json()
+    if (j.partial !== true) return false
+    report.value = j
+    error.value = ''
+    loading.value = false
+    return true
+  } catch {
+    return false
   }
 }
 
@@ -123,7 +139,10 @@ const POLL_MAX = 720
 
 async function refreshResults() {
   await Promise.all([loadIndex(), loadLastFinished()])
-  await loadReport()
+  const partial = await loadLiveProgressIfPartial()
+  if (!partial && !scanWaiting.value) {
+    await loadReport()
+  }
 }
 
 async function startScanAgain() {
@@ -140,6 +159,9 @@ async function startScanAgain() {
     }
     startMessage.value = body.message || 'Scan en curso…'
     liveLogText.value = ''
+    report.value = null
+    error.value = ''
+    loading.value = true
     scanWaiting.value = true
     logPollTimer = setInterval(() => void refreshLiveLog(), 900)
     void refreshLiveLog()
@@ -149,12 +171,19 @@ async function startScanAgain() {
       try {
         attempts++
         await Promise.all([loadLastFinished(), loadIndex()])
-        await loadReport()
-        const doneByFinish =
+        const finishedNow =
           lastFinished.value?.finishedAt != null &&
           lastFinished.value.finishedAt !== baselineFinishedAt
-        const doneByReport = report.value != null
+        const partial = await loadLiveProgressIfPartial()
+        if (finishedNow) {
+          await loadReport()
+        }
+        const doneByFinish = finishedNow
+        const doneByReport = report.value != null && report.value.partial !== true
         if (doneByFinish || doneByReport || attempts >= POLL_MAX) {
+          if (attempts >= POLL_MAX && !doneByReport && !doneByFinish) {
+            await loadReport()
+          }
           if (attempts >= POLL_MAX) {
             startMessage.value =
               'Sigue sin aparecer el reporte tras ~1 h. Revisá la terminal o logs/scan-*.txt.'
@@ -279,7 +308,13 @@ function formatLastFinished(meta) {
             {{ resetBusy ? 'Reseteando…' : 'Reset job scan' }}
           </button>
         </div>
-        <p v-if="scanWaiting" class="hint poll-hint">Esperando resultados (revisión cada pocos segundos)…</p>
+        <p v-if="scanWaiting" class="hint poll-hint">
+          <template v-if="report?.partial && report.scanProgress">
+            Resultados parciales en la UI: {{ report.scanProgress.completed }} /
+            {{ report.scanProgress.total }} empresas (se actualiza cada pocos segundos).
+          </template>
+          <template v-else>Esperando resultados (revisión cada pocos segundos)…</template>
+        </p>
         <p v-if="startMessage" class="hint start-msg">{{ startMessage }}</p>
         <p v-if="resetMessage" class="hint reset-msg">{{ resetMessage }}</p>
       </div>
@@ -304,6 +339,9 @@ function formatLastFinished(meta) {
     <main v-else-if="error" class="card err">{{ error }}</main>
     <main v-else-if="report" class="stack">
       <section class="card meta">
+        <p v-if="report.partial" class="hint partial-banner">
+          <strong>Parcial:</strong> el scan sigue; cuando termine se reemplaza por el reporte completo.
+        </p>
         <p>
           <strong>Corrida:</strong>
           {{ new Date(report.generatedAt).toLocaleString('es') }}
@@ -330,7 +368,7 @@ function formatLastFinished(meta) {
 
       <section
         v-for="c in companiesInReport"
-        :key="(selectedKey || '') + (c.id || c.name)"
+        :key="(selectedKey || '') + (c.id || c.name || '') + (c.careersUrl || '')"
         class="card company"
       >
         <div class="company-head">
