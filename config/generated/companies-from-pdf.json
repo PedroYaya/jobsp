@@ -1,6 +1,6 @@
 {
   "sourceFile": "laburosremot copy.pdf",
-  "generatedAt": "2026-05-07T21:51:23.786Z",
+  "generatedAt": "2026-05-08T22:25:48.930Z",
   "pages": 13,
   "urlsFound": [
     "https://10up.com",
@@ -253,7 +253,6 @@
     "https://jobgether.com/remote-jobs/company-glennwebsitedesignInternet",
     "https://gridium.com",
     "https://gridium.com/about/working-at-gridium",
-    "https://giantmade.comi",
     "https://www.flexera.com",
     "https://www.flexera.com/about-us/careers",
     "https://generalassemb.ly",
@@ -555,7 +554,6 @@
     "https://www.shopify.com/careers",
     "https://www.silverfin.com",
     "https://silverfin.com/careers/IT",
-    "https://www.serverdensity.comi",
     "https://scandit.com",
     "https://www.scandit.com/careers",
     "https://shippabo.com",
@@ -822,7 +820,6 @@
     "https://youcanbook.me/jobs",
     "https://www.redhat.com",
     "https://rackspace.com",
-    "https://rackspace.jobsit",
     "https://www.wellsfargo.com",
     "https://www.wellsfargo.com/about/careers",
     "https://chainlinklabs.com",
@@ -905,11 +902,9 @@
     "https://constructor.com/about/careers",
     "https://www.convert.com/jobs/A/B",
     "https://crisp.chat/en/careers/si",
-    "https://www.crossover.com/jobssi%22Recruit",
     "https://crowdbotics.com/careers",
     "https://search-careers.gm.com/en/?utm_source=gm",
     "https://databento.com/careers",
-    "https://www.datacamp.com/careerssi%22Data",
     "https://www.deel.com/careers",
     "https://donyati.com/careers/siDonyati",
     "https://www.dronedeploy.com/about/careerssiDrone-based",
@@ -1049,10 +1044,8 @@
     "https://www.thanx.com/careers",
     "https://time-doctor.breezy.hr/si",
     "https://toggl.com/jobs/siProductivity",
-    "https://www.toptal.com/careerssi%22Remote",
     "https://uberall.com/en/company/careers",
     "https://www.unified.com/careers/siA",
-    "https://www.upwork.com/careerssi%22Global",
     "https://wellfound.com/company/valur-finance/jobs",
     "https://verra.org/life-at-verra/si",
     "https://jobs.ashbyhq.com/tryvitalsi",
@@ -1124,3481 +1117,642 @@
     "https://www.escapethecity.org",
     "https://www.linkedin.com/jobs/LinkedIn"
   ],
+  "whereYouCanWorkFilter": {
+    "description": "Solo URLs cuyo texto siguiente en el PDF incluye Worldwide, South America, LATAM, Argentina, Uruguay, Chile, Brasil/Brazil o Paraguay (palabras completas donde aplica)",
+    "urlsUnique": 1113,
+    "urlsKept": 107,
+    "urlsDropped": 1006
+  },
   "companies": [
-    {
-      "id": "10up-com",
-      "name": "10up.com",
-      "careersUrl": "https://10up.com/careers"
-    },
-    {
-      "id": "ably-io",
-      "name": "ably.io",
-      "careersUrl": "https://www.ably.io"
-    },
-    {
-      "id": "ably-com",
-      "name": "ably.com",
-      "careersUrl": "https://ably.com/careers"
-    },
-    {
-      "id": "17hats-com",
-      "name": "17hats.com",
-      "careersUrl": "https://www.17hats.com"
-    },
-    {
-      "id": "1password-com",
-      "name": "1password.com",
-      "careersUrl": "https://1password.com/careers"
-    },
-    {
-      "id": "noom-com",
-      "name": "noom.com",
-      "careersUrl": "https://www.noom.com/careers"
-    },
-    {
-      "id": "adhocteam-us",
-      "name": "adhocteam.us",
-      "careersUrl": "https://www.adhocteam.us"
-    },
-    {
-      "id": "adhoc-team",
-      "name": "adhoc.team",
-      "careersUrl": "https://adhoc.team/careers"
-    },
     {
       "id": "activecampaign-com",
       "name": "activecampaign.com",
-      "careersUrl": "https://www.activecampaign.com/careers"
+      "careersUrl": "https://www.activecampaign.com/careers",
+      "whereYouCanWork": "Software DevelopmentIntelligent marketing automation platformUnited States, Ireland, Australia, Brazil 7% YoY growth (799 → 851 employees) 3.4/5 ⭐ rating (446 reviews) | 49% CEO approval AE Studio/"
     },
     {
       "id": "ae-studio",
       "name": "ae.studio",
-      "careersUrl": "https://ae.studio/join-us"
-    },
-    {
-      "id": "bazaarvoice-com",
-      "name": "bazaarvoice.com",
-      "careersUrl": "https://www.bazaarvoice.com/company/careers"
-    },
-    {
-      "id": "acquia-com",
-      "name": "acquia.com",
-      "careersUrl": "https://www.acquia.com/careers"
+      "careersUrl": "https://ae.studio/join-us",
+      "whereYouCanWork": "Software DevelopmentAgency enhancing technology solutions and innovation. United States, Brazil-6% YoY growth (185 → 174 employees) 4.0/5 ⭐ rating (43 reviews) | 76% CEO approval AddStructure/"
     },
     {
       "id": "adevait-com",
       "name": "adevait.com",
-      "careersUrl": "https://adevait.com/careers/job-openings/Akl9DwRe5rInternet"
-    },
-    {
-      "id": "bebanjo-com",
-      "name": "bebanjo.com",
-      "careersUrl": "https://www.bebanjo.com/company/careers"
-    },
-    {
-      "id": "broadwing-io",
-      "name": "broadwing.io",
-      "careersUrl": "https://www.broadwing.io"
-    },
-    {
-      "id": "broadwing-catsone-com",
-      "name": "broadwing.catsone.com",
-      "careersUrl": "https://broadwing.catsone.com/careers/88237-General/IT"
-    },
-    {
-      "id": "corp-betable-com",
-      "name": "corp.betable.com",
-      "careersUrl": "https://corp.betable.com"
+      "careersUrl": "https://adevait.com/careers/job-openings/Akl9DwRe5rInternet",
+      "whereYouCanWork": "Marketplace PlatformsGlobal tech talent network and staffingEurope, India, North America, South America, Eastern Europe -13% YoY growth (111 → 97 employees) BeBanjo/"
     },
     {
       "id": "betable-com",
       "name": "betable.com",
-      "careersUrl": "https://www.betable.com/careers"
-    },
-    {
-      "id": "bigcartel-com",
-      "name": "bigcartel.com",
-      "careersUrl": "https://www.bigcartel.com/company/jobs"
-    },
-    {
-      "id": "aula-education",
-      "name": "aula.education",
-      "careersUrl": "https://www.aula.education/careers"
-    },
-    {
-      "id": "automattic-com",
-      "name": "automattic.com",
-      "careersUrl": "https://automattic.com/work-with-us"
+      "careersUrl": "https://www.betable.com/careers",
+      "whereYouCanWork": "/Worldwide, United Kingdom 4.4/5 ⭐ rating (4 reviews) | 100% CEO approval Big Cartel/"
     },
     {
       "id": "bitovi-com",
       "name": "bitovi.com",
-      "careersUrl": "https://www.bitovi.com/about/jobs"
-    },
-    {
-      "id": "bill-com",
-      "name": "bill.com",
-      "careersUrl": "https://www.bill.com/careers"
-    },
-    {
-      "id": "animalz-co",
-      "name": "animalz.co",
-      "careersUrl": "https://www.animalz.co/join-us"
-    },
-    {
-      "id": "axios-com",
-      "name": "axios.com",
-      "careersUrl": "https://www.axios.com/careers"
-    },
-    {
-      "id": "yazio-com",
-      "name": "yazio.com",
-      "careersUrl": "https://www.yazio.com/en/jobs"
+      "careersUrl": "https://www.bitovi.com/about/jobs",
+      "whereYouCanWork": "Software DevelopmentEnd-to-end software development and consulting. North America, South America, United Kingdom -5% YoY growth (76 → 72 employees) 4.1/5 ⭐ rating (17-20 reviews) | 65% CEO approval Bill/"
     },
     {
       "id": "argyle-com",
       "name": "argyle.com",
-      "careersUrl": "https://argyle.com/careers"
-    },
-    {
-      "id": "annertech-com",
-      "name": "annertech.com",
-      "careersUrl": "https://www.annertech.com/careers"
-    },
-    {
-      "id": "articulate-com",
-      "name": "articulate.com",
-      "careersUrl": "https://www.articulate.com/about/careers"
-    },
-    {
-      "id": "auth0-com",
-      "name": "auth0.com",
-      "careersUrl": "https://auth0.com/careers"
-    },
-    {
-      "id": "virtahealth-com",
-      "name": "virtahealth.com",
-      "careersUrl": "https://www.virtahealth.com/careers"
-    },
-    {
-      "id": "aimincorp-com",
-      "name": "aimincorp.com",
-      "careersUrl": "https://www.aimincorp.com"
-    },
-    {
-      "id": "crunchbase-com",
-      "name": "crunchbase.com",
-      "careersUrl": "https://www.crunchbase.com/organi"
-    },
-    {
-      "id": "about-crunchbase-com",
-      "name": "about.crunchbase.com",
-      "careersUrl": "https://about.crunchbase.com/about-us/careers"
-    },
-    {
-      "id": "bairesdev-com",
-      "name": "bairesdev.com",
-      "careersUrl": "https://www.bairesdev.com/join-us/IT"
+      "careersUrl": "https://argyle.com/careers",
+      "whereYouCanWork": "/Financial ServicesReal-time income and employment data access Worldwide-8% YoY growth (144 → 132 employees) 3.8/5 ⭐ rating (30 reviews) | 84% CEO approval Annertech/"
     },
     {
       "id": "artefactual-com",
       "name": "artefactual.com",
-      "careersUrl": "https://www.artefactual.com/careers"
-    },
-    {
-      "id": "appwrite-io",
-      "name": "appwrite.io",
-      "careersUrl": "https://appwrite.io"
-    },
-    {
-      "id": "appwrite-careers",
-      "name": "appwrite.careers",
-      "careersUrl": "https://www.appwrite.careers"
+      "careersUrl": "https://www.artefactual.com/careers",
+      "whereYouCanWork": "Software DevelopmentOpen-source digital preservation and archival software. Worldwide-3% YoY growth (31 → 30 employees) 4.9/5 ⭐ rating (4 reviews) Appwrite/"
     },
     {
       "id": "axelerant-com",
       "name": "axelerant.com",
-      "careersUrl": "https://www.axelerant.com/careers"
-    },
-    {
-      "id": "bloc-io",
-      "name": "bloc.io",
-      "careersUrl": "https://www.bloc.io"
-    },
-    {
-      "id": "osv-chegg-wd5-myworkdayjobs-com",
-      "name": "osv-chegg.wd5.myworkdayjobs.com",
-      "careersUrl": "https://osv-chegg.wd5.myworkdayjobs.com/CheggE-Learning"
-    },
-    {
-      "id": "applaudostudios-com",
-      "name": "applaudostudios.com",
-      "careersUrl": "https://applaudostudios.com"
-    },
-    {
-      "id": "careers-smartrecruiters-com",
-      "name": "careers.smartrecruiters.com",
-      "careersUrl": "https://careers.smartrecruiters.com/ApplaudoStudiosIT"
-    },
-    {
-      "id": "audiense-com",
-      "name": "audiense.com",
-      "careersUrl": "https://www.audiense.com/jobs/careers"
-    },
-    {
-      "id": "anomali-com",
-      "name": "anomali.com",
-      "careersUrl": "https://www.anomali.com/company/careers"
-    },
-    {
-      "id": "balsamiq-com",
-      "name": "balsamiq.com",
-      "careersUrl": "https://balsamiq.com/company/jobs"
+      "careersUrl": "https://www.axelerant.com/careers",
+      "whereYouCanWork": "IT Services and IT ConsultingRemote success management and delivery services Worldwide-4% YoY growth (211 → 202 employees) 4.5/5 ⭐ rating (143 reviews) | 96% CEO approval Bloc/"
     },
     {
       "id": "bandlab-com",
       "name": "bandlab.com",
-      "careersUrl": "https://www.bandlab.com/careers"
+      "careersUrl": "https://www.bandlab.com/careers",
+      "whereYouCanWork": "MusiciansOriginal podcast music production.Worldwide 4.1/5 ⭐ rating (56 reviews) | 88% CEO approval Bandzoogle/"
     },
     {
       "id": "bandzoogle-com",
       "name": "bandzoogle.com",
-      "careersUrl": "https://bandzoogle.com/jobs"
-    },
-    {
-      "id": "apartmenttherapy-com",
-      "name": "apartmenttherapy.com",
-      "careersUrl": "http://www.apartmenttherapy.com"
-    },
-    {
-      "id": "apartmenttherapymedia-com",
-      "name": "apartmenttherapymedia.com",
-      "careersUrl": "https://www.apartmenttherapymedia.com/jobs"
+      "careersUrl": "https://bandzoogle.com/jobs",
+      "whereYouCanWork": "Entertainment ProvidersCreates and sells entertainment merchandise.Worldwide 5.0/5 ⭐ rating (1 review) apartment therapy/"
     },
     {
       "id": "beenverified-com",
       "name": "beenverified.com",
-      "careersUrl": "https://www.beenverified.com/careers"
-    },
-    {
-      "id": "bounteous-com",
-      "name": "bounteous.com",
-      "careersUrl": "https://www.bounteous.com/careers"
-    },
-    {
-      "id": "hellobonsai-com",
-      "name": "hellobonsai.com",
-      "careersUrl": "https://www.hellobonsai.com/careers"
-    },
-    {
-      "id": "alamisharia-co-id",
-      "name": "alamisharia.co.id",
-      "careersUrl": "https://alamisharia.co.id/en/career"
+      "careersUrl": "https://www.beenverified.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetPublic records access platformArgentina, Colombia, India, United States, Peru, Philippines, Uruguay -5% YoY growth (37 → 35 employees) 4.3/5 ⭐ rating (19 reviews) | 92% CEO approval Bounteous/"
     },
     {
       "id": "airgarage-com",
       "name": "airgarage.com",
-      "careersUrl": "https://www.airgarage.com/careers?srsltid=AfmBOopZsTQ7X1UiD90u9bBP3IfRGtRcMBD7SFGtXiwyg8Gp_QcbgPojTechnology"
-    },
-    {
-      "id": "alight-com",
-      "name": "alight.com",
-      "careersUrl": "https://alight.com"
-    },
-    {
-      "id": "careers-alight-com",
-      "name": "careers.alight.com",
-      "careersUrl": "https://careers.alight.com"
-    },
-    {
-      "id": "astronomer-io",
-      "name": "astronomer.io",
-      "careersUrl": "https://www.astronomer.io/careers"
-    },
-    {
-      "id": "boldare-com",
-      "name": "boldare.com",
-      "careersUrl": "https://www.boldare.com/career/IT"
-    },
-    {
-      "id": "engineering-alphasights-com",
-      "name": "engineering.alphasights.com",
-      "careersUrl": "https://engineering.alphasights.com"
-    },
-    {
-      "id": "alphasights-com",
-      "name": "alphasights.com",
-      "careersUrl": "https://www.alphasights.com/careers/engineering-product"
-    },
-    {
-      "id": "appinio-com",
-      "name": "appinio.com",
-      "careersUrl": "https://www.appinio.com/en/careers"
+      "careersUrl": "https://www.airgarage.com/careers?srsltid=AfmBOopZsTQ7X1UiD90u9bBP3IfRGtRcMBD7SFGtXiwyg8Gp_QcbgPojTechnology",
+      "whereYouCanWork": ", Information and InternetComprehensive parking management solutions Worldwide-11% YoY growth (61 → 54 employees) 4.4/5 ⭐ rating (17 reviews) | 72% CEO approval Alight Solutions/"
     },
     {
       "id": "alan-com",
       "name": "alan.com",
-      "careersUrl": "https://alan.com/en/careers"
+      "careersUrl": "https://alan.com/en/careers",
+      "whereYouCanWork": "InsuranceComprehensive health and wellness services provider. France, Spain, Belgium, Netherlands, Sweden, Germany, Luxembourg, United Kingdom, Worldwide 19% YoY growth (939 → 1113 employees) 4.3/5 ⭐ rating (72 reviews) | 94% CEO approval Atlassian/"
     },
     {
       "id": "atlassian-com",
       "name": "atlassian.com",
-      "careersUrl": "https://www.atlassian.com/company/careers"
-    },
-    {
-      "id": "joinairbank-com",
-      "name": "joinairbank.com",
-      "careersUrl": "https://www.joinairbank.com"
-    },
-    {
-      "id": "airbank-it",
-      "name": "airbank.it",
-      "careersUrl": "https://www.airbank.it/en/azienda/lavora_con_noi.phpItaly"
-    },
-    {
-      "id": "amazon-jobs",
-      "name": "amazon.jobs",
-      "careersUrl": "https://www.amazon.jobs/en/locatio"
-    },
-    {
-      "id": "basecamp-com",
-      "name": "basecamp.com",
-      "careersUrl": "https://basecamp.com/handbook/making-a-careerWorldwide"
-    },
-    {
-      "id": "balena-io",
-      "name": "balena.io",
-      "careersUrl": "https://www.balena.io"
-    },
-    {
-      "id": "apply-workable-com",
-      "name": "apply.workable.com",
-      "careersUrl": "https://apply.workable.com/balena/?lng=enEmbedded"
-    },
-    {
-      "id": "aerolab-co",
-      "name": "aerolab.co",
-      "careersUrl": "https://aerolab.co/careers"
-    },
-    {
-      "id": "aha-io",
-      "name": "aha.io",
-      "careersUrl": "https://www.aha.io/company/careers"
-    },
-    {
-      "id": "bluecatnetworks-com",
-      "name": "bluecatnetworks.com",
-      "careersUrl": "https://bluecatnetworks.com/careers"
-    },
-    {
-      "id": "alley-co",
-      "name": "alley.co",
-      "careersUrl": "https://alley.co"
+      "careersUrl": "https://www.atlassian.com/company/careers",
+      "whereYouCanWork": "Software DevelopmentTeam collaboration and productivity software. Worldwide-15% YoY growth (19913 → 16911 employees) 3.7/5 ⭐ rating (2,786 reviews) | 71% CEO approval Airbank/"
     },
     {
       "id": "alley-com",
       "name": "alley.com",
-      "careersUrl": "https://alley.com/careers/IT"
-    },
-    {
-      "id": "coursera-org",
-      "name": "coursera.org",
-      "careersUrl": "https://www.coursera.org"
-    },
-    {
-      "id": "careers-coursera-com",
-      "name": "careers.coursera.com",
-      "careersUrl": "https://careers.coursera.com/E-Learning"
-    },
-    {
-      "id": "coingape-com",
-      "name": "coingape.com",
-      "careersUrl": "https://coingape.com/careers"
-    },
-    {
-      "id": "compucorp-co-uk",
-      "name": "compucorp.co.uk",
-      "careersUrl": "https://www.compucorp.co.uk"
-    },
-    {
-      "id": "careers-compuco-io",
-      "name": "careers.compuco.io",
-      "careersUrl": "https://careers.compuco.io"
-    },
-    {
-      "id": "coinbase-com",
-      "name": "coinbase.com",
-      "careersUrl": "https://www.coinbase.com/careers"
-    },
-    {
-      "id": "crossover-com",
-      "name": "crossover.com",
-      "careersUrl": "https://www.crossover.com/jobs"
-    },
-    {
-      "id": "customer-io",
-      "name": "customer.io",
-      "careersUrl": "https://customer.io/careers"
-    },
-    {
-      "id": "coreos-com",
-      "name": "coreos.com",
-      "careersUrl": "https://coreos.com"
-    },
-    {
-      "id": "redhat-com",
-      "name": "redhat.com",
-      "careersUrl": "https://www.redhat.com/en/jobs"
-    },
-    {
-      "id": "crowdstrike-com",
-      "name": "crowdstrike.com",
-      "careersUrl": "https://www.crowdstrike.com/en-us/careers"
-    },
-    {
-      "id": "convert-com",
-      "name": "convert.com",
-      "careersUrl": "https://www.convert.com/jobs"
-    },
-    {
-      "id": "consensys-net",
-      "name": "consensys.net",
-      "careersUrl": "https://consensys.net"
+      "careersUrl": "https://alley.com/careers/IT",
+      "whereYouCanWork": "Services and IT ConsultingCustom digital experiences for publishers and brands. United States, North America, South America -22% YoY growth (58 → 45 employees) 3.6/5 ⭐ rating (34 reviews) | 48% CEO approval Coursera/"
     },
     {
       "id": "consensys-io",
       "name": "consensys.io",
-      "careersUrl": "https://consensys.io/careers"
+      "careersUrl": "https://consensys.io/careers",
+      "whereYouCanWork": "Software DevelopmentWeb3 development platform.United States, EMEA, Canada, LATAM -3% YoY growth (820 → 792 employees) 3.4/5 ⭐ rating (332 reviews) | 71% CEO approval Collabora/"
     },
     {
       "id": "collabora-com",
       "name": "collabora.com",
-      "careersUrl": "https://www.collabora.com/careers.htmlSoftware"
-    },
-    {
-      "id": "cuvette-tech",
-      "name": "cuvette.tech",
-      "careersUrl": "https://cuvette.tech"
-    },
-    {
-      "id": "instahyre-com",
-      "name": "instahyre.com",
-      "careersUrl": "https://www.instahyre.com/jobs-at-cuvette-tech/EducationIT"
-    },
-    {
-      "id": "coalitiontechnologies-com",
-      "name": "coalitiontechnologies.com",
-      "careersUrl": "https://coalitiontechnologies.com/jobs"
-    },
-    {
-      "id": "continu-co",
-      "name": "continu.co",
-      "careersUrl": "https://www.continu.co"
+      "careersUrl": "https://www.collabora.com/careers.htmlSoftware",
+      "whereYouCanWork": "DevelopmentOpen Source software consultancy and development. Worldwide, Cambridge, Montreal, Africa, Asia, Europe, Oceania, North America, South America, Canada, UK, United States -6% YoY growth (132 → 124 employees) 3.6/5 ⭐ rating (21 reviews) | 71% CEO approval Cuvette/"
     },
     {
       "id": "continu-com",
       "name": "continu.com",
-      "careersUrl": "https://www.continu.com/careers"
+      "careersUrl": "https://www.continu.com/careers",
+      "whereYouCanWork": "Software DevelopmentModern learning management system (LMS)Worldwide-17% YoY growth (46 → 38 employees) 3.4/5 ⭐ rating (29 reviews) | 63% CEO approval CareMessage/"
     },
     {
       "id": "caremessage-org",
       "name": "caremessage.org",
-      "careersUrl": "https://caremessage.org/careers"
-    },
-    {
-      "id": "clootrack-com",
-      "name": "clootrack.com",
-      "careersUrl": "https://www.clootrack.com/careers"
-    },
-    {
-      "id": "celsius-network",
-      "name": "celsius.network",
-      "careersUrl": "https://celsius.network/careers"
-    },
-    {
-      "id": "circleci-com",
-      "name": "circleci.com",
-      "careersUrl": "https://circleci.com/careers"
+      "careersUrl": "https://www.caremessage.org/about-us/careers",
+      "whereYouCanWork": "/Hospitals and Health CarePatient engagement platform for low-income populations. Brazil, India, United States41% YoY growth (44 → 62 employees) 3.4/5 ⭐ rating (28 reviews) | 50% CEO approval Clootrack/"
     },
     {
       "id": "close-com",
       "name": "close.com",
-      "careersUrl": "https://www.close.com/careers"
-    },
-    {
-      "id": "civicactions-com",
-      "name": "civicactions.com",
-      "careersUrl": "https://civicactions.com/careers"
-    },
-    {
-      "id": "charitywater-org",
-      "name": "charitywater.org",
-      "careersUrl": "https://www.charitywater.org/about/jobsNon-profit"
-    },
-    {
-      "id": "clickup-com",
-      "name": "clickup.com",
-      "careersUrl": "https://clickup.com/careers"
-    },
-    {
-      "id": "capitalonecareers-com",
-      "name": "capitalonecareers.com",
-      "careersUrl": "https://www.capitalonecareers.com/t"
+      "careersUrl": "https://www.close.com/careers",
+      "whereYouCanWork": "Software DevelopmentRemote CRM for small, scaling businesses.Worldwide, United States30% YoY growth (131 → 171 employees) 4.8/5 ⭐ rating (53 reviews) | 96% CEO approval CivicActions/"
     },
     {
       "id": "canonical-com",
       "name": "canonical.com",
-      "careersUrl": "https://canonical.com/careers"
+      "careersUrl": "https://canonical.com/careers",
+      "whereYouCanWork": "Software DevelopmentOpen source software and Ubuntu development. Worldwide, APAC, AMER, EMEA, United States, London, Bratislava, Beijing, Taipei, Tokyo, Austin, Boston 20 YoY growth (1390 → 1661 employees) 3.3/5 ⭐ rating (380 reviews) | 49% CEO approval Calibre/"
     },
     {
       "id": "calibreapp-com",
       "name": "calibreapp.com",
-      "careersUrl": "https://calibreapp.com/careers"
-    },
-    {
-      "id": "cancom-com",
-      "name": "cancom.com",
-      "careersUrl": "https://www.cancom.com"
-    },
-    {
-      "id": "career-cancom-com",
-      "name": "career.cancom.com",
-      "careersUrl": "https://career.cancom.com/IT"
-    },
-    {
-      "id": "precisionnutrition-com",
-      "name": "precisionnutrition.com",
-      "careersUrl": "https://www.precisionnutrition.com/careers"
-    },
-    {
-      "id": "cartodb-com",
-      "name": "cartodb.com",
-      "careersUrl": "https://cartodb.com"
-    },
-    {
-      "id": "carto-com",
-      "name": "carto.com",
-      "careersUrl": "https://carto.com/careers"
-    },
-    {
-      "id": "modernhealth-com",
-      "name": "modernhealth.com",
-      "careersUrl": "https://www.modernhealth.com/careers"
-    },
-    {
-      "id": "carbonblack-com",
-      "name": "carbonblack.com",
-      "careersUrl": "https://www.carbonblack.com"
-    },
-    {
-      "id": "broadcom-com",
-      "name": "broadcom.com",
-      "careersUrl": "https://www.broadcom.com/company/careers"
+      "careersUrl": "https://calibreapp.com/careers",
+      "whereYouCanWork": "Technology, Information and InternetWeb performance monitoring and insights platform. Worldwide CANCOM/"
     },
     {
       "id": "buysellads-com",
       "name": "buysellads.com",
-      "careersUrl": "https://www.buysellads.com/careers"
+      "careersUrl": "https://www.buysellads.com/careers",
+      "whereYouCanWork": "Technology, Information and MediaContextual advertising and publisher monetization platform. Worldwide-5% YoY growth (41 → 39 employees) 3.9/5 ⭐ rating (15 reviews) | 83% CEO approval Calamari/"
     },
     {
-      "id": "calamari-io",
-      "name": "calamari.io",
-      "careersUrl": "https://www.calamari.io/careerHuman"
-    },
-    {
-      "id": "buffer-com",
-      "name": "buffer.com",
-      "careersUrl": "https://buffer.com"
-    },
-    {
-      "id": "imachines-com",
-      "name": "imachines.com",
-      "careersUrl": "https://www.imachines.com"
-    },
-    {
-      "id": "iohk-io",
-      "name": "iohk.io",
-      "careersUrl": "https://iohk.io"
-    },
-    {
-      "id": "invisionapp-com",
-      "name": "invisionapp.com",
-      "careersUrl": "https://www.invisionapp.com/careers"
-    },
-    {
-      "id": "imaginelearning-com",
-      "name": "imaginelearning.com",
-      "careersUrl": "https://www.imaginelearning.com/about/careers/E-Learning"
-    },
-    {
-      "id": "incsub-com",
-      "name": "incsub.com",
-      "careersUrl": "https://incsub.com/careers"
-    },
-    {
-      "id": "intercom-io",
-      "name": "intercom.io",
-      "careersUrl": "https://www.intercom.io"
-    },
-    {
-      "id": "intercom-com",
-      "name": "intercom.com",
-      "careersUrl": "https://www.intercom.com/careers"
-    },
-    {
-      "id": "hypothes-is",
-      "name": "hypothes.is",
-      "careersUrl": "https://hypothes.is"
-    },
-    {
-      "id": "web-hypothes-is",
-      "name": "web.hypothes.is",
-      "careersUrl": "https://web.hypothes.is/jobs/EducationSocial"
-    },
-    {
-      "id": "inpsyde-com",
-      "name": "inpsyde.com",
-      "careersUrl": "https://inpsyde.com/en"
-    },
-    {
-      "id": "syde-com",
-      "name": "syde.com",
-      "careersUrl": "https://syde.com/career"
-    },
-    {
-      "id": "ifit-com",
-      "name": "ifit.com",
-      "careersUrl": "https://www.ifit.com/careers"
+      "id": "apply-workable-com",
+      "name": "apply.workable.com",
+      "careersUrl": "https://apply.workable.com/imachines",
+      "whereYouCanWork": "/Research ServicesOnline security and machine intelligence solutions Brazil, Poland, United Kingdom, Canada, Bulgaria, Argentina, Malaysia, Philippines -1% YoY growth (88 → 87 employees) 2.6/5 ⭐ rating (2 reviews) IOHK/"
     },
     {
       "id": "instructure-com",
       "name": "instructure.com",
-      "careersUrl": "https://www.instructure.com/about/careersE-Learning"
+      "careersUrl": "https://www.instructure.com/about/careersE-Learning",
+      "whereYouCanWork": "ProvidersEducation technology and learning management systems. Australia, Brazil, Hungary, Indonesia, Japan, United Kingdom, Mexico, Philippines, United States, Singapore, Spain 32% YoY growth (1544 → 2036 employees) 3.5/5 ⭐ rating (763-828 reviews) | 47% CEO approval Hopper/"
     },
     {
       "id": "hopper-com",
       "name": "hopper.com",
-      "careersUrl": "https://hopper.com/careers"
+      "careersUrl": "https://hopper.com/careers",
+      "whereYouCanWork": "Software DevelopmentTravel and fintech platform for younger travelers. Argentina, Brazil, Canada, Colombia, Japan, Mexico, Philippines, Qatar, Saudi Arabia, Singapore, South Korea, United Arab Emirates, United States -1% YoY growth (1268 → 1253 employees) 3.1/5 ⭐ rating (402 reviews) | 42% CEO approval Honeybadger/"
     },
     {
       "id": "honeybadger-io",
       "name": "honeybadger.io",
-      "careersUrl": "https://www.honeybadger.io/careers"
-    },
-    {
-      "id": "heapanalytics-com",
-      "name": "heapanalytics.com",
-      "careersUrl": "https://heapanalytics.com"
+      "careersUrl": "https://www.honeybadger.io/careers",
+      "whereYouCanWork": "/Software DevelopmentApplication health monitoring for developers.Worldwide-6% YoY growth (31 → 29 employees) 4.0/5 ⭐ rating (3 reviews) Heap/"
     },
     {
       "id": "heap-io",
       "name": "heap.io",
-      "careersUrl": "https://www.heap.io/careers"
+      "careersUrl": "https://www.heap.io/careers",
+      "whereYouCanWork": "Software DevelopmentDigital experience analytics platformSan Francisco, New York, London, Worldwide -38% YoY growth (291 → 181 employees) 4.6/5 ⭐ rating (291 reviews) | 95% CEO approval Hudl/"
     },
     {
       "id": "hudl-com",
       "name": "hudl.com",
-      "careersUrl": "https://www.hudl.com/jobs"
-    },
-    {
-      "id": "careers-hotjar-com",
-      "name": "careers.hotjar.com",
-      "careersUrl": "https://careers.hotjar.com"
+      "careersUrl": "https://www.hudl.com/jobs",
+      "whereYouCanWork": "Software DevelopmentPerformance analysis technology for sports teams United States, United Kingdom, Spain, Italy, Netherlands, India, Japan, Mexico, Brazil 16% YoY growth (2889 → 3342 employees) 4.0/5 ⭐ rating (1,094 reviews) | 88% CEO approval Hotjar/"
     },
     {
       "id": "contentsquare-com",
       "name": "contentsquare.com",
-      "careersUrl": "https://contentsquare.com/careers/IT"
-    },
-    {
-      "id": "allydvm-com",
-      "name": "allydvm.com",
-      "careersUrl": "https://www.allydvm.com"
-    },
-    {
-      "id": "cencora-com",
-      "name": "cencora.com",
-      "careersUrl": "https://www.cencora.com/careers"
+      "careersUrl": "https://contentsquare.com/careers/IT",
+      "whereYouCanWork": "Services and IT ConsultingUser behavior analytics for improved experiences. Worldwide-35% YoY growth (380 → 247 employees) 3.9/5 ⭐ rating (95-113 reviews) | 72% CEO approval allyDVM/"
     },
     {
       "id": "guidesmiths-com",
       "name": "guidesmiths.com",
-      "careersUrl": "https://www.guidesmiths.com/careers/open-positionsSoftware"
+      "careersUrl": "https://www.guidesmiths.com/careers/open-positionsSoftware",
+      "whereYouCanWork": "DevelopmentBespoke software development and digital transformation United States, Canada, United Kingdom, Ireland, Germany, Netherlands, Poland, Spain, Colombia, Argentina, Costa Rica, Israel, South Africa -16% YoY growth (243 → 203 employees)No data available Hack Reactor Remote/"
     },
     {
       "id": "hackreactor-com",
       "name": "hackreactor.com",
-      "careersUrl": "https://www.hackreactor.com/remote"
-    },
-    {
-      "id": "helpscout-net",
-      "name": "helpscout.net",
-      "careersUrl": "https://www.helpscout.net"
-    },
-    {
-      "id": "helpscout-com",
-      "name": "helpscout.com",
-      "careersUrl": "https://www.helpscout.com/company/careers"
-    },
-    {
-      "id": "hmn-md",
-      "name": "hmn.md",
-      "careersUrl": "https://hmn.md"
-    },
-    {
-      "id": "humanmade-com",
-      "name": "humanmade.com",
-      "careersUrl": "https://humanmade.com/careers"
+      "careersUrl": "https://www.hackreactor.com/hire-software-engineers",
+      "whereYouCanWork": "/Higher EducationTech education and coding bootcamps.Worldwide-25% YoY growth (200 → 150 employees) 4.2/5 ⭐ rating (98-125 reviews) | 92% CEO approval Help Scout/"
     },
     {
       "id": "happycog-com",
       "name": "happycog.com",
-      "careersUrl": "https://www.happycog.com/careers"
-    },
-    {
-      "id": "hashicorp-com",
-      "name": "hashicorp.com",
-      "careersUrl": "https://www.hashicorp.com/en/careers"
-    },
-    {
-      "id": "getharvest-com",
-      "name": "getharvest.com",
-      "careersUrl": "https://www.getharvest.com/careers"
-    },
-    {
-      "id": "gohiring-com",
-      "name": "gohiring.com",
-      "careersUrl": "https://gohiring.com/jobs"
-    },
-    {
-      "id": "about-gitlab-com",
-      "name": "about.gitlab.com",
-      "careersUrl": "https://about.gitlab.com/jobs/IT"
-    },
-    {
-      "id": "graylog-org",
-      "name": "graylog.org",
-      "careersUrl": "https://graylog.org/careers"
-    },
-    {
-      "id": "ghost-org",
-      "name": "ghost.org",
-      "careersUrl": "https://ghost.org"
-    },
-    {
-      "id": "careers-ghost-org",
-      "name": "careers.ghost.org",
-      "careersUrl": "https://careers.ghost.org"
-    },
-    {
-      "id": "gojob-com",
-      "name": "gojob.com",
-      "careersUrl": "https://gojob.com/wearehiring/us"
+      "careersUrl": "https://www.happycog.com/careers",
+      "whereYouCanWork": "Advertising ServicesDigital product and experience development.Worldwide-1% YoY growth (112 → 111 employees) 4.6/5 ⭐ rating (8 reviews) | 100% CEO approval HashiCorp/"
     },
     {
       "id": "gremlin-com",
       "name": "gremlin.com",
-      "careersUrl": "https://www.gremlin.com/teamSoftware"
-    },
-    {
-      "id": "github-com",
-      "name": "github.com",
-      "careersUrl": "https://github.com"
-    },
-    {
-      "id": "github-careers",
-      "name": "github.careers",
-      "careersUrl": "https://www.github.careers/careers-homeSoftware"
-    },
-    {
-      "id": "glennwebsitedesign-com",
-      "name": "glennwebsitedesign.com",
-      "careersUrl": "https://glennwebsitedesign.com"
+      "careersUrl": "https://www.gremlin.com/teamSoftware",
+      "whereYouCanWork": "DevelopmentAutomated reliability management for software teams. Worldwide-1% YoY growth (67 → 66 employees) 3.5/5 ⭐ rating (23 reviews) | 50% CEO approval GitHub/"
     },
     {
       "id": "jobgether-com",
       "name": "jobgether.com",
-      "careersUrl": "https://jobgether.com/remote-jobs/company-glennwebsitedesignInternet"
-    },
-    {
-      "id": "gridium-com",
-      "name": "gridium.com",
-      "careersUrl": "https://gridium.com"
-    },
-    {
-      "id": "giantmade-comi",
-      "name": "giantmade.comi",
-      "careersUrl": "https://giantmade.comi"
+      "careersUrl": "https://jobgether.com/remote-jobs/company-glennwebsitedesignInternet",
+      "whereYouCanWork": "Marketplace PlatformsComprehensive website design and management Worldwide(229 reviews) Gridium/"
     },
     {
       "id": "flexera-com",
       "name": "flexera.com",
-      "careersUrl": "https://www.flexera.com/about-us/careers"
-    },
-    {
-      "id": "generalassemb-ly",
-      "name": "generalassemb.ly",
-      "careersUrl": "https://generalassemb.ly/careers"
-    },
-    {
-      "id": "lifen-health",
-      "name": "lifen.health",
-      "careersUrl": "https://www.lifen.health"
-    },
-    {
-      "id": "jobs-lever-co",
-      "name": "jobs.lever.co",
-      "careersUrl": "https://jobs.lever.co/lifenHospitals"
-    },
-    {
-      "id": "freeagent-com",
-      "name": "freeagent.com",
-      "careersUrl": "https://www.freeagent.com"
-    },
-    {
-      "id": "careers-freeagent-com",
-      "name": "careers.freeagent.com",
-      "careersUrl": "https://careers.freeagent.com"
-    },
-    {
-      "id": "gaggle-net",
-      "name": "gaggle.net",
-      "careersUrl": "https://www.gaggle.net/careers"
-    },
-    {
-      "id": "functionize-com",
-      "name": "functionize.com",
-      "careersUrl": "https://www.functionize.com/careers"
-    },
-    {
-      "id": "geckoboard-com",
-      "name": "geckoboard.com",
-      "careersUrl": "https://www.geckoboard.com/about/careers"
+      "careersUrl": "https://www.flexera.com/about-us/careers",
+      "whereYouCanWork": "Software DevelopmentSaaS-based IT management solutionsNorth America, Europe, Australia, Asia, Worldwide 59% YoY growth (1067 → 1691 employees) 3.7/5 ⭐ rating (489 reviews) | 73% CEO approval General Assembly/"
     },
     {
       "id": "flowing-it",
       "name": "flowing.it",
-      "careersUrl": "https://www.flowing.it/job-opportunityIT"
-    },
-    {
-      "id": "gofmx-com",
-      "name": "gofmx.com",
-      "careersUrl": "https://www.gofmx.com/careers"
-    },
-    {
-      "id": "envoy-com",
-      "name": "envoy.com",
-      "careersUrl": "https://envoy.com/jobs"
-    },
-    {
-      "id": "fingerprintjs-com",
-      "name": "fingerprintjs.com",
-      "careersUrl": "https://fingerprintjs.com"
-    },
-    {
-      "id": "fingerprint-com",
-      "name": "fingerprint.com",
-      "careersUrl": "https://fingerprint.com/careers"
-    },
-    {
-      "id": "ffwagency-com",
-      "name": "ffwagency.com",
-      "careersUrl": "https://ffwagency.com"
-    },
-    {
-      "id": "careers-ffw-com",
-      "name": "careers.ffw.com",
-      "careersUrl": "https://careers.ffw.com"
-    },
-    {
-      "id": "evrone-com",
-      "name": "evrone.com",
-      "careersUrl": "https://evrone.com"
+      "careersUrl": "https://www.flowing.it/job-opportunityIT",
+      "whereYouCanWork": "Services and IT ConsultingManaged IT services and cloud solutions.Worldwide-13% YoY growth (63 → 55 employees) 4.1/5 ⭐ rating (15 reviews) | 78% CEO approval FMX/"
     },
     {
       "id": "jobs-evrone-com",
       "name": "jobs.evrone.com",
-      "careersUrl": "https://jobs.evrone.com/IT"
-    },
-    {
-      "id": "eyeo-com",
-      "name": "eyeo.com",
-      "careersUrl": "https://eyeo.com/careers"
-    },
-    {
-      "id": "faithlife-com",
-      "name": "faithlife.com",
-      "careersUrl": "https://faithlife.com/careers"
-    },
-    {
-      "id": "fastly-com",
-      "name": "fastly.com",
-      "careersUrl": "https://www.fastly.com/about/careers"
-    },
-    {
-      "id": "fire-engine-red-com",
-      "name": "fire-engine-red.com",
-      "careersUrl": "https://fire-engine-red.com"
-    },
-    {
-      "id": "carnegiehighered-com",
-      "name": "carnegiehighered.com",
-      "careersUrl": "https://www.carnegiehighered.com/about/careers"
-    },
-    {
-      "id": "fauna-com",
-      "name": "fauna.com",
-      "careersUrl": "https://fauna.com/careers"
-    },
-    {
-      "id": "equalexperts-com",
-      "name": "equalexperts.com",
-      "careersUrl": "https://www.equalexperts.com/contact-us/lisbon"
+      "careersUrl": "https://jobs.evrone.com/IT",
+      "whereYouCanWork": "Services and IT ConsultingDigital product development and web project design. Worldwide, United States, Germany 4.6/5 ⭐ rating (18 reviews) | 94% CEO approval Eyeo (Adblock Plus)"
     },
     {
       "id": "fairwinds-com",
       "name": "fairwinds.com",
-      "careersUrl": "https://www.fairwinds.com/careers"
-    },
-    {
-      "id": "devsquad-com",
-      "name": "devsquad.com",
-      "careersUrl": "https://devsquad.com"
-    },
-    {
-      "id": "doist-com",
-      "name": "doist.com",
-      "careersUrl": "https://doist.com/careers"
-    },
-    {
-      "id": "digitalocean-com",
-      "name": "digitalocean.com",
-      "careersUrl": "https://www.digitalocean.com/careers"
-    },
-    {
-      "id": "dealdash-com",
-      "name": "dealdash.com",
-      "careersUrl": "https://www.dealdash.com/careers"
-    },
-    {
-      "id": "elastic-co",
-      "name": "elastic.co",
-      "careersUrl": "https://www.elastic.co/careers"
-    },
-    {
-      "id": "envato-com",
-      "name": "envato.com",
-      "careersUrl": "https://www.envato.com/about/careers"
-    },
-    {
-      "id": "duckduckgo-com",
-      "name": "duckduckgo.com",
-      "careersUrl": "https://duckduckgo.com/hiringSoftware"
-    },
-    {
-      "id": "enjoei-com-br",
-      "name": "enjoei.com.br",
-      "careersUrl": "https://www.enjoei.com.br"
-    },
-    {
-      "id": "enjoei-gupy-io",
-      "name": "enjoei.gupy.io",
-      "careersUrl": "https://enjoei.gupy.io"
-    },
-    {
-      "id": "dronedeploy-com",
-      "name": "dronedeploy.com",
-      "careersUrl": "https://www.dronedeploy.com/about/careers"
-    },
-    {
-      "id": "pleo-io",
-      "name": "pleo.io",
-      "careersUrl": "https://www.pleo.io/en/careers"
-    },
-    {
-      "id": "pex-com",
-      "name": "pex.com",
-      "careersUrl": "https://pex.com/careers"
-    },
-    {
-      "id": "powerschool-com",
-      "name": "powerschool.com",
-      "careersUrl": "https://www.powerschool.com/company/careers/E-Learning"
-    },
-    {
-      "id": "prezi-com",
-      "name": "prezi.com",
-      "careersUrl": "https://prezi.com/jobs"
-    },
-    {
-      "id": "mycwt-com",
-      "name": "mycwt.com",
-      "careersUrl": "https://www.mycwt.com"
-    },
-    {
-      "id": "careers-mycwt-com",
-      "name": "careers.mycwt.com",
-      "careersUrl": "https://careers.mycwt.com"
-    },
-    {
-      "id": "teravisiontech-com",
-      "name": "teravisiontech.com",
-      "careersUrl": "https://www.teravisiontech.com/careers"
+      "careersUrl": "https://www.fairwinds.com/careers",
+      "whereYouCanWork": "IT Services and IT ConsultingKubernetes enablement and cloud-native optimization. Worldwide-5% YoY growth (60 → 57 employees) 4.5/5 ⭐ rating (11 reviews) | 100% CEO approval Devsquad/"
     },
     {
       "id": "datacamp-com",
       "name": "datacamp.com",
-      "careersUrl": "https://www.datacamp.com/careersE-Learning"
-    },
-    {
-      "id": "pnc-com",
-      "name": "pnc.com",
-      "careersUrl": "https://www.pnc.com"
-    },
-    {
-      "id": "careers-pnc-com",
-      "name": "careers.pnc.com",
-      "careersUrl": "https://careers.pnc.com/global/enFinancial"
-    },
-    {
-      "id": "datadoghq-com",
-      "name": "datadoghq.com",
-      "careersUrl": "https://www.datadoghq.com"
-    },
-    {
-      "id": "careers-datadoghq-com",
-      "name": "careers.datadoghq.com",
-      "careersUrl": "https://careers.datadoghq.com"
-    },
-    {
-      "id": "dashlane-com",
-      "name": "dashlane.com",
-      "careersUrl": "https://www.dashlane.com/about/careers"
-    },
-    {
-      "id": "datastax-com",
-      "name": "datastax.com",
-      "careersUrl": "https://www.datastax.com/company/careers"
+      "careersUrl": "https://www.datacamp.com/careersE-Learning",
+      "whereYouCanWork": "Providers\"Data and AI skill development platform\"Belgium, Argentina, Europe, United Kingdom, Portugal, United States 17% YoY growth (1334 → 1558 employees) 3.3/5 ⭐ rating (110 reviews) | 49% CEO approval PNC Financial Services/"
     },
     {
       "id": "polygon-technology",
       "name": "polygon.technology",
-      "careersUrl": "https://polygon.technology/careers"
-    },
-    {
-      "id": "percona-com",
-      "name": "percona.com",
-      "careersUrl": "https://www.percona.com/about/careers"
+      "careersUrl": "https://polygon.technology/careers",
+      "whereYouCanWork": "Technology, Information and InternetBlockchain analytics and data aggregation.Worldwide-20% YoY growth (559 → 447 employees) 3.5/5 ⭐ rating (44 reviews) | No CEO approval rating available. Percona/"
     },
     {
       "id": "corporate-payu-com",
       "name": "corporate.payu.com",
-      "careersUrl": "https://corporate.payu.com/careers"
-    },
-    {
-      "id": "olo-com",
-      "name": "olo.com",
-      "careersUrl": "https://www.olo.com"
-    },
-    {
-      "id": "paylocity-com",
-      "name": "paylocity.com",
-      "careersUrl": "https://www.paylocity.com/careers"
-    },
-    {
-      "id": "payscale-com",
-      "name": "payscale.com",
-      "careersUrl": "https://www.payscale.com/about/careers-at-payscale"
-    },
-    {
-      "id": "onna-com",
-      "name": "onna.com",
-      "careersUrl": "https://onna.com/careers"
+      "careersUrl": "https://corporate.payu.com/careers",
+      "whereYouCanWork": "/Financial ServicesGlobal online payment service provider.Czech Republic, Hungary, Poland, Romania, Argentina, Brazil, Central America, Chile, Colombia, Mexico, Peru, Kenya, Nigeria, South Africa 13% YoY growth (2990 → 3374 employees) 3.7/5 ⭐ rating (793 reviews) | 70% CEO approval Olo/"
     },
     {
       "id": "parse-ly",
       "name": "parse.ly",
-      "careersUrl": "https://www.parse.ly/careers"
-    },
-    {
-      "id": "oracle-com",
-      "name": "oracle.com",
-      "careersUrl": "https://www.oracle.com/careers/IT"
-    },
-    {
-      "id": "runpanther-io",
-      "name": "runpanther.io",
-      "careersUrl": "https://runpanther.io"
-    },
-    {
-      "id": "panther-com",
-      "name": "panther.com",
-      "careersUrl": "https://panther.com/company/careers"
+      "careersUrl": "https://www.parse.ly/careers",
+      "whereYouCanWork": "/Technology, Information and InternetContent analytics platform for marketers.Worldwide-27% YoY growth (55 → 40 employees) 4.5/5 ⭐ rating (32 reviews) | 89% CEO approval Oracle/"
     },
     {
       "id": "netguru-com",
       "name": "netguru.com",
-      "careersUrl": "https://www.netguru.com/join-netguruIT"
-    },
-    {
-      "id": "ocient-com",
-      "name": "ocient.com",
-      "careersUrl": "https://ocient.com/careers"
+      "careersUrl": "https://www.netguru.com/join-netguruIT",
+      "whereYouCanWork": "Services and IT ConsultingDigital product development and consulting services Worldwide-16% YoY growth (567 → 476 employees) 3.9/5 ⭐ rating (139-184 reviews) | 49% CEO approval Ocient/"
     },
     {
       "id": "olist-com",
       "name": "olist.com",
-      "careersUrl": "https://olist.com/careers"
-    },
-    {
-      "id": "netapp-com",
-      "name": "netapp.com",
-      "careersUrl": "https://www.netapp.com"
-    },
-    {
-      "id": "careers-netapp-com",
-      "name": "careers.netapp.com",
-      "careersUrl": "https://careers.netapp.com"
-    },
-    {
-      "id": "oreilly-com",
-      "name": "oreilly.com",
-      "careersUrl": "https://www.oreilly.com/careers/E-Learning"
-    },
-    {
-      "id": "nocodenoprob-com",
-      "name": "nocodenoprob.com",
-      "careersUrl": "https://www.nocodenoprob.com"
-    },
-    {
-      "id": "nocodejobs-org",
-      "name": "nocodejobs.org",
-      "careersUrl": "https://www.nocodejobs.org"
-    },
-    {
-      "id": "myollie-com",
-      "name": "myollie.com",
-      "careersUrl": "https://www.myollie.com"
-    },
-    {
-      "id": "oddball-io",
-      "name": "oddball.io",
-      "careersUrl": "https://oddball.io/jobs"
-    },
-    {
-      "id": "octopus-com",
-      "name": "octopus.com",
-      "careersUrl": "https://octopus.com/company/careers"
-    },
-    {
-      "id": "noredink-com",
-      "name": "noredink.com",
-      "careersUrl": "https://noredink.com/about/jobs/E-LearningAdaptive"
-    },
-    {
-      "id": "okta-com",
-      "name": "okta.com",
-      "careersUrl": "https://www.okta.com/company/careers"
-    },
-    {
-      "id": "nuagebiz-tech",
-      "name": "nuagebiz.tech",
-      "careersUrl": "https://nuagebiz.tech/careers/IT"
-    },
-    {
-      "id": "nvidia-com",
-      "name": "nvidia.com",
-      "careersUrl": "https://www.nvidia.com/en-us/about-nvidia/careers"
-    },
-    {
-      "id": "nexttrucking-com",
-      "name": "nexttrucking.com",
-      "careersUrl": "https://www.nexttrucking.com"
-    },
-    {
-      "id": "boards-greenhouse-io",
-      "name": "boards.greenhouse.io",
-      "careersUrl": "https://boards.greenhouse.io/nexttruckingTruck"
-    },
-    {
-      "id": "netsparker-com",
-      "name": "netsparker.com",
-      "careersUrl": "https://www.netsparker.com"
-    },
-    {
-      "id": "invicti-com",
-      "name": "invicti.com",
-      "careersUrl": "https://www.invicti.com/careers"
-    },
-    {
-      "id": "jobs-cvshealth-com",
-      "name": "jobs.cvshealth.com",
-      "careersUrl": "https://jobs.cvshealth.com"
-    },
-    {
-      "id": "mozilla-org",
-      "name": "mozilla.org",
-      "careersUrl": "https://www.mozilla.org/en-US/careers"
-    },
-    {
-      "id": "mux-com",
-      "name": "mux.com",
-      "careersUrl": "https://www.mux.com/jobs"
-    },
-    {
-      "id": "muckrack-com",
-      "name": "muckrack.com",
-      "careersUrl": "https://muckrack.com/careers"
-    },
-    {
-      "id": "nagarro-com",
-      "name": "nagarro.com",
-      "careersUrl": "https://www.nagarro.com/en/careers"
-    },
-    {
-      "id": "modsquad-com",
-      "name": "modsquad.com",
-      "careersUrl": "https://modsquad.com"
-    },
-    {
-      "id": "join-modsquad-com",
-      "name": "join.modsquad.com",
-      "careersUrl": "https://join.modsquad.com/careers"
-    },
-    {
-      "id": "mixmax-com",
-      "name": "mixmax.com",
-      "careersUrl": "https://www.mixmax.com/careers"
+      "careersUrl": "https://olist.com/careers",
+      "whereYouCanWork": "IT Services and IT ConsultingE-commerce solutions for global businesses.Brazil-4% YoY growth (847 → 815 employees) 4.0/5 ⭐ rating (710 reviews) | 73% CEO approval NetApp/"
     },
     {
       "id": "labs-madisoft-it",
       "name": "labs.madisoft.it",
-      "careersUrl": "https://labs.madisoft.it/entra-nel-team"
-    },
-    {
-      "id": "lullabot-com",
-      "name": "lullabot.com",
-      "careersUrl": "https://www.lullabot.com/jobs"
-    },
-    {
-      "id": "mailerlite-com",
-      "name": "mailerlite.com",
-      "careersUrl": "https://www.mailerlite.com/jobs"
+      "careersUrl": "https://labs.madisoft.it/entra-nel-team",
+      "whereYouCanWork": "/Software DevelopmentInnovative educational software and support services. Worldwide-11% YoY growth (36 → 32 employees) 3.7/5 ⭐ rating (8 reviews) | 71% CEO approval Lullabot/"
     },
     {
       "id": "mediacurrent-com",
       "name": "mediacurrent.com",
-      "careersUrl": "https://www.mediacurrent.com/careers"
-    },
-    {
-      "id": "mapbox-com",
-      "name": "mapbox.com",
-      "careersUrl": "https://www.mapbox.com/careers"
-    },
-    {
-      "id": "lytx-com",
-      "name": "lytx.com",
-      "careersUrl": "https://www.lytx.com/en-us/about-us/careers"
-    },
-    {
-      "id": "maxicus-com",
-      "name": "maxicus.com",
-      "careersUrl": "https://maxicus.com/careers"
-    },
-    {
-      "id": "mayvue-com",
-      "name": "mayvue.com",
-      "careersUrl": "https://www.mayvue.com/careers/IT"
-    },
-    {
-      "id": "mediavine-com",
-      "name": "mediavine.com",
-      "careersUrl": "https://www.mediavine.com/jobs"
-    },
-    {
-      "id": "memory-ai",
-      "name": "memory.ai",
-      "careersUrl": "https://memory.ai"
-    },
-    {
-      "id": "indeed-com",
-      "name": "indeed.com",
-      "careersUrl": "https://www.indeed.com/q-memory-ai-jobs.htmlSoftware"
-    },
-    {
-      "id": "marcopolo-me",
-      "name": "marcopolo.me",
-      "careersUrl": "https://www.marcopolo.me/jobs"
-    },
-    {
-      "id": "logdna-com",
-      "name": "logdna.com",
-      "careersUrl": "https://logdna.com"
-    },
-    {
-      "id": "luxoft-com",
-      "name": "luxoft.com",
-      "careersUrl": "https://www.luxoft.com"
-    },
-    {
-      "id": "career-luxoft-com",
-      "name": "career.luxoft.com",
-      "careersUrl": "https://career.luxoft.com"
-    },
-    {
-      "id": "liveperson-com",
-      "name": "liveperson.com",
-      "careersUrl": "https://www.liveperson.com/company/careers"
-    },
-    {
-      "id": "madewithlove-com",
-      "name": "madewithlove.com",
-      "careersUrl": "https://madewithlove.com/careers"
-    },
-    {
-      "id": "ltvco-com",
-      "name": "ltvco.com",
-      "careersUrl": "https://www.ltvco.com/careers"
-    },
-    {
-      "id": "jobs-iqvia-com",
-      "name": "jobs.iqvia.com",
-      "careersUrl": "https://jobs.iqvia.com/our-company"
-    },
-    {
-      "id": "komoot-com",
-      "name": "komoot.com",
-      "careersUrl": "https://www.komoot.com/jobs"
-    },
-    {
-      "id": "leadfeeder-com",
-      "name": "leadfeeder.com",
-      "careersUrl": "https://www.leadfeeder.com"
-    },
-    {
-      "id": "dealfront-com",
-      "name": "dealfront.com",
-      "careersUrl": "https://www.dealfront.com/careers"
+      "careersUrl": "https://www.mediacurrent.com/careers",
+      "whereYouCanWork": "Design ServicesOpen Source digital solutions agencyUnited States, Philippines, Honduras, Greece, Canada, Colombia, Brazil, Peru, Dominican Republic, Mexico, Argentina -41% YoY growth (49 → 29 employees) 3.7/5 ⭐ rating (36 reviews) Mapbox/"
     },
     {
       "id": "leadiq-com",
       "name": "leadiq.com",
-      "careersUrl": "https://leadiq.com/careers"
-    },
-    {
-      "id": "heykona-com",
-      "name": "heykona.com",
-      "careersUrl": "https://www.heykona.com/careers"
+      "careersUrl": "https://leadiq.com/careers",
+      "whereYouCanWork": "Software DevelopmentAutomated CRM enrichment and pipeline generation. Worldwide-12% YoY growth (148 → 130 employees) 3.1/5 ⭐ rating (71-77 reviews) | 81% CEO approval Kona/"
     },
     {
       "id": "litmus-com",
       "name": "litmus.com",
-      "careersUrl": "https://www.litmus.com/careers"
+      "careersUrl": "https://www.litmus.com/careers",
+      "whereYouCanWork": "Software DevelopmentEmail marketing and optimization platform.Worldwide-3% YoY growth (217 → 210 employees) 3.6/5 ⭐ rating (73 reviews) | 71% CEO approval kea/"
     },
     {
       "id": "kea-ai",
       "name": "kea.ai",
-      "careersUrl": "https://kea.ai/careers"
-    },
-    {
-      "id": "recruitment-jobsity-com",
-      "name": "recruitment.jobsity.com",
-      "careersUrl": "https://recruitment.jobsity.com"
-    },
-    {
-      "id": "careers-jobsity-com",
-      "name": "careers.jobsity.com",
-      "careersUrl": "https://careers.jobsity.com/IT"
-    },
-    {
-      "id": "iruuza-inc-com",
-      "name": "iruuza-inc.com",
-      "careersUrl": "https://iruuza-inc.com"
-    },
-    {
-      "id": "jitera-com",
-      "name": "jitera.com",
-      "careersUrl": "https://jitera.com/careerInformation"
-    },
-    {
-      "id": "intevity-com",
-      "name": "intevity.com",
-      "careersUrl": "https://www.intevity.com/careers"
+      "careersUrl": "https://kea.ai/careers",
+      "whereYouCanWork": "/Software DevelopmentConversational AI for restaurant ordering.Worldwide-16% YoY growth (89 → 75 employees) 4.5/5 ⭐ rating (18 reviews) | 91% CEO approval Jobsity/"
     },
     {
       "id": "khanacademy-org",
       "name": "khanacademy.org",
-      "careersUrl": "https://www.khanacademy.org/careersE-Learning"
-    },
-    {
-      "id": "kodify-io",
-      "name": "kodify.io",
-      "careersUrl": "https://kodify.io"
-    },
-    {
-      "id": "kodify-recruitee-com",
-      "name": "kodify.recruitee.com",
-      "careersUrl": "https://kodify.recruitee.com"
-    },
-    {
-      "id": "jupiterone-com",
-      "name": "jupiterone.com",
-      "careersUrl": "https://www.jupiterone.com/careers"
-    },
-    {
-      "id": "kissmetrics-com",
-      "name": "kissmetrics.com",
-      "careersUrl": "https://www.kissmetrics.com"
-    },
-    {
-      "id": "jaya-tech",
-      "name": "jaya.tech",
-      "careersUrl": "https://jaya.tech"
-    },
-    {
-      "id": "ironin-it",
-      "name": "ironin.it",
-      "careersUrl": "https://www.ironin.it"
+      "careersUrl": "https://www.khanacademy.org/careersE-Learning",
+      "whereYouCanWork": "ProvidersFree online educational resourcesUnited States, Canada, India, Brazil 27% YoY growth (1394 → 1766 employees) 4.2/5 ⭐ rating (150 reviews) | 90% CEO approval Kodify/"
     },
     {
       "id": "careers-ironin-it",
       "name": "careers.ironin.it",
-      "careersUrl": "https://careers.ironin.it/IT"
-    },
-    {
-      "id": "kinsta-com",
-      "name": "kinsta.com",
-      "careersUrl": "https://kinsta.com/careers/IT"
-    },
-    {
-      "id": "kentik-com",
-      "name": "kentik.com",
-      "careersUrl": "https://www.kentik.com/careers"
+      "careersUrl": "https://careers.ironin.it/IT",
+      "whereYouCanWork": "Services and IT ConsultingWeb, Mobile, and DevOps Development Services Worldwide-29% YoY growth (45 → 32 employees) 4.6/5 ⭐ rating (8 reviews) Kinsta/"
     },
     {
       "id": "joyent-com",
       "name": "joyent.com",
-      "careersUrl": "https://www.joyent.com/careers"
-    },
-    {
-      "id": "klaviyo-com",
-      "name": "klaviyo.com",
-      "careersUrl": "https://www.klaviyo.com/careers"
-    },
-    {
-      "id": "two-ai",
-      "name": "two.ai",
-      "careersUrl": "https://www.two.ai/joinusTechnology"
-    },
-    {
-      "id": "uship-com",
-      "name": "uship.com",
-      "careersUrl": "https://www.uship.com/about/careers"
-    },
-    {
-      "id": "weareuncapped-com",
-      "name": "weareuncapped.com",
-      "careersUrl": "https://www.weareuncapped.com/careers"
-    },
-    {
-      "id": "tuftandneedle-com",
-      "name": "tuftandneedle.com",
-      "careersUrl": "https://www.tuftandneedle.com"
-    },
-    {
-      "id": "careers-sertasimmons-com",
-      "name": "careers.sertasimmons.com",
-      "careersUrl": "https://careers.sertasimmons.com"
-    },
-    {
-      "id": "ipsgroupinc-com",
-      "name": "ipsgroupinc.com",
-      "careersUrl": "https://ipsgroupinc.com/careers/TelecommunicationsSmart"
-    },
-    {
-      "id": "udacity-com",
-      "name": "udacity.com",
-      "careersUrl": "https://udacity.com/jobsE-LearningDigital"
+      "careersUrl": "https://www.joyent.com/careers",
+      "whereYouCanWork": "/Information Technology and ServicesCloud infrastructure and services providerMountain View, United States, Worldwide 7% YoY growth (103 → 110 employees) 3.3/5 ⭐ rating (38 reviews) | 70% CEO approval Klaviyo/"
     },
     {
       "id": "valimail-com",
       "name": "valimail.com",
-      "careersUrl": "https://www.valimail.com/careers"
+      "careersUrl": "https://www.valimail.com/careers",
+      "whereYouCanWork": "/Computer and Network SecurityAnti-phishing identity authentication platform Worldwide-5% YoY growth (111 → 106 employees) 3.9/5 ⭐ rating (84 reviews) | 76% CEO approval Twilio/"
     },
     {
       "id": "twilio-com",
       "name": "twilio.com",
-      "careersUrl": "https://www.twilio.com/en-us/company/jobs"
-    },
-    {
-      "id": "turing-com",
-      "name": "turing.com",
-      "careersUrl": "https://www.turing.com"
-    },
-    {
-      "id": "careers-turing-com",
-      "name": "careers.turing.com",
-      "careersUrl": "https://careers.turing.com"
-    },
-    {
-      "id": "thinkful-com",
-      "name": "thinkful.com",
-      "careersUrl": "https://www.thinkful.com"
-    },
-    {
-      "id": "thorn-org",
-      "name": "thorn.org",
-      "careersUrl": "https://www.thorn.org/careers/Non-profit"
+      "careersUrl": "https://www.twilio.com/en-us/company/jobs",
+      "whereYouCanWork": "Software DevelopmentCustomer engagement and communication platform Bengaluru, India, Dublin, Ireland, Australia, Brazil, Colombia, Estonia, Germany, Japan, Poland, Singapore, Spain, United Kingdom, United States -3% YoY growth (6588 → 6372 employees) 3.7/5 ⭐ rating (178 reviews) | 67% CEO approval Turing/"
     },
     {
       "id": "theoremone-co",
       "name": "theoremone.co",
-      "careersUrl": "https://www.theoremone.co/careers"
-    },
-    {
-      "id": "thegrid-io",
-      "name": "thegrid.io",
-      "careersUrl": "https://thegrid.io"
-    },
-    {
-      "id": "grid-is",
-      "name": "grid.is",
-      "careersUrl": "https://grid.is/careers"
-    },
-    {
-      "id": "thewirecutter-com",
-      "name": "thewirecutter.com",
-      "careersUrl": "https://thewirecutter.com"
-    },
-    {
-      "id": "nytimes-wd5-myworkdayjobs-com",
-      "name": "nytimes.wd5.myworkdayjobs.com",
-      "careersUrl": "https://nytimes.wd5.myworkdayjobs.com/WirecutterBook"
-    },
-    {
-      "id": "truss-works",
-      "name": "truss.works",
-      "careersUrl": "https://truss.works/jobs"
-    },
-    {
-      "id": "pos-toasttab-com",
-      "name": "pos.toasttab.com",
-      "careersUrl": "https://pos.toasttab.com"
-    },
-    {
-      "id": "careers-toasttab-com",
-      "name": "careers.toasttab.com",
-      "careersUrl": "https://careers.toasttab.com"
-    },
-    {
-      "id": "tt-com-pl",
-      "name": "tt.com.pl",
-      "careersUrl": "http://www.tt.com.pl"
-    },
-    {
-      "id": "kariera-ttpsc-com",
-      "name": "kariera.ttpsc.com",
-      "careersUrl": "https://kariera.ttpsc.com/en"
-    },
-    {
-      "id": "truelogicsoftware-com",
-      "name": "truelogicsoftware.com",
-      "careersUrl": "https://www.truelogicsoftware.com"
-    },
-    {
-      "id": "truelogic-io",
-      "name": "truelogic.io",
-      "careersUrl": "https://www.truelogic.io/careers"
-    },
-    {
-      "id": "testdouble-com",
-      "name": "testdouble.com",
-      "careersUrl": "https://testdouble.com/culture-careersSoftware"
-    },
-    {
-      "id": "toggl-com",
-      "name": "toggl.com",
-      "careersUrl": "https://toggl.com/jobs"
-    },
-    {
-      "id": "scalefactory-com",
-      "name": "scalefactory.com",
-      "careersUrl": "https://scalefactory.com/about/careers/IT"
+      "careersUrl": "https://www.theoremone.co/careers",
+      "whereYouCanWork": "IT Services and IT ConsultingInnovation and engineering consulting services Worldwide-57% YoY growth (221 → 95 employees) 3.5/5 ⭐ rating (4 reviews) The Grid/"
     },
     {
       "id": "toptal-com",
       "name": "toptal.com",
-      "careersUrl": "https://www.toptal.com/careers"
+      "careersUrl": "https://www.toptal.com/careers",
+      "whereYouCanWork": "Software Development\"Remote workforce and freelance talent platform\" Worldwide-5% YoY growth (6105 → 5818 employees) 3.5/5 ⭐ rating (717 reviews) | 43% CEO approval StreamNative/"
     },
     {
       "id": "streamnative-io",
       "name": "streamnative.io",
-      "careersUrl": "https://streamnative.io/careers"
-    },
-    {
-      "id": "sweetrush-com",
-      "name": "sweetrush.com",
-      "careersUrl": "https://www.sweetrush.com"
-    },
-    {
-      "id": "sweetrush-applytojob-com",
-      "name": "sweetrush.applytojob.com",
-      "careersUrl": "https://sweetrush.applytojob.com/applyHuman"
+      "careersUrl": "https://streamnative.io/careers",
+      "whereYouCanWork": "Software DevelopmentManaged Apache Pulsar streaming services.Worldwide-16% YoY growth (82 → 69 employees) 4.3/5 ⭐ rating (22 reviews) | 88% CEO approval SweetRush/"
     },
     {
       "id": "telerik-com",
       "name": "telerik.com",
-      "careersUrl": "https://www.telerik.com/company/careers"
-    },
-    {
-      "id": "computacenter-com",
-      "name": "computacenter.com",
-      "careersUrl": "https://www.computacenter.com/careers"
-    },
-    {
-      "id": "tatvasoft-com",
-      "name": "tatvasoft.com",
-      "careersUrl": "https://www.tatvasoft.com/careerInformation"
-    },
-    {
-      "id": "teamsnap-com",
-      "name": "teamsnap.com",
-      "careersUrl": "https://www.teamsnap.com/company/careers"
-    },
-    {
-      "id": "surevine-com",
-      "name": "surevine.com",
-      "careersUrl": "https://surevine.com/careers"
-    },
-    {
-      "id": "sysdig-com",
-      "name": "sysdig.com",
-      "careersUrl": "https://sysdig.com/careers"
-    },
-    {
-      "id": "skillshare-com",
-      "name": "skillshare.com",
-      "careersUrl": "https://www.skillshare.com/en/careers?srsltid=AfmBOopsD_GO8MgQJHAR0yiEZUxBuOz-IY9ZAJ7sFORx0obYyGhgysvAE-Learning"
-    },
-    {
-      "id": "spreaker-com",
-      "name": "spreaker.com",
-      "careersUrl": "https://spreaker.com"
+      "careersUrl": "https://www.telerik.com/company/careers",
+      "whereYouCanWork": "Software DevelopmentUI components and testing tools for developers. Worldwide 3.7/5 ⭐ rating (44 reviews) TeamUltra/"
     },
     {
       "id": "careers-spreaker-com",
       "name": "careers.spreaker.com",
-      "careersUrl": "https://careers.spreaker.com"
-    },
-    {
-      "id": "sommo-io",
-      "name": "sommo.io",
-      "careersUrl": "https://www.sommo.io"
-    },
-    {
-      "id": "upwork-com",
-      "name": "upwork.com",
-      "careersUrl": "https://www.upwork.com/careers"
-    },
-    {
-      "id": "status-im",
-      "name": "status.im",
-      "careersUrl": "https://www.status.im"
+      "careersUrl": "https://careers.spreaker.com",
+      "whereYouCanWork": "/Technology, Information and InternetPodcast monetization and distribution platform Worldwide-9% YoY growth (149 → 136 employees)No data available for Spreaker.com reviews on Glassdoor. Sommo/"
     },
     {
       "id": "status-app",
       "name": "status.app",
-      "careersUrl": "https://status.app/jobs"
-    },
-    {
-      "id": "stackexchange-com",
-      "name": "stackexchange.com",
-      "careersUrl": "https://stackexchange.com"
+      "careersUrl": "https://status.app/jobs",
+      "whereYouCanWork": "Software DevelopmentDecentralized crypto communication app platform. Worldwide-16% YoY growth (341 → 288 employees) 4.6/5 ⭐ rating (113 reviews) | 74% CEO approval Stack Exchange/"
     },
     {
       "id": "stackoverflow-co",
       "name": "stackoverflow.co",
-      "careersUrl": "https://stackoverflow.co/company/work-here"
-    },
-    {
-      "id": "getspruce-com",
-      "name": "getspruce.com",
-      "careersUrl": "https://getspruce.com/careers"
-    },
-    {
-      "id": "smile-io",
-      "name": "smile.io",
-      "careersUrl": "https://smile.io/careers/IT"
-    },
-    {
-      "id": "softwaremill-com",
-      "name": "softwaremill.com",
-      "careersUrl": "https://softwaremill.com/join-us"
-    },
-    {
-      "id": "skyrocketventures-com",
-      "name": "skyrocketventures.com",
-      "careersUrl": "https://www.skyrocketventures.com/careers"
-    },
-    {
-      "id": "soostone-com",
-      "name": "soostone.com",
-      "careersUrl": "https://www.soostone.com"
-    },
-    {
-      "id": "soostone-client-webflow-io",
-      "name": "soostone-client.webflow.io",
-      "careersUrl": "https://soostone-client.webflow.io/aboutIT"
-    },
-    {
-      "id": "stitchfix-com",
-      "name": "stitchfix.com",
-      "careersUrl": "https://www.stitchfix.com/careers"
+      "careersUrl": "https://stackoverflow.co/company/work-here",
+      "whereYouCanWork": "/Software DevelopmentDeveloper knowledge sharing and collaboration platform. APAC, Australia, Brazil, Canada, Dach, EMEA, Germany, UK, United States -5% YoY growth (661 → 629 employees) 3.2/5 ⭐ rating (282 reviews) | 54% CEO approval Spruce/"
     },
     {
       "id": "semaphoreci-com",
       "name": "semaphoreci.com",
-      "careersUrl": "https://semaphoreci.com/hiringSoftware"
-    },
-    {
-      "id": "scylladb-com",
-      "name": "scylladb.com",
-      "careersUrl": "https://www.scylladb.com/company/careers"
+      "careersUrl": "https://semaphoreci.com/hiringSoftware",
+      "whereYouCanWork": "DevelopmentCI/CD platform for engineering teams.Worldwide ScyllaDB/"
     },
     {
       "id": "securityscorecard-com",
       "name": "securityscorecard.com",
-      "careersUrl": "https://securityscorecard.com/company/careers"
-    },
-    {
-      "id": "scopicsoftware-com",
-      "name": "scopicsoftware.com",
-      "careersUrl": "https://scopicsoftware.com"
-    },
-    {
-      "id": "careers-scopicsoftware-com",
-      "name": "careers.scopicsoftware.com",
-      "careersUrl": "https://careers.scopicsoftware.com"
+      "careersUrl": "https://securityscorecard.com/company/careers",
+      "whereYouCanWork": "/Data Security Software ProductsCybersecurity risk ratings and managementUruguay, Prague, Romania, London, Argentina, Turkey 0% YoY growth (558 → 558 employees) 2.7/5 ⭐ rating (278 reviews) | 37% CEO approval Scopic Software/"
     },
     {
       "id": "shopify-com",
       "name": "shopify.com",
-      "careersUrl": "https://www.shopify.com/careers"
-    },
-    {
-      "id": "silverfin-com",
-      "name": "silverfin.com",
-      "careersUrl": "https://silverfin.com/careers/IT"
-    },
-    {
-      "id": "serverdensity-comi",
-      "name": "serverdensity.comi",
-      "careersUrl": "https://www.serverdensity.comi"
-    },
-    {
-      "id": "scandit-com",
-      "name": "scandit.com",
-      "careersUrl": "https://www.scandit.com/careers"
-    },
-    {
-      "id": "shippabo-com",
-      "name": "shippabo.com",
-      "careersUrl": "https://shippabo.com"
-    },
-    {
-      "id": "scrapinghub-com",
-      "name": "scrapinghub.com",
-      "careersUrl": "https://scrapinghub.com"
+      "careersUrl": "https://www.shopify.com/careers",
+      "whereYouCanWork": "Software DevelopmentE-commerce platform for businesses worldwide. Worldwide24% YoY growth (17,773 → 22,062 employees) 3.3/5 ⭐ rating (3,213 reviews) | 51% CEO approval Silverfin/"
     },
     {
       "id": "zyte-com",
       "name": "zyte.com",
-      "careersUrl": "https://www.zyte.com/jobs/IT"
-    },
-    {
-      "id": "sendwave-com",
-      "name": "sendwave.com",
-      "careersUrl": "https://www.sendwave.com"
-    },
-    {
-      "id": "zepzpay-com",
-      "name": "zepzpay.com",
-      "careersUrl": "https://www.zepzpay.com/careers"
-    },
-    {
-      "id": "simpletexting-com",
-      "name": "simpletexting.com",
-      "careersUrl": "https://simpletexting.com/careers"
-    },
-    {
-      "id": "researchsquare-com",
-      "name": "researchsquare.com",
-      "careersUrl": "https://www.researchsquare.com"
-    },
-    {
-      "id": "research-square-com",
-      "name": "research-square.com",
-      "careersUrl": "https://research-square.com/our-jobs"
-    },
-    {
-      "id": "remotebase-com",
-      "name": "remotebase.com",
-      "careersUrl": "https://remotebase.com/jobs"
-    },
-    {
-      "id": "salesforce-com",
-      "name": "salesforce.com",
-      "careersUrl": "https://www.salesforce.com"
-    },
-    {
-      "id": "careers-salesforce-com",
-      "name": "careers.salesforce.com",
-      "careersUrl": "https://careers.salesforce.com/en/jobs"
-    },
-    {
-      "id": "rechargepayments-com",
-      "name": "rechargepayments.com",
-      "careersUrl": "https://rechargepayments.com"
-    },
-    {
-      "id": "getrecharge-com",
-      "name": "getrecharge.com",
-      "careersUrl": "https://getrecharge.com/careers"
-    },
-    {
-      "id": "replit-com",
-      "name": "replit.com",
-      "careersUrl": "https://replit.com/careers"
+      "careersUrl": "https://www.zyte.com/jobs/IT",
+      "whereYouCanWork": "Services and IT ConsultingEthical web data collection and extraction.Worldwide-1% YoY growth (213 → 211 employees) Sendwave/"
     },
     {
       "id": "rocket-chat",
       "name": "rocket.chat",
-      "careersUrl": "https://rocket.chat/company/careers"
-    },
-    {
-      "id": "safeguardglobal-com",
-      "name": "safeguardglobal.com",
-      "careersUrl": "https://www.safeguardglobal.com"
-    },
-    {
-      "id": "careers-safeguardglobal-com",
-      "name": "careers.safeguardglobal.com",
-      "careersUrl": "https://careers.safeguardglobal.com"
+      "careersUrl": "https://rocket.chat/company/careers",
+      "whereYouCanWork": "Software DevelopmentSecure, customizable communication platform. Worldwide-2% YoY growth (178 → 175 employees) 4.2/5 ⭐ rating (44 reviews) | 80% CEO approval Safeguard Global/"
     },
     {
       "id": "renofi-com",
       "name": "renofi.com",
-      "careersUrl": "https://www.renofi.com/careers"
-    },
-    {
-      "id": "redoxengine-com",
-      "name": "redoxengine.com",
-      "careersUrl": "https://redoxengine.com/company/careers"
+      "careersUrl": "https://www.renofi.com/careers",
+      "whereYouCanWork": "/Financial ServicesHome renovation financing solutionsUnited States, India, Poland, Ukraine, Sri Lanka, Greece, Ireland, Pakistan, Sweden, Germany, Bulgaria, Brazil 21% YoY growth (73 → 88 employees) 3.7/5 ⭐ rating (16 reviews) Redox/"
     },
     {
       "id": "rebelmouse-com",
       "name": "rebelmouse.com",
-      "careersUrl": "https://www.rebelmouse.com/rebelmouse-careersTechnology"
+      "careersUrl": "https://www.rebelmouse.com/rebelmouse-careersTechnology",
+      "whereYouCanWork": ", Information and InternetAI-powered CMS and digital agency.Worldwide-11% YoY growth (89 → 79 employees) 4.2/5 ⭐ rating (40 reviews) | 83% CEO approval ReactiveOps, Inc."
     },
     {
       "id": "reactiveops-com",
       "name": "reactiveops.com",
-      "careersUrl": "https://www.reactiveops.com/careers/IT"
-    },
-    {
-      "id": "ramp-com",
-      "name": "ramp.com",
-      "careersUrl": "https://ramp.com/careers"
-    },
-    {
-      "id": "primer-io",
-      "name": "primer.io",
-      "careersUrl": "https://primer.io/careers"
+      "careersUrl": "https://www.reactiveops.com/careers/IT",
+      "whereYouCanWork": "Services and IT ConsultingKubernetes enablement and optimization solutions Worldwide-5% YoY growth (60 → 57 employees) 0/5 ⭐ rating (0 reviews) Ramp/"
     },
     {
       "id": "persefoni-com",
       "name": "persefoni.com",
-      "careersUrl": "https://www.persefoni.com/company/careers"
-    },
-    {
-      "id": "betterup-com",
-      "name": "betterup.com",
-      "careersUrl": "https://www.betterup.com/about-us/careers"
-    },
-    {
-      "id": "procurify-com",
-      "name": "procurify.com",
-      "careersUrl": "https://procurify.com/careers"
-    },
-    {
-      "id": "goraft-tech",
-      "name": "goraft.tech",
-      "careersUrl": "https://goraft.tech"
-    },
-    {
-      "id": "teamraft-com",
-      "name": "teamraft.com",
-      "careersUrl": "https://teamraft.com/who-we-are/careers"
-    },
-    {
-      "id": "puppet-com",
-      "name": "puppet.com",
-      "careersUrl": "https://puppet.com"
-    },
-    {
-      "id": "quora-com",
-      "name": "quora.com",
-      "careersUrl": "https://www.quora.com"
-    },
-    {
-      "id": "careers-quora-com",
-      "name": "careers.quora.com",
-      "careersUrl": "https://www.careers.quora.com"
+      "careersUrl": "https://www.persefoni.com/company/careers",
+      "whereYouCanWork": "Software DevelopmentClimate management and accounting platform Worldwide-32% YoY growth (235 → 161 employees) 3.8/5 ⭐ rating (124 reviews) | 66% CEO approval BetterUp/"
     },
     {
       "id": "pwc-com",
       "name": "pwc.com",
-      "careersUrl": "https://www.pwc.com/us/en/careers.htmlBusiness"
-    },
-    {
-      "id": "questdb-io",
-      "name": "questdb.io",
-      "careersUrl": "https://questdb.io"
-    },
-    {
-      "id": "questdb-com",
-      "name": "questdb.com",
-      "careersUrl": "https://questdb.com/careers"
-    },
-    {
-      "id": "safetywing-com",
-      "name": "safetywing.com",
-      "careersUrl": "https://safetywing.com/join-us"
-    },
-    {
-      "id": "wombatsecurity-com",
-      "name": "wombatsecurity.com",
-      "careersUrl": "https://www.wombatsecurity.com"
+      "careersUrl": "https://www.pwc.com/us/en/careers.htmlBusiness",
+      "whereYouCanWork": "Consulting and ServicesStrategy execution and consulting services.Worldwide-2% YoY growth (6067 → 5961 employees) 3.8/5 ⭐ rating (80,385 reviews) | 85% CEO approval QuestDB/"
     },
     {
       "id": "proofpoint-com",
       "name": "proofpoint.com",
-      "careersUrl": "https://www.proofpoint.com/us/company/careers"
-    },
-    {
-      "id": "xapo-com",
-      "name": "xapo.com",
-      "careersUrl": "https://xapo.com/en"
-    },
-    {
-      "id": "xapobank-com",
-      "name": "xapobank.com",
-      "careersUrl": "https://www.xapobank.com/en/careers"
-    },
-    {
-      "id": "yandex-com",
-      "name": "yandex.com",
-      "careersUrl": "https://yandex.com/jobs"
-    },
-    {
-      "id": "zamp-com-br",
-      "name": "zamp.com.br",
-      "careersUrl": "https://zamp.com.br"
+      "careersUrl": "https://www.proofpoint.com/us/company/careers",
+      "whereYouCanWork": "Computer and Network SecurityCybersecurity and compliance solutions provider Argentina, Australia, Canada, France, Israel, Japan, United Kingdom, United States 4% YoY growth (4542 → 4737 employees) 4.8/5 ⭐ rating (15 reviews) Xapo/"
     },
     {
       "id": "yodo1-com",
       "name": "yodo1.com",
-      "careersUrl": "https://www.yodo1.com/careers"
+      "careersUrl": "https://www.yodo1.com/careers",
+      "whereYouCanWork": "/Computer GamesMobile game growth and monetization support. Worldwide-3% YoY growth (122 → 118 employees) 4.6/5 ⭐ rating (63 reviews) | 97% CEO approval Checkr/"
     },
     {
       "id": "checkr-com",
       "name": "checkr.com",
-      "careersUrl": "https://checkr.com/company/careers"
+      "careersUrl": "https://checkr.com/company/careers",
+      "whereYouCanWork": "Software DevelopmentAI-powered background check platformUnited States, Chile-1% YoY growth (1412 → 1393 employees) 3.1/5 ⭐ rating (353 reviews) | 43% CEO approval Zapier/"
     },
     {
-      "id": "zapier-com",
-      "name": "zapier.com",
-      "careersUrl": "https://zapier.com/jobs"
-    },
-    {
-      "id": "wp-media-me",
-      "name": "wp-media.me",
-      "careersUrl": "https://wp-media.me"
-    },
-    {
-      "id": "freeletics-com",
-      "name": "freeletics.com",
-      "careersUrl": "https://www.freeletics.com/en/corporate/jobs"
-    },
-    {
-      "id": "wikimediafoundation-org",
-      "name": "wikimediafoundation.org",
-      "careersUrl": "https://wikimediafoundation.org/about/jobs"
-    },
-    {
-      "id": "checklyhq-com",
-      "name": "checklyhq.com",
-      "careersUrl": "https://www.checklyhq.com/careers"
-    },
-    {
-      "id": "wikihow-com",
-      "name": "wikihow.com",
-      "careersUrl": "https://www.wikihow.com/wikiHow:About-wikiHow"
+      "id": "boards-greenhouse-io",
+      "name": "boards.greenhouse.io",
+      "careersUrl": "https://boards.greenhouse.io/voxySoftware",
+      "whereYouCanWork": "DevelopmentComprehensive hiring platform for businesses. Brazil, United States3% YoY growth (835 → 858 employees) 3.8/5 ⭐ rating (148 reviews) | 47% CEO approval Whitespectre/"
     },
     {
       "id": "whitespectre-com",
       "name": "whitespectre.com",
-      "careersUrl": "https://www.whitespectre.com/careers"
+      "careersUrl": "https://www.whitespectre.com/careers",
+      "whereYouCanWork": "/Software DevelopmentStrategic tech partnerships for business growth. Worldwide-10% YoY growth (61 → 55 employees) 4.9/5 ⭐ rating (38 reviews) | 100% CEO approval Wizeline/"
     },
     {
       "id": "wizeline-com",
       "name": "wizeline.com",
-      "careersUrl": "https://www.wizeline.com/careers/IT"
-    },
-    {
-      "id": "wolve-com",
-      "name": "wolve.com",
-      "careersUrl": "https://www.wolve.com/careers"
+      "careersUrl": "https://www.wizeline.com/careers/IT",
+      "whereYouCanWork": "Services and IT ConsultingBuilds digital products and modernizes technology. Worldwide-3% YoY growth (1490 → 1443 employees) 3.8/5 ⭐ rating (628 reviews) Wolverine Trading/"
     },
     {
       "id": "webdevstudios-com",
       "name": "webdevstudios.com",
-      "careersUrl": "https://webdevstudios.com/careers"
-    },
-    {
-      "id": "vmware-com",
-      "name": "vmware.com",
-      "careersUrl": "https://www.vmware.com/in.html"
-    },
-    {
-      "id": "veryfi-com",
-      "name": "veryfi.com",
-      "careersUrl": "https://www.veryfi.com/careers"
-    },
-    {
-      "id": "webfx-com",
-      "name": "webfx.com",
-      "careersUrl": "https://www.webfx.com/careers"
-    },
-    {
-      "id": "casumo-com",
-      "name": "casumo.com",
-      "careersUrl": "https://www.casumo.com"
-    },
-    {
-      "id": "casumocareers-com",
-      "name": "casumocareers.com",
-      "careersUrl": "https://www.casumocareers.com"
-    },
-    {
-      "id": "cardsagainsthumanity-com",
-      "name": "cardsagainsthumanity.com",
-      "careersUrl": "https://www.cardsagainsthumanity.com/careers"
+      "careersUrl": "https://webdevstudios.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetWordPress website design and development agency. Worldwide-29% YoY growth (51 → 36 employees) 3.7/5 ⭐ rating (20 reviews) | 33% CEO approval VMware/"
     },
     {
       "id": "clevertech-biz",
       "name": "clevertech.biz",
-      "careersUrl": "https://clevertech.biz/jobs/applyIT"
-    },
-    {
-      "id": "getcloudapp-com",
-      "name": "getcloudapp.com",
-      "careersUrl": "https://getcloudapp.com"
-    },
-    {
-      "id": "zight-springrecruit-com",
-      "name": "zight.springrecruit.com",
-      "careersUrl": "https://zight.springrecruit.com/careers"
+      "careersUrl": "https://clevertech.biz/jobs/applyIT",
+      "whereYouCanWork": "Services and IT ConsultingCustom software solutions for leading brands.Worldwide 4.4/5 ⭐ rating (14 reviews) CloudApp/"
     },
     {
       "id": "influxdata-com",
       "name": "influxdata.com",
-      "careersUrl": "https://www.influxdata.com/careers"
-    },
-    {
-      "id": "heetch-com",
-      "name": "heetch.com",
-      "careersUrl": "https://www.heetch.com/en/jobs"
-    },
-    {
-      "id": "conveyhealthsolutions-com",
-      "name": "conveyhealthsolutions.com",
-      "careersUrl": "https://conveyhealthsolutions.com/careers"
-    },
-    {
-      "id": "hyperiondev-com",
-      "name": "hyperiondev.com",
-      "careersUrl": "https://hyperiondev.com/jobs"
-    },
-    {
-      "id": "inin-com",
-      "name": "inin.com",
-      "careersUrl": "https://www.inin.com"
-    },
-    {
-      "id": "genesys-com",
-      "name": "genesys.com",
-      "careersUrl": "https://www.genesys.com/company/careers"
-    },
-    {
-      "id": "ibm-com",
-      "name": "ibm.com",
-      "careersUrl": "https://www.ibm.com/careers"
+      "careersUrl": "https://www.influxdata.com/careers",
+      "whereYouCanWork": "/Software DevelopmentTime series data platform.North America, South America, Europe 3% YoY growth (187 → 192 employees) 3.8/5 ⭐ rating (68 reviews) | 59% CEO approval Heetch/"
     },
     {
       "id": "intuit-com",
       "name": "intuit.com",
-      "careersUrl": "https://www.intuit.com/careers"
-    },
-    {
-      "id": "intellum-com",
-      "name": "intellum.com",
-      "careersUrl": "https://www.intellum.com/company/careersE-Learning"
-    },
-    {
-      "id": "igalia-com",
-      "name": "igalia.com",
-      "careersUrl": "https://www.igalia.com/jobs"
-    },
-    {
-      "id": "heroku-com",
-      "name": "heroku.com",
-      "careersUrl": "https://www.heroku.com/careers"
-    },
-    {
-      "id": "godaddy-com",
-      "name": "godaddy.com",
-      "careersUrl": "https://www.godaddy.com"
-    },
-    {
-      "id": "careers-godaddy",
-      "name": "careers.godaddy",
-      "careersUrl": "https://careers.godaddy"
-    },
-    {
-      "id": "formstack-com",
-      "name": "formstack.com",
-      "careersUrl": "https://www.formstack.com/careers"
-    },
-    {
-      "id": "fullfabric-com",
-      "name": "fullfabric.com",
-      "careersUrl": "https://www.fullfabric.com/company/careers"
+      "careersUrl": "https://www.intuit.com/careers",
+      "whereYouCanWork": "/Software DevelopmentFinancial technology and services platformNorth America, South America, Europe, Middle East, Asia- Pacific 7% YoY growth (15519 → 16608 employees) 4.2/5 ⭐ rating (10,093 reviews) | 82% CEO approval Intellum/"
     },
     {
       "id": "giantswarm-io",
       "name": "giantswarm.io",
-      "careersUrl": "https://www.giantswarm.io/careers"
-    },
-    {
-      "id": "etsy-com",
-      "name": "etsy.com",
-      "careersUrl": "https://www.etsy.com"
-    },
-    {
-      "id": "careers-etsy-com",
-      "name": "careers.etsy.com",
-      "careersUrl": "https://careers.etsy.com"
-    },
-    {
-      "id": "epam-com",
-      "name": "epam.com",
-      "careersUrl": "https://www.epam.com/careers"
+      "careersUrl": "https://www.giantswarm.io/careers",
+      "whereYouCanWork": "Software DevelopmentCloud-native platform with 24/7 management. Worldwide-26% YoY growth (70 → 52 employees) 4.4/5 ⭐ rating (15 reviews) | 81% recommend to a friend Etsy/"
     },
     {
       "id": "fourkitchens-com",
       "name": "fourkitchens.com",
-      "careersUrl": "https://www.fourkitchens.com/careers"
+      "careersUrl": "https://www.fourkitchens.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetMission-driven website development and consulting. Worldwide-9% YoY growth (46 → 42 employees) 4.7/5 ⭐ rating (19 reviews) | 100% CEO approval FactorialHR/"
     },
     {
       "id": "factorialhr-com",
       "name": "factorialhr.com",
-      "careersUrl": "https://factorialhr.com/join-factorialSoftware"
-    },
-    {
-      "id": "flip-id",
-      "name": "flip.id",
-      "careersUrl": "https://flip.id"
-    },
-    {
-      "id": "career-flip-id",
-      "name": "career.flip.id",
-      "careersUrl": "https://career.flip.id/jobs"
+      "careersUrl": "https://factorialhr.com/join-factorialSoftware",
+      "whereYouCanWork": "DevelopmentHR software solutions for SMEsSpain, Germany, Mexico, Brazil, France, Italy, Portugal, United Kingdom, Austria, Switzerland 11% YoY growth (1595 → 1768 employees) 3.1/5 ⭐ rating (486 reviews) | 70% CEO approval Flip/"
     },
     {
       "id": "grafana-com",
       "name": "grafana.com",
-      "careersUrl": "https://grafana.com/about/careers"
-    },
-    {
-      "id": "fiverr-com",
-      "name": "fiverr.com",
-      "careersUrl": "https://www.fiverr.com/jobs"
+      "careersUrl": "https://grafana.com/about/careers",
+      "whereYouCanWork": "/Software DevelopmentOpen-source operational data visualization.Worldwide.15% YoY growth (1269 → 1447 employees) 4.2/5 ⭐ rating (165 reviews) | 88% CEO approval Fiverr/"
     },
     {
       "id": "fly-io",
       "name": "fly.io",
-      "careersUrl": "https://fly.io/jobs"
-    },
-    {
-      "id": "granicus-com",
-      "name": "granicus.com",
-      "careersUrl": "https://granicus.com/careers"
-    },
-    {
-      "id": "engineyard-com",
-      "name": "engineyard.com",
-      "careersUrl": "https://www.engineyard.com"
-    },
-    {
-      "id": "docker-com",
-      "name": "docker.com",
-      "careersUrl": "https://www.docker.com/careers"
-    },
-    {
-      "id": "edg-io",
-      "name": "edg.io",
-      "careersUrl": "https://edg.io"
-    },
-    {
-      "id": "linkedin-com",
-      "name": "linkedin.com",
-      "careersUrl": "https://www.linkedin.com/company/edgio/jobs"
-    },
-    {
-      "id": "people-doc-com",
-      "name": "people-doc.com",
-      "careersUrl": "https://www.people-doc.com"
+      "careersUrl": "https://fly.io/jobs",
+      "whereYouCanWork": "/Technology, Information and InternetCloud app deployment and scaling platform.Worldwide 4.5/5 ⭐ rating (2 reviews) Granicus/"
     },
     {
       "id": "ukg-com",
       "name": "ukg.com",
-      "careersUrl": "https://www.ukg.com/about-us/careers"
+      "careersUrl": "https://www.ukg.com/about-us/careers",
+      "whereYouCanWork": "Software DevelopmentHCM cloud solutions for businesses.United States, Canada, Mexico, Brasil, United Kingdom, France, Deutschland, Nederland, India, Australia 1% YoY growth (14246 → 14419 employees) 4.1/5 ⭐ rating (75 reviews) | 100% CEO approval OpenZeppelin/"
     },
     {
-      "id": "openzeppelin-com",
-      "name": "openzeppelin.com",
-      "careersUrl": "https://www.openzeppelin.com/careers"
-    },
-    {
-      "id": "plex-tv",
-      "name": "plex.tv",
-      "careersUrl": "https://www.plex.tv/careers"
-    },
-    {
-      "id": "discord-com",
-      "name": "discord.com",
-      "careersUrl": "https://discord.com/careers"
-    },
-    {
-      "id": "fireballlabs-com",
-      "name": "fireballlabs.com",
-      "careersUrl": "https://www.fireballlabs.com"
-    },
-    {
-      "id": "onthegosystems-com",
-      "name": "onthegosystems.com",
-      "careersUrl": "https://onthegosystems.com/jobs"
+      "id": "linkedin-com",
+      "name": "linkedin.com",
+      "careersUrl": "https://www.linkedin.com/company/fireball-labs-gmbhOnline",
+      "whereYouCanWork": "Audio and Video MediaRemote advertising technology solutions.Worldwide OnTheGoSystems/"
     },
     {
       "id": "dappradar-com",
       "name": "dappradar.com",
-      "careersUrl": "https://dappradar.com/careers"
-    },
-    {
-      "id": "efishery-com",
-      "name": "efishery.com",
-      "careersUrl": "https://efishery.com/en/careers"
-    },
-    {
-      "id": "dropbox-com",
-      "name": "dropbox.com",
-      "careersUrl": "https://www.dropbox.com"
-    },
-    {
-      "id": "jobs-dropbox-com",
-      "name": "jobs.dropbox.com",
-      "careersUrl": "https://jobs.dropbox.com"
-    },
-    {
-      "id": "laterpay-net",
-      "name": "laterpay.net",
-      "careersUrl": "https://www.laterpay.net/careers"
-    },
-    {
-      "id": "merico-dev",
-      "name": "merico.dev",
-      "careersUrl": "https://merico.dev"
+      "careersUrl": "https://dappradar.com/careers",
+      "whereYouCanWork": "Technology, Information and InternetDecentralized app store for blockchain insights. Worldwide-25% YoY growth (51 → 38 employees) 4.3/5 ⭐ rating (5 reviews) eFishery/"
     },
     {
       "id": "tri-be",
       "name": "tri.be",
-      "careersUrl": "https://tri.be/careers"
-    },
-    {
-      "id": "linuxfoundation-org",
-      "name": "linuxfoundation.org",
-      "careersUrl": "https://www.linuxfoundation.org/careers"
-    },
-    {
-      "id": "kraken-com",
-      "name": "kraken.com",
-      "careersUrl": "https://www.kraken.com/careers"
-    },
-    {
-      "id": "microsoft-com",
-      "name": "microsoft.com",
-      "careersUrl": "https://www.microsoft.com"
-    },
-    {
-      "id": "careers-microsoft-com",
-      "name": "careers.microsoft.com",
-      "careersUrl": "https://careers.microsoft.com"
-    },
-    {
-      "id": "about-mercari-com",
-      "name": "about.mercari.com",
-      "careersUrl": "https://about.mercari.com/en"
-    },
-    {
-      "id": "careers-mercari-com",
-      "name": "careers.mercari.com",
-      "careersUrl": "https://careers.mercari.com/en"
-    },
-    {
-      "id": "mongodb-com",
-      "name": "mongodb.com",
-      "careersUrl": "https://www.mongodb.com/en-us/company/careers"
-    },
-    {
-      "id": "mtcmedia-co-uk",
-      "name": "mtcmedia.co.uk",
-      "careersUrl": "https://www.mtcmedia.co.uk/careers"
-    },
-    {
-      "id": "mixrank-com",
-      "name": "mixrank.com",
-      "careersUrl": "https://mixrank.com/careers"
-    },
-    {
-      "id": "kuali-co",
-      "name": "kuali.co",
-      "careersUrl": "https://www.kuali.co/positionsInformation"
-    },
-    {
-      "id": "pagerduty-com",
-      "name": "pagerduty.com",
-      "careersUrl": "https://pagerduty.com"
+      "careersUrl": "https://tri.be/careers",
+      "whereYouCanWork": "/Internet PublishingEnterprise WordPress digital solutions agency Worldwide-22 YoY growth (78 → 61 reviews)I am sorry, but I cannot provide the information you requested about Modern Tribe's Glassdoor reviews because I could not find the relevant information in the provided search results. Linux Foundation/"
     },
     {
       "id": "careers-pagerduty-com",
       "name": "careers.pagerduty.com",
-      "careersUrl": "https://careers.pagerduty.com"
-    },
-    {
-      "id": "metalab-co",
-      "name": "metalab.co",
-      "careersUrl": "https://metalab.co"
+      "careersUrl": "https://careers.pagerduty.com",
+      "whereYouCanWork": "/Software DevelopmentDigital operations management platformAustralia, Canada, Chile, Portugal, United Kingdom, United States 4% YoY growth (1318 → 1365 employees) 4.0/5 ⭐ rating (470 reviews) | 79% CEO approval MetaLab/"
     },
     {
       "id": "metalab-com",
       "name": "metalab.com",
-      "careersUrl": "https://www.metalab.com/careers"
-    },
-    {
-      "id": "usaa-com",
-      "name": "usaa.com",
-      "careersUrl": "https://www.usaa.com/careers"
-    },
-    {
-      "id": "trello-com",
-      "name": "trello.com",
-      "careersUrl": "https://trello.com"
-    },
-    {
-      "id": "upworthy-com",
-      "name": "upworthy.com",
-      "careersUrl": "https://www.upworthy.com"
-    },
-    {
-      "id": "upworthy-hire-trakstar-com",
-      "name": "upworthy.hire.trakstar.com",
-      "careersUrl": "https://upworthy.hire.trakstar.com"
-    },
-    {
-      "id": "studysoup-com",
-      "name": "studysoup.com",
-      "careersUrl": "https://studysoup.com/jobsE-Learning"
-    },
-    {
-      "id": "stripe-com",
-      "name": "stripe.com",
-      "careersUrl": "https://stripe.com/jobs"
-    },
-    {
-      "id": "lightspeedhq-com",
-      "name": "lightspeedhq.com",
-      "careersUrl": "https://www.lightspeedhq.com/careers"
-    },
-    {
-      "id": "knack-com",
-      "name": "knack.com",
-      "careersUrl": "https://www.knack.com/careers"
-    },
-    {
-      "id": "testgorilla-com",
-      "name": "testgorilla.com",
-      "careersUrl": "https://www.testgorilla.com/careers"
-    },
-    {
-      "id": "taskade-com",
-      "name": "taskade.com",
-      "careersUrl": "https://www.taskade.com/jobs"
-    },
-    {
-      "id": "ushahidi-com",
-      "name": "ushahidi.com",
-      "careersUrl": "https://www.ushahidi.com"
-    },
-    {
-      "id": "vercel-com",
-      "name": "vercel.com",
-      "careersUrl": "https://vercel.com/careers"
-    },
-    {
-      "id": "labelbox-com",
-      "name": "labelbox.com",
-      "careersUrl": "https://labelbox.com/company/careers"
-    },
-    {
-      "id": "suse-com",
-      "name": "suse.com",
-      "careersUrl": "https://www.suse.com"
-    },
-    {
-      "id": "jobs-suse-com",
-      "name": "jobs.suse.com",
-      "careersUrl": "https://jobs.suse.com/us/enSoftware"
-    },
-    {
-      "id": "ipinfo-io",
-      "name": "ipinfo.io",
-      "careersUrl": "https://ipinfo.io/jobs"
-    },
-    {
-      "id": "teleport-org",
-      "name": "teleport.org",
-      "careersUrl": "https://teleport.org"
+      "careersUrl": "https://www.metalab.com/careers",
+      "whereYouCanWork": "Software DevelopmentUser interface design and development agency. Worldwide, Vancouver, Lima, Sao Paulo -17% YoY growth (254 → 212 employees) 3.7/5 ⭐ rating (36 reviews) USAA/"
     },
     {
       "id": "goteleport-com",
       "name": "goteleport.com",
-      "careersUrl": "https://goteleport.com/careers"
-    },
-    {
-      "id": "ted-com",
-      "name": "ted.com",
-      "careersUrl": "https://www.ted.com/about/our-organization/jobs-at-tedNon-profit"
-    },
-    {
-      "id": "getshogun-com",
-      "name": "getshogun.com",
-      "careersUrl": "https://getshogun.com/careers"
-    },
-    {
-      "id": "revolut-com",
-      "name": "revolut.com",
-      "careersUrl": "https://www.revolut.com/careers"
-    },
-    {
-      "id": "stickermule-com",
-      "name": "stickermule.com",
-      "careersUrl": "https://www.stickermule.com/careers"
+      "careersUrl": "https://goteleport.com/careers",
+      "whereYouCanWork": "/Software DevelopmentEmployee mobility and location management solutions. Worldwide-44% YoY growth (262 → 148 employees) 4.0/5 ⭐ rating (47-48 reviews) | 86% CEO approval TED/"
     },
     {
       "id": "tenable-com",
       "name": "tenable.com",
-      "careersUrl": "https://www.tenable.com/careers"
-    },
-    {
-      "id": "signeasy-com",
-      "name": "signeasy.com",
-      "careersUrl": "https://signeasy.com/careers"
+      "careersUrl": "https://www.tenable.com/careers",
+      "whereYouCanWork": "Computer and Network SecurityCybersecurity exposure management platform United States, Boston, Brazil, Mexico, Dublin, London, Paris, Tel Aviv, Abu Dhabi/Dubai, Singapore, China, Japan, Sydney -2% YoY growth (2219 → 2176 employees) 3.9/5 ⭐ rating (620 reviews) | 83% CEO approval SignEasy/"
     },
     {
       "id": "reinteractive-com",
       "name": "reinteractive.com",
-      "careersUrl": "https://reinteractive.com/careers"
-    },
-    {
-      "id": "redditinc-com",
-      "name": "redditinc.com",
-      "careersUrl": "https://redditinc.com/careers"
-    },
-    {
-      "id": "rtcamp-com",
-      "name": "rtcamp.com",
-      "careersUrl": "https://rtcamp.com"
-    },
-    {
-      "id": "careers-rtcamp-com",
-      "name": "careers.rtcamp.com",
-      "careersUrl": "https://careers.rtcamp.com"
-    },
-    {
-      "id": "strapi-io",
-      "name": "strapi.io",
-      "careersUrl": "https://strapi.io/careers"
+      "careersUrl": "https://reinteractive.com/Careers",
+      "whereYouCanWork": "Software DevelopmentCustom app development and Salesforce integration. Worldwide-6% YoY growth (34 → 32 employees) 4.3/5 ⭐ rating (4 reviews) Reddit/"
     },
     {
       "id": "scalac-io",
       "name": "scalac.io",
-      "careersUrl": "https://scalac.io/careers/IT"
-    },
-    {
-      "id": "civo-com",
-      "name": "civo.com",
-      "careersUrl": "https://www.civo.com"
-    },
-    {
-      "id": "careers-civo-com",
-      "name": "careers.civo.com",
-      "careersUrl": "https://careers.civo.com/IT"
+      "careersUrl": "https://scalac.io/careers/IT",
+      "whereYouCanWork": "Services and IT ConsultingHigh-quality software solutions and expert tech support. Worldwide-24% YoY growth (83 → 63 employees) 4.7/5 ⭐ rating (24 reviews) | 100% CEO approval Civo/"
     },
     {
       "id": "wolfram-com",
       "name": "wolfram.com",
-      "careersUrl": "https://www.wolfram.com/company/careers/index.php.enSoftware"
-    },
-    {
-      "id": "vshn-ch",
-      "name": "vshn.ch",
-      "careersUrl": "https://vshn.ch/jobs"
-    },
-    {
-      "id": "youneedabudget-com",
-      "name": "youneedabudget.com",
-      "careersUrl": "https://www.youneedabudget.com"
+      "careersUrl": "https://www.wolfram.com/company/careers/index.php.enSoftware",
+      "whereYouCanWork": "DevelopmentComputational software and knowledge innovation. Worldwide-5% YoY growth (656 → 622 employees) 3.1/5 ⭐ rating (297 reviews) | 44% CEO approval VSHN/"
     },
     {
       "id": "ynab-com",
       "name": "ynab.com",
-      "careersUrl": "https://www.ynab.com/careers"
-    },
-    {
-      "id": "zip-co",
-      "name": "zip.co",
-      "careersUrl": "https://zip.co/careers"
-    },
-    {
-      "id": "getmindful-com",
-      "name": "getmindful.com",
-      "careersUrl": "https://getmindful.com"
+      "careersUrl": "https://www.ynab.com/careers",
+      "whereYouCanWork": "Financial ServicesPersonal budgeting and financial empowerment. Worldwide 4.9/5 ⭐ rating (60 reviews) Zip.co/"
     },
     {
       "id": "jobs-medallia-com",
       "name": "jobs.medallia.com",
-      "careersUrl": "https://jobs.medallia.com"
-    },
-    {
-      "id": "zup-com-br",
-      "name": "zup.com.br",
-      "careersUrl": "https://zup.com.br"
-    },
-    {
-      "id": "youcanbook-me",
-      "name": "youcanbook.me",
-      "careersUrl": "https://youcanbook.me/jobs"
-    },
-    {
-      "id": "rackspace-com",
-      "name": "rackspace.com",
-      "careersUrl": "https://rackspace.com"
-    },
-    {
-      "id": "rackspace-jobsit",
-      "name": "rackspace.jobsit",
-      "careersUrl": "https://rackspace.jobsit"
-    },
-    {
-      "id": "wellsfargo-com",
-      "name": "wellsfargo.com",
-      "careersUrl": "https://www.wellsfargo.com/about/careers"
-    },
-    {
-      "id": "chainlinklabs-com",
-      "name": "chainlinklabs.com",
-      "careersUrl": "https://chainlinklabs.com/careers"
-    },
-    {
-      "id": "x-team-com",
-      "name": "x-team.com",
-      "careersUrl": "https://x-team.com/careers"
-    },
-    {
-      "id": "chef-io",
-      "name": "chef.io",
-      "careersUrl": "https://www.chef.io/careers"
-    },
-    {
-      "id": "grubhub-com",
-      "name": "grubhub.com",
-      "careersUrl": "https://www.grubhub.com"
-    },
-    {
-      "id": "careers-grubhub-com",
-      "name": "careers.grubhub.com",
-      "careersUrl": "https://careers.grubhub.com"
-    },
-    {
-      "id": "episource-com",
-      "name": "episource.com",
-      "careersUrl": "https://episource.com"
-    },
-    {
-      "id": "go-episource-com",
-      "name": "go.episource.com",
-      "careersUrl": "https://go.episource.com/careers"
-    },
-    {
-      "id": "madewithover-com",
-      "name": "madewithover.com",
-      "careersUrl": "https://www.madewithover.com"
-    },
-    {
-      "id": "spotify-com",
-      "name": "spotify.com",
-      "careersUrl": "https://www.spotify.com"
-    },
-    {
-      "id": "lifeatspotify-com",
-      "name": "lifeatspotify.com",
-      "careersUrl": "https://www.lifeatspotify.com/jobs"
-    },
-    {
-      "id": "packlink-com",
-      "name": "packlink.com",
-      "careersUrl": "https://www.packlink.com"
-    },
-    {
-      "id": "job-boards-greenhouse-io",
-      "name": "job-boards.greenhouse.io",
-      "careersUrl": "https://job-boards.greenhouse.io/packlink?t=cd464b543usTechnology"
-    },
-    {
-      "id": "recurly-com",
-      "name": "recurly.com",
-      "careersUrl": "https://recurly.com/careers"
-    },
-    {
-      "id": "lightbend-com",
-      "name": "lightbend.com",
-      "careersUrl": "https://www.lightbend.com"
-    },
-    {
-      "id": "lightbend-applytojob-com",
-      "name": "lightbend.applytojob.com",
-      "careersUrl": "https://lightbend.applytojob.com/applySoftware"
+      "careersUrl": "https://jobs.medallia.com",
+      "whereYouCanWork": "/Software DevelopmentCustomer experience and engagement solutions Worldwide-21% YoY growth (155 → 122 employees) 4.1/5 ⭐ rating (17 reviews) | 100% CEO approval Zup/"
     },
     {
       "id": "chess-com",
       "name": "chess.com",
-      "careersUrl": "https://www.chess.com/jobs"
+      "careersUrl": "https://www.chess.com/jobs",
+      "whereYouCanWork": "Technology, Information and InternetOnline chess platform and community.Worldwide 4.5/5 ⭐ rating (123 reviews) | 86% CEO approval Linaro/"
     },
     {
       "id": "linaro-org",
       "name": "linaro.org",
-      "careersUrl": "https://www.linaro.org/careers"
-    },
-    {
-      "id": "prisma-io",
-      "name": "prisma.io",
-      "careersUrl": "https://www.prisma.io/careers"
+      "careersUrl": "https://www.linaro.org/careers",
+      "whereYouCanWork": "/Software DevelopmentArm-based software solutions and services.Worldwide-3% YoY growth (182 → 176 employees) 4.1/5 ⭐ rating (37 reviews) | 82% CEO approval Prisma/"
     },
     {
       "id": "reforge-com",
       "name": "reforge.com",
-      "careersUrl": "https://www.reforge.com/careersE-Learning"
-    },
-    {
-      "id": "smugmug-com",
-      "name": "smugmug.com",
-      "careersUrl": "https://www.smugmug.com/careers"
-    },
-    {
-      "id": "acleddata-com",
-      "name": "acleddata.com",
-      "careersUrl": "https://acleddata.com/careers"
-    },
-    {
-      "id": "adapty-io",
-      "name": "adapty.io",
-      "careersUrl": "https://adapty.io/careers"
-    },
-    {
-      "id": "alpaca-markets",
-      "name": "alpaca.markets",
-      "careersUrl": "https://alpaca.markets/hiringsi"
-    },
-    {
-      "id": "amplemarket-com",
-      "name": "amplemarket.com",
-      "careersUrl": "https://www.amplemarket.com/careers"
-    },
-    {
-      "id": "jobs-ashbyhq-com",
-      "name": "jobs.ashbyhq.com",
-      "careersUrl": "https://jobs.ashbyhq.com/anagramsi"
-    },
-    {
-      "id": "careers-ancient-gg",
-      "name": "careers.ancient.gg",
-      "careersUrl": "https://careers.ancient.gg/si"
-    },
-    {
-      "id": "anrok-com",
-      "name": "anrok.com",
-      "careersUrl": "https://www.anrok.com/careers"
-    },
-    {
-      "id": "apollo-io",
-      "name": "apollo.io",
-      "careersUrl": "https://www.apollo.io/company/careers#open-rolessi"
-    },
-    {
-      "id": "appcues-com",
-      "name": "appcues.com",
-      "careersUrl": "https://www.appcues.com/companysiAppcues"
-    },
-    {
-      "id": "arc-dev",
-      "name": "arc.dev",
-      "careersUrl": "https://arc.dev/careers"
-    },
-    {
-      "id": "arize-com",
-      "name": "arize.com",
-      "careersUrl": "https://arize.com/careers"
-    },
-    {
-      "id": "ascendo-ai",
-      "name": "ascendo.ai",
-      "careersUrl": "https://www.ascendo.ai/careers"
-    },
-    {
-      "id": "ashbyhq-com",
-      "name": "ashbyhq.com",
-      "careersUrl": "https://www.ashbyhq.com/careers"
-    },
-    {
-      "id": "awesomemotive-com",
-      "name": "awesomemotive.com",
-      "careersUrl": "https://awesomemotive.com/careers/siAwesomemotive"
-    },
-    {
-      "id": "careers-beehiiv-com",
-      "name": "careers.beehiiv.com",
-      "careersUrl": "https://careers.beehiiv.com/si"
-    },
-    {
-      "id": "bendingspoons-com",
-      "name": "bendingspoons.com",
-      "careersUrl": "https://bendingspoons.com/careers"
-    },
-    {
-      "id": "billigence-com",
-      "name": "billigence.com",
-      "careersUrl": "https://billigence.com/careers/#dream-jobsi"
-    },
-    {
-      "id": "bitso-com",
-      "name": "bitso.com",
-      "careersUrl": "https://bitso.com/lp/careers"
-    },
-    {
-      "id": "bsky-social",
-      "name": "bsky.social",
-      "careersUrl": "https://bsky.social/about/joinsi"
-    },
-    {
-      "id": "chorus-one",
-      "name": "chorus.one",
-      "careersUrl": "https://chorus.one/careers"
-    },
-    {
-      "id": "circle-so",
-      "name": "circle.so",
-      "careersUrl": "https://circle.so/careers#open-rolessiCircle"
-    },
-    {
-      "id": "clara-com",
-      "name": "clara.com",
-      "careersUrl": "https://clara.com/careers"
-    },
-    {
-      "id": "cloudbeds-com",
-      "name": "cloudbeds.com",
-      "careersUrl": "https://www.cloudbeds.com/careers/siCloudbeds"
-    },
-    {
-      "id": "cloudlinux-com",
-      "name": "cloudlinux.com",
-      "careersUrl": "https://www.cloudlinux.com/about-us-company-jobs/si"
-    },
-    {
-      "id": "coinshift-xyz",
-      "name": "coinshift.xyz",
-      "careersUrl": "https://coinshift.xyz/careers"
-    },
-    {
-      "id": "constructor-com",
-      "name": "constructor.com",
-      "careersUrl": "https://constructor.com/about/careers"
-    },
-    {
-      "id": "crisp-chat",
-      "name": "crisp.chat",
-      "careersUrl": "https://crisp.chat/en/careers/si"
-    },
-    {
-      "id": "crowdbotics-com",
-      "name": "crowdbotics.com",
-      "careersUrl": "https://crowdbotics.com/careers"
-    },
-    {
-      "id": "search-careers-gm-com",
-      "name": "search-careers.gm.com",
-      "careersUrl": "https://search-careers.gm.com/en/?utm_source=gm"
-    },
-    {
-      "id": "databento-com",
-      "name": "databento.com",
-      "careersUrl": "https://databento.com/careers"
-    },
-    {
-      "id": "deel-com",
-      "name": "deel.com",
-      "careersUrl": "https://www.deel.com/careers"
-    },
-    {
-      "id": "donyati-com",
-      "name": "donyati.com",
-      "careersUrl": "https://donyati.com/careers/siDonyati"
-    },
-    {
-      "id": "elevenlabs-io",
-      "name": "elevenlabs.io",
-      "careersUrl": "https://elevenlabs.io/careers"
-    },
-    {
-      "id": "eotlabs-io",
-      "name": "eotlabs.io",
-      "careersUrl": "https://www.eotlabs.io/about-us#careerssi"
-    },
-    {
-      "id": "expert-thinking-co-uk",
-      "name": "expert-thinking.co.uk",
-      "careersUrl": "https://expert-thinking.co.uk/careers"
-    },
-    {
-      "id": "fiber-ai",
-      "name": "fiber.ai",
-      "careersUrl": "https://fiber.ai/careers"
-    },
-    {
-      "id": "fillout-com",
-      "name": "fillout.com",
-      "careersUrl": "https://fillout.com/careers"
-    },
-    {
-      "id": "firehydrant-io",
-      "name": "firehydrant.io",
-      "careersUrl": "https://firehydrant.io/careers"
-    },
-    {
-      "id": "fluentu-com",
-      "name": "fluentu.com",
-      "careersUrl": "https://www.fluentu.com/learn/remote-jobs-at-fluentu-join-"
-    },
-    {
-      "id": "funded-club",
-      "name": "funded.club",
-      "careersUrl": "https://funded.club/startupjobssiFunded.club"
-    },
-    {
-      "id": "fundraiseup-com",
-      "name": "fundraiseup.com",
-      "careersUrl": "https://fundraiseup.com/careers"
-    },
-    {
-      "id": "gate-io",
-      "name": "gate.io",
-      "careersUrl": "https://www.gate.io/careers"
-    },
-    {
-      "id": "virtasant-com",
-      "name": "virtasant.com",
-      "careersUrl": "https://www.virtasant.com/careers?src=gigstersi"
-    },
-    {
-      "id": "going-com",
-      "name": "going.com",
-      "careersUrl": "https://going.com/careers"
-    },
-    {
-      "id": "graphaware-com",
-      "name": "graphaware.com",
-      "careersUrl": "https://graphaware.com/careers/#open-positionssi"
-    },
-    {
-      "id": "happymammoth-com",
-      "name": "happymammoth.com",
-      "careersUrl": "https://happymammoth.com/careers"
-    },
-    {
-      "id": "web-haystackapp-io",
-      "name": "web.haystackapp.io",
-      "careersUrl": "https://web.haystackapp.io/roles"
-    },
-    {
-      "id": "esim-holafly-com",
-      "name": "esim.holafly.com",
-      "careersUrl": "https://esim.holafly.com/about-us/si"
-    },
-    {
-      "id": "homebuddy-com",
-      "name": "homebuddy.com",
-      "careersUrl": "https://www.homebuddy.com/careers"
-    },
-    {
-      "id": "ycombinator-com",
-      "name": "ycombinator.com",
-      "careersUrl": "https://www.ycombinator.com/companies/hotglue/jobs"
-    },
-    {
-      "id": "hubstaff-com",
-      "name": "hubstaff.com",
-      "careersUrl": "https://hubstaff.com/jobs#hsds-open-positionssiworkforce"
-    },
-    {
-      "id": "instrumentl-com",
-      "name": "instrumentl.com",
-      "careersUrl": "https://www.instrumentl.com/careers"
+      "careersUrl": "https://www.reforge.com/careersE-Learning",
+      "whereYouCanWork": "ProvidersCareer advancement in Product and Growth.Worldwide-28% YoY growth (467 → 335 employees) 3.2/5 ⭐ rating (48 reviews) | 44% CEO approval SmugMug/"
     },
     {
       "id": "intrado-jobs-net",
       "name": "intrado.jobs.net",
-      "careersUrl": "https://intrado.jobs.net/jobs?keywords=&location=Intrado"
-    },
-    {
-      "id": "kake-co",
-      "name": "kake.co",
-      "careersUrl": "https://kake.co/jobs"
-    },
-    {
-      "id": "keyrock-eu",
-      "name": "keyrock.eu",
-      "careersUrl": "https://keyrock.eu/careers/si"
-    },
-    {
-      "id": "supertab-co",
-      "name": "supertab.co",
-      "careersUrl": "https://www.supertab.co/careerOne-click"
-    },
-    {
-      "id": "lily-ai",
-      "name": "lily.ai",
-      "careersUrl": "https://www.lily.ai/careers"
-    },
-    {
-      "id": "magicmedia-studio",
-      "name": "magicmedia.studio",
-      "careersUrl": "https://magicmedia.studio/careers/si"
-    },
-    {
-      "id": "app-pyjamahr-com",
-      "name": "app.pyjamahr.com",
-      "careersUrl": "https://app.pyjamahr.com/careers"
-    },
-    {
-      "id": "metabase-com",
-      "name": "metabase.com",
-      "careersUrl": "https://www.metabase.com/careers"
-    },
-    {
-      "id": "monetizemore-com",
-      "name": "monetizemore.com",
-      "careersUrl": "https://www.monetizemore.com/about-us/careers/si"
-    },
-    {
-      "id": "forthepeople-com",
-      "name": "forthepeople.com",
-      "careersUrl": "https://www.forthepeople.com/careers/si"
-    },
-    {
-      "id": "nethermind-io",
-      "name": "nethermind.io",
-      "careersUrl": "https://www.nethermind.io/open-rolessi"
-    },
-    {
-      "id": "notabene-id",
-      "name": "notabene.id",
-      "careersUrl": "https://notabene.id/careers"
-    },
-    {
-      "id": "offsite-com",
-      "name": "offsite.com",
-      "careersUrl": "https://www.offsite.com/careers"
-    },
-    {
-      "id": "beomniscient-com",
-      "name": "beomniscient.com",
-      "careersUrl": "https://beomniscient.com/careers/si"
-    },
-    {
-      "id": "onebrief-com",
-      "name": "onebrief.com",
-      "careersUrl": "https://www.onebrief.com/careers"
-    },
-    {
-      "id": "onelocal-com",
-      "name": "onelocal.com",
-      "careersUrl": "https://onelocal.com/careers"
-    },
-    {
-      "id": "zinrec-intervieweb-it",
-      "name": "zinrec.intervieweb.it",
-      "careersUrl": "https://zinrec.intervieweb.it/oway/it/career"
-    },
-    {
-      "id": "owner-com",
-      "name": "owner.com",
-      "careersUrl": "https://owner.com/careers"
-    },
-    {
-      "id": "pathward-com",
-      "name": "pathward.com",
-      "careersUrl": "https://www.pathward.com/about-us/people-culture/careers/siAt"
-    },
-    {
-      "id": "phaidra-ai",
-      "name": "phaidra.ai",
-      "careersUrl": "https://phaidra.ai/careers"
-    },
-    {
-      "id": "phantom-app",
-      "name": "phantom.app",
-      "careersUrl": "https://phantom.app/careers"
-    },
-    {
-      "id": "pitch-com",
-      "name": "pitch.com",
-      "careersUrl": "https://pitch.com/jobs"
-    },
-    {
-      "id": "pitchup-com",
-      "name": "pitchup.com",
-      "careersUrl": "https://www.pitchup.com/jobs/si"
-    },
-    {
-      "id": "planet-com",
-      "name": "planet.com",
-      "careersUrl": "https://www.planet.com/careers"
-    },
-    {
-      "id": "portside-co",
-      "name": "portside.co",
-      "careersUrl": "https://portside.co/careers"
-    },
-    {
-      "id": "posthog-com",
-      "name": "posthog.com",
-      "careersUrl": "https://posthog.com/careers"
-    },
-    {
-      "id": "pulumi-com",
-      "name": "pulumi.com",
-      "careersUrl": "https://www.pulumi.com/careers/si"
-    },
-    {
-      "id": "app-screenloop-com",
-      "name": "app.screenloop.com",
-      "careersUrl": "https://app.screenloop.com/careers/quadrivia"
-    },
-    {
-      "id": "remofirst-com",
-      "name": "remofirst.com",
-      "careersUrl": "https://www.remofirst.com/careers"
-    },
-    {
-      "id": "job-boards-eu-greenhouse-io",
-      "name": "job-boards.eu.greenhouse.io",
-      "careersUrl": "https://job-boards.eu.greenhouse.io/retraced"
-    },
-    {
-      "id": "revenuecat-com",
-      "name": "revenuecat.com",
-      "careersUrl": "https://www.revenuecat.com/careers"
-    },
-    {
-      "id": "scalemath-com",
-      "name": "scalemath.com",
-      "careersUrl": "https://www.scalemath.com/careers"
-    },
-    {
-      "id": "screenloop-com",
-      "name": "screenloop.com",
-      "careersUrl": "https://screenloop.com/careers"
-    },
-    {
-      "id": "wellfound-com",
-      "name": "wellfound.com",
-      "careersUrl": "https://wellfound.com/company/sendwave-2/jobs"
-    },
-    {
-      "id": "singular-net",
-      "name": "singular.net",
-      "careersUrl": "https://www.singular.net/careers"
-    },
-    {
-      "id": "socialdiscoverygroup-com",
-      "name": "socialdiscoverygroup.com",
-      "careersUrl": "https://socialdiscoverygroup.com/si"
-    },
-    {
-      "id": "solo-io",
-      "name": "solo.io",
-      "careersUrl": "https://www.solo.io/company/careers"
-    },
-    {
-      "id": "storyworth-com",
-      "name": "storyworth.com",
-      "careersUrl": "https://www.storyworth.com/careers"
-    },
-    {
-      "id": "superside-com",
-      "name": "superside.com",
-      "careersUrl": "https://www.superside.com/careers"
-    },
-    {
-      "id": "tableau-com",
-      "name": "tableau.com",
-      "careersUrl": "https://tableau.com/careers"
-    },
-    {
-      "id": "testrigor-com",
-      "name": "testrigor.com",
-      "careersUrl": "https://testrigor.com/careers"
-    },
-    {
-      "id": "tether-recruitee-com",
-      "name": "tether.recruitee.com",
-      "careersUrl": "https://tether.recruitee.com/si"
-    },
-    {
-      "id": "thanx-com",
-      "name": "thanx.com",
-      "careersUrl": "https://www.thanx.com/careers"
-    },
-    {
-      "id": "time-doctor-breezy-hr",
-      "name": "time-doctor.breezy.hr",
-      "careersUrl": "https://time-doctor.breezy.hr/si"
-    },
-    {
-      "id": "uberall-com",
-      "name": "uberall.com",
-      "careersUrl": "https://uberall.com/en/company/careers"
-    },
-    {
-      "id": "unified-com",
-      "name": "unified.com",
-      "careersUrl": "https://www.unified.com/careers/siA"
-    },
-    {
-      "id": "verra-org",
-      "name": "verra.org",
-      "careersUrl": "https://verra.org/life-at-verra/si"
-    },
-    {
-      "id": "vital-io",
-      "name": "vital.io",
-      "careersUrl": "https://vital.io/careers"
-    },
-    {
-      "id": "careers-getworkflex-com",
-      "name": "careers.getworkflex.com",
-      "careersUrl": "https://careers.getworkflex.com/siGlobal"
-    },
-    {
-      "id": "getzep-com",
-      "name": "getzep.com",
-      "careersUrl": "https://www.getzep.com/careers"
-    },
-    {
-      "id": "remoterocketship-com",
-      "name": "remoterocketship.com",
-      "careersUrl": "https://www.remoterocketship.com"
-    },
-    {
-      "id": "flexjobs-com",
-      "name": "flexjobs.com",
-      "careersUrl": "https://www.flexjobs.com"
-    },
-    {
-      "id": "growmotely-com",
-      "name": "growmotely.com",
-      "careersUrl": "https://www.growmotely.com"
-    },
-    {
-      "id": "weworkremotely-com",
-      "name": "weworkremotely.com",
-      "careersUrl": "https://weworkremotely.com"
-    },
-    {
-      "id": "otta-com",
-      "name": "otta.com",
-      "careersUrl": "https://otta.com/Otta.com"
-    },
-    {
-      "id": "remoteok-io",
-      "name": "remoteok.io",
-      "careersUrl": "https://remoteok.io/RemoteOK"
-    },
-    {
-      "id": "dynamitejobs-co",
-      "name": "dynamitejobs.co",
-      "careersUrl": "https://dynamitejobs.co"
-    },
-    {
-      "id": "remotive-io",
-      "name": "remotive.io",
-      "careersUrl": "https://remotive.io/remote-jobsRemotive"
-    },
-    {
-      "id": "findasync-com",
-      "name": "findasync.com",
-      "careersUrl": "https://findasync.com/FindAsync"
-    },
-    {
-      "id": "nocommute-com",
-      "name": "nocommute.com",
-      "careersUrl": "https://nocommute.com/NoCommute"
-    },
-    {
-      "id": "letsworkremotely-com",
-      "name": "letsworkremotely.com",
-      "careersUrl": "https://letsworkremotely.com/letsworkremotely"
-    },
-    {
-      "id": "workingnomads-co",
-      "name": "workingnomads.co",
-      "careersUrl": "https://www.workingnomads.co"
-    },
-    {
-      "id": "justremote-co",
-      "name": "justremote.co",
-      "careersUrl": "https://justremote.co/JustRemote"
-    },
-    {
-      "id": "pangian-com",
-      "name": "pangian.com",
-      "careersUrl": "https://pangian.com"
-    },
-    {
-      "id": "skipthedrive-com",
-      "name": "skipthedrive.com",
-      "careersUrl": "https://www.skipthedrive.com"
-    },
-    {
-      "id": "remote-co",
-      "name": "remote.co",
-      "careersUrl": "https://remote.co/Remote.co"
-    },
-    {
-      "id": "trueremote-co",
-      "name": "trueremote.co",
-      "careersUrl": "https://trueremote.co/TrueRemote"
-    },
-    {
-      "id": "flexa-com",
-      "name": "flexa.com",
-      "careersUrl": "https://flexa.com"
-    },
-    {
-      "id": "remote-io",
-      "name": "remote.io",
-      "careersUrl": "https://remote.io/remote.io"
-    },
-    {
-      "id": "goremotely-com",
-      "name": "goremotely.com",
-      "careersUrl": "https://goremotely.com/GoRemotely"
-    },
-    {
-      "id": "remotehub-io",
-      "name": "remotehub.io",
-      "careersUrl": "https://remotehub.io/RemoteHub"
-    },
-    {
-      "id": "remotetribe-io",
-      "name": "remotetribe.io",
-      "careersUrl": "https://remotetribe.io"
-    },
-    {
-      "id": "remoteleaf-com",
-      "name": "remoteleaf.com",
-      "careersUrl": "https://remoteleaf.com"
-    },
-    {
-      "id": "remoteworkjunkie-com",
-      "name": "remoteworkjunkie.com",
-      "careersUrl": "https://remoteworkjunkie.com"
+      "careersUrl": "https://intrado.jobs.net/jobs?keywords=&location=Intrado",
+      "whereYouCanWork": "provides cloud-based technology to connect people and businesses worldwide. Intuition Machines, Inc/"
     },
     {
       "id": "remoters-net",
       "name": "remoters.net",
-      "careersUrl": "https://remoters.net/Remoters.me"
-    },
-    {
-      "id": "citizenremote-com",
-      "name": "citizenremote.com",
-      "careersUrl": "https://citizenremote.com"
-    },
-    {
-      "id": "peoplefirst-jobs",
-      "name": "peoplefirst.jobs",
-      "careersUrl": "https://peoplefirst.jobs"
-    },
-    {
-      "id": "dailyremote-com",
-      "name": "dailyremote.com",
-      "careersUrl": "https://dailyremote.com/DailyRemote"
-    },
-    {
-      "id": "smoothremote-com",
-      "name": "smoothremote.com",
-      "careersUrl": "https://smoothremote.com"
-    },
-    {
-      "id": "beefrii-com",
-      "name": "beefrii.com",
-      "careersUrl": "https://beefrii.com/BeeFrii"
-    },
-    {
-      "id": "remotewx-com",
-      "name": "remotewx.com",
-      "careersUrl": "https://remotewx.com"
-    },
-    {
-      "id": "remotists-com",
-      "name": "remotists.com",
-      "careersUrl": "https://remotists.com"
-    },
-    {
-      "id": "nodesk-co",
-      "name": "nodesk.co",
-      "careersUrl": "https://nodesk.co/No"
-    },
-    {
-      "id": "jobspresso-co",
-      "name": "jobspresso.co",
-      "careersUrl": "https://jobspresso.co/Jobs"
-    },
-    {
-      "id": "remote4me-com",
-      "name": "remote4me.com",
-      "careersUrl": "https://remote4me.com/Remote4Me"
-    },
-    {
-      "id": "aijobs-net",
-      "name": "aijobs.net",
-      "careersUrl": "https://aijobs.net/Aijobs.NET"
-    },
-    {
-      "id": "pyjamajobs-com",
-      "name": "pyjamajobs.com",
-      "careersUrl": "https://pyjamajobs.com"
-    },
-    {
-      "id": "idealist-org",
-      "name": "idealist.org",
-      "careersUrl": "https://www.idealist.org/en"
-    },
-    {
-      "id": "remotewoman-com",
-      "name": "remotewoman.com",
-      "careersUrl": "https://remotewoman.com"
-    },
-    {
-      "id": "remoteworkhub-com",
-      "name": "remoteworkhub.com",
-      "careersUrl": "https://remoteworkhub.com"
-    },
-    {
-      "id": "powertofly-com",
-      "name": "powertofly.com",
-      "careersUrl": "https://powertofly.com/PowertoFly"
-    },
-    {
-      "id": "wellfound-io",
-      "name": "wellfound.io",
-      "careersUrl": "https://www.wellfound.io"
-    },
-    {
-      "id": "hiremymom-com",
-      "name": "hiremymom.com",
-      "careersUrl": "https://www.hiremymom.com"
-    },
-    {
-      "id": "euremotejobs-com",
-      "name": "euremotejobs.com",
-      "careersUrl": "https://euremotejobs.com/EU"
-    },
-    {
-      "id": "talenteum-africa",
-      "name": "talenteum.africa",
-      "careersUrl": "https://talenteum.africa/Talenteum.Africa"
-    },
-    {
-      "id": "fieldscope-io",
-      "name": "fieldscope.io",
-      "careersUrl": "https://www.fieldscope.io"
-    },
-    {
-      "id": "waw-asia",
-      "name": "waw.asia",
-      "careersUrl": "https://waw.asia"
-    },
-    {
-      "id": "builtin-com",
-      "name": "builtin.com",
-      "careersUrl": "https://builtin.com"
-    },
-    {
-      "id": "dribbble-com",
-      "name": "dribbble.com",
-      "careersUrl": "https://dribbble.com/jobs"
-    },
-    {
-      "id": "techjunction-io",
-      "name": "techjunction.io",
-      "careersUrl": "https://www.techjunction.io"
-    },
-    {
-      "id": "jobsfactor-eu",
-      "name": "jobsfactor.eu",
-      "careersUrl": "https://jobsfactor.eu"
-    },
-    {
-      "id": "techjobsforgood-com",
-      "name": "techjobsforgood.com",
-      "careersUrl": "https://www.techjobsforgood.com"
-    },
-    {
-      "id": "escapethecity-org",
-      "name": "escapethecity.org",
-      "careersUrl": "https://www.escapethecity.org"
+      "careersUrl": "https://remoters.net/Remoters.me",
+      "whereYouCanWork": "is a job board that caters to digital nomads and remote workers, offering remote job listings and resources for those seeking remote work opportunities worldwide. Citizen Remote/"
     }
   ]
 }

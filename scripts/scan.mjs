@@ -188,20 +188,24 @@ async function launchBrowser() {
 
 /**
  * Una pestaña nueva por URL: navega como Chrome, devuelve HTML + innerText del DOM renderizado.
+ * finalUrl = location.href al final (tras postWait) — eso es lo que guardamos como URL de oferta si el aviso pasó verificación.
+ * @param {string} [logCtx] — si viene, escribe en el log de corrida líneas [Chrome] para seguir el proceso (p. ej. detalle por aviso).
  */
-async function fetchCareersWithChrome(browser, url) {
+async function fetchCareersWithChrome(browser, url, logCtx = '') {
+  const navTimeout = Number(process.env.JOBSP_NAV_TIMEOUT_MS) || 45000
+  const postWait = Math.min(8000, Math.max(0, Number(process.env.JOBSP_POST_WAIT_MS) || 2500))
+
   const page = await browser.newPage()
   try {
+    if (logCtx) log(`    [Chrome] ${logCtx} → goto: ${url}`)
     await page.setViewport({ width: 1365, height: 900 })
     await page.setUserAgent(
       'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     )
-    const navTimeout = Number(process.env.JOBSP_NAV_TIMEOUT_MS) || 45000
     const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: navTimeout })
     const status = response?.status() ?? 0
-    const finalUrl = page.url()
-    const postWait = Math.min(8000, Math.max(0, Number(process.env.JOBSP_POST_WAIT_MS) || 2500))
     if (postWait) await new Promise((r) => setTimeout(r, postWait))
+
     const innerText = await page.evaluate(() => {
       try {
         return document.body ? document.body.innerText : ''
@@ -210,7 +214,14 @@ async function fetchCareersWithChrome(browser, url) {
       }
     })
     const html = await page.content()
+    const finalUrl = page.url()
+    const innerLen = String(innerText || '').trim().length
     const ok = status >= 200 && status < 400
+    if (logCtx) {
+      log(
+        `    [Chrome] ${logCtx} ← listo: http=${status} finalUrl=${finalUrl} innerTextChars=${innerLen} postWaitMs=${postWait}`,
+      )
+    }
     return {
       ok,
       status,
@@ -219,6 +230,7 @@ async function fetchCareersWithChrome(browser, url) {
       finalUrl,
     }
   } catch (e) {
+    if (logCtx) log(`    [Chrome] ${logCtx} ← error navegación: ${String(e.message || e)}`)
     return {
       ok: false,
       status: 0,
@@ -299,7 +311,8 @@ async function llmExtractOpeningsWithUrls(companyName, listUrl, pageText) {
   const system = `Sos un extractor de listados de empleo. Respondé SOLO JSON válido, sin markdown.
 Formato: {"openings":[{"title":"string","url":"string|null"}]}
 - title: nombre del puesto o aviso.
-- url: enlace al detalle si aparece en el texto (http(s) o ruta /...). Si no hay URL clara para esa fila, null.
+- url: SOLO si en el texto hay un enlace propio a ESE aviso (href de la fila/tarjeta: /jobs/…, ?gh_jid=, /o/, /position/, /job/, /careers/…/… con slug/id, etc.). Debe abrir el detalle de esa oferta, no la vista listado genérica.
+- Si el listado no muestra href por fila o solo repetirías la URL base de la página actual para muchas filas, usá null (no inventes ni reutilices la home de careers como url de cada fila).
 Máximo 45 filas. Si no hay listado reconocible: {"openings":[]}.`
 
   const user = `Empresa: ${companyName}
@@ -332,6 +345,7 @@ async function llmShortlistTechnicalRoles(openingsWithUrl, cvText, profile, maxS
   const system = `Sos filtro estricto (solo ingeniería de software alineada al perfil). Respondé SOLO JSON:
 {"shortlist":[{"title":"string","url":"string","why":"máx 140 chars español"}]}
 Máximo ${maxShort} ítems. Cada url DEBE ser exactamente una de las URLs del input (no inventar dominios).
+Cada url tiene que ser enlace al DETALLE de ese aviso (página del puesto o URL con id/slug del rol). NO elijas entradas cuya url sea solo la página de listado o /careers sin path de oferta, a menos que el input no tenga otra url para ese título.
 
 CRITERIO VISTA LISTADO (título del aviso):
 ${titleHints}
@@ -423,6 +437,9 @@ ${pageText.slice(0, 12000)}`
 async function analyzeWithListAndDetailPages(browser, { companyName, careersUrl, finalUrl, pageText, cvText }) {
   const profile = candidateProfile()
   const maxVisit = Math.min(10, Math.max(1, Number(process.env.JOBSP_MAX_DETAIL_VISITS) || 5))
+  log(
+    `  [proceso] ${companyName}: pipeline listado→detalle (listado finalUrl=${finalUrl}, hasta ${maxVisit} URLs de detalle, postWait JOBSP_POST_WAIT_MS)`,
+  )
 
   const openings = await llmExtractOpeningsWithUrls(companyName, finalUrl, pageText)
   const withUrl = openings.filter((o) => o.url)
@@ -431,14 +448,33 @@ async function analyzeWithListAndDetailPages(browser, { companyName, careersUrl,
   if (withUrl.length === 0) {
     log('  Sin URLs en listado → análisis estricto solo sobre texto de la página')
     const fb = await analyzeListPageFallbackStrict({ companyName, careersUrl: finalUrl, pageText, cvText })
+    const raw = Array.isArray(fb.relevantRoles) ? fb.relevantRoles : []
+    const withPageUrl = raw.map((r) => {
+      if (!r || typeof r !== 'object') return r
+      const fromLlm = typeof r.specificUrl === 'string' ? r.specificUrl.trim() : ''
+      const abs = fromLlm ? resolveJobHref(fromLlm, finalUrl) || fromLlm : ''
+      return { ...r, specificUrl: abs || finalUrl }
+    })
+    log(
+      `  [proceso/fallback] Sin URLs por fila en el listado. ${withPageUrl.length} roles; specificUrl = página analizada salvo URL del modelo.`,
+    )
+    for (let ri = 0; ri < withPageUrl.length; ri++) {
+      const r = withPageUrl[ri]
+      if (r && typeof r === 'object' && r.title)
+        log(`    [fallback rol ${ri + 1}] "${r.title}" → specificUrl=${r.specificUrl}`)
+    }
     return {
-      relevantRoles: Array.isArray(fb.relevantRoles) ? fb.relevantRoles : [],
+      relevantRoles: withPageUrl,
       summary: typeof fb.summary === 'string' ? fb.summary : '',
     }
   }
 
   const shortlist = await llmShortlistTechnicalRoles(withUrl, cvText, profile, maxVisit)
   log(`  LLM: shortlist técnica ${shortlist.length} (máx ${maxVisit})`)
+  for (let si = 0; si < shortlist.length; si++) {
+    const row = shortlist[si]
+    log(`    [shortlist ${si + 1}/${shortlist.length}] "${row.title}" → abrir: ${row.url}`)
+  }
 
   if (shortlist.length === 0) {
     return {
@@ -451,31 +487,40 @@ async function analyzeWithListAndDetailPages(browser, { companyName, careersUrl,
   const relevantRoles = []
   for (let i = 0; i < shortlist.length; i++) {
     const s = shortlist[i]
+    const detLabel = `detalle ${i + 1}/${shortlist.length} "${String(s.title || '').slice(0, 56)}"`
     log(`    Chrome detalle [${i + 1}/${shortlist.length}]`)
-    const det = await fetchCareersWithChrome(browser, s.url)
+    const det = await fetchCareersWithChrome(browser, s.url, detLabel)
     if (!det.ok) {
       log(`    detalle falló: ${det.error || det.status}`)
       continue
     }
     const detailText =
       det.innerText && det.innerText.length > 200 ? det.innerText : htmlToText(det.html || '')
+    log(
+      `    [proceso] Texto para verificación LLM: ${detailText.length} chars (listado dijo url=${s.url} · Chrome finalUrl=${det.finalUrl})`,
+    )
     let verdict
+    const tVer = Date.now()
     try {
       verdict = await llmVerifyDetailPage({
         detailText,
         cvText,
         profile,
         listTitle: s.title,
-        jobUrl: s.url,
+        jobUrl: det.finalUrl || s.url,
       })
     } catch (e) {
       log(`    error verificación: ${e.message}`)
       continue
     }
+    log(
+      `    [LLM detalle] ${Date.now() - tVer}ms include=${verdict.include} fit=${verdict.fit || '—'} titleOut="${String(verdict.title || s.title).slice(0, 72)}"`,
+    )
     if (verdict.include !== true) {
       log(`    descartado post-detalle: ${verdict.reason || verdict.redFlags || '—'}`)
       continue
     }
+    log(`    [salida] Rol aceptado → specificUrl = det.finalUrl (location.href) = ${det.finalUrl}`)
     relevantRoles.push({
       title: verdict.title || s.title,
       fit: ['high', 'medium', 'low'].includes(verdict.fit) ? verdict.fit : 'medium',
@@ -483,7 +528,7 @@ async function analyzeWithListAndDetailPages(browser, { companyName, careersUrl,
         String(verdict.reason || '').trim() +
         (s.why ? ` · Listado: ${s.why}` : '') +
         (verdict.redFlags ? ` · ${verdict.redFlags}` : ''),
-      specificUrl: s.url,
+      specificUrl: det.finalUrl,
       verifiedOnDetail: true,
     })
   }

@@ -2,6 +2,11 @@
 /**
  * Lee todos los .pdf en /pdfs, identifica CV vs listado por nombre de archivo,
  * escribe JSON solo en config/generated/ (cv-from-pdf.json, companies-from-pdf.json).
+ *
+ * Listado (laburos remotos): tras cada URL, el texto del PDF hasta el próximo link (~1200 chars)
+ * se usa como proxy de la columna "Where you can work". Solo se conservan URLs cuyo tramo incluye
+ * (sin importar mayúsculas) alguno de: Worldwide, South America, LATAM, Argentina, Uruguay,
+ * Chile, Brasil/Brazil, Paraguay.
  */
 import { createRequire } from 'node:module'
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
@@ -110,21 +115,53 @@ function isPlausibleUrl(u) {
   }
 }
 
-/** Extrae URLs del texto del PDF (incluye cadenas pegadas). */
-function extractAllUrlsFromText(text) {
+/** Texto tras el link en el PDF debe reflejar "Where you can work" (regiones admitidas). */
+function locationMatchesWhereYouCanWork(trail) {
+  const s = String(trail || '').toLowerCase()
+  if (/\bworldwide\b/.test(s)) return true
+  if (/south\s+america/.test(s)) return true
+  if (/\b(latam|argentina|uruguay|chile|brasil|brazil|paraguay)\b/.test(s)) return true
+  return false
+}
+
+/**
+ * URLs únicas con el texto que sigue a cada una en el PDF (hasta el próximo http o 1200 chars).
+ * Sirve para filtrar por columna "Where you can work" cuando el PDF concatena columnas.
+ */
+function extractUrlsWithWhereTrail(text) {
   const t = fixTypos(text)
-  const chunks = t.match(/https?:\/\/[^\s\n]+/gi) || []
-  const all = []
-  const seen = new Set()
-  for (const ch of chunks) {
-    for (const u of explodeUrlsFromChain(ch)) {
+  const re = /https?:\/\/[^\s\n]+/gi
+  const byUrl = new Map()
+  let m
+  while ((m = re.exec(t)) !== null) {
+    const chain = m[0]
+    const chainStart = m.index
+    let searchFrom = 0
+    for (const u of explodeUrlsFromChain(chain)) {
       if (!isPlausibleUrl(u)) continue
-      if (seen.has(u)) continue
-      seen.add(u)
-      all.push(u)
+      const rel = chain.indexOf(u, searchFrom)
+      if (rel < 0) continue
+      searchFrom = rel + u.length
+      const absUrlStart = chainStart + rel
+      const afterUrl = absUrlStart + u.length
+      const nextHttp = t.indexOf('http', afterUrl)
+      const end = nextHttp < 0 ? Math.min(t.length, afterUrl + 1200) : Math.min(nextHttp, afterUrl + 1200)
+      const trail = t
+        .slice(afterUrl, end)
+        .replace(/[\r\n]+/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+      const matches = locationMatchesWhereYouCanWork(trail)
+      const prev = byUrl.get(u)
+      if (!prev) {
+        byUrl.set(u, { url: u, trail, matches })
+      } else {
+        prev.matches = prev.matches || matches
+        if (matches && trail.length > (prev.trail || '').length) prev.trail = trail
+      }
     }
   }
-  return all
+  return [...byUrl.values()]
 }
 
 function careerScore(urlStr) {
@@ -158,10 +195,11 @@ function slug(s) {
     .slice(0, 60) || 'empresa'
 }
 
-/** Una URL por host: la de mayor score tipo careers. */
-function urlsToCompanies(urls) {
+/** Una URL por host: la de mayor score tipo careers (solo entradas que ya pasaron filtro Where). */
+function urlsToCompanies(whereRows) {
   const byHost = new Map()
-  for (const url of urls) {
+  for (const row of whereRows) {
+    const url = row.url
     let host
     try {
       host = new URL(url).hostname.replace(/^www\./, '').toLowerCase()
@@ -170,12 +208,13 @@ function urlsToCompanies(urls) {
     }
     const sc = careerScore(url)
     const prev = byHost.get(host)
-    if (!prev || sc > prev.sc) byHost.set(host, { url, sc })
+    if (!prev || sc > prev.sc) byHost.set(host, { url, sc, trail: row.trail || '' })
   }
-  return [...byHost.entries()].map(([host, { url }]) => ({
+  return [...byHost.entries()].map(([host, { url, trail }]) => ({
     id: slug(host),
     name: host,
     careersUrl: url,
+    whereYouCanWork: String(trail || '').slice(0, 500),
   }))
 }
 
@@ -232,19 +271,32 @@ async function main() {
   if (listName) {
     const buf = await readFile(join(pdfsDir, listName))
     const { text, pages } = await pdfText(buf)
-    const merged = extractAllUrlsFromText(text)
-    const companies = urlsToCompanies(merged)
+    const allRows = extractUrlsWithWhereTrail(text)
+    const passed = allRows.filter((r) => r.matches)
+    const companies = urlsToCompanies(passed)
     const listMeta = {
       sourceFile: listName,
       generatedAt,
       pages,
-      urlsFound: merged,
+      urlsFound: allRows.map((r) => r.url),
+      whereYouCanWorkFilter: {
+        description:
+          'Solo URLs cuyo texto siguiente en el PDF incluye Worldwide, South America, LATAM, Argentina, Uruguay, Chile, Brasil/Brazil o Paraguay (palabras completas donde aplica)',
+        urlsUnique: allRows.length,
+        urlsKept: passed.length,
+        urlsDropped: allRows.length - passed.length,
+      },
       companies,
     }
     await writeFile(join(genDir, 'companies-from-pdf.json'), JSON.stringify(listMeta, null, 2), 'utf8')
     log(
-      `Listado → config/generated/companies-from-pdf.json (${companies.length} empresas, ${merged.length} URLs únicas)`,
+      `Listado → config/generated/companies-from-pdf.json (${companies.length} empresas tras filtro Where you can work; ${passed.length}/${allRows.length} URLs únicas con región admitida)`,
     )
+    if (allRows.length && !passed.length) {
+      log(
+        'ADVERTENCIA: ninguna URL pasó el filtro (revisá el PDF o ampliá el tramo de texto si la columna queda lejos del link).',
+      )
+    }
   } else {
     log('No se encontró PDF de listado')
   }
