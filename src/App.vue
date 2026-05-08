@@ -24,6 +24,13 @@ const reportUrl = computed(() => {
   return `/generated/${file}`
 })
 
+/** Solo encajes con ≥1 rol sugerido (nada de “ninguno cumplió…”). */
+const companiesInReport = computed(() => {
+  const list = report.value?.companies
+  if (!Array.isArray(list)) return []
+  return list.filter((c) => Array.isArray(c.relevantRoles) && c.relevantRoles.length > 0)
+})
+
 async function loadIndex() {
   try {
     const idxRes = await fetch('/generated/index.json', { cache: 'no-store' })
@@ -317,8 +324,12 @@ function formatLastFinished(meta) {
         </template>
       </section>
 
+      <p v-if="companiesInReport.length === 0" class="card muted empty-report">
+        Sin resultados positivos en esta corrida.
+      </p>
+
       <section
-        v-for="c in report.companies"
+        v-for="c in companiesInReport"
         :key="(selectedKey || '') + (c.id || c.name)"
         class="card company"
       >
@@ -338,7 +349,7 @@ function formatLastFinished(meta) {
           <p v-if="!report.usedLLM && c.heuristicScore != null" class="hint">
             Score heurístico: {{ c.heuristicScore }}
           </p>
-          <ul v-if="c.relevantRoles?.length" class="roles">
+          <ul class="roles">
             <li v-for="(r, i) in c.relevantRoles" :key="i">
               <div class="role-title">{{ r.title }}</div>
               <div class="role-meta">
@@ -354,7 +365,6 @@ function formatLastFinished(meta) {
               <p v-if="r.reason" class="role-reason">{{ r.reason }}</p>
             </li>
           </ul>
-          <p v-else class="muted">Sin roles sugeridos para esta empresa.</p>
         </template>
       </section>
     </main>
@@ -433,6 +443,7 @@ code {
   align-items: center;
   gap: 0.5rem;
   margin-top: 0.35rem;
+  margin-bottom: 0.5rem;
 }
 .btn-start,
 .btn-refresh,
@@ -585,6 +596,9 @@ code {
   color: #94a3b8;
   font-size: 0.9rem;
   margin: 0.75rem 0 0;
+}
+.empty-report {
+  margin: 0;
 }
 .tag-verified {
   font-size: 0.75rem;
