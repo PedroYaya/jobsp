@@ -1,6 +1,6 @@
 {
   "sourceFile": "laburosremot copy.pdf",
-  "generatedAt": "2026-05-08T22:25:48.930Z",
+  "generatedAt": "2026-05-08T22:53:57.293Z",
   "pages": 13,
   "urlsFound": [
     "https://10up.com",
@@ -1117,13 +1117,56 @@
     "https://www.escapethecity.org",
     "https://www.linkedin.com/jobs/LinkedIn"
   ],
-  "whereYouCanWorkFilter": {
-    "description": "Solo URLs cuyo texto siguiente en el PDF incluye Worldwide, South America, LATAM, Argentina, Uruguay, Chile, Brasil/Brazil o Paraguay (palabras completas donde aplica)",
-    "urlsUnique": 1113,
-    "urlsKept": 107,
-    "urlsDropped": 1006
-  },
+  "urlRowsUnique": 1113,
   "companies": [
+    {
+      "id": "10up-com",
+      "name": "10up.com",
+      "careersUrl": "https://10up.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetCraft websites and tools for content creators.Worldwide19% YoY growth (323 → 383 employees) 3.9/5 ⭐ rating (111 reviews) | 77% CEO approval Ably/"
+    },
+    {
+      "id": "ably-io",
+      "name": "ably.io",
+      "careersUrl": "https://www.ably.io",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "ably-com",
+      "name": "ably.com",
+      "careersUrl": "https://ably.com/careers",
+      "whereYouCanWork": "Technology, Information and InternetRealtime experience platform for developers.Worldwide8% YoY growth (110 → 119 employees) 4.2/5 ⭐ rating (54 reviews) | 89% CEO approval 17hats/"
+    },
+    {
+      "id": "17hats-com",
+      "name": "17hats.com",
+      "careersUrl": "https://www.17hats.com",
+      "whereYouCanWork": "/Technology, Information and InternetBusiness management and automation software United States100% YoY growth (15 → 30 products) 3.0/5 ⭐ rating (22 reviews) 1Password/"
+    },
+    {
+      "id": "1password-com",
+      "name": "1password.com",
+      "careersUrl": "https://1password.com/careers",
+      "whereYouCanWork": "Computer and Network SecurityBusiness password and data protection software Worldwide46% YoY growth (1711 → 2497 employees) 3.4/5 ⭐ rating (316 reviews) | 78% CEO approval Noom/"
+    },
+    {
+      "id": "noom-com",
+      "name": "noom.com",
+      "careersUrl": "https://www.noom.com/careers",
+      "whereYouCanWork": "/Wellness and Fitness ServicesBehavior change for healthier livingWorldwide, United States, Seoul, Tokyo -2% YoY growth (1285 → 1256 employees) 2.8/5 ⭐ rating (1,355 reviews) | 39% CEO approval Ad Hoc/"
+    },
+    {
+      "id": "adhocteam-us",
+      "name": "adhocteam.us",
+      "careersUrl": "https://www.adhocteam.us",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "adhoc-team",
+      "name": "adhoc.team",
+      "careersUrl": "https://adhoc.team/careers",
+      "whereYouCanWork": "/Software DevelopmentDigital transformation for federal servicesUnited States-7% YoY growth (497 → 462 employees) 3.2/5 ⭐ rating (129 reviews) | 56% CEO approval ActiveCampaign/"
+    },
     {
       "id": "activecampaign-com",
       "name": "activecampaign.com",
@@ -1137,10 +1180,46 @@
       "whereYouCanWork": "Software DevelopmentAgency enhancing technology solutions and innovation. United States, Brazil-6% YoY growth (185 → 174 employees) 4.0/5 ⭐ rating (43 reviews) | 76% CEO approval AddStructure/"
     },
     {
+      "id": "bazaarvoice-com",
+      "name": "bazaarvoice.com",
+      "careersUrl": "https://www.bazaarvoice.com/company/careers",
+      "whereYouCanWork": "/Software DevelopmentUser-generated content platform for brands.United States, United Kingdom, India, Lithuania, Canada, France 6% YoY growth (1683 → 1785 employees) 3.9/5 ⭐ rating (780 reviews) | 87% CEO approval Acquia/"
+    },
+    {
+      "id": "acquia-com",
+      "name": "acquia.com",
+      "careersUrl": "https://www.acquia.com/careers",
+      "whereYouCanWork": "Software DevelopmentOpen-source digital experience platform.Worldwide1% YoY growth (1136 → 1148 employees) 3.6/5 ⭐ rating (543 reviews) | 68% CEO approval Adeva/"
+    },
+    {
       "id": "adevait-com",
       "name": "adevait.com",
       "careersUrl": "https://adevait.com/careers/job-openings/Akl9DwRe5rInternet",
       "whereYouCanWork": "Marketplace PlatformsGlobal tech talent network and staffingEurope, India, North America, South America, Eastern Europe -13% YoY growth (111 → 97 employees) BeBanjo/"
+    },
+    {
+      "id": "bebanjo-com",
+      "name": "bebanjo.com",
+      "careersUrl": "https://www.bebanjo.com/company/careers",
+      "whereYouCanWork": "Software DevelopmentSmart content lifecycle management platformWorldwide8% YoY growth (341 → 369 employees) 5.0/5 ⭐ rating (5 reviews) Broadwing/"
+    },
+    {
+      "id": "broadwing-io",
+      "name": "broadwing.io",
+      "careersUrl": "https://www.broadwing.io",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "broadwing-catsone-com",
+      "name": "broadwing.catsone.com",
+      "careersUrl": "https://broadwing.catsone.com/careers/88237-General/IT",
+      "whereYouCanWork": "Services and IT ConsultingRemote engineering services and solutions provider. United States23% YoY growth (30 → 37 employees) Betable/"
+    },
+    {
+      "id": "corp-betable-com",
+      "name": "corp.betable.com",
+      "careersUrl": "https://corp.betable.com",
+      "whereYouCanWork": "/"
     },
     {
       "id": "betable-com",
@@ -1149,10 +1228,52 @@
       "whereYouCanWork": "/Worldwide, United Kingdom 4.4/5 ⭐ rating (4 reviews) | 100% CEO approval Big Cartel/"
     },
     {
+      "id": "bigcartel-com",
+      "name": "bigcartel.com",
+      "careersUrl": "https://www.bigcartel.com/company/jobs",
+      "whereYouCanWork": "Software DevelopmentTools for artists' online storesUnited States40% YoY growth (65 → 91 employees) 3.6/5 ⭐ rating (16 reviews) | 89% CEO approval Aula Education/"
+    },
+    {
+      "id": "aula-education",
+      "name": "aula.education",
+      "careersUrl": "https://www.aula.education/careers",
+      "whereYouCanWork": "Higher EducationCommunity-focused learning experience platform Worldwide22% YoY growth (41 → 50 employees) 4.3/5 ⭐ rating (37 reviews) | 100% CEO approval Automattic/"
+    },
+    {
+      "id": "automattic-com",
+      "name": "automattic.com",
+      "careersUrl": "https://automattic.com/work-with-us",
+      "whereYouCanWork": "/Software DevelopmentWeb development and publishing platforms.Worldwide1% YoY growth (4050 → 4104 employees) 3.9/5 ⭐ rating (423 reviews) | 61% CEO approval Bitovi/"
+    },
+    {
       "id": "bitovi-com",
       "name": "bitovi.com",
       "careersUrl": "https://www.bitovi.com/about/jobs",
       "whereYouCanWork": "Software DevelopmentEnd-to-end software development and consulting. North America, South America, United Kingdom -5% YoY growth (76 → 72 employees) 4.1/5 ⭐ rating (17-20 reviews) | 65% CEO approval Bill/"
+    },
+    {
+      "id": "bill-com",
+      "name": "bill.com",
+      "careersUrl": "https://www.bill.com/careers",
+      "whereYouCanWork": "Software DevelopmentFinancial automation software for SMBsUnited States6% YoY growth (3030 → 3224 employees) 3.6/5 ⭐ rating (635 reviews) Animalz/"
+    },
+    {
+      "id": "animalz-co",
+      "name": "animalz.co",
+      "careersUrl": "https://www.animalz.co/join-us",
+      "whereYouCanWork": "/Advertising ServicesContent marketing for business professionalsWorldwide-18% YoY growth (39 → 32 employees) 2.9/5 ⭐ rating (73 reviews) | 100% CEO approval Axios/"
+    },
+    {
+      "id": "axios-com",
+      "name": "axios.com",
+      "careersUrl": "https://www.axios.com/careers",
+      "whereYouCanWork": "Internet NewsNews and analysis on mobile platform.United States-1% YoY growth (622 → 617 employees) 3.8/5 ⭐ rating (215 reviews) | 78% CEO approval YAZIO/"
+    },
+    {
+      "id": "yazio-com",
+      "name": "yazio.com",
+      "careersUrl": "https://www.yazio.com/en/jobs",
+      "whereYouCanWork": "Wellness and Fitness ServicesRemote nutrition and health appGermany, Spain, Portugal, United Kingdom 37% YoY growth (85 → 116 employees) 4.9/5 ⭐ rating (14 reviews) | 100% CEO approval argyle/"
     },
     {
       "id": "argyle-com",
@@ -1161,16 +1282,118 @@
       "whereYouCanWork": "/Financial ServicesReal-time income and employment data access Worldwide-8% YoY growth (144 → 132 employees) 3.8/5 ⭐ rating (30 reviews) | 84% CEO approval Annertech/"
     },
     {
+      "id": "annertech-com",
+      "name": "annertech.com",
+      "careersUrl": "https://www.annertech.com/careers",
+      "whereYouCanWork": "Software DevelopmentLeading Drupal web development agencyIreland, France, Sweden, Czech Republic, Spain, Croatia, United Kingdom 0% YoY growth (35 → 35 employees)0 reviews | no rating available Articulate/"
+    },
+    {
+      "id": "articulate-com",
+      "name": "articulate.com",
+      "careersUrl": "https://www.articulate.com/about/careers",
+      "whereYouCanWork": "/Software DevelopmentE-learning software and resources development. United States15% YoY growth (494 → 569 employees) 3.7/5 ⭐ rating (184 reviews) | 58% CEO approval Auth0/"
+    },
+    {
+      "id": "auth0-com",
+      "name": "auth0.com",
+      "careersUrl": "https://auth0.com/careers",
+      "whereYouCanWork": "IT Services and IT ConsultingIdentity and access management platformWorldwide-12% YoY growth (443 → 392 employees) 4.5/5 ⭐ rating (221 reviews) | 99% CEO approval Virta Health/"
+    },
+    {
+      "id": "virtahealth-com",
+      "name": "virtahealth.com",
+      "careersUrl": "https://www.virtahealth.com/careers",
+      "whereYouCanWork": "Hospitals and Health CarePersonalized nutrition for diabetes and obesity. Worldwide43% YoY growth (483 → 689 employees) 3.3/5 ⭐ rating (185 reviews) | 81% CEO approval Aim India/"
+    },
+    {
+      "id": "aimincorp-com",
+      "name": "aimincorp.com",
+      "careersUrl": "https://www.aimincorp.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "crunchbase-com",
+      "name": "crunchbase.com",
+      "careersUrl": "https://www.crunchbase.com/organi",
+      "whereYouCanWork": "zation/brave-investment/"
+    },
+    {
+      "id": "about-crunchbase-com",
+      "name": "about.crunchbase.com",
+      "careersUrl": "https://about.crunchbase.com/about-us/careers",
+      "whereYouCanWork": "Software DevelopmentPrivate-company data and prospecting solutions. United States3% YoY growth (251 → 259 employees) 4.6/5 ⭐ rating (34 reviews) | 100% CEO approval Bairesdev/"
+    },
+    {
+      "id": "bairesdev-com",
+      "name": "bairesdev.com",
+      "careersUrl": "https://www.bairesdev.com/join-us/IT",
+      "whereYouCanWork": "Services and IT ConsultingHigh-quality, scalable software development services. Worldwide3% YoY growth (3005 → 3008 employees) 4.1/5 ⭐ rating (950 reviews) | 89% CEO approval Artefactual Systems/"
+    },
+    {
       "id": "artefactual-com",
       "name": "artefactual.com",
       "careersUrl": "https://www.artefactual.com/careers",
       "whereYouCanWork": "Software DevelopmentOpen-source digital preservation and archival software. Worldwide-3% YoY growth (31 → 30 employees) 4.9/5 ⭐ rating (4 reviews) Appwrite/"
     },
     {
+      "id": "appwrite-io",
+      "name": "appwrite.io",
+      "careersUrl": "https://appwrite.io",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "appwrite-careers",
+      "name": "appwrite.careers",
+      "careersUrl": "https://www.appwrite.careers",
+      "whereYouCanWork": "/Technology, Information and InternetOpen-source backend development platformWorldwide-9% YoY growth (56 → 51 employees) 5.0/5 ⭐ rating (3 reviews) Axelerant/"
+    },
+    {
       "id": "axelerant-com",
       "name": "axelerant.com",
       "careersUrl": "https://www.axelerant.com/careers",
       "whereYouCanWork": "IT Services and IT ConsultingRemote success management and delivery services Worldwide-4% YoY growth (211 → 202 employees) 4.5/5 ⭐ rating (143 reviews) | 96% CEO approval Bloc/"
+    },
+    {
+      "id": "bloc-io",
+      "name": "bloc.io",
+      "careersUrl": "https://www.bloc.io",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "osv-chegg-wd5-myworkdayjobs-com",
+      "name": "osv-chegg.wd5.myworkdayjobs.com",
+      "careersUrl": "https://osv-chegg.wd5.myworkdayjobs.com/CheggE-Learning",
+      "whereYouCanWork": "ProvidersTech bootcamp prioritizing student success.United Kingdom, Spain, United States, India -26% YoY growth (743 → 551 employees) 3.2/5 ⭐ rating (142 reviews) | 66% CEO approval Thorn/"
+    },
+    {
+      "id": "applaudostudios-com",
+      "name": "applaudostudios.com",
+      "careersUrl": "https://applaudostudios.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-smartrecruiters-com",
+      "name": "careers.smartrecruiters.com",
+      "careersUrl": "https://careers.smartrecruiters.com/ApplaudoStudiosIT",
+      "whereYouCanWork": "Services and IT ConsultingNearshore digital solutions and tech talent.El Salvador, Mexico, Colombia11% YoY growth (471 → 523 employees) 3.5/5 ⭐ rating (217 reviews) Audiense/"
+    },
+    {
+      "id": "audiense-com",
+      "name": "audiense.com",
+      "careersUrl": "https://www.audiense.com/jobs/careers",
+      "whereYouCanWork": "Advertising ServicesSocial audience insights and marketing tools.Worldwide3% YoY growth (69 → 71 employees) 4.3/5 ⭐ rating (23 reviews) | 100% CEO approval Anomali/"
+    },
+    {
+      "id": "anomali-com",
+      "name": "anomali.com",
+      "careersUrl": "https://www.anomali.com/company/careers",
+      "whereYouCanWork": "Computer and Network SecurityAI-powered security and IT operations platform United States19 YoY growth (286 → 340 employees) 3.2/5 ⭐ rating (157 reviews) | 48% CEO approval Balsamiq/"
+    },
+    {
+      "id": "balsamiq-com",
+      "name": "balsamiq.com",
+      "careersUrl": "https://balsamiq.com/company/jobs",
+      "whereYouCanWork": "/Software DevelopmentUser interface wireframing tool.Italy, France, Germany, United States -14% YoY growth (44 → 38 employees) 5.0/5 ⭐ rating (1 review) BandLab/"
     },
     {
       "id": "bandlab-com",
@@ -1185,16 +1408,88 @@
       "whereYouCanWork": "Entertainment ProvidersCreates and sells entertainment merchandise.Worldwide 5.0/5 ⭐ rating (1 review) apartment therapy/"
     },
     {
+      "id": "apartmenttherapy-com",
+      "name": "apartmenttherapy.com",
+      "careersUrl": "http://www.apartmenttherapy.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "apartmenttherapymedia-com",
+      "name": "apartmenttherapymedia.com",
+      "careersUrl": "https://www.apartmenttherapymedia.com/jobs",
+      "whereYouCanWork": "Technology, Information and InternetHome lifestyle and design media company.New York, United States, Chicago, United States -1% YoY growth (260 → 257 employees) 4.3/5 ⭐ rating (49 reviews) | 83% CEO approval BeenVerified/"
+    },
+    {
       "id": "beenverified-com",
       "name": "beenverified.com",
       "careersUrl": "https://www.beenverified.com/careers",
       "whereYouCanWork": "/Technology, Information and InternetPublic records access platformArgentina, Colombia, India, United States, Peru, Philippines, Uruguay -5% YoY growth (37 → 35 employees) 4.3/5 ⭐ rating (19 reviews) | 92% CEO approval Bounteous/"
     },
     {
+      "id": "bounteous-com",
+      "name": "bounteous.com",
+      "careersUrl": "https://www.bounteous.com/careers",
+      "whereYouCanWork": "IT Services and IT ConsultingEnd-to-end digital transformation consultancy. United States, Canada, Mexico, India, Europe 1% YoY growth (1618 → 1630 employees) 3.4/5 ⭐ rating (497 reviews) | 57% CEO approval Bonsai/"
+    },
+    {
+      "id": "hellobonsai-com",
+      "name": "hellobonsai.com",
+      "careersUrl": "https://www.hellobonsai.com/careers",
+      "whereYouCanWork": "Technology, Information and InternetBusiness management software platformWorldwide0% YoY growth (52 → 52 employees) 5.0/5 ⭐ rating (1 review) Alami/"
+    },
+    {
+      "id": "alamisharia-co-id",
+      "name": "alamisharia.co.id",
+      "careersUrl": "https://alamisharia.co.id/en/career",
+      "whereYouCanWork": "/Financial ServicesSharia-compliant SME financing platform.Worldwide10 YoY growth (442 → 485 employees) 4.6/5 ⭐ rating (29 reviews) AirGarage/"
+    },
+    {
       "id": "airgarage-com",
       "name": "airgarage.com",
       "careersUrl": "https://www.airgarage.com/careers?srsltid=AfmBOopZsTQ7X1UiD90u9bBP3IfRGtRcMBD7SFGtXiwyg8Gp_QcbgPojTechnology",
       "whereYouCanWork": ", Information and InternetComprehensive parking management solutions Worldwide-11% YoY growth (61 → 54 employees) 4.4/5 ⭐ rating (17 reviews) | 72% CEO approval Alight Solutions/"
+    },
+    {
+      "id": "alight-com",
+      "name": "alight.com",
+      "careersUrl": "https://alight.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-alight-com",
+      "name": "careers.alight.com",
+      "careersUrl": "https://careers.alight.com",
+      "whereYouCanWork": "/Human Resources ServicesCloud-based human capital technology provider Canada, India, Poland, United States -20% YoY growth (14093 → 11247 employees) 3.3/5 ⭐ rating (3,978 reviews) | 48% CEO approval Astronomer/"
+    },
+    {
+      "id": "astronomer-io",
+      "name": "astronomer.io",
+      "careersUrl": "https://www.astronomer.io/careers",
+      "whereYouCanWork": "/Software DevelopmentDataOps platform for analytics and AIWorldwide21% YoY growth (275 → 334 employees) 4.3/5 ⭐ rating (82 reviews) | 98% CEO approval Boldare/"
+    },
+    {
+      "id": "boldare-com",
+      "name": "boldare.com",
+      "careersUrl": "https://www.boldare.com/career/IT",
+      "whereYouCanWork": "Services and IT ConsultingInnovative product development services.Poland, Germany, Sweden, Portugal, Netherlands -45% YoY growth (137 → 76 employees) 3.8/5 ⭐ rating (29 reviews) | 87% CEO approval AlphaSights/"
+    },
+    {
+      "id": "engineering-alphasights-com",
+      "name": "engineering.alphasights.com",
+      "careersUrl": "https://engineering.alphasights.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "alphasights-com",
+      "name": "alphasights.com",
+      "careersUrl": "https://www.alphasights.com/careers/engineering-product",
+      "whereYouCanWork": "/Information ServicesKnowledge on-demand for investors and businesses. Americas, United Kingdom, Germany, Greater China, Korea, Japan 13% YoY growth (2859 → 3243 employees) 3.4/5 ⭐ rating (1,679 reviews) | 71% CEO approval Appinio/"
+    },
+    {
+      "id": "appinio-com",
+      "name": "appinio.com",
+      "careersUrl": "https://www.appinio.com/en/careers",
+      "whereYouCanWork": "Market ResearchAI-powered global market research platformWorldwide29% YoY growth (221 → 285 employees) 3.7/5 ⭐ rating (58 reviews) | 86% CEO approval Alan/"
     },
     {
       "id": "alan-com",
@@ -1209,10 +1504,148 @@
       "whereYouCanWork": "Software DevelopmentTeam collaboration and productivity software. Worldwide-15% YoY growth (19913 → 16911 employees) 3.7/5 ⭐ rating (2,786 reviews) | 71% CEO approval Airbank/"
     },
     {
+      "id": "joinairbank-com",
+      "name": "joinairbank.com",
+      "careersUrl": "https://www.joinairbank.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "airbank-it",
+      "name": "airbank.it",
+      "careersUrl": "https://www.airbank.it/en/azienda/lavora_con_noi.phpItaly",
+      "whereYouCanWork": "3.8/5 ⭐ rating (5 reviews) Amazon/"
+    },
+    {
+      "id": "amazon-jobs",
+      "name": "amazon.jobs",
+      "careersUrl": "https://www.amazon.jobs/en/locatio",
+      "whereYouCanWork": "ns/virtual-locations/"
+    },
+    {
+      "id": "basecamp-com",
+      "name": "basecamp.com",
+      "careersUrl": "https://basecamp.com/handbook/making-a-careerWorldwide",
+      "whereYouCanWork": "5.0/5 ⭐ rating (1 review) Balena/"
+    },
+    {
+      "id": "balena-io",
+      "name": "balena.io",
+      "careersUrl": "https://www.balena.io",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "apply-workable-com",
+      "name": "apply.workable.com",
+      "careersUrl": "https://apply.workable.com/balena/?lng=enEmbedded",
+      "whereYouCanWork": "Software ProductsIoT device fleet management platformWorldwide7% YoY growth (72 → 77 employees) 4.3/5 ⭐ rating (42 reviews) Aerolab/"
+    },
+    {
+      "id": "aerolab-co",
+      "name": "aerolab.co",
+      "careersUrl": "https://aerolab.co/careers",
+      "whereYouCanWork": "Information Technology and ServicesDigital product and branding agencyWorldwide-1% YoY growth (84 → 83 employees) 4.2/5 ⭐ rating (66 reviews) | 97% CEO approval Aha!"
+    },
+    {
+      "id": "aha-io",
+      "name": "aha.io",
+      "careersUrl": "https://www.aha.io/company/careers",
+      "whereYouCanWork": "Software DevelopmentProduct development and strategy softwareWorldwide103% YoY growth (161 → 327 employees) 4.6/5 ⭐ rating (109 reviews) | 91% CEO approval BlueCat Networks/"
+    },
+    {
+      "id": "bluecatnetworks-com",
+      "name": "bluecatnetworks.com",
+      "careersUrl": "https://bluecatnetworks.com/careers",
+      "whereYouCanWork": "/Software DevelopmentNetwork solutions and DDI management.Canada, United States, Iceland, Europe, Germany, Japan, Serbia, Singapore, Belgrade, Malaysia, Reykjavik, Toronto -6% YoY growth (661 → 623 employees) 4.2/5 ⭐ rating (270 reviews) | 86% CEO approval Alley/"
+    },
+    {
+      "id": "alley-co",
+      "name": "alley.co",
+      "careersUrl": "https://alley.co",
+      "whereYouCanWork": "/"
+    },
+    {
       "id": "alley-com",
       "name": "alley.com",
       "careersUrl": "https://alley.com/careers/IT",
       "whereYouCanWork": "Services and IT ConsultingCustom digital experiences for publishers and brands. United States, North America, South America -22% YoY growth (58 → 45 employees) 3.6/5 ⭐ rating (34 reviews) | 48% CEO approval Coursera/"
+    },
+    {
+      "id": "coursera-org",
+      "name": "coursera.org",
+      "careersUrl": "https://www.coursera.org",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-coursera-com",
+      "name": "careers.coursera.com",
+      "careersUrl": "https://careers.coursera.com/E-Learning",
+      "whereYouCanWork": "ProvidersOnline learning platform and education provider United Arab Emirates, Bulgaria, Canada, Colombia, Germany, France, United Kingdom, Indonesia, India, Mexico, Philippines, Saudi Arabia, Singapore, Thailand, United States 18% YoY growth (4509 → 5303 employees) 3.6/5 ⭐ rating (462 reviews) | 60% CEO approval Coingape/"
+    },
+    {
+      "id": "coingape-com",
+      "name": "coingape.com",
+      "careersUrl": "https://coingape.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetCrypto news and marketing servicesIndia, Dubai42% YoY growth (50 → 71 employees) 3.5/5 ⭐ rating (45 reviews) | 58% CEO approval Compucorp/"
+    },
+    {
+      "id": "compucorp-co-uk",
+      "name": "compucorp.co.uk",
+      "careersUrl": "https://www.compucorp.co.uk",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-compuco-io",
+      "name": "careers.compuco.io",
+      "careersUrl": "https://careers.compuco.io",
+      "whereYouCanWork": "/Software DevelopmentWorldwide 4.3/5 ⭐ rating (23 reviews) | 84% CEO approval Coinbase/"
+    },
+    {
+      "id": "coinbase-com",
+      "name": "coinbase.com",
+      "careersUrl": "https://www.coinbase.com/careers",
+      "whereYouCanWork": "Financial ServicesDigital currency wallet and platform.Worldwide20% YoY growth (4,742 → 5,677 employees) 3.7/5 ⭐ rating (907 reviews) | 71% CEO approval Crossover/"
+    },
+    {
+      "id": "crossover-com",
+      "name": "crossover.com",
+      "careersUrl": "https://www.crossover.com/jobs",
+      "whereYouCanWork": "IT Services and IT Consulting\"Recruit elite remote tech talent globally\"Worldwide11% YoY growth (2460 → 2742 employees) 3.4/5 ⭐ rating (39 reviews) | 65% CEO approval Customer.io/"
+    },
+    {
+      "id": "customer-io",
+      "name": "customer.io",
+      "careersUrl": "https://customer.io/careers",
+      "whereYouCanWork": "Software DevelopmentCustomer engagement platform for personalized messaging. Worldwide21% YoY growth (330 → 398 employees) 3.4/5 ⭐ rating (64 reviews) | 79% CEO approval CoreOS/"
+    },
+    {
+      "id": "coreos-com",
+      "name": "coreos.com",
+      "careersUrl": "https://coreos.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "redhat-com",
+      "name": "redhat.com",
+      "careersUrl": "https://www.redhat.com/en/jobs",
+      "whereYouCanWork": "Software DevelopmentEnterprise open source solutions providerWorldwide1% YoY growth (19,310 → 19,530 employees) 4.2/5 ⭐ rating (4,654 reviews) | 77% CEO approval Rackspace/"
+    },
+    {
+      "id": "crowdstrike-com",
+      "name": "crowdstrike.com",
+      "careersUrl": "https://www.crowdstrike.com/en-us/careers",
+      "whereYouCanWork": "/Computer and Network SecurityCloud-native cybersecurity solutions provider. United States, Denmark, Spain, India, Belgium, Romania, United Kingdom, United Arab Emirates, Japan, Saudi Arabia, Singapore, Australia, Israel 27% YoY growth (7786 → 9909 employees) 4.2/5 ⭐ rating (1,072 reviews) | 91% CEO approval Convert/"
+    },
+    {
+      "id": "convert-com",
+      "name": "convert.com",
+      "careersUrl": "https://www.convert.com/jobs",
+      "whereYouCanWork": "/Software DevelopmentA/B testing and optimization softwareWorldwide59% YoY growth (29 → 46 employees) 4.0/5 ⭐ rating (8 reviews) ConsenSys/"
+    },
+    {
+      "id": "consensys-net",
+      "name": "consensys.net",
+      "careersUrl": "https://consensys.net",
+      "whereYouCanWork": "/"
     },
     {
       "id": "consensys-io",
@@ -1227,6 +1660,30 @@
       "whereYouCanWork": "DevelopmentOpen Source software consultancy and development. Worldwide, Cambridge, Montreal, Africa, Asia, Europe, Oceania, North America, South America, Canada, UK, United States -6% YoY growth (132 → 124 employees) 3.6/5 ⭐ rating (21 reviews) | 71% CEO approval Cuvette/"
     },
     {
+      "id": "cuvette-tech",
+      "name": "cuvette.tech",
+      "careersUrl": "https://cuvette.tech",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "instahyre-com",
+      "name": "instahyre.com",
+      "careersUrl": "https://www.instahyre.com/jobs-at-cuvette-tech/EducationIT",
+      "whereYouCanWork": "job placement platform for graduates.India115% YoY growth (40 → 86 employees) 4.0/5 ⭐ rating (6 reviews) | CEO approval Coalition Technologies/"
+    },
+    {
+      "id": "coalitiontechnologies-com",
+      "name": "coalitiontechnologies.com",
+      "careersUrl": "https://coalitiontechnologies.com/jobs",
+      "whereYouCanWork": "Advertising ServicesSEO and web design servicesWorldwide-6% YoY growth (318 → 300 employees) 4.3/5 ⭐ rating (295 reviews) | 87% CEO approval Continu/"
+    },
+    {
+      "id": "continu-co",
+      "name": "continu.co",
+      "careersUrl": "https://www.continu.co",
+      "whereYouCanWork": "/"
+    },
+    {
       "id": "continu-com",
       "name": "continu.com",
       "careersUrl": "https://www.continu.com/careers",
@@ -1235,14 +1692,56 @@
     {
       "id": "caremessage-org",
       "name": "caremessage.org",
-      "careersUrl": "https://www.caremessage.org/about-us/careers",
-      "whereYouCanWork": "/Hospitals and Health CarePatient engagement platform for low-income populations. Brazil, India, United States41% YoY growth (44 → 62 employees) 3.4/5 ⭐ rating (28 reviews) | 50% CEO approval Clootrack/"
+      "careersUrl": "https://caremessage.org/careers",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "clootrack-com",
+      "name": "clootrack.com",
+      "careersUrl": "https://www.clootrack.com/careers",
+      "whereYouCanWork": "Technology, Information and InternetAI-driven customer experience analytics platform New York, San Francisco-1% YoY growth (117 → 116 employees) 4.2/5 ⭐ rating (85 reviews) | 95% CEO approval Celsius/"
+    },
+    {
+      "id": "celsius-network",
+      "name": "celsius.network",
+      "careersUrl": "https://celsius.network/careers",
+      "whereYouCanWork": "Financial ServicesBlockchain-based financial services platformWorldwide, United States, London, Tel Aviv -14% YoY growth (173 → 148 employees) 3.1/5 ⭐ rating (105 reviews) | 15% CEO approval CircleCI/"
+    },
+    {
+      "id": "circleci-com",
+      "name": "circleci.com",
+      "careersUrl": "https://circleci.com/careers",
+      "whereYouCanWork": "/Software DevelopmentContinuous Integration/Continuous Deployment (CI/CD) platform United States, Canada, United Kingdom, Ireland, Germany, Japan -32% YoY growth (470 → 320 employees) 3.4/5 ⭐ rating (153 reviews) | 51% CEO approval Close/"
     },
     {
       "id": "close-com",
       "name": "close.com",
       "careersUrl": "https://www.close.com/careers",
       "whereYouCanWork": "Software DevelopmentRemote CRM for small, scaling businesses.Worldwide, United States30% YoY growth (131 → 171 employees) 4.8/5 ⭐ rating (53 reviews) | 96% CEO approval CivicActions/"
+    },
+    {
+      "id": "civicactions-com",
+      "name": "civicactions.com",
+      "careersUrl": "https://civicactions.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetGovernment digital services and software consultancy. United States, Canada0% YoY growth (124 → 124 employees) 4.4/5 ⭐ rating (42 reviews) | 90% CEO approval charity: water/"
+    },
+    {
+      "id": "charitywater-org",
+      "name": "charitywater.org",
+      "careersUrl": "https://www.charitywater.org/about/jobsNon-profit",
+      "whereYouCanWork": "Organization Management\"Provides clean water access globally\"United States5% YoY growth (318 → 334 employees) 4.2/5 ⭐ rating (62 reviews) | 92% CEO approval ClickUp/"
+    },
+    {
+      "id": "clickup-com",
+      "name": "clickup.com",
+      "careersUrl": "https://clickup.com/careers",
+      "whereYouCanWork": "Software DevelopmentAll-in-one productivity platformUnited States, Canada, Ireland, United Kingdom, Australia, Philippines, Poland, Hungary, Czechia, Bulgaria, Ukraine, India 17% YoY growth (1071 → 1246 employees) 3.9/5 ⭐ rating (434 reviews) | 77% CEO approval Capital One"
+    },
+    {
+      "id": "capitalonecareers-com",
+      "name": "capitalonecareers.com",
+      "careersUrl": "https://www.capitalonecareers.com/t",
+      "whereYouCanWork": "ech/"
     },
     {
       "id": "canonical-com",
@@ -1257,16 +1756,142 @@
       "whereYouCanWork": "Technology, Information and InternetWeb performance monitoring and insights platform. Worldwide CANCOM/"
     },
     {
+      "id": "cancom-com",
+      "name": "cancom.com",
+      "careersUrl": "https://www.cancom.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "career-cancom-com",
+      "name": "career.cancom.com",
+      "careersUrl": "https://career.cancom.com/IT",
+      "whereYouCanWork": "Services and IT ConsultingDigital business and IT solutions provider.Germany, Austria, Switzerland, Belgium, Slovakia, Romania, Czech Republic, United Kingdom, United States 9% YoY growth (2242 → 2444 employees) 3.6/5 ⭐ rating (194 reviews) | 83% CEO approval Precision Nutrition/"
+    },
+    {
+      "id": "precisionnutrition-com",
+      "name": "precisionnutrition.com",
+      "careersUrl": "https://www.precisionnutrition.com/careers",
+      "whereYouCanWork": "Wellness and Fitness ServicesRemote nutrition coaching and certification programs United States, Canada, Costa Rica, England -2% YoY growth (383 → 376 employees) 4.5/5 ⭐ rating (23 reviews) CartoDB/"
+    },
+    {
+      "id": "cartodb-com",
+      "name": "cartodb.com",
+      "careersUrl": "https://cartodb.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "carto-com",
+      "name": "carto.com",
+      "careersUrl": "https://carto.com/careers",
+      "whereYouCanWork": "Technology, Information and InternetCloud-based spatial analytics platformUnited States, Spain-4% YoY growth (310 → 298 employees) 3.8/5 ⭐ rating (68 reviews) | 67% CEO approval Modern Health/"
+    },
+    {
+      "id": "modernhealth-com",
+      "name": "modernhealth.com",
+      "careersUrl": "https://www.modernhealth.com/careers",
+      "whereYouCanWork": "Mental Health CareGlobal mental health support platformUnited States4% YoY growth (843 → 879 employees) 3.2/5 ⭐ rating (181 reviews) | 44% CEO approval Carbon Black/"
+    },
+    {
+      "id": "carbonblack-com",
+      "name": "carbonblack.com",
+      "careersUrl": "https://www.carbonblack.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "broadcom-com",
+      "name": "broadcom.com",
+      "careersUrl": "https://www.broadcom.com/company/careers",
+      "whereYouCanWork": "Semiconductor ManufacturingInfrastructure technology and engineering solutions. United States, India, Malaysia, Singapore, Bulgaria, Czech Republic, United Kingdom, Israel, Canada 4% YoY growth (57392 → 59754 employees) 4.2/5 ⭐ rating (213 reviews) | 88% CEO approval BuySellAds/"
+    },
+    {
       "id": "buysellads-com",
       "name": "buysellads.com",
       "careersUrl": "https://www.buysellads.com/careers",
       "whereYouCanWork": "Technology, Information and MediaContextual advertising and publisher monetization platform. Worldwide-5% YoY growth (41 → 39 employees) 3.9/5 ⭐ rating (15 reviews) | 83% CEO approval Calamari/"
     },
     {
-      "id": "apply-workable-com",
-      "name": "apply.workable.com",
-      "careersUrl": "https://apply.workable.com/imachines",
-      "whereYouCanWork": "/Research ServicesOnline security and machine intelligence solutions Brazil, Poland, United Kingdom, Canada, Bulgaria, Argentina, Malaysia, Philippines -1% YoY growth (88 → 87 employees) 2.6/5 ⭐ rating (2 reviews) IOHK/"
+      "id": "calamari-io",
+      "name": "calamari.io",
+      "careersUrl": "https://www.calamari.io/careerHuman",
+      "whereYouCanWork": "Resources ServicesOnline HR software for leave and attendance management. Worldwide31% YoY growth (45 → 59 employees) 5.0/5 ⭐ rating (1 review) Buffer/"
+    },
+    {
+      "id": "buffer-com",
+      "name": "buffer.com",
+      "careersUrl": "https://buffer.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "imachines-com",
+      "name": "imachines.com",
+      "careersUrl": "https://www.imachines.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "iohk-io",
+      "name": "iohk.io",
+      "careersUrl": "https://iohk.io",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "invisionapp-com",
+      "name": "invisionapp.com",
+      "careersUrl": "https://www.invisionapp.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetVisual collaboration platform for teamsWorldwide-27% YoY growth (477 → 348 employees) 3.8/5 ⭐ rating (381 reviews) | 71% CEO approval Imagine Learning/"
+    },
+    {
+      "id": "imaginelearning-com",
+      "name": "imaginelearning.com",
+      "careersUrl": "https://www.imaginelearning.com/about/careers/E-Learning",
+      "whereYouCanWork": "ProvidersEducational technology for personalized learning United States, United Kingdom, Ireland 19% YoY growth (1516 → 1799 employees) 3.0/5 ⭐ rating (514 reviews) | 34% CEO approval Incsub/"
+    },
+    {
+      "id": "incsub-com",
+      "name": "incsub.com",
+      "careersUrl": "https://incsub.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetWordPress solutions and hosting services.Worldwide21% YoY growth (28 → 34 employees) 3.6/5 ⭐ rating (27 reviews) Intercom/"
+    },
+    {
+      "id": "intercom-io",
+      "name": "intercom.io",
+      "careersUrl": "https://www.intercom.io",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "intercom-com",
+      "name": "intercom.com",
+      "careersUrl": "https://www.intercom.com/careers",
+      "whereYouCanWork": "Software DevelopmentAI-driven customer service platformUnited States, Ireland, United Kingdom, Australia 13% YoY growth (1416 → 1598 employees) 4.0/5 ⭐ rating (373 reviews) | 77% CEO approval Hypothesis/"
+    },
+    {
+      "id": "hypothes-is",
+      "name": "hypothes.is",
+      "careersUrl": "https://hypothes.is",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "web-hypothes-is",
+      "name": "web.hypothes.is",
+      "careersUrl": "https://web.hypothes.is/jobs/EducationSocial",
+      "whereYouCanWork": "annotation platform for online collaboration. Worldwide15% YoY growth (26 → 30 employees) 4.0/5 ⭐ rating (35 reviews) | 100% CEO approval Inpsyde/"
+    },
+    {
+      "id": "inpsyde-com",
+      "name": "inpsyde.com",
+      "careersUrl": "https://inpsyde.com/en",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "syde-com",
+      "name": "syde.com",
+      "careersUrl": "https://syde.com/career",
+      "whereYouCanWork": "/Technology, Information and InternetPure WordPress solutions and consultancyWorldwide iFit/"
+    },
+    {
+      "id": "ifit-com",
+      "name": "ifit.com",
+      "careersUrl": "https://www.ifit.com/careers",
+      "whereYouCanWork": "Wellness and Fitness ServicesGlobal health and fitness technology platformUnited States2% YoY growth (1451 → 1473 employees) 2.9/5 ⭐ rating (606 reviews) | 36% CEO approval Instructure/"
     },
     {
       "id": "instructure-com",
@@ -1287,6 +1912,12 @@
       "whereYouCanWork": "/Software DevelopmentApplication health monitoring for developers.Worldwide-6% YoY growth (31 → 29 employees) 4.0/5 ⭐ rating (3 reviews) Heap/"
     },
     {
+      "id": "heapanalytics-com",
+      "name": "heapanalytics.com",
+      "careersUrl": "https://heapanalytics.com",
+      "whereYouCanWork": "/"
+    },
+    {
       "id": "heap-io",
       "name": "heap.io",
       "careersUrl": "https://www.heap.io/careers",
@@ -1299,10 +1930,28 @@
       "whereYouCanWork": "Software DevelopmentPerformance analysis technology for sports teams United States, United Kingdom, Spain, Italy, Netherlands, India, Japan, Mexico, Brazil 16% YoY growth (2889 → 3342 employees) 4.0/5 ⭐ rating (1,094 reviews) | 88% CEO approval Hotjar/"
     },
     {
+      "id": "careers-hotjar-com",
+      "name": "careers.hotjar.com",
+      "careersUrl": "https://careers.hotjar.com",
+      "whereYouCanWork": "/"
+    },
+    {
       "id": "contentsquare-com",
       "name": "contentsquare.com",
       "careersUrl": "https://contentsquare.com/careers/IT",
       "whereYouCanWork": "Services and IT ConsultingUser behavior analytics for improved experiences. Worldwide-35% YoY growth (380 → 247 employees) 3.9/5 ⭐ rating (95-113 reviews) | 72% CEO approval allyDVM/"
+    },
+    {
+      "id": "allydvm-com",
+      "name": "allydvm.com",
+      "careersUrl": "https://www.allydvm.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "cencora-com",
+      "name": "cencora.com",
+      "careersUrl": "https://www.cencora.com/careers",
+      "whereYouCanWork": "Veterinary ServicesVeterinary client engagement platformWorldwide3% YoY growth (37 → 38 employees) 0/5 ⭐ rating (0 reviews) GuideSmiths/"
     },
     {
       "id": "guidesmiths-com",
@@ -1313,8 +1962,32 @@
     {
       "id": "hackreactor-com",
       "name": "hackreactor.com",
-      "careersUrl": "https://www.hackreactor.com/hire-software-engineers",
-      "whereYouCanWork": "/Higher EducationTech education and coding bootcamps.Worldwide-25% YoY growth (200 → 150 employees) 4.2/5 ⭐ rating (98-125 reviews) | 92% CEO approval Help Scout/"
+      "careersUrl": "https://www.hackreactor.com/remote",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "helpscout-net",
+      "name": "helpscout.net",
+      "careersUrl": "https://www.helpscout.net",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "helpscout-com",
+      "name": "helpscout.com",
+      "careersUrl": "https://www.helpscout.com/company/careers",
+      "whereYouCanWork": "/Technology, Information and InternetCustomer support software platform.Worldwide12% YoY growth (227 → 254 employees) 3.1/5 ⭐ rating (40 reviews) | 52% CEO approval Human Made/"
+    },
+    {
+      "id": "hmn-md",
+      "name": "hmn.md",
+      "careersUrl": "https://hmn.md",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "humanmade-com",
+      "name": "humanmade.com",
+      "careersUrl": "https://humanmade.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetWordPress-powered digital solutions provider Worldwide12% YoY growth (68 → 76 employees) Happy Cog/"
     },
     {
       "id": "happycog-com",
@@ -1323,10 +1996,76 @@
       "whereYouCanWork": "Advertising ServicesDigital product and experience development.Worldwide-1% YoY growth (112 → 111 employees) 4.6/5 ⭐ rating (8 reviews) | 100% CEO approval HashiCorp/"
     },
     {
+      "id": "hashicorp-com",
+      "name": "hashicorp.com",
+      "careersUrl": "https://www.hashicorp.com/en/careers",
+      "whereYouCanWork": "Software DevelopmentMulti-cloud infrastructure automation solutions. NA7% YoY growth (2339 → 2499 employees) 3.7/5 ⭐ rating (394 reviews) | 67% CEO approval Harvest/"
+    },
+    {
+      "id": "getharvest-com",
+      "name": "getharvest.com",
+      "careersUrl": "https://www.getharvest.com/careers",
+      "whereYouCanWork": "Technology, Information and InternetTime management and business intelligence tools. Worldwide6% YoY growth (469 → 496 employees) 3.4/5 ⭐ rating (113 reviews) | 55% CEO approval GoHiring/"
+    },
+    {
+      "id": "gohiring-com",
+      "name": "gohiring.com",
+      "careersUrl": "https://gohiring.com/jobs",
+      "whereYouCanWork": "/Software DevelopmentAutomated job posting and recruiting analytics Worldwide26% YoY growth (40 → 50 employees) 4.5/5 ⭐ rating (12 reviews) | 100% CEO approval GitLab/"
+    },
+    {
+      "id": "about-gitlab-com",
+      "name": "about.gitlab.com",
+      "careersUrl": "https://about.gitlab.com/jobs/IT",
+      "whereYouCanWork": "Services and IT ConsultingDevOps platform and remote collaboration.Worldwide21% YoY growth (2379 → 2886 employees) 4.1/5 ⭐ rating (591 reviews) | 90% CEO approval Graylog/"
+    },
+    {
+      "id": "graylog-org",
+      "name": "graylog.org",
+      "careersUrl": "https://graylog.org/careers",
+      "whereYouCanWork": "/Software DevelopmentThreat detection and incident response solutions. Worldwide21% YoY growth (108 → 131 employees) 5.0/5 ⭐ rating (34 reviews) | 100% CEO approval Ghost Foundation/"
+    },
+    {
+      "id": "ghost-org",
+      "name": "ghost.org",
+      "careersUrl": "https://ghost.org",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-ghost-org",
+      "name": "careers.ghost.org",
+      "careersUrl": "https://careers.ghost.org",
+      "whereYouCanWork": "/Internet PublishingSubscription-based online publishing platform. Worldwide38% YoY growth (76 → 105 employees)There are currently no reviews for Ghost on Glassdoor. Gojob/"
+    },
+    {
+      "id": "gojob-com",
+      "name": "gojob.com",
+      "careersUrl": "https://gojob.com/wearehiring/us",
+      "whereYouCanWork": "/Human Resources ServicesAI-driven recruitment and staffing platform.United States, France31% YoY growth (296 → 388 employees) 3.5/5 ⭐ rating (89 reviews) | 75% CEO approval Gremlin/"
+    },
+    {
       "id": "gremlin-com",
       "name": "gremlin.com",
       "careersUrl": "https://www.gremlin.com/teamSoftware",
       "whereYouCanWork": "DevelopmentAutomated reliability management for software teams. Worldwide-1% YoY growth (67 → 66 employees) 3.5/5 ⭐ rating (23 reviews) | 50% CEO approval GitHub/"
+    },
+    {
+      "id": "github-com",
+      "name": "github.com",
+      "careersUrl": "https://github.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "github-careers",
+      "name": "github.careers",
+      "careersUrl": "https://www.github.careers/careers-homeSoftware",
+      "whereYouCanWork": "DevelopmentAI-powered collaborative software development platform NA17% YoY growth (5495 → 6409 employees) 3.9/5 ⭐ rating (364 reviews) | 76% CEO approval Glenn Website Design/"
+    },
+    {
+      "id": "glennwebsitedesign-com",
+      "name": "glennwebsitedesign.com",
+      "careersUrl": "https://glennwebsitedesign.com",
+      "whereYouCanWork": "/"
     },
     {
       "id": "jobgether-com",
@@ -1335,10 +2074,64 @@
       "whereYouCanWork": "Marketplace PlatformsComprehensive website design and management Worldwide(229 reviews) Gridium/"
     },
     {
+      "id": "gridium-com",
+      "name": "gridium.com",
+      "careersUrl": "https://gridium.com",
+      "whereYouCanWork": "/"
+    },
+    {
       "id": "flexera-com",
       "name": "flexera.com",
       "careersUrl": "https://www.flexera.com/about-us/careers",
       "whereYouCanWork": "Software DevelopmentSaaS-based IT management solutionsNorth America, Europe, Australia, Asia, Worldwide 59% YoY growth (1067 → 1691 employees) 3.7/5 ⭐ rating (489 reviews) | 73% CEO approval General Assembly/"
+    },
+    {
+      "id": "generalassemb-ly",
+      "name": "generalassemb.ly",
+      "careersUrl": "https://generalassemb.ly/careers",
+      "whereYouCanWork": "Higher EducationTechnology career bootcamps and upskilling programs. Bahrain, Singapore, United Kingdom, United States -30% YoY growth (80 → 56 employees) 3.5/5 ⭐ rating (863 reviews) | 64% CEO approval Lifen/"
+    },
+    {
+      "id": "lifen-health",
+      "name": "lifen.health",
+      "careersUrl": "https://www.lifen.health",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "jobs-lever-co",
+      "name": "jobs.lever.co",
+      "careersUrl": "https://jobs.lever.co/lifenHospitals",
+      "whereYouCanWork": "and Health CareMedical data management and sharingParis-6% YoY growth (174 → 163 employees) 4.6/5 ⭐ rating (76 reviews) | 100% CEO approval Freeagent/"
+    },
+    {
+      "id": "freeagent-com",
+      "name": "freeagent.com",
+      "careersUrl": "https://www.freeagent.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-freeagent-com",
+      "name": "careers.freeagent.com",
+      "careersUrl": "https://careers.freeagent.com",
+      "whereYouCanWork": "/Software DevelopmentCloud-based accounting software for small businesses. United Kingdom4% YoY growth (370 → 383 employees) 4.5/5 ⭐ rating (75 reviews) | 90% CEO approval Gaggle/"
+    },
+    {
+      "id": "gaggle-net",
+      "name": "gaggle.net",
+      "careersUrl": "https://www.gaggle.net/careers",
+      "whereYouCanWork": "Education Administration ProgramsStudent safety and mental health servicesUnited States7% YoY growth (332 → 354 employees) 4.0/5 ⭐ rating (145 reviews) | 76% CEO approval Functionize/"
+    },
+    {
+      "id": "functionize-com",
+      "name": "functionize.com",
+      "careersUrl": "https://www.functionize.com/careers",
+      "whereYouCanWork": "Technology, Information and InternetEnterprise automation with AI-driven solutions United States18% YoY growth (117 → 138 employees) 4.0/5 ⭐ rating (32 reviews) Geckoboard/"
+    },
+    {
+      "id": "geckoboard-com",
+      "name": "geckoboard.com",
+      "careersUrl": "https://www.geckoboard.com/about/careers",
+      "whereYouCanWork": "/Technology, Information and InternetReal-time KPI dashboard software.London-7% YoY growth (28 → 26 employees) 4.9/5 ⭐ rating (21 reviews) | 100% CEO approval Flowing/"
     },
     {
       "id": "flowing-it",
@@ -1347,10 +2140,94 @@
       "whereYouCanWork": "Services and IT ConsultingManaged IT services and cloud solutions.Worldwide-13% YoY growth (63 → 55 employees) 4.1/5 ⭐ rating (15 reviews) | 78% CEO approval FMX/"
     },
     {
+      "id": "gofmx-com",
+      "name": "gofmx.com",
+      "careersUrl": "https://www.gofmx.com/careers",
+      "whereYouCanWork": "/Software DevelopmentFacility management software for educational and government sectors. Worldwide19% YoY growth (155 → 184 employees) Envoy/"
+    },
+    {
+      "id": "envoy-com",
+      "name": "envoy.com",
+      "careersUrl": "https://envoy.com/jobs",
+      "whereYouCanWork": "Software DevelopmentIntegrated workplace management platformWorldwide4% YoY growth (423 → 441 employees) 3.0/5 ⭐ rating (150 reviews) | 49% CEO approval 4.1/5 ⭐ rating (90 reviews) | 79% CEO approval FingerprintJS/"
+    },
+    {
+      "id": "fingerprintjs-com",
+      "name": "fingerprintjs.com",
+      "careersUrl": "https://fingerprintjs.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "fingerprint-com",
+      "name": "fingerprint.com",
+      "careersUrl": "https://fingerprint.com/careers",
+      "whereYouCanWork": "/Software DevelopmentFraud detection for developers.Worldwide14% YoY growth (119 → 136 employees) 4.8/5 ⭐ rating (20 reviews) | 100% CEO approval FFW Agency/"
+    },
+    {
+      "id": "ffwagency-com",
+      "name": "ffwagency.com",
+      "careersUrl": "https://ffwagency.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-ffw-com",
+      "name": "careers.ffw.com",
+      "careersUrl": "https://careers.ffw.com",
+      "whereYouCanWork": "/Software DevelopmentDigital platform agency for enterprise experiences. Denmark-39% YoY growth (1005 → 610 employees) 3.8/5 ⭐ rating (73 reviews) | 75% CEO approval Evrone/"
+    },
+    {
+      "id": "evrone-com",
+      "name": "evrone.com",
+      "careersUrl": "https://evrone.com",
+      "whereYouCanWork": "/"
+    },
+    {
       "id": "jobs-evrone-com",
       "name": "jobs.evrone.com",
       "careersUrl": "https://jobs.evrone.com/IT",
       "whereYouCanWork": "Services and IT ConsultingDigital product development and web project design. Worldwide, United States, Germany 4.6/5 ⭐ rating (18 reviews) | 94% CEO approval Eyeo (Adblock Plus)"
+    },
+    {
+      "id": "eyeo-com",
+      "name": "eyeo.com",
+      "careersUrl": "https://eyeo.com/careers",
+      "whereYouCanWork": "Technology, Information and InternetAd-filtering and programmatic ad technologies. Germany, Canada, United States -2% YoY growth (242 → 236 employees) 3.7/5 ⭐ rating (74 reviews) | 55% CEO approval Faithlife/"
+    },
+    {
+      "id": "faithlife-com",
+      "name": "faithlife.com",
+      "careersUrl": "https://faithlife.com/careers",
+      "whereYouCanWork": "Software DevelopmentBible study software and resources.United States, Mexico28% YoY growth (431 → 552 employees) 3.5/5 ⭐ rating (342 reviews) Fastly/"
+    },
+    {
+      "id": "fastly-com",
+      "name": "fastly.com",
+      "careersUrl": "https://www.fastly.com/about/careers",
+      "whereYouCanWork": "Software DevelopmentEdge cloud platform servicesUnited Kingdom, United States, Germany, Spain, Australia, France, Singapore, Sweden, Japan 1% YoY growth (1282 → 1297 employees) 2.9/5 ⭐ rating (306 reviews) | 31% CEO approval Fire Engine Red/"
+    },
+    {
+      "id": "fire-engine-red-com",
+      "name": "fire-engine-red.com",
+      "careersUrl": "https://fire-engine-red.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "carnegiehighered-com",
+      "name": "carnegiehighered.com",
+      "careersUrl": "https://www.carnegiehighered.com/about/careers",
+      "whereYouCanWork": "/Higher EducationHigher education marketing and enrollment strategy. United States7% YoY growth (363 → 389 employees) 3.8/5 ⭐ rating (20 reviews) | 72% CEO approval Fauna/"
+    },
+    {
+      "id": "fauna-com",
+      "name": "fauna.com",
+      "careersUrl": "https://fauna.com/careers",
+      "whereYouCanWork": "/Information Technology and ServicesServerless operational database for applications. Americas, Europe 4.4/5 ⭐ rating (18 reviews) Equal Experts Portugal/"
+    },
+    {
+      "id": "equalexperts-com",
+      "name": "equalexperts.com",
+      "careersUrl": "https://www.equalexperts.com/contact-us/lisbon",
+      "whereYouCanWork": "/"
     },
     {
       "id": "fairwinds-com",
@@ -1359,10 +2236,148 @@
       "whereYouCanWork": "IT Services and IT ConsultingKubernetes enablement and cloud-native optimization. Worldwide-5% YoY growth (60 → 57 employees) 4.5/5 ⭐ rating (11 reviews) | 100% CEO approval Devsquad/"
     },
     {
+      "id": "devsquad-com",
+      "name": "devsquad.com",
+      "careersUrl": "https://devsquad.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "doist-com",
+      "name": "doist.com",
+      "careersUrl": "https://doist.com/careers",
+      "whereYouCanWork": "Software DevelopmentProductivity software for organized workdaysWorldwide3% YoY growth (100 → 103 employees) 4.7/5 ⭐ rating (27 reviews) | 100% CEO approval DigitalOcean/"
+    },
+    {
+      "id": "digitalocean-com",
+      "name": "digitalocean.com",
+      "careersUrl": "https://www.digitalocean.com/careers",
+      "whereYouCanWork": "Software DevelopmentSimplifies cloud computing for developers.United States, India, Pakistan, Canada, Singapore, Netherlands 22% YoY growth (1556 → 1894 employees) 3.6-3.7/5 ⭐ rating (392-416 reviews) | 46-49% CEO approval DealDash/"
+    },
+    {
+      "id": "dealdash-com",
+      "name": "dealdash.com",
+      "careersUrl": "https://www.dealdash.com/careers",
+      "whereYouCanWork": "RetailOnline bidding fee auction platformFinland, United States4% YoY growth (28 → 29 employees) 4.5/5 ⭐ rating (36 reviews) | 90% CEO approval Elastic/"
+    },
+    {
+      "id": "elastic-co",
+      "name": "elastic.co",
+      "careersUrl": "https://www.elastic.co/careers",
+      "whereYouCanWork": "Software DevelopmentReal-time data search and analysis platform.Worldwide10.1% YoY growth (3820 → 4206 employees) 3.9/5 ⭐ rating (840 reviews) | 74% CEO approval Envato/"
+    },
+    {
+      "id": "envato-com",
+      "name": "envato.com",
+      "careersUrl": "https://www.envato.com/about/careers",
+      "whereYouCanWork": "/Technology, Information and InternetCreative assets and education platformAustralia & New Zealand, Mexico 17% YoY growth (816 → 956 employees) 4.0/5 ⭐ rating (172 reviews) | 75% CEO approval DuckDuckGo/"
+    },
+    {
+      "id": "duckduckgo-com",
+      "name": "duckduckgo.com",
+      "careersUrl": "https://duckduckgo.com/hiringSoftware",
+      "whereYouCanWork": "DevelopmentPrivacy-focused web browsing and search.Worldwide20% YoY growth (297 → 357 employees) 4.6/5 ⭐ rating (29 reviews) Enjoei/"
+    },
+    {
+      "id": "enjoei-com-br",
+      "name": "enjoei.com.br",
+      "careersUrl": "https://www.enjoei.com.br",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "enjoei-gupy-io",
+      "name": "enjoei.gupy.io",
+      "careersUrl": "https://enjoei.gupy.io",
+      "whereYouCanWork": "/Software DevelopmentOnline secondhand marketplace for clothing.São Paulo21% YoY growth (347 → 420 employees) 3.5/5 ⭐ rating (217 reviews) DroneDeploy/"
+    },
+    {
+      "id": "dronedeploy-com",
+      "name": "dronedeploy.com",
+      "careersUrl": "https://www.dronedeploy.com/about/careers",
+      "whereYouCanWork": "Software DevelopmentDrone-based reality capture platformWorldwide8% YoY growth (285 → 308 employees) 4.7/5 ⭐ rating (111 reviews) | 98% CEO approval Pleo/"
+    },
+    {
+      "id": "pleo-io",
+      "name": "pleo.io",
+      "careersUrl": "https://www.pleo.io/en/careers",
+      "whereYouCanWork": "Financial ServicesSpend management platform for businesses.Copenhagen, London, Madrid, Lisbon, Stockholm, Berlin, Chennai, Paris, Amsterdam, Montreal 11% YoY growth (916 → 1011 employees) 3.7/5 ⭐ rating (249-264 reviews) | 81% CEO approval Pex/"
+    },
+    {
+      "id": "pex-com",
+      "name": "pex.com",
+      "careersUrl": "https://pex.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetDigital rights management and content licensing. Worldwide10% YoY growth (80 → 88 employees) PEX (E1145157): 4.5/5 ⭐ rating (29 reviews) | 100% CEO approval PowerSchool/"
+    },
+    {
+      "id": "powerschool-com",
+      "name": "powerschool.com",
+      "careersUrl": "https://www.powerschool.com/company/careers/E-Learning",
+      "whereYouCanWork": "ProvidersCloud-based K-12 education software.United States, Canada, India2% YoY growth (3375 → 3403 employees) 3.6/5 ⭐ rating (1,184 reviews) | 75% CEO approval Prezi/"
+    },
+    {
+      "id": "prezi-com",
+      "name": "prezi.com",
+      "careersUrl": "https://prezi.com/jobs",
+      "whereYouCanWork": "/Software DevelopmentAI-powered presentation creation platformWorldwide-10% YoY growth (287 → 258 employees) 3.8/5 ⭐ rating (180 reviews) | 76% CEO approval CWT/"
+    },
+    {
+      "id": "mycwt-com",
+      "name": "mycwt.com",
+      "careersUrl": "https://www.mycwt.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-mycwt-com",
+      "name": "careers.mycwt.com",
+      "careersUrl": "https://careers.mycwt.com",
+      "whereYouCanWork": "/Travel ArrangementsGlobal business travel and meetings specialistWorldwide-7% YoY growth (13977 → 13044 employees) 3.4/5 ⭐ rating (1,386 reviews) | 42% CEO approval Teravision Technologies/"
+    },
+    {
+      "id": "teravisiontech-com",
+      "name": "teravisiontech.com",
+      "careersUrl": "https://www.teravisiontech.com/careers",
+      "whereYouCanWork": "Software DevelopmentNearshore software development for SaaS companies. United States, Venezuela, Colombia 1.34 YoY growth (149 → 151 employees) 4.4/5 ⭐ rating (67 reviews) | 95% CEO approval DataCamp/"
+    },
+    {
       "id": "datacamp-com",
       "name": "datacamp.com",
       "careersUrl": "https://www.datacamp.com/careersE-Learning",
       "whereYouCanWork": "Providers\"Data and AI skill development platform\"Belgium, Argentina, Europe, United Kingdom, Portugal, United States 17% YoY growth (1334 → 1558 employees) 3.3/5 ⭐ rating (110 reviews) | 49% CEO approval PNC Financial Services/"
+    },
+    {
+      "id": "pnc-com",
+      "name": "pnc.com",
+      "careersUrl": "https://www.pnc.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-pnc-com",
+      "name": "careers.pnc.com",
+      "careersUrl": "https://careers.pnc.com/global/enFinancial",
+      "whereYouCanWork": "ServicesFinancial management and banking servicesUnited States-9% YoY growth (67611 → 61558 employees) 3.5/5 ⭐ rating (10,237 reviews) | 66% CEO approval Datadog/"
+    },
+    {
+      "id": "datadoghq-com",
+      "name": "datadoghq.com",
+      "careersUrl": "https://www.datadoghq.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-datadoghq-com",
+      "name": "careers.datadoghq.com",
+      "careersUrl": "https://careers.datadoghq.com",
+      "whereYouCanWork": "/Software DevelopmentCloud application monitoring platformWorldwide37% YoY growth (6052 → 8261 employees) 4.0/5 ⭐ rating (1234 reviews) | 92% CEO approval Dashlane/"
+    },
+    {
+      "id": "dashlane-com",
+      "name": "dashlane.com",
+      "careersUrl": "https://www.dashlane.com/about/careers",
+      "whereYouCanWork": "Computer and Network SecurityPassword management and digital securityFrance, Portugal, United States-7% YoY growth (355 → 329 employees) 3.3/5 ⭐ rating (145 reviews) DataStax/"
+    },
+    {
+      "id": "datastax-com",
+      "name": "datastax.com",
+      "careersUrl": "https://www.datastax.com/company/careers",
+      "whereYouCanWork": "IT System Data ServicesAI platform as a service.United States, UK, Australia, France, Canada, India, Japan, Singapore, Bulgaria, Ireland, Poland, Spain 6% YoY growth (655 → 694 employees) 4.0/5 ⭐ rating (569 reviews) | 78% CEO approval Polygon/"
     },
     {
       "id": "polygon-technology",
@@ -1371,10 +2386,40 @@
       "whereYouCanWork": "Technology, Information and InternetBlockchain analytics and data aggregation.Worldwide-20% YoY growth (559 → 447 employees) 3.5/5 ⭐ rating (44 reviews) | No CEO approval rating available. Percona/"
     },
     {
+      "id": "percona-com",
+      "name": "percona.com",
+      "careersUrl": "https://www.percona.com/about/careers",
+      "whereYouCanWork": "Software DevelopmentOpen source database support and optimization. Worldwide11% YoY growth (309 → 343 employees) 4.6/5 ⭐ rating (138 reviews) | 99% CEO approval PayU/"
+    },
+    {
       "id": "corporate-payu-com",
       "name": "corporate.payu.com",
       "careersUrl": "https://corporate.payu.com/careers",
       "whereYouCanWork": "/Financial ServicesGlobal online payment service provider.Czech Republic, Hungary, Poland, Romania, Argentina, Brazil, Central America, Chile, Colombia, Mexico, Peru, Kenya, Nigeria, South Africa 13% YoY growth (2990 → 3374 employees) 3.7/5 ⭐ rating (793 reviews) | 70% CEO approval Olo/"
+    },
+    {
+      "id": "olo-com",
+      "name": "olo.com",
+      "careersUrl": "https://www.olo.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "paylocity-com",
+      "name": "paylocity.com",
+      "careersUrl": "https://www.paylocity.com/careers",
+      "whereYouCanWork": "/Software DevelopmentCloud-based HR and payroll solutionsCzech Republic, Australia, Canada, Germany, India, Ireland, Mexico, Netherlands, Philippines, Singapore, Spain, United Kingdom, Jamaica, Nicaragua, Trinidad and Tobago, U.S. Virgin Islands, United States 8% YoY growth (5333 → 5755 employees) 3.8/5 ⭐ rating (2,878 reviews) | 98% CEO approval PayScale/"
+    },
+    {
+      "id": "payscale-com",
+      "name": "payscale.com",
+      "careersUrl": "https://www.payscale.com/about/careers-at-payscale",
+      "whereYouCanWork": "/Software DevelopmentCompensation management and fair pay solutions. Worldwide13% YoY growth (744 → 745 employees) 3.3/5 ⭐ rating (330 reviews) | 50% CEO approval Onna/"
+    },
+    {
+      "id": "onna-com",
+      "name": "onna.com",
+      "careersUrl": "https://onna.com/careers",
+      "whereYouCanWork": "Software DevelopmentData management and unification platformUnited States, Europe, Spain-58% YoY growth (115 → 48 employees) 3.1/5 ⭐ rating (56 reviews) | 50% CEO approval Parsely/"
     },
     {
       "id": "parse-ly",
@@ -1383,10 +2428,34 @@
       "whereYouCanWork": "/Technology, Information and InternetContent analytics platform for marketers.Worldwide-27% YoY growth (55 → 40 employees) 4.5/5 ⭐ rating (32 reviews) | 89% CEO approval Oracle/"
     },
     {
+      "id": "oracle-com",
+      "name": "oracle.com",
+      "careersUrl": "https://www.oracle.com/careers/IT",
+      "whereYouCanWork": "Services and IT ConsultingCloud technology and autonomous databases provider India, United States, Mexico-2% YoY growth (206534 → 203224 employees) 3.8/5 ⭐ rating (53,249 reviews) | 80% CEO approval Panther Labs/"
+    },
+    {
+      "id": "runpanther-io",
+      "name": "runpanther.io",
+      "careersUrl": "https://runpanther.io",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "panther-com",
+      "name": "panther.com",
+      "careersUrl": "https://panther.com/company/careers",
+      "whereYouCanWork": "Computer and Network SecurityCode-driven cloud security signalsWorldwide-5% YoY growth (269 → 256 employees)I am unable to find enough reliable information from Glassdoor to fulfill this request. Netguru/"
+    },
+    {
       "id": "netguru-com",
       "name": "netguru.com",
       "careersUrl": "https://www.netguru.com/join-netguruIT",
       "whereYouCanWork": "Services and IT ConsultingDigital product development and consulting services Worldwide-16% YoY growth (567 → 476 employees) 3.9/5 ⭐ rating (139-184 reviews) | 49% CEO approval Ocient/"
+    },
+    {
+      "id": "ocient-com",
+      "name": "ocient.com",
+      "careersUrl": "https://ocient.com/careers",
+      "whereYouCanWork": "/Software Development\"High-performance data analytics solutions\"United States, Worldwide6% YoY growth (160 → 169 employees) 4.1/5 ⭐ rating (24 reviews) Olist/"
     },
     {
       "id": "olist-com",
@@ -1395,10 +2464,166 @@
       "whereYouCanWork": "IT Services and IT ConsultingE-commerce solutions for global businesses.Brazil-4% YoY growth (847 → 815 employees) 4.0/5 ⭐ rating (710 reviews) | 73% CEO approval NetApp/"
     },
     {
+      "id": "netapp-com",
+      "name": "netapp.com",
+      "careersUrl": "https://www.netapp.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-netapp-com",
+      "name": "careers.netapp.com",
+      "careersUrl": "https://careers.netapp.com",
+      "whereYouCanWork": "/Software DevelopmentIntelligent data infrastructure solutions.Worldwide3% YoY growth (12,300 → 12,675 employees) 4.0/5 ⭐ rating (3,326 reviews) | 85% CEO approval O'Reilly Media/"
+    },
+    {
+      "id": "oreilly-com",
+      "name": "oreilly.com",
+      "careersUrl": "https://www.oreilly.com/careers/E-Learning",
+      "whereYouCanWork": "ProvidersInnovative skills and knowledge platform.Worldwide9% YoY growth (1144 → 1249 employees) 4.3/5 ⭐ rating (170 reviews) | 95% CEO approval No Code No Problem/"
+    },
+    {
+      "id": "nocodenoprob-com",
+      "name": "nocodenoprob.com",
+      "careersUrl": "https://www.nocodenoprob.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "nocodejobs-org",
+      "name": "nocodejobs.org",
+      "careersUrl": "https://www.nocodejobs.org",
+      "whereYouCanWork": "/Software DevelopmentNo/low-code application development studioUnited States11% YoY growth (27 → 30 employees) 3.0/5 ⭐ rating (1 review) | 0% CEO approval Ollie/"
+    },
+    {
+      "id": "myollie-com",
+      "name": "myollie.com",
+      "careersUrl": "https://www.myollie.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "oddball-io",
+      "name": "oddball.io",
+      "careersUrl": "https://oddball.io/jobs",
+      "whereYouCanWork": "/Software DevelopmentDigital modernization for federal services.Worldwide17% YoY growth (285 → 334 employees) 4.6/5 ⭐ rating (54 reviews) | CEO approval is present in the reviews Octopus Deploy/"
+    },
+    {
+      "id": "octopus-com",
+      "name": "octopus.com",
+      "careersUrl": "https://octopus.com/company/careers",
+      "whereYouCanWork": "Software DevelopmentDeployment automation for DevOps teamsAustralia, New Zealand, Israel, United States, Canada, UK, Germany, Singapore, Netherlands 46% YoY growth (227 → 332 employees) 3.8/5 ⭐ rating (351 reviews) | 80% CEO approval NoRedInk/"
+    },
+    {
+      "id": "noredink-com",
+      "name": "noredink.com",
+      "careersUrl": "https://noredink.com/about/jobs/E-LearningAdaptive",
+      "whereYouCanWork": "writing curriculum for studentsWorldwide, United States2% YoY growth (162 → 165 employees) 4.0/5 ⭐ rating (55 reviews) | 74% CEO approval Okta/"
+    },
+    {
+      "id": "okta-com",
+      "name": "okta.com",
+      "careersUrl": "https://www.okta.com/company/careers",
+      "whereYouCanWork": "/Software DevelopmentIdentity management platformWorldwide12% YoY growth (7133 → 7988 employees) 3.7/5 ⭐ rating (1,435 reviews) | 74% CEO approval Nuage/"
+    },
+    {
+      "id": "nuagebiz-tech",
+      "name": "nuagebiz.tech",
+      "careersUrl": "https://nuagebiz.tech/careers/IT",
+      "whereYouCanWork": "Services and IT ConsultingBoutique tech solutions for startups and SMBs. India26% YoY growth (54 → 68 employees) 4.4/5 ⭐ rating (12 reviews) | 86% CEO approval Nvidia/"
+    },
+    {
+      "id": "nvidia-com",
+      "name": "nvidia.com",
+      "careersUrl": "https://www.nvidia.com/en-us/about-nvidia/careers",
+      "whereYouCanWork": "/Computer Hardware ManufacturingAccelerated computing and AI solutions.NA33% YoY growth (28788 → 38267 employees) 4.7/5 ⭐ rating (6,161 reviews) | 98% CEO approval NEXT/"
+    },
+    {
+      "id": "nexttrucking-com",
+      "name": "nexttrucking.com",
+      "careersUrl": "https://www.nexttrucking.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "boards-greenhouse-io",
+      "name": "boards.greenhouse.io",
+      "careersUrl": "https://boards.greenhouse.io/nexttruckingTruck",
+      "whereYouCanWork": "TransportationDigital freight marketplace and smart load- matching. NA-18% YoY growth (267 → 219 employees) 3.3/5 ⭐ rating (172 reviews) | 23% CEO approval Netsparker/"
+    },
+    {
+      "id": "netsparker-com",
+      "name": "netsparker.com",
+      "careersUrl": "https://www.netsparker.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "invicti-com",
+      "name": "invicti.com",
+      "careersUrl": "https://www.invicti.com/careers",
+      "whereYouCanWork": "/Computer and Network SecurityWeb application security and scanningCzech Republic, Birkirkara, Malta, United Kingdom, United States -2% YoY growth (324 → 317 employees) 4.1/5 ⭐ rating (16 reviews) | 91% CEO approval CVS Health/"
+    },
+    {
+      "id": "jobs-cvshealth-com",
+      "name": "jobs.cvshealth.com",
+      "careersUrl": "https://jobs.cvshealth.com",
+      "whereYouCanWork": "/Hospitals and Health CareComprehensive healthcare solutions providerUnited States1% YoY growth (121,045 → 122,427 employees) 3.1/5 ⭐ rating (45,860 reviews) | 46% CEO approval Mozilla/"
+    },
+    {
+      "id": "mozilla-org",
+      "name": "mozilla.org",
+      "careersUrl": "https://www.mozilla.org/en-US/careers",
+      "whereYouCanWork": "/Software DevelopmentOpen and accessible internet solutions.Worldwide1.25 YoY growth (1767 → 1789 employees) Mozilla: 2.8/5 ⭐ rating (420 reviews) | 19% CEO approval Mux/"
+    },
+    {
+      "id": "mux-com",
+      "name": "mux.com",
+      "careersUrl": "https://www.mux.com/jobs",
+      "whereYouCanWork": "Software DevelopmentVideo infrastructure APIs for developersUnited States, London14% YoY growth (113 → 129 employees) 3.9/5 ⭐ rating (31 reviews) | 85% CEO approval Muck Rack/"
+    },
+    {
+      "id": "muckrack-com",
+      "name": "muckrack.com",
+      "careersUrl": "https://muckrack.com/careers",
+      "whereYouCanWork": "Software DevelopmentAI-powered PR software platformNA17% YoY growth (307 → 358 employees) 4.5/5 ⭐ rating (110 reviews) | 92% CEO approval Nagarro/"
+    },
+    {
+      "id": "nagarro-com",
+      "name": "nagarro.com",
+      "careersUrl": "https://www.nagarro.com/en/careers",
+      "whereYouCanWork": "IT Services and IT ConsultingDigital engineering and transformation services Worldwide16% YoY growth (20270 → 23513 employees) 3.9/5 ⭐ rating (6,299 reviews) | 87% CEO approval Modsquad/"
+    },
+    {
+      "id": "modsquad-com",
+      "name": "modsquad.com",
+      "careersUrl": "https://modsquad.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "join-modsquad-com",
+      "name": "join.modsquad.com",
+      "careersUrl": "https://join.modsquad.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetRemote customer experience services provider United States, Costa Rica, Jamaica, Philippines 10.13 YoY growth (1346 → 1482 employees) 3.2/5 ⭐ rating (303 reviews) | 51% CEO approval Mixmax/"
+    },
+    {
+      "id": "mixmax-com",
+      "name": "mixmax.com",
+      "careersUrl": "https://www.mixmax.com/careers",
+      "whereYouCanWork": "Software DevelopmentSales engagement platform for revenue teamsWorldwide5% YoY growth (111 → 116 employees) 4.8/5 ⭐ rating (58 reviews) | 94% CEO approval Madisoft/"
+    },
+    {
       "id": "labs-madisoft-it",
       "name": "labs.madisoft.it",
       "careersUrl": "https://labs.madisoft.it/entra-nel-team",
       "whereYouCanWork": "/Software DevelopmentInnovative educational software and support services. Worldwide-11% YoY growth (36 → 32 employees) 3.7/5 ⭐ rating (8 reviews) | 71% CEO approval Lullabot/"
+    },
+    {
+      "id": "lullabot-com",
+      "name": "lullabot.com",
+      "careersUrl": "https://www.lullabot.com/jobs",
+      "whereYouCanWork": "Technology, Information and InternetDrupal strategy, design, and development agency. United States, Worldwide7% YoY growth (71 → 76 employees) 4.9/5 ⭐ rating (8 reviews) | 100% CEO approval MailerLite/"
+    },
+    {
+      "id": "mailerlite-com",
+      "name": "mailerlite.com",
+      "careersUrl": "https://www.mailerlite.com/jobs",
+      "whereYouCanWork": "IT Services and IT ConsultingEmail marketing and automation solutionsWorldwide17% YoY growth (121 → 142 employees) 4.7/5 ⭐ rating (52 reviews) | 93% CEO approval Mediacurrent/"
     },
     {
       "id": "mediacurrent-com",
@@ -1407,10 +2632,124 @@
       "whereYouCanWork": "Design ServicesOpen Source digital solutions agencyUnited States, Philippines, Honduras, Greece, Canada, Colombia, Brazil, Peru, Dominican Republic, Mexico, Argentina -41% YoY growth (49 → 29 employees) 3.7/5 ⭐ rating (36 reviews) Mapbox/"
     },
     {
+      "id": "mapbox-com",
+      "name": "mapbox.com",
+      "careersUrl": "https://www.mapbox.com/careers",
+      "whereYouCanWork": "Software DevelopmentReal-time location platform for businessesFinland, United States, Japan, Poland, Belarus, Germany, United Kingdom, Singapore, Canada 15% YoY growth (693 → 798 employees) 3.0/5 ⭐ rating (293 reviews) | 36% CEO approval Lytx/"
+    },
+    {
+      "id": "lytx-com",
+      "name": "lytx.com",
+      "careersUrl": "https://www.lytx.com/en-us/about-us/careers",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "maxicus-com",
+      "name": "maxicus.com",
+      "careersUrl": "https://maxicus.com/careers",
+      "whereYouCanWork": "/Outsourcing and Offshoring ConsultingTech-enabled BPM and customer engagement services. Amritsar, Gurgaon, Vadodara, Kolkata, Bangalore 50% YoY growth (857 → 1287 employees) 4.0/5 ⭐ rating (93 reviews) Mayvue/"
+    },
+    {
+      "id": "mayvue-com",
+      "name": "mayvue.com",
+      "careersUrl": "https://www.mayvue.com/careers/IT",
+      "whereYouCanWork": "Services and IT ConsultingPublic infrastructure software solutions provider Worldwide9% YoY growth (33 → 36 employees) 0/5 ⭐ rating (0 reviews) | No CEO approval rating Mediavine/"
+    },
+    {
+      "id": "mediavine-com",
+      "name": "mediavine.com",
+      "careersUrl": "https://www.mediavine.com/jobs",
+      "whereYouCanWork": "/Technology, Information and InternetAd management for publishers and advertisers. United States-10% YoY growth (241 → 217 employees) 4.4/5 ⭐ rating (87 reviews) | 95% CEO approval Memory/"
+    },
+    {
+      "id": "memory-ai",
+      "name": "memory.ai",
+      "careersUrl": "https://memory.ai",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "indeed-com",
+      "name": "indeed.com",
+      "careersUrl": "https://www.indeed.com/q-memory-ai-jobs.htmlSoftware",
+      "whereYouCanWork": "DevelopmentAI productivity apps for work enhancementUnited States-11% YoY growth (46 → 41 employees) 4.5/5 ⭐ rating (9 reviews) Marco Polo/"
+    },
+    {
+      "id": "marcopolo-me",
+      "name": "marcopolo.me",
+      "careersUrl": "https://www.marcopolo.me/jobs",
+      "whereYouCanWork": "/Technology, Information and InternetVideo messaging app for close connections.North America-13% YoY growth (105 → 91 employees) 4.7/5 ⭐ rating (35 reviews) | 90% CEO approval LogDNA/"
+    },
+    {
+      "id": "logdna-com",
+      "name": "logdna.com",
+      "careersUrl": "https://logdna.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "luxoft-com",
+      "name": "luxoft.com",
+      "careersUrl": "https://www.luxoft.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "career-luxoft-com",
+      "name": "career.luxoft.com",
+      "careersUrl": "https://career.luxoft.com",
+      "whereYouCanWork": "/Information Technology and ServicesDigital strategy and bespoke technology solutions. Worldwide41% YoY growth (318 → 449 employees) 3.9/5 ⭐ rating (4,808 reviews) | 78% CEO approval LivePerson/"
+    },
+    {
+      "id": "liveperson-com",
+      "name": "liveperson.com",
+      "careersUrl": "https://www.liveperson.com/company/careers",
+      "whereYouCanWork": "/Software DevelopmentAI-driven customer conversation platformHerzliya, London, Mannheim, Melbourne, United States, Singapore, Sofia, Tokyo -7% YoY growth (1547 → 1432 employees) 2.8/5 ⭐ rating (877 reviews) | 63% CEO approval madewithlove/"
+    },
+    {
+      "id": "madewithlove-com",
+      "name": "madewithlove.com",
+      "careersUrl": "https://madewithlove.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetDigital product development and team building. Worldwide11 YoY growth (27 → 30 employees) 4.5/5 ⭐ rating (2 reviews) Lifetime Value Company/"
+    },
+    {
+      "id": "ltvco-com",
+      "name": "ltvco.com",
+      "careersUrl": "https://www.ltvco.com/careers",
+      "whereYouCanWork": "/Software DevelopmentData-driven consumer brand developmentWorldwide8% YoY growth (259 → 280 employees) 4.7/5 ⭐ rating (118 reviews) | 99% CEO approval IQVIA/"
+    },
+    {
+      "id": "jobs-iqvia-com",
+      "name": "jobs.iqvia.com",
+      "careersUrl": "https://jobs.iqvia.com/our-company",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "komoot-com",
+      "name": "komoot.com",
+      "careersUrl": "https://www.komoot.com/jobs",
+      "whereYouCanWork": "Software DevelopmentOutdoor adventure planning appGermany, France, Netherlands, United Kingdom, Poland, Austria, Switzerland, Italy 13% YoY growth (231 → 262 employees) 4.5/5 ⭐ rating (47 reviews) | 92% CEO approval Leadfeeder/"
+    },
+    {
+      "id": "leadfeeder-com",
+      "name": "leadfeeder.com",
+      "careersUrl": "https://www.leadfeeder.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "dealfront-com",
+      "name": "dealfront.com",
+      "careersUrl": "https://www.dealfront.com/careers",
+      "whereYouCanWork": "/Software DevelopmentWebsite visitor analytics and lead generation.Germany-43% YoY growth (87 → 50 employees) 4.1/5 ⭐ rating (41 reviews) LeadIQ/"
+    },
+    {
       "id": "leadiq-com",
       "name": "leadiq.com",
       "careersUrl": "https://leadiq.com/careers",
       "whereYouCanWork": "Software DevelopmentAutomated CRM enrichment and pipeline generation. Worldwide-12% YoY growth (148 → 130 employees) 3.1/5 ⭐ rating (71-77 reviews) | 81% CEO approval Kona/"
+    },
+    {
+      "id": "heykona-com",
+      "name": "heykona.com",
+      "careersUrl": "https://www.heykona.com/careers",
+      "whereYouCanWork": "Software DevelopmentAI-powered meeting assistant for remote managers Worldwide25 YoY growth (80 → 100 employees) 5.0/5 ⭐ rating (1 review) Litmus/"
     },
     {
       "id": "litmus-com",
@@ -1425,10 +2764,76 @@
       "whereYouCanWork": "/Software DevelopmentConversational AI for restaurant ordering.Worldwide-16% YoY growth (89 → 75 employees) 4.5/5 ⭐ rating (18 reviews) | 91% CEO approval Jobsity/"
     },
     {
+      "id": "recruitment-jobsity-com",
+      "name": "recruitment.jobsity.com",
+      "careersUrl": "https://recruitment.jobsity.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-jobsity-com",
+      "name": "careers.jobsity.com",
+      "careersUrl": "https://careers.jobsity.com/IT",
+      "whereYouCanWork": "Services and IT ConsultingOutsourcing with local talent and support.Worldwide1% YoY growth (263 → 264 employees) 4.2/5 ⭐ rating (193 reviews) | 86% CEO approval Jitera/"
+    },
+    {
+      "id": "iruuza-inc-com",
+      "name": "iruuza-inc.com",
+      "careersUrl": "https://iruuza-inc.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "jitera-com",
+      "name": "jitera.com",
+      "careersUrl": "https://jitera.com/careerInformation",
+      "whereYouCanWork": "Technology and ServicesAI-powered software development automation platform Worldwide120% YoY growth (50 → 110 employees) 4.0/5 ⭐ rating (1 review) Intevity/"
+    },
+    {
+      "id": "intevity-com",
+      "name": "intevity.com",
+      "careersUrl": "https://www.intevity.com/careers",
+      "whereYouCanWork": "Business Consulting and ServicesDigital strategy and solutions consultancyWorldwide-13% YoY growth (45 → 39 employees) 4.7/5 ⭐ rating (35 reviews) | 100% CEO approval Khan Academy/"
+    },
+    {
       "id": "khanacademy-org",
       "name": "khanacademy.org",
       "careersUrl": "https://www.khanacademy.org/careersE-Learning",
       "whereYouCanWork": "ProvidersFree online educational resourcesUnited States, Canada, India, Brazil 27% YoY growth (1394 → 1766 employees) 4.2/5 ⭐ rating (150 reviews) | 90% CEO approval Kodify/"
+    },
+    {
+      "id": "kodify-io",
+      "name": "kodify.io",
+      "careersUrl": "https://kodify.io",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "kodify-recruitee-com",
+      "name": "kodify.recruitee.com",
+      "careersUrl": "https://kodify.recruitee.com",
+      "whereYouCanWork": "/Technology, Information and InternetVideo content and website development.Barcelona, Spain, Los Angeles, United States, Montreal, Canada, European Union 3% YoY growth (94 → 97 employees) 4.8/5 ⭐ rating (25 reviews) | 100% CEO approval JupiterOne/"
+    },
+    {
+      "id": "jupiterone-com",
+      "name": "jupiterone.com",
+      "careersUrl": "https://www.jupiterone.com/careers",
+      "whereYouCanWork": "Software DevelopmentCyber asset management and security platform. United States-39% YoY growth (133 → 81 employees) 3.7/5 ⭐ rating (89 reviews) | 100% CEO approval Kissmetrics/"
+    },
+    {
+      "id": "kissmetrics-com",
+      "name": "kissmetrics.com",
+      "careersUrl": "https://www.kissmetrics.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "jaya-tech",
+      "name": "jaya.tech",
+      "careersUrl": "https://jaya.tech",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "ironin-it",
+      "name": "ironin.it",
+      "careersUrl": "https://www.ironin.it",
+      "whereYouCanWork": "/"
     },
     {
       "id": "careers-ironin-it",
@@ -1437,10 +2842,70 @@
       "whereYouCanWork": "Services and IT ConsultingWeb, Mobile, and DevOps Development Services Worldwide-29% YoY growth (45 → 32 employees) 4.6/5 ⭐ rating (8 reviews) Kinsta/"
     },
     {
+      "id": "kinsta-com",
+      "name": "kinsta.com",
+      "careersUrl": "https://kinsta.com/careers/IT",
+      "whereYouCanWork": "Services and IT ConsultingWeb hosting servicesWorldwide-14% YoY growth (251 → 215 employees) 4.1/5 ⭐ rating (68 reviews) | 74% CEO approval Kentik/"
+    },
+    {
+      "id": "kentik-com",
+      "name": "kentik.com",
+      "careersUrl": "https://www.kentik.com/careers",
+      "whereYouCanWork": "/Computer Networking ProductsNetwork observability and performance platform Worldwide7% YoY growth (195 → 209 employees) 3.5/5 ⭐ rating (54 reviews) | 73% CEO approval Joyent/"
+    },
+    {
       "id": "joyent-com",
       "name": "joyent.com",
       "careersUrl": "https://www.joyent.com/careers",
       "whereYouCanWork": "/Information Technology and ServicesCloud infrastructure and services providerMountain View, United States, Worldwide 7% YoY growth (103 → 110 employees) 3.3/5 ⭐ rating (38 reviews) | 70% CEO approval Klaviyo/"
+    },
+    {
+      "id": "klaviyo-com",
+      "name": "klaviyo.com",
+      "careersUrl": "https://www.klaviyo.com/careers",
+      "whereYouCanWork": "Marketing ServicesData-driven customer engagement platformUnited States, Ireland, United Kingdom, Singapore, Australia 23% YoY growth (2115 → 2594 employees) 3.4/5 ⭐ rating (593 reviews) | 61% CEO approval Two/"
+    },
+    {
+      "id": "two-ai",
+      "name": "two.ai",
+      "careersUrl": "https://www.two.ai/joinusTechnology",
+      "whereYouCanWork": ", Information and MediaMultilingual AI language models and solutions. United States, South Korea, India 4.8/5 ⭐ rating (57 reviews) | 100% CEO approval uShip/"
+    },
+    {
+      "id": "uship-com",
+      "name": "uship.com",
+      "careersUrl": "https://www.uship.com/about/careers",
+      "whereYouCanWork": "/Transportation, Logistics, Supply Chain and StorageOnline shipping marketplace for large items.United States-2% YoY growth (217 → 212 employees) 3.7/5 ⭐ rating (104 reviews) | 88% CEO approval Uncapped/"
+    },
+    {
+      "id": "weareuncapped-com",
+      "name": "weareuncapped.com",
+      "careersUrl": "https://www.weareuncapped.com/careers",
+      "whereYouCanWork": "Financial ServicesNon-dilutive capital for business growth.London, Warsaw, United States-4% YoY growth (90 → 86 employees) 3.4/5 ⭐ rating (31 reviews) Tuft & Needle/"
+    },
+    {
+      "id": "tuftandneedle-com",
+      "name": "tuftandneedle.com",
+      "careersUrl": "https://www.tuftandneedle.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-sertasimmons-com",
+      "name": "careers.sertasimmons.com",
+      "careersUrl": "https://careers.sertasimmons.com",
+      "whereYouCanWork": "/United States, Canada 3.4/5 ⭐ rating (7 reviews) | 0% CEO approval IPS Group, Inc."
+    },
+    {
+      "id": "ipsgroupinc-com",
+      "name": "ipsgroupinc.com",
+      "careersUrl": "https://ipsgroupinc.com/careers/TelecommunicationsSmart",
+      "whereYouCanWork": "parking solutions for urban cities.United States, United Kingdom, Canada 7% YoY growth (130 → 139 employees) 3.6/5 ⭐ rating (26 reviews) | 85% CEO approval 3.9/5 ⭐ rating (34 reviews) | 89% CEO approval Udacity/"
+    },
+    {
+      "id": "udacity-com",
+      "name": "udacity.com",
+      "careersUrl": "https://udacity.com/jobsE-LearningDigital",
+      "whereYouCanWork": "workforce training programsIndia, Egypt, United States, Oman, United Kingdom, Japan, Saudi Arabia, UAE, Singapore, Canada, Germany, France, Spain, Netherlands -6% YoY growth (3454 → 3256 employees) 3.9/5 ⭐ rating (312 reviews) | 73% CEO approval Valimail/"
     },
     {
       "id": "valimail-com",
@@ -1455,10 +2920,118 @@
       "whereYouCanWork": "Software DevelopmentCustomer engagement and communication platform Bengaluru, India, Dublin, Ireland, Australia, Brazil, Colombia, Estonia, Germany, Japan, Poland, Singapore, Spain, United Kingdom, United States -3% YoY growth (6588 → 6372 employees) 3.7/5 ⭐ rating (178 reviews) | 67% CEO approval Turing/"
     },
     {
+      "id": "turing-com",
+      "name": "turing.com",
+      "careersUrl": "https://www.turing.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-turing-com",
+      "name": "careers.turing.com",
+      "careersUrl": "https://careers.turing.com",
+      "whereYouCanWork": "/Technology, Information and InternetAGI infrastructure and AI solutions providerUnited States, India, Brazil92% YoY growth (2500 → 4800 employees) 3.9/5 ⭐ rating (843 reviews) | 76% CEO approval Thinkful/"
+    },
+    {
+      "id": "thinkful-com",
+      "name": "thinkful.com",
+      "careersUrl": "https://www.thinkful.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "thorn-org",
+      "name": "thorn.org",
+      "careersUrl": "https://www.thorn.org/careers/Non-profit",
+      "whereYouCanWork": "OrganizationsChild protection from sexual exploitation.United States3% YoY growth (154 → 158 employees) 4.7/5 ⭐ rating (9 reviews) | 100% CEO approval TheoremOne/"
+    },
+    {
       "id": "theoremone-co",
       "name": "theoremone.co",
       "careersUrl": "https://www.theoremone.co/careers",
       "whereYouCanWork": "IT Services and IT ConsultingInnovation and engineering consulting services Worldwide-57% YoY growth (221 → 95 employees) 3.5/5 ⭐ rating (4 reviews) The Grid/"
+    },
+    {
+      "id": "thegrid-io",
+      "name": "thegrid.io",
+      "careersUrl": "https://thegrid.io",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "grid-is",
+      "name": "grid.is",
+      "careersUrl": "https://grid.is/careers",
+      "whereYouCanWork": "Technology, Information and InternetAI-driven website design platformIceland7% YoY growth (28 → 30 employees) 3.9/5 ⭐ rating (4 reviews) | The Wirecutter/"
+    },
+    {
+      "id": "thewirecutter-com",
+      "name": "thewirecutter.com",
+      "careersUrl": "https://thewirecutter.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "nytimes-wd5-myworkdayjobs-com",
+      "name": "nytimes.wd5.myworkdayjobs.com",
+      "careersUrl": "https://nytimes.wd5.myworkdayjobs.com/WirecutterBook",
+      "whereYouCanWork": "and Periodical PublishingProduct recommendation and review service.United States 2.4/5 ⭐ rating (25 reviews) | 29% recommend to a friend TrussWorks/"
+    },
+    {
+      "id": "truss-works",
+      "name": "truss.works",
+      "careersUrl": "https://truss.works/jobs",
+      "whereYouCanWork": "Software DevelopmentCivic tech consulting and digital transformation. United States-33% YoY growth (203 → 135 employees) 3.3/5 ⭐ rating (30 reviews) | 50% CEO approval Toast/"
+    },
+    {
+      "id": "pos-toasttab-com",
+      "name": "pos.toasttab.com",
+      "careersUrl": "https://pos.toasttab.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-toasttab-com",
+      "name": "careers.toasttab.com",
+      "careersUrl": "https://careers.toasttab.com",
+      "whereYouCanWork": "/Software DevelopmentRestaurant management software and hardware solutions. Canada, India, Ireland, Taiwan, United Kingdom, United States 12% YoY growth (5561 → 6226 employees) 3.9/5 ⭐ rating (1,363 reviews) | 70% CEO approval Transition Technologies - Advanced Solutions/"
+    },
+    {
+      "id": "tt-com-pl",
+      "name": "tt.com.pl",
+      "careersUrl": "http://www.tt.com.pl",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "kariera-ttpsc-com",
+      "name": "kariera.ttpsc.com",
+      "careersUrl": "https://kariera.ttpsc.com/en",
+      "whereYouCanWork": "/Information Technology and ServicesAdvanced IT solutions and services providerPoland, United States, Germany, Denmark, France, Taipei, Australia -5% YoY growth (153 → 146 employees) 3.6/5 ⭐ rating (24 reviews) Truelogic/"
+    },
+    {
+      "id": "truelogicsoftware-com",
+      "name": "truelogicsoftware.com",
+      "careersUrl": "https://www.truelogicsoftware.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "truelogic-io",
+      "name": "truelogic.io",
+      "careersUrl": "https://www.truelogic.io/careers",
+      "whereYouCanWork": "Information Technology and ServicesHire elite Latin American tech talentWorldwide21% YoY growth (257 → 310 employees) 4.6/5 ⭐ rating (75 reviews) | 99% CEO approval Test Double/"
+    },
+    {
+      "id": "testdouble-com",
+      "name": "testdouble.com",
+      "careersUrl": "https://testdouble.com/culture-careersSoftware",
+      "whereYouCanWork": "DevelopmentRemote software consulting and development agency. United States, Canada10 YoY growth (115 → 126 employees) 4.9/5 ⭐ rating (18 reviews) | 100% CEO approval toggl/"
+    },
+    {
+      "id": "toggl-com",
+      "name": "toggl.com",
+      "careersUrl": "https://toggl.com/jobs",
+      "whereYouCanWork": "/Software DevelopmentProductivity and project management tools.Worldwide30% YoY growth (109 → 142 employees) 4.4/5 ⭐ rating (74 reviews) | 88% CEO approval The Scale Factory/"
+    },
+    {
+      "id": "scalefactory-com",
+      "name": "scalefactory.com",
+      "careersUrl": "https://scalefactory.com/about/careers/IT",
+      "whereYouCanWork": "Services and IT ConsultingScalable internet services consulting.Poland, Portugal, Slovenia, United Kingdom 16% YoY growth (26 → 30 employees) 2.9/5 ⭐ rating (2 reviews) Toptal/"
     },
     {
       "id": "toptal-com",
@@ -1473,10 +3046,64 @@
       "whereYouCanWork": "Software DevelopmentManaged Apache Pulsar streaming services.Worldwide-16% YoY growth (82 → 69 employees) 4.3/5 ⭐ rating (22 reviews) | 88% CEO approval SweetRush/"
     },
     {
+      "id": "sweetrush-com",
+      "name": "sweetrush.com",
+      "careersUrl": "https://www.sweetrush.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "sweetrush-applytojob-com",
+      "name": "sweetrush.applytojob.com",
+      "careersUrl": "https://sweetrush.applytojob.com/applyHuman",
+      "whereYouCanWork": "Resources ServicesLearning and development consulting services Worldwide9% YoY growth (218 → 238 employees) 4.3/5 ⭐ rating (39 reviews) | 100% CEO approval Telerik/"
+    },
+    {
       "id": "telerik-com",
       "name": "telerik.com",
       "careersUrl": "https://www.telerik.com/company/careers",
       "whereYouCanWork": "Software DevelopmentUI components and testing tools for developers. Worldwide 3.7/5 ⭐ rating (44 reviews) TeamUltra/"
+    },
+    {
+      "id": "computacenter-com",
+      "name": "computacenter.com",
+      "careersUrl": "https://www.computacenter.com/careers",
+      "whereYouCanWork": "Information Technology and ServicesTechnology infrastructure and services provider Canada, United States, India, Japan, Belgium, France, Germany, Netherlands, Poland, Romania, United Kingdom 9% YoY growth (16,867 → 18,390 employees) 3.7/5 ⭐ rating (1,281 reviews) | 90% CEO approval TatvaSoft/"
+    },
+    {
+      "id": "tatvasoft-com",
+      "name": "tatvasoft.com",
+      "careersUrl": "https://www.tatvasoft.com/careerInformation",
+      "whereYouCanWork": "Technology and ServicesSoftware development services providerUnited States, India, United Kingdom, Canada, Australia, Japan -2% YoY growth (1596 → 1572 employees) 4.0/5 ⭐ rating (499 reviews) TeamSnap/"
+    },
+    {
+      "id": "teamsnap-com",
+      "name": "teamsnap.com",
+      "careersUrl": "https://www.teamsnap.com/company/careers",
+      "whereYouCanWork": "Software DevelopmentYouth sports management and engagement platform. United States-8% YoY growth (204 → 187 employees) 3.0/5 ⭐ rating (87 reviews) | 60% CEO approval Surevine/"
+    },
+    {
+      "id": "surevine-com",
+      "name": "surevine.com",
+      "careersUrl": "https://surevine.com/careers",
+      "whereYouCanWork": "Software DevelopmentSecure collaboration solutions for sensitive information Worldwide13 YoY growth (23 → 26 employees) 4.5/5 ⭐ rating (2 reviews) | 100% CEO approval Sysdig/"
+    },
+    {
+      "id": "sysdig-com",
+      "name": "sysdig.com",
+      "careersUrl": "https://sysdig.com/careers",
+      "whereYouCanWork": "/Computer and Network SecurityCloud security and attack prevention.Belgrade, United States, Tokyo, Mumbai, France, Germany, Ireland, Spain, United Kingdom, India -11% YoY growth (857 → 767 employees) 3.8/5 ⭐ rating (214 reviews) | 73% CEO approval Skillshare/"
+    },
+    {
+      "id": "skillshare-com",
+      "name": "skillshare.com",
+      "careersUrl": "https://www.skillshare.com/en/careers?srsltid=AfmBOopsD_GO8MgQJHAR0yiEZUxBuOz-IY9ZAJ7sFORx0obYyGhgysvAE-Learning",
+      "whereYouCanWork": "ProvidersCreative online learning and team solutions.NA-7% YoY growth (644 → 598 employees) 3.5/5 ⭐ rating (62 reviews) | 61% CEO approval Spreaker/"
+    },
+    {
+      "id": "spreaker-com",
+      "name": "spreaker.com",
+      "careersUrl": "https://spreaker.com",
+      "whereYouCanWork": "/"
     },
     {
       "id": "careers-spreaker-com",
@@ -1485,10 +3112,34 @@
       "whereYouCanWork": "/Technology, Information and InternetPodcast monetization and distribution platform Worldwide-9% YoY growth (149 → 136 employees)No data available for Spreaker.com reviews on Glassdoor. Sommo/"
     },
     {
+      "id": "sommo-io",
+      "name": "sommo.io",
+      "careersUrl": "https://www.sommo.io",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "upwork-com",
+      "name": "upwork.com",
+      "careersUrl": "https://www.upwork.com/careers",
+      "whereYouCanWork": "Software Development\"Global freelance talent marketplace\"United States, Latin America7% YoY growth (134889 → 144138 employees) 3.8/5 ⭐ rating (750 reviews) | 60% CEO approval Taskade/"
+    },
+    {
+      "id": "status-im",
+      "name": "status.im",
+      "careersUrl": "https://www.status.im",
+      "whereYouCanWork": "/"
+    },
+    {
       "id": "status-app",
       "name": "status.app",
       "careersUrl": "https://status.app/jobs",
       "whereYouCanWork": "Software DevelopmentDecentralized crypto communication app platform. Worldwide-16% YoY growth (341 → 288 employees) 4.6/5 ⭐ rating (113 reviews) | 74% CEO approval Stack Exchange/"
+    },
+    {
+      "id": "stackexchange-com",
+      "name": "stackexchange.com",
+      "careersUrl": "https://stackexchange.com",
+      "whereYouCanWork": "/"
     },
     {
       "id": "stackoverflow-co",
@@ -1497,10 +3148,58 @@
       "whereYouCanWork": "/Software DevelopmentDeveloper knowledge sharing and collaboration platform. APAC, Australia, Brazil, Canada, Dach, EMEA, Germany, UK, United States -5% YoY growth (661 → 629 employees) 3.2/5 ⭐ rating (282 reviews) | 54% CEO approval Spruce/"
     },
     {
+      "id": "getspruce-com",
+      "name": "getspruce.com",
+      "careersUrl": "https://getspruce.com/careers",
+      "whereYouCanWork": "/Consumer ServicesOn-demand home cleaning and management services. North America, Latin America14% YoY growth (93 → 106 employees) 3.6/5 ⭐ rating (70 reviews) | 79% CEO approval 3.2/5 ⭐ rating (63 reviews) Smile.io/"
+    },
+    {
+      "id": "smile-io",
+      "name": "smile.io",
+      "careersUrl": "https://smile.io/careers/IT",
+      "whereYouCanWork": "Services and IT ConsultingLoyalty programs for sustainable growthWorldwide-3% YoY growth (60 → 58 employees) 4.3/5 ⭐ rating (68 reviews) | 87% CEO approval SoftwareMill/"
+    },
+    {
+      "id": "softwaremill-com",
+      "name": "softwaremill.com",
+      "careersUrl": "https://softwaremill.com/join-us",
+      "whereYouCanWork": "/Software DevelopmentCustom software solutions and IT consultingWorldwide5% YoY growth (200 → 210 employees) 4.8/5 ⭐ rating (5 reviews) Skyrocket Ventures/"
+    },
+    {
+      "id": "skyrocketventures-com",
+      "name": "skyrocketventures.com",
+      "careersUrl": "https://www.skyrocketventures.com/careers",
+      "whereYouCanWork": "/Staffing and Recruiting\"Tech recruiting for high-growth companies\"United States25% YoY growth (28 → 35 employees) 4.5/5 ⭐ rating (19 reviews) | 100% CEO approval Soostone/"
+    },
+    {
+      "id": "soostone-com",
+      "name": "soostone.com",
+      "careersUrl": "https://www.soostone.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "soostone-client-webflow-io",
+      "name": "soostone-client.webflow.io",
+      "careersUrl": "https://soostone-client.webflow.io/aboutIT",
+      "whereYouCanWork": "Services and IT ConsultingAI-driven business optimization platformUnited States, Canada, Germany, Poland, Turkey 4% YoY growth (25 → 26 employees) 5.0/5 ⭐ rating (3 reviews) Stitch Fix/"
+    },
+    {
+      "id": "stitchfix-com",
+      "name": "stitchfix.com",
+      "careersUrl": "https://www.stitchfix.com/careers",
+      "whereYouCanWork": "Retail Apparel and FashionOnline personal styling service.United States-5% YoY growth (4484 → 4247 employees) 3.1/5 ⭐ rating (2,744 reviews) | 51% CEO approval Semaphore/"
+    },
+    {
       "id": "semaphoreci-com",
       "name": "semaphoreci.com",
       "careersUrl": "https://semaphoreci.com/hiringSoftware",
       "whereYouCanWork": "DevelopmentCI/CD platform for engineering teams.Worldwide ScyllaDB/"
+    },
+    {
+      "id": "scylladb-com",
+      "name": "scylladb.com",
+      "careersUrl": "https://www.scylladb.com/company/careers",
+      "whereYouCanWork": "/Software DevelopmentHigh-performance, low-latency database solutions Worldwide21% YoY growth (171 → 207 employees) 4.2/5 ⭐ rating (42 reviews) SecurityScorecard/"
     },
     {
       "id": "securityscorecard-com",
@@ -1509,10 +3208,46 @@
       "whereYouCanWork": "/Data Security Software ProductsCybersecurity risk ratings and managementUruguay, Prague, Romania, London, Argentina, Turkey 0% YoY growth (558 → 558 employees) 2.7/5 ⭐ rating (278 reviews) | 37% CEO approval Scopic Software/"
     },
     {
+      "id": "scopicsoftware-com",
+      "name": "scopicsoftware.com",
+      "careersUrl": "https://scopicsoftware.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-scopicsoftware-com",
+      "name": "careers.scopicsoftware.com",
+      "careersUrl": "https://careers.scopicsoftware.com",
+      "whereYouCanWork": "/Software DevelopmentCustom software development and digital marketing Worldwide10% YoY growth (207 → 227 employees) 4.6/5 ⭐ rating (184 reviews) | 98% CEO approval Shopify/"
+    },
+    {
       "id": "shopify-com",
       "name": "shopify.com",
       "careersUrl": "https://www.shopify.com/careers",
       "whereYouCanWork": "Software DevelopmentE-commerce platform for businesses worldwide. Worldwide24% YoY growth (17,773 → 22,062 employees) 3.3/5 ⭐ rating (3,213 reviews) | 51% CEO approval Silverfin/"
+    },
+    {
+      "id": "silverfin-com",
+      "name": "silverfin.com",
+      "careersUrl": "https://silverfin.com/careers/IT",
+      "whereYouCanWork": "Services and IT ConsultingCloud platform for enhanced accounting services. Belgium, Luxembourg, Netherlands, United Kingdom 3% YoY growth (177 → 182 employees) 4.0/5 ⭐ rating (83 reviews) | 100% CEO approval Server Density/"
+    },
+    {
+      "id": "scandit-com",
+      "name": "scandit.com",
+      "careersUrl": "https://www.scandit.com/careers",
+      "whereYouCanWork": "/Software DevelopmentSmart data capture for businessesSwitzerland, UK, United States, Spain, France, Germany, Finland, Poland, Italy, Japan, 5 continents 0% YoY growth (414 → 416 employees) 4.0/5 ⭐ rating (135 reviews) | 90% CEO approval Shippabo/"
+    },
+    {
+      "id": "shippabo-com",
+      "name": "shippabo.com",
+      "careersUrl": "https://shippabo.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "scrapinghub-com",
+      "name": "scrapinghub.com",
+      "careersUrl": "https://scrapinghub.com",
+      "whereYouCanWork": "/"
     },
     {
       "id": "zyte-com",
@@ -1521,16 +3256,100 @@
       "whereYouCanWork": "Services and IT ConsultingEthical web data collection and extraction.Worldwide-1% YoY growth (213 → 211 employees) Sendwave/"
     },
     {
+      "id": "sendwave-com",
+      "name": "sendwave.com",
+      "careersUrl": "https://www.sendwave.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "zepzpay-com",
+      "name": "zepzpay.com",
+      "careersUrl": "https://www.zepzpay.com/careers",
+      "whereYouCanWork": "Financial ServicesAffordable international money transfers appWorldwide-30% YoY growth (253 → 176 employees) 3.8/5 ⭐ rating (82 reviews) | CEO approval mentioned in reviews SimpleTexting/"
+    },
+    {
+      "id": "simpletexting-com",
+      "name": "simpletexting.com",
+      "careersUrl": "https://simpletexting.com/careers",
+      "whereYouCanWork": "/Advertising ServicesSMS marketing and communication platformWorldwide-28% YoY growth (81 → 58 employees) 3.8/5 ⭐ rating (34 reviews) Research Square/"
+    },
+    {
+      "id": "researchsquare-com",
+      "name": "researchsquare.com",
+      "careersUrl": "https://www.researchsquare.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "research-square-com",
+      "name": "research-square.com",
+      "careersUrl": "https://research-square.com/our-jobs",
+      "whereYouCanWork": "/Book and Periodical PublishingResearch communication and manuscript preparation services. Netherlands-59% YoY growth (197 → 80 employees) 3.0/5 ⭐ rating (280 reviews) | 61% CEO approval RemoteBase/"
+    },
+    {
+      "id": "remotebase-com",
+      "name": "remotebase.com",
+      "careersUrl": "https://remotebase.com/jobs",
+      "whereYouCanWork": "IT Services and IT ConsultingHire top 1% remote engineering talent.Pakistan-16% YoY growth (171 → 144 employees) 3.8/5 ⭐ rating (39 reviews) Salesforce/"
+    },
+    {
+      "id": "salesforce-com",
+      "name": "salesforce.com",
+      "careersUrl": "https://www.salesforce.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-salesforce-com",
+      "name": "careers.salesforce.com",
+      "careersUrl": "https://careers.salesforce.com/en/jobs",
+      "whereYouCanWork": "/Software DevelopmentCustomer relationship management solutions.Worldwide9% YoY growth (71515 → 77719 employees) 4.1/5 ⭐ rating (19,798 reviews) | 84% CEO approval ReCharge/"
+    },
+    {
+      "id": "rechargepayments-com",
+      "name": "rechargepayments.com",
+      "careersUrl": "https://rechargepayments.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "getrecharge-com",
+      "name": "getrecharge.com",
+      "careersUrl": "https://getrecharge.com/careers",
+      "whereYouCanWork": "/Software DevelopmentSubscription management for ecommerce brands. Thailand, United States 4.0/5 ⭐ rating (215 reviews) | 72% CEO approval Replit/"
+    },
+    {
+      "id": "replit-com",
+      "name": "replit.com",
+      "careersUrl": "https://replit.com/careers",
+      "whereYouCanWork": "Software DevelopmentAI-powered web app development platformUnited States-11% YoY growth (163 → 146 employees) 4.1/5 ⭐ rating (14 reviews) Rocket.Chat/"
+    },
+    {
       "id": "rocket-chat",
       "name": "rocket.chat",
       "careersUrl": "https://rocket.chat/company/careers",
       "whereYouCanWork": "Software DevelopmentSecure, customizable communication platform. Worldwide-2% YoY growth (178 → 175 employees) 4.2/5 ⭐ rating (44 reviews) | 80% CEO approval Safeguard Global/"
     },
     {
+      "id": "safeguardglobal-com",
+      "name": "safeguardglobal.com",
+      "careersUrl": "https://www.safeguardglobal.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-safeguardglobal-com",
+      "name": "careers.safeguardglobal.com",
+      "careersUrl": "https://careers.safeguardglobal.com",
+      "whereYouCanWork": "/Human Resources ServicesGlobal workforce management solutionsWorldwide13% YoY growth (1760 → 1986 employees) 3.8/5 ⭐ rating (293 reviews) | 76% CEO approval RenoFi/"
+    },
+    {
       "id": "renofi-com",
       "name": "renofi.com",
       "careersUrl": "https://www.renofi.com/careers",
       "whereYouCanWork": "/Financial ServicesHome renovation financing solutionsUnited States, India, Poland, Ukraine, Sri Lanka, Greece, Ireland, Pakistan, Sweden, Germany, Bulgaria, Brazil 21% YoY growth (73 → 88 employees) 3.7/5 ⭐ rating (16 reviews) Redox/"
+    },
+    {
+      "id": "redoxengine-com",
+      "name": "redoxengine.com",
+      "careersUrl": "https://redoxengine.com/company/careers",
+      "whereYouCanWork": "Hospitals and Health CareReal-time healthcare data exchange platformWorldwide-6% YoY growth (222 → 208 employees) 3.3/5 ⭐ rating (77 reviews) | 8% CEO approval RebelMouse/"
     },
     {
       "id": "rebelmouse-com",
@@ -1545,10 +3364,64 @@
       "whereYouCanWork": "Services and IT ConsultingKubernetes enablement and optimization solutions Worldwide-5% YoY growth (60 → 57 employees) 0/5 ⭐ rating (0 reviews) Ramp/"
     },
     {
+      "id": "ramp-com",
+      "name": "ramp.com",
+      "careersUrl": "https://ramp.com/careers",
+      "whereYouCanWork": "Financial ServicesAll-in-one financial operations platform.United States, Canada47% YoY growth (991 → 1454 employees) 4.2/5 ⭐ rating (116 reviews) | 88% CEO approval Primer/"
+    },
+    {
+      "id": "primer-io",
+      "name": "primer.io",
+      "careersUrl": "https://primer.io/careers",
+      "whereYouCanWork": "Financial ServicesUnified payments and commerce infrastructure. Worldwide10% YoY growth (172 → 190 employees) 4.0/5 ⭐ rating (67 reviews) | 62% recommend to a friend Persefoni/"
+    },
+    {
       "id": "persefoni-com",
       "name": "persefoni.com",
       "careersUrl": "https://www.persefoni.com/company/careers",
       "whereYouCanWork": "Software DevelopmentClimate management and accounting platform Worldwide-32% YoY growth (235 → 161 employees) 3.8/5 ⭐ rating (124 reviews) | 66% CEO approval BetterUp/"
+    },
+    {
+      "id": "betterup-com",
+      "name": "betterup.com",
+      "careersUrl": "https://www.betterup.com/about-us/careers",
+      "whereYouCanWork": "Professional Training and CoachingHuman transformation and coaching solutions NA1% YoY growth (2785 → 2788 employees) 2.9/5 ⭐ rating (633 reviews) | 36% CEO approval Procurify/"
+    },
+    {
+      "id": "procurify-com",
+      "name": "procurify.com",
+      "careersUrl": "https://procurify.com/careers",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "goraft-tech",
+      "name": "goraft.tech",
+      "careersUrl": "https://goraft.tech",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "teamraft-com",
+      "name": "teamraft.com",
+      "careersUrl": "https://teamraft.com/who-we-are/careers",
+      "whereYouCanWork": "/Software DevelopmentDefense AI/ML and data solutionsWorldwide57% YoY growth (229 → 359 employees) Raft Technologies: 4.5/5 ⭐ rating (4 reviews) | 100% CEO approval Raft: 4.7/5 ⭐ rating (31 reviews) | 96% CEO approval Puppet/"
+    },
+    {
+      "id": "puppet-com",
+      "name": "puppet.com",
+      "careersUrl": "https://puppet.com",
+      "whereYouCanWork": "/ I am sorry, but I cannot find the exact career page URL for puppet.com from the given search results.IT Services and IT ConsultingIT infrastructure automation solutionsUnited Kingdom, Czech Republic, Sweden, Estonia, Israel, Australia, Singapore, India, United States, Canada -9% YoY growth (238 → 217 employees)28 reviews Quora/"
+    },
+    {
+      "id": "quora-com",
+      "name": "quora.com",
+      "careersUrl": "https://www.quora.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-quora-com",
+      "name": "careers.quora.com",
+      "careersUrl": "https://www.careers.quora.com",
+      "whereYouCanWork": "/Technology, Information and InternetKnowledge sharing and AI platform development. Canada, India, Ireland, United States, Bangladesh, Costa Rica, Egypt, Estonia, Germany, Mexico, Nigeria, Poland, South Korea, Thailand, United Kingdom -1% YoY growth (1283 → 1275 employees) 4.3/5 ⭐ rating (154 reviews) | 82% CEO approval PricewaterhouseCoope rs/"
     },
     {
       "id": "pwc-com",
@@ -1557,10 +3430,58 @@
       "whereYouCanWork": "Consulting and ServicesStrategy execution and consulting services.Worldwide-2% YoY growth (6067 → 5961 employees) 3.8/5 ⭐ rating (80,385 reviews) | 85% CEO approval QuestDB/"
     },
     {
+      "id": "questdb-io",
+      "name": "questdb.io",
+      "careersUrl": "https://questdb.io",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "questdb-com",
+      "name": "questdb.com",
+      "careersUrl": "https://questdb.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetTime-series data processing databaseWorldwide-7% YoY growth (29 → 27 employees) 5.0/5 ⭐ rating (8 reviews) Safetywing/"
+    },
+    {
+      "id": "safetywing-com",
+      "name": "safetywing.com",
+      "careersUrl": "https://safetywing.com/join-us",
+      "whereYouCanWork": "Technology, Information and InternetGlobal insurance for remote workers and nomads. Worldwide5% YoY growth (126 → 132 employees) 4.2/5 ⭐ rating (28 reviews) | 96% CEO approval Wombat Security Technologies/"
+    },
+    {
+      "id": "wombatsecurity-com",
+      "name": "wombatsecurity.com",
+      "careersUrl": "https://www.wombatsecurity.com",
+      "whereYouCanWork": "/"
+    },
+    {
       "id": "proofpoint-com",
       "name": "proofpoint.com",
       "careersUrl": "https://www.proofpoint.com/us/company/careers",
       "whereYouCanWork": "Computer and Network SecurityCybersecurity and compliance solutions provider Argentina, Australia, Canada, France, Israel, Japan, United Kingdom, United States 4% YoY growth (4542 → 4737 employees) 4.8/5 ⭐ rating (15 reviews) Xapo/"
+    },
+    {
+      "id": "xapo-com",
+      "name": "xapo.com",
+      "careersUrl": "https://xapo.com/en",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "xapobank-com",
+      "name": "xapobank.com",
+      "careersUrl": "https://www.xapobank.com/en/careers",
+      "whereYouCanWork": "Financial ServicesCrypto-integrated banking with daily interest.Worldwide2% YoY growth (146 → 149 employees) 3.6/5 ⭐ rating (111 reviews) | 66% CEO approval Yandex/"
+    },
+    {
+      "id": "yandex-com",
+      "name": "yandex.com",
+      "careersUrl": "https://yandex.com/jobs",
+      "whereYouCanWork": "Technology, Information and InternetIntelligent technology and services company.Russia, Israel, United States, Europe, Central Asia, Middle East, Africa 11% YoY growth (8323 → 9251 employees) 4.3/5 ⭐ rating (2,239 reviews) | 90% CEO approval ZAMP/"
+    },
+    {
+      "id": "zamp-com-br",
+      "name": "zamp.com.br",
+      "careersUrl": "https://zamp.com.br",
+      "whereYouCanWork": "/"
     },
     {
       "id": "yodo1-com",
@@ -1575,10 +3496,40 @@
       "whereYouCanWork": "Software DevelopmentAI-powered background check platformUnited States, Chile-1% YoY growth (1412 → 1393 employees) 3.1/5 ⭐ rating (353 reviews) | 43% CEO approval Zapier/"
     },
     {
-      "id": "boards-greenhouse-io",
-      "name": "boards.greenhouse.io",
-      "careersUrl": "https://boards.greenhouse.io/voxySoftware",
-      "whereYouCanWork": "DevelopmentComprehensive hiring platform for businesses. Brazil, United States3% YoY growth (835 → 858 employees) 3.8/5 ⭐ rating (148 reviews) | 47% CEO approval Whitespectre/"
+      "id": "zapier-com",
+      "name": "zapier.com",
+      "careersUrl": "https://zapier.com/jobs",
+      "whereYouCanWork": "Software DevelopmentApp integration and automation platform.Worldwide13% YoY growth (1052 → 1185 employees) 3.8/5 ⭐ rating (267 reviews) | 72% CEO approval WP-Media/"
+    },
+    {
+      "id": "wp-media-me",
+      "name": "wp-media.me",
+      "careersUrl": "https://wp-media.me",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "freeletics-com",
+      "name": "freeletics.com",
+      "careersUrl": "https://www.freeletics.com/en/corporate/jobs",
+      "whereYouCanWork": "/Wellness and Fitness ServicesAI-based fitness and lifestyle coachingNA4% YoY growth (120 → 125 employees) 4.1/5 ⭐ rating (87 reviews) | 76% CEO approval Wikimedia Foundation/"
+    },
+    {
+      "id": "wikimediafoundation-org",
+      "name": "wikimediafoundation.org",
+      "careersUrl": "https://wikimediafoundation.org/about/jobs",
+      "whereYouCanWork": "/Software DevelopmentOperates and supports free knowledge projects. Worldwide6% YoY growth (993 → 1051 employees) 3.9/5 ⭐ rating (161 reviews) | 87% CEO approval Checkly/"
+    },
+    {
+      "id": "checklyhq-com",
+      "name": "checklyhq.com",
+      "careersUrl": "https://www.checklyhq.com/careers",
+      "whereYouCanWork": "/Technology, Information and InternetApplication reliability and monitoring platform Worldwide43% YoY growth (35 → 50 employees) 4.8/5 ⭐ rating (6 reviews) | 100% CEO approval WikiHow/"
+    },
+    {
+      "id": "wikihow-com",
+      "name": "wikihow.com",
+      "careersUrl": "https://www.wikihow.com/wikiHow:About-wikiHow",
+      "whereYouCanWork": "/"
     },
     {
       "id": "whitespectre-com",
@@ -1593,10 +3544,52 @@
       "whereYouCanWork": "Services and IT ConsultingBuilds digital products and modernizes technology. Worldwide-3% YoY growth (1490 → 1443 employees) 3.8/5 ⭐ rating (628 reviews) Wolverine Trading/"
     },
     {
+      "id": "wolve-com",
+      "name": "wolve.com",
+      "careersUrl": "https://www.wolve.com/careers",
+      "whereYouCanWork": "Financial ServicesDiversified financial trading and technology solutions United States-5% YoY growth (301 → 286 employees) 4.3/5 ⭐ rating (98 reviews) | 88% CEO approval WebDevStudios/"
+    },
+    {
       "id": "webdevstudios-com",
       "name": "webdevstudios.com",
       "careersUrl": "https://webdevstudios.com/careers",
       "whereYouCanWork": "/Technology, Information and InternetWordPress website design and development agency. Worldwide-29% YoY growth (51 → 36 employees) 3.7/5 ⭐ rating (20 reviews) | 33% CEO approval VMware/"
+    },
+    {
+      "id": "vmware-com",
+      "name": "vmware.com",
+      "careersUrl": "https://www.vmware.com/in.html",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "veryfi-com",
+      "name": "veryfi.com",
+      "careersUrl": "https://www.veryfi.com/careers",
+      "whereYouCanWork": "/Software DevelopmentDocument data extraction and processing.United States, Colombia, Australia -7% YoY growth (57 → 53 employees) 3.2/5 ⭐ rating (12 reviews) | 45% CEO approval WebFX/"
+    },
+    {
+      "id": "webfx-com",
+      "name": "webfx.com",
+      "careersUrl": "https://www.webfx.com/careers",
+      "whereYouCanWork": "/Advertising ServicesDigital marketing and SEO solutions.United States, Guatemala, South Africa 44% YoY growth (797 → 1151 employees) 4.4/5 ⭐ rating (281 reviews) | 92% CEO approval Casumo/"
+    },
+    {
+      "id": "casumo-com",
+      "name": "casumo.com",
+      "careersUrl": "https://www.casumo.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "casumocareers-com",
+      "name": "casumocareers.com",
+      "careersUrl": "https://www.casumocareers.com",
+      "whereYouCanWork": "/Gambling Facilities and CasinosOnline gaming and sportsbook providerMalta, Gibraltar, Macedonia, Croatia 6% YoY growth (216 → 228 employees) 3.3/5 ⭐ rating (135 reviews) | 64% CEO approval Cards Against Humanity/"
+    },
+    {
+      "id": "cardsagainsthumanity-com",
+      "name": "cardsagainsthumanity.com",
+      "careersUrl": "https://www.cardsagainsthumanity.com/careers",
+      "whereYouCanWork": "Adult party card game creators Carry1stcarry1st.com/careers/siMobile games publisher focused on African markets. Cayusecayuse.com/careers/siResearch administration software solutions. ChainLink Labs/"
     },
     {
       "id": "clevertech-biz",
@@ -1605,10 +3598,58 @@
       "whereYouCanWork": "Services and IT ConsultingCustom software solutions for leading brands.Worldwide 4.4/5 ⭐ rating (14 reviews) CloudApp/"
     },
     {
+      "id": "getcloudapp-com",
+      "name": "getcloudapp.com",
+      "careersUrl": "https://getcloudapp.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "zight-springrecruit-com",
+      "name": "zight.springrecruit.com",
+      "careersUrl": "https://zight.springrecruit.com/careers",
+      "whereYouCanWork": "Technology, Information and InternetInstantly shareable visual communication tools Salt Lake City, United States 4.0/5 ⭐ rating (16 reviews) | 68% CEO approval InfluxData/"
+    },
+    {
       "id": "influxdata-com",
       "name": "influxdata.com",
       "careersUrl": "https://www.influxdata.com/careers",
       "whereYouCanWork": "/Software DevelopmentTime series data platform.North America, South America, Europe 3% YoY growth (187 → 192 employees) 3.8/5 ⭐ rating (68 reviews) | 59% CEO approval Heetch/"
+    },
+    {
+      "id": "heetch-com",
+      "name": "heetch.com",
+      "careersUrl": "https://www.heetch.com/en/jobs",
+      "whereYouCanWork": "Information Technology and ServicesRide-hailing service across Europe and Africa. Algeria, Spain, Ivory Coast, Senegal, Belgium, France 21% YoY growth (501 → 605 employees) 4.2/5 ⭐ rating (109 reviews) | 96% CEO approval Gorman Health Group/"
+    },
+    {
+      "id": "conveyhealthsolutions-com",
+      "name": "conveyhealthsolutions.com",
+      "careersUrl": "https://conveyhealthsolutions.com/careers",
+      "whereYouCanWork": "/Hospitals and Health CareHealthcare technology and services solutionsUnited States, Philippines7% YoY growth (1841 → 1978 employees) 3.8/5 ⭐ rating (551 reviews) | 73% CEO approval Hyperion/"
+    },
+    {
+      "id": "hyperiondev-com",
+      "name": "hyperiondev.com",
+      "careersUrl": "https://hyperiondev.com/jobs",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "inin-com",
+      "name": "inin.com",
+      "careersUrl": "https://www.inin.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "genesys-com",
+      "name": "genesys.com",
+      "careersUrl": "https://www.genesys.com/company/careers",
+      "whereYouCanWork": "/Software DevelopmentAI-powered customer experience platformWorldwide7% YoY growth (7671 → 8213 employees)5 reviews IBM/"
+    },
+    {
+      "id": "ibm-com",
+      "name": "ibm.com",
+      "careersUrl": "https://www.ibm.com/careers",
+      "whereYouCanWork": "IT Services and IT ConsultingTechnology and infrastructure innovation.Worldwide2% YoY growth (322023 → 330023 employees) 4.0/5 ⭐ rating (100,568 reviews) | 79% CEO approval Intuit Inc."
     },
     {
       "id": "intuit-com",
@@ -1617,10 +3658,70 @@
       "whereYouCanWork": "/Software DevelopmentFinancial technology and services platformNorth America, South America, Europe, Middle East, Asia- Pacific 7% YoY growth (15519 → 16608 employees) 4.2/5 ⭐ rating (10,093 reviews) | 82% CEO approval Intellum/"
     },
     {
+      "id": "intellum-com",
+      "name": "intellum.com",
+      "careersUrl": "https://www.intellum.com/company/careersE-Learning",
+      "whereYouCanWork": "ProvidersExternal education platform for businessesWorldwide2 YoY growth (135 → 138 employees) 3.6/5 ⭐ rating (53 reviews) | 63% CEO approval Igalia/"
+    },
+    {
+      "id": "igalia-com",
+      "name": "igalia.com",
+      "careersUrl": "https://www.igalia.com/jobs",
+      "whereYouCanWork": "/Software DevelopmentOpen source consultancy for diverse platforms. Worldwide2% YoY growth (122 → 125 employees) 4.3/5 ⭐ rating (7 reviews) | 100% CEO approval Heroku/"
+    },
+    {
+      "id": "heroku-com",
+      "name": "heroku.com",
+      "careersUrl": "https://www.heroku.com/careers",
+      "whereYouCanWork": "Software DevelopmentCloud-based app development and deployment platform. Worldwide12% YoY growth (151 → 169 employees) 3.6/5 ⭐ rating (9 reviews) | No CEO approval rating available. GoDaddy/"
+    },
+    {
+      "id": "godaddy-com",
+      "name": "godaddy.com",
+      "careersUrl": "https://www.godaddy.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-godaddy",
+      "name": "careers.godaddy",
+      "careersUrl": "https://careers.godaddy",
+      "whereYouCanWork": "/Technology, Information and InternetAI-powered tools for entrepreneursUnited States, UK, Romania, Serbia, India 1% YoY growth (8223 → 8317 employees) 3.6/5 ⭐ rating (3076 reviews) | 66% CEO approval Formstack/"
+    },
+    {
+      "id": "formstack-com",
+      "name": "formstack.com",
+      "careersUrl": "https://www.formstack.com/careers",
+      "whereYouCanWork": "Technology, Information and InternetSecure workplace productivity platform.Worldwide7% YoY growth (209 → 223 employees) 2.9/5 ⭐ rating (140 reviews) | 39% CEO approval FullFabric/"
+    },
+    {
+      "id": "fullfabric-com",
+      "name": "fullfabric.com",
+      "careersUrl": "https://www.fullfabric.com/company/careers",
+      "whereYouCanWork": "Software DevelopmentIntegrated university student journey platformWorldwide, United Kingdom, Portugal 71% YoY growth (14 → 24 employees) 5.0/5 ⭐ rating (8 reviews) | 100% CEO approval Giant Swarm/"
+    },
+    {
       "id": "giantswarm-io",
       "name": "giantswarm.io",
       "careersUrl": "https://www.giantswarm.io/careers",
       "whereYouCanWork": "Software DevelopmentCloud-native platform with 24/7 management. Worldwide-26% YoY growth (70 → 52 employees) 4.4/5 ⭐ rating (15 reviews) | 81% recommend to a friend Etsy/"
+    },
+    {
+      "id": "etsy-com",
+      "name": "etsy.com",
+      "careersUrl": "https://www.etsy.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-etsy-com",
+      "name": "careers.etsy.com",
+      "careersUrl": "https://careers.etsy.com",
+      "whereYouCanWork": "/Software DevelopmentGlobal marketplace for unique, creative goods. United States, Canada, Ireland, UK, Mexico, India, Germany -2% YoY growth (8891 → 8745 employees) 4.0/5 ⭐ rating (624 reviews) | 61% CEO approval Epam/"
+    },
+    {
+      "id": "epam-com",
+      "name": "epam.com",
+      "careersUrl": "https://www.epam.com/careers",
+      "whereYouCanWork": "IT Services and IT ConsultingDigital engineering and AI transformation services Worldwide10% YoY growth (53553 → 59052 employees) 4.2/5 ⭐ rating (12,609 reviews) | 95% CEO approval Four Kitchens/"
     },
     {
       "id": "fourkitchens-com",
@@ -1635,10 +3736,28 @@
       "whereYouCanWork": "DevelopmentHR software solutions for SMEsSpain, Germany, Mexico, Brazil, France, Italy, Portugal, United Kingdom, Austria, Switzerland 11% YoY growth (1595 → 1768 employees) 3.1/5 ⭐ rating (486 reviews) | 70% CEO approval Flip/"
     },
     {
+      "id": "flip-id",
+      "name": "flip.id",
+      "careersUrl": "https://flip.id",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "career-flip-id",
+      "name": "career.flip.id",
+      "careersUrl": "https://career.flip.id/jobs",
+      "whereYouCanWork": "Financial ServicesFree interbank transfer service in Indonesia.Indonesia-1% YoY growth (628 → 620 employees) 3.3/5 ⭐ rating (22 reviews) Grafana Labs/"
+    },
+    {
       "id": "grafana-com",
       "name": "grafana.com",
       "careersUrl": "https://grafana.com/about/careers",
       "whereYouCanWork": "/Software DevelopmentOpen-source operational data visualization.Worldwide.15% YoY growth (1269 → 1447 employees) 4.2/5 ⭐ rating (165 reviews) | 88% CEO approval Fiverr/"
+    },
+    {
+      "id": "fiverr-com",
+      "name": "fiverr.com",
+      "careersUrl": "https://www.fiverr.com/jobs",
+      "whereYouCanWork": "Software DevelopmentConnects businesses with freelance talent.Tel Aviv, Berlin, Kyiv, New York, London, Orlando, San Francisco, Phoenix, Sydney, New Jersey, United States, Poland 8 YoY growth (196087 → 211838 employees) 4.3/5 ⭐ rating (1,629 reviews) | 87% CEO approval Fly.io/"
     },
     {
       "id": "fly-io",
@@ -1647,16 +3766,76 @@
       "whereYouCanWork": "/Technology, Information and InternetCloud app deployment and scaling platform.Worldwide 4.5/5 ⭐ rating (2 reviews) Granicus/"
     },
     {
+      "id": "granicus-com",
+      "name": "granicus.com",
+      "careersUrl": "https://granicus.com/careers",
+      "whereYouCanWork": "/Software DevelopmentCivic engagement platform for governments.United States, Armenia, Australia, Canada, India, New Zealand 17% YoY growth (1248 → 1459 employees) 3.3/5 ⭐ rating (388 reviews) | 66% CEO approval EngineYard (Support Team)"
+    },
+    {
+      "id": "engineyard-com",
+      "name": "engineyard.com",
+      "careersUrl": "https://www.engineyard.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "docker-com",
+      "name": "docker.com",
+      "careersUrl": "https://www.docker.com/careers",
+      "whereYouCanWork": "/Software DevelopmentDeveloper workflow simplification toolsWorldwide16% YoY growth (808 → 934 employees) 3.2/5 ⭐ rating (142 reviews) | 62% CEO approval Edgio/"
+    },
+    {
+      "id": "edg-io",
+      "name": "edg.io",
+      "careersUrl": "https://edg.io",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "linkedin-com",
+      "name": "linkedin.com",
+      "careersUrl": "https://www.linkedin.com/company/edgio/jobs",
+      "whereYouCanWork": "Technology, Information and MediaEdge content delivery and security platformWorldwide-10% YoY growth (966 → 869 employees) 2.6/5 ⭐ rating (126 reviews) | 23% CEO approval PeopleDoc/"
+    },
+    {
+      "id": "people-doc-com",
+      "name": "people-doc.com",
+      "careersUrl": "https://www.people-doc.com",
+      "whereYouCanWork": "/"
+    },
+    {
       "id": "ukg-com",
       "name": "ukg.com",
       "careersUrl": "https://www.ukg.com/about-us/careers",
       "whereYouCanWork": "Software DevelopmentHCM cloud solutions for businesses.United States, Canada, Mexico, Brasil, United Kingdom, France, Deutschland, Nederland, India, Australia 1% YoY growth (14246 → 14419 employees) 4.1/5 ⭐ rating (75 reviews) | 100% CEO approval OpenZeppelin/"
     },
     {
-      "id": "linkedin-com",
-      "name": "linkedin.com",
-      "careersUrl": "https://www.linkedin.com/company/fireball-labs-gmbhOnline",
-      "whereYouCanWork": "Audio and Video MediaRemote advertising technology solutions.Worldwide OnTheGoSystems/"
+      "id": "openzeppelin-com",
+      "name": "openzeppelin.com",
+      "careersUrl": "https://www.openzeppelin.com/careers",
+      "whereYouCanWork": "Software DevelopmentBlockchain security and smart contract development. Worldwide24% YoY growth (93 → 115 employees) 4.6/5 ⭐ rating (14 reviews) Plex/"
+    },
+    {
+      "id": "plex-tv",
+      "name": "plex.tv",
+      "careersUrl": "https://www.plex.tv/careers",
+      "whereYouCanWork": "/Entertainment ProvidersMedia streaming and personal media management. Worldwide4% YoY growth (148 → 154 employees) 3.3/5 ⭐ rating (16 reviews) | 27% CEO approval Discord/"
+    },
+    {
+      "id": "discord-com",
+      "name": "discord.com",
+      "careersUrl": "https://discord.com/careers",
+      "whereYouCanWork": "Software DevelopmentGaming communication and community platform United States, Canada-19% YoY growth (3956 → 3186 employees) 3.6/5 ⭐ rating (77 reviews) | 62% CEO approval Fireball Labs/"
+    },
+    {
+      "id": "fireballlabs-com",
+      "name": "fireballlabs.com",
+      "careersUrl": "https://www.fireballlabs.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "onthegosystems-com",
+      "name": "onthegosystems.com",
+      "careersUrl": "https://onthegosystems.com/jobs",
+      "whereYouCanWork": "/Software DevelopmentLocalization and translation tools.Worldwide2% YoY growth (114 → 116 employees) 4.8/5 ⭐ rating (73 reviews) | 96% recommend to a friend DappRadar/"
     },
     {
       "id": "dappradar-com",
@@ -1665,10 +3844,106 @@
       "whereYouCanWork": "Technology, Information and InternetDecentralized app store for blockchain insights. Worldwide-25% YoY growth (51 → 38 employees) 4.3/5 ⭐ rating (5 reviews) eFishery/"
     },
     {
+      "id": "efishery-com",
+      "name": "efishery.com",
+      "careersUrl": "https://efishery.com/en/careers",
+      "whereYouCanWork": "/Information Technology and ServicesAquaculture technology solutions for sustainable farming. Indonesia, United States-5% YoY growth (1772 → 1680 employees) 3.8/5 ⭐ rating (160 reviews) Dropbox/"
+    },
+    {
+      "id": "dropbox-com",
+      "name": "dropbox.com",
+      "careersUrl": "https://www.dropbox.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "jobs-dropbox-com",
+      "name": "jobs.dropbox.com",
+      "careersUrl": "https://jobs.dropbox.com",
+      "whereYouCanWork": "/Software DevelopmentCloud storage and collaboration platformUnited States, Canada, Ireland, Poland, United Kingdom, Australia, Japan -4% YoY growth (3687 → 3536 employees) 4.1/5 ⭐ rating (1,705 reviews) | 67% CEO approval LaterPay/"
+    },
+    {
+      "id": "laterpay-net",
+      "name": "laterpay.net",
+      "careersUrl": "https://www.laterpay.net/careers",
+      "whereYouCanWork": "Technology, Information and InternetOne-click digital purchase aggregationWorldwide122% YoY growth (9 → 20 employees) 3.9/5 ⭐ rating (8 reviews) | 0% CEO approval Merico/"
+    },
+    {
+      "id": "merico-dev",
+      "name": "merico.dev",
+      "careersUrl": "https://merico.dev",
+      "whereYouCanWork": "/"
+    },
+    {
       "id": "tri-be",
       "name": "tri.be",
       "careersUrl": "https://tri.be/careers",
       "whereYouCanWork": "/Internet PublishingEnterprise WordPress digital solutions agency Worldwide-22 YoY growth (78 → 61 reviews)I am sorry, but I cannot provide the information you requested about Modern Tribe's Glassdoor reviews because I could not find the relevant information in the provided search results. Linux Foundation/"
+    },
+    {
+      "id": "linuxfoundation-org",
+      "name": "linuxfoundation.org",
+      "careersUrl": "https://www.linuxfoundation.org/careers",
+      "whereYouCanWork": "Software DevelopmentAccelerates open technology development and adoption. Germany, United States, Canada 10% YoY growth (692 → 759 employees) 4.3/5 ⭐ rating (95 reviews) | 80% CEO approval Kraken/"
+    },
+    {
+      "id": "kraken-com",
+      "name": "kraken.com",
+      "careersUrl": "https://www.kraken.com/careers",
+      "whereYouCanWork": "Financial ServicesCrypto trading and financial services platform Worldwide44% YoY growth (545 → 784 employees) 4.5/5 ⭐ rating (346 reviews) | 91% CEO approval Microsoft/"
+    },
+    {
+      "id": "microsoft-com",
+      "name": "microsoft.com",
+      "careersUrl": "https://www.microsoft.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-microsoft-com",
+      "name": "careers.microsoft.com",
+      "careersUrl": "https://careers.microsoft.com",
+      "whereYouCanWork": "/Software DevelopmentEmpowering through technology and innovation Asia Pacific, Europe, Greater China Region, India, Latin America, Middle East and Africa, United States 6% YoY growth (224881 → 239018 employees) 4.2/5 ⭐ rating (48,055 reviews) | 91% CEO approval Mercari/"
+    },
+    {
+      "id": "about-mercari-com",
+      "name": "about.mercari.com",
+      "careersUrl": "https://about.mercari.com/en",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-mercari-com",
+      "name": "careers.mercari.com",
+      "careersUrl": "https://careers.mercari.com/en",
+      "whereYouCanWork": "/Software DevelopmentC2C marketplace and mobile payment services. NA11% YoY growth (1538 → 1700 employees) 3.3/5 ⭐ rating (241 reviews) | 96% CEO approval MongoDB/"
+    },
+    {
+      "id": "mongodb-com",
+      "name": "mongodb.com",
+      "careersUrl": "https://www.mongodb.com/en-us/company/careers",
+      "whereYouCanWork": "Software DevelopmentDeveloper-focused database platform and services. Worldwide25 YoY growth (5712 → 7130 employees) 4.1/5 ⭐ rating (2,348 reviews) | 92% CEO approval mtc."
+    },
+    {
+      "id": "mtcmedia-co-uk",
+      "name": "mtcmedia.co.uk",
+      "careersUrl": "https://www.mtcmedia.co.uk/careers",
+      "whereYouCanWork": "Technology, Information and InternetWeb design and development servicesDundee, Edinburgh, London, Bristol, Riga 72% YoY growth (600 → 1032 employees) 3.3/5 ⭐ rating (75 reviews) | 59% CEO approval MixRank/"
+    },
+    {
+      "id": "mixrank-com",
+      "name": "mixrank.com",
+      "careersUrl": "https://mixrank.com/careers",
+      "whereYouCanWork": "/Software DevelopmentMobile and web intelligence platformWorldwide19% YoY growth (26 → 31 employees) 4.9/5 ⭐ rating (23 reviews) | 100% CEO approval Kuali/"
+    },
+    {
+      "id": "kuali-co",
+      "name": "kuali.co",
+      "careersUrl": "https://www.kuali.co/positionsInformation",
+      "whereYouCanWork": "Technology and ServicesAdministrative SaaS solutions for higher education United States11% YoY growth (79 → 88 employees) 4.4/5 ⭐ rating (45 reviews) | 91% CEO approval PagerDuty/"
+    },
+    {
+      "id": "pagerduty-com",
+      "name": "pagerduty.com",
+      "careersUrl": "https://pagerduty.com",
+      "whereYouCanWork": "/"
     },
     {
       "id": "careers-pagerduty-com",
@@ -1677,10 +3952,118 @@
       "whereYouCanWork": "/Software DevelopmentDigital operations management platformAustralia, Canada, Chile, Portugal, United Kingdom, United States 4% YoY growth (1318 → 1365 employees) 4.0/5 ⭐ rating (470 reviews) | 79% CEO approval MetaLab/"
     },
     {
+      "id": "metalab-co",
+      "name": "metalab.co",
+      "careersUrl": "https://metalab.co",
+      "whereYouCanWork": "/"
+    },
+    {
       "id": "metalab-com",
       "name": "metalab.com",
       "careersUrl": "https://www.metalab.com/careers",
       "whereYouCanWork": "Software DevelopmentUser interface design and development agency. Worldwide, Vancouver, Lima, Sao Paulo -17% YoY growth (254 → 212 employees) 3.7/5 ⭐ rating (36 reviews) USAA/"
+    },
+    {
+      "id": "usaa-com",
+      "name": "usaa.com",
+      "careersUrl": "https://www.usaa.com/careers",
+      "whereYouCanWork": "Financial ServicesFinancial services for military familiesUnited States, England, Germany, Luxembourg 5% YoY growth (37,250 → 39,131 employees) 3.4/5 ⭐ rating (7,774 reviews) | 43% CEO approval Trello/"
+    },
+    {
+      "id": "trello-com",
+      "name": "trello.com",
+      "careersUrl": "https://trello.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "upworthy-com",
+      "name": "upworthy.com",
+      "careersUrl": "https://www.upworthy.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "upworthy-hire-trakstar-com",
+      "name": "upworthy.hire.trakstar.com",
+      "careersUrl": "https://upworthy.hire.trakstar.com",
+      "whereYouCanWork": "/Online Audio and Video MediaInspiring stories about important issuesUnited States0% YoY growth (45 → 45 employees) 2.8/5 ⭐ rating (24 reviews) | No CEO approval rating available. StudySoup/"
+    },
+    {
+      "id": "studysoup-com",
+      "name": "studysoup.com",
+      "careersUrl": "https://studysoup.com/jobsE-Learning",
+      "whereYouCanWork": "ProvidersEducational study tools for studentsWorldwide-1% YoY growth (67 → 66 employees) 3.9/5 ⭐ rating (316 reviews) | 87% CEO approval Stripe/"
+    },
+    {
+      "id": "stripe-com",
+      "name": "stripe.com",
+      "careersUrl": "https://stripe.com/jobs",
+      "whereYouCanWork": "Technology, Information and InternetOnline payment processing platformWorldwide26 YoY growth (8754 → 11039 employees) 3.7/5 ⭐ rating (1,124 reviews) | 81% CEO approval Lightspeed/"
+    },
+    {
+      "id": "lightspeedhq-com",
+      "name": "lightspeedhq.com",
+      "careersUrl": "https://www.lightspeedhq.com/careers",
+      "whereYouCanWork": "/Software DevelopmentCommerce platform for global retail and hospitality. United Kingdom, Belgium, Germany, France, Canada, Netherlands, Italy, Philippines, Georgia, Armenia, New Zealand, United States, Australia, Mexico, Switzerland, Norway 11% YoY growth (2707 → 2994 employees) 3.6/5 ⭐ rating (884 reviews) | 66% CEO approval Knack/"
+    },
+    {
+      "id": "knack-com",
+      "name": "knack.com",
+      "careersUrl": "https://www.knack.com/careers",
+      "whereYouCanWork": "/Software DevelopmentNo-code custom app development platform.Worldwide10% YoY growth (78 → 86 employees) 3.5/5 ⭐ rating (21 reviews) | 45% CEO approval TestGorilla/"
+    },
+    {
+      "id": "testgorilla-com",
+      "name": "testgorilla.com",
+      "careersUrl": "https://www.testgorilla.com/careers",
+      "whereYouCanWork": "/Human Resources ServicesTalent assessment for unbiased hiringWorldwide23% YoY growth (209 → 258 employees) 4.9/5 ⭐ rating (43 reviews) | 100% CEO approval Upwork Pro/"
+    },
+    {
+      "id": "taskade-com",
+      "name": "taskade.com",
+      "careersUrl": "https://www.taskade.com/jobs",
+      "whereYouCanWork": "Software DevelopmentAI task automation and workflow optimization United States, Singapore33 YoY growth (60 → 80 employees) 5.0/5 ⭐ rating (1 review) Ushahidi/"
+    },
+    {
+      "id": "ushahidi-com",
+      "name": "ushahidi.com",
+      "careersUrl": "https://www.ushahidi.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "vercel-com",
+      "name": "vercel.com",
+      "careersUrl": "https://vercel.com/careers",
+      "whereYouCanWork": "Software DevelopmentFrontend development and hosting platformUnited States, Australia, Canada, Germany, India, Netherlands, United Kingdom 26% YoY growth (505 → 636 employees) 4.3/5 ⭐ rating (78 reviews) | 93% CEO approval Labelbox/"
+    },
+    {
+      "id": "labelbox-com",
+      "name": "labelbox.com",
+      "careersUrl": "https://labelbox.com/company/careers",
+      "whereYouCanWork": "/,"
+    },
+    {
+      "id": "suse-com",
+      "name": "suse.com",
+      "careersUrl": "https://www.suse.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "jobs-suse-com",
+      "name": "jobs.suse.com",
+      "careersUrl": "https://jobs.suse.com/us/enSoftware",
+      "whereYouCanWork": "DevelopmentEnterprise open source solutions providerWorldwide10 YoY growth (3200 → 3520 employees) 4.0/5 ⭐ rating (556 reviews) | 84% CEO approval IPInfo/"
+    },
+    {
+      "id": "ipinfo-io",
+      "name": "ipinfo.io",
+      "careersUrl": "https://ipinfo.io/jobs",
+      "whereYouCanWork": "Technology, Information and InternetIP geolocation and fraud prevention APIWorldwide36% YoY growth (25 → 34 employees) 3.3/5 ⭐ rating (9 reviews) | 49% CEO approval Teleport/"
+    },
+    {
+      "id": "teleport-org",
+      "name": "teleport.org",
+      "careersUrl": "https://teleport.org",
+      "whereYouCanWork": "/"
     },
     {
       "id": "goteleport-com",
@@ -1689,16 +4072,70 @@
       "whereYouCanWork": "/Software DevelopmentEmployee mobility and location management solutions. Worldwide-44% YoY growth (262 → 148 employees) 4.0/5 ⭐ rating (47-48 reviews) | 86% CEO approval TED/"
     },
     {
+      "id": "ted-com",
+      "name": "ted.com",
+      "careersUrl": "https://www.ted.com/about/our-organization/jobs-at-tedNon-profit",
+      "whereYouCanWork": "OrganizationsShowcase transformative ideas globally through talks. Worldwide9% YoY growth (12658 → 13757 employees) 4.2/5 ⭐ rating (244 reviews) | 62% CEO approval Shogun/"
+    },
+    {
+      "id": "getshogun-com",
+      "name": "getshogun.com",
+      "careersUrl": "https://getshogun.com/careers",
+      "whereYouCanWork": "Technology, Information and InternetEcommerce optimization and personalization tools Worldwide0% YoY growth (226 → 226 employees) 4.4/5 ⭐ rating (87 reviews) | 100% CEO approval Revolut/"
+    },
+    {
+      "id": "revolut-com",
+      "name": "revolut.com",
+      "careersUrl": "https://www.revolut.com/careers",
+      "whereYouCanWork": "/Financial ServicesDigital financial services platformWorldwide62% YoY growth (8551 → 13851 employees) 3.7/5 ⭐ rating (3,577 reviews) | 86% CEO approval Sticker Mule/"
+    },
+    {
+      "id": "stickermule-com",
+      "name": "stickermule.com",
+      "careersUrl": "https://www.stickermule.com/careers",
+      "whereYouCanWork": "Printing ServicesCustom merchandise production and salesWorldwide15% YoY growth (332 → 382 employees) 3.8/5 ⭐ rating (71 reviews) | 80% CEO approval Tenable/"
+    },
+    {
       "id": "tenable-com",
       "name": "tenable.com",
       "careersUrl": "https://www.tenable.com/careers",
       "whereYouCanWork": "Computer and Network SecurityCybersecurity exposure management platform United States, Boston, Brazil, Mexico, Dublin, London, Paris, Tel Aviv, Abu Dhabi/Dubai, Singapore, China, Japan, Sydney -2% YoY growth (2219 → 2176 employees) 3.9/5 ⭐ rating (620 reviews) | 83% CEO approval SignEasy/"
     },
     {
+      "id": "signeasy-com",
+      "name": "signeasy.com",
+      "careersUrl": "https://signeasy.com/careers",
+      "whereYouCanWork": "Software DevelopmentContract management and automation platform India, United States-23% YoY growth (86 → 66 employees) 4.3/5 ⭐ rating (67 reviews) | 82% CEO approval reinteractive/"
+    },
+    {
       "id": "reinteractive-com",
       "name": "reinteractive.com",
-      "careersUrl": "https://reinteractive.com/Careers",
-      "whereYouCanWork": "Software DevelopmentCustom app development and Salesforce integration. Worldwide-6% YoY growth (34 → 32 employees) 4.3/5 ⭐ rating (4 reviews) Reddit/"
+      "careersUrl": "https://reinteractive.com/careers",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "redditinc-com",
+      "name": "redditinc.com",
+      "careersUrl": "https://redditinc.com/careers",
+      "whereYouCanWork": "Social Networking PlatformsOnline community and discussion platformPhilippines, India, United States, London, United Kingdom, Ontario, Canada, The Netherlands, Berlin, Germany, Dublin, Ireland, Sydney, Australia 18% YoY growth (3215 → 3792 employees) 3.6/5 ⭐ rating (281 reviews) | 73% CEO approval rtCamp/"
+    },
+    {
+      "id": "rtcamp-com",
+      "name": "rtcamp.com",
+      "careersUrl": "https://rtcamp.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-rtcamp-com",
+      "name": "careers.rtcamp.com",
+      "careersUrl": "https://careers.rtcamp.com",
+      "whereYouCanWork": "/Information Technology and ServicesEnterprise web publishing and digital commerce solutions. Worldwide36% YoY growth (195 → 265 employees) 4.3/5 ⭐ rating (104 reviews) | 94% CEO approval Strapi/"
+    },
+    {
+      "id": "strapi-io",
+      "name": "strapi.io",
+      "careersUrl": "https://strapi.io/careers",
+      "whereYouCanWork": "Software DevelopmentOpen-source headless CMS platformWorldwide-6% YoY growth (100 → 94 employees) 4.6/5 ⭐ rating (22 reviews) | 93% CEO approval Scalac/"
     },
     {
       "id": "scalac-io",
@@ -1707,10 +4144,34 @@
       "whereYouCanWork": "Services and IT ConsultingHigh-quality software solutions and expert tech support. Worldwide-24% YoY growth (83 → 63 employees) 4.7/5 ⭐ rating (24 reviews) | 100% CEO approval Civo/"
     },
     {
+      "id": "civo-com",
+      "name": "civo.com",
+      "careersUrl": "https://www.civo.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-civo-com",
+      "name": "careers.civo.com",
+      "careersUrl": "https://careers.civo.com/IT",
+      "whereYouCanWork": "Services and IT ConsultingCloud infrastructure with fast cluster launches. Worldwide50% YoY growth (56 → 84 employees) 3.6/5 ⭐ rating (6 reviews) Wolfram/"
+    },
+    {
       "id": "wolfram-com",
       "name": "wolfram.com",
       "careersUrl": "https://www.wolfram.com/company/careers/index.php.enSoftware",
       "whereYouCanWork": "DevelopmentComputational software and knowledge innovation. Worldwide-5% YoY growth (656 → 622 employees) 3.1/5 ⭐ rating (297 reviews) | 44% CEO approval VSHN/"
+    },
+    {
+      "id": "vshn-ch",
+      "name": "vshn.ch",
+      "careersUrl": "https://vshn.ch/jobs",
+      "whereYouCanWork": "Software DevelopmentScalable web application consulting and operations Switzerland-12% YoY growth (34 → 30 employees) 5.0/5 ⭐ rating (1 review) | CEO approval You Need A Budget/"
+    },
+    {
+      "id": "youneedabudget-com",
+      "name": "youneedabudget.com",
+      "careersUrl": "https://www.youneedabudget.com",
+      "whereYouCanWork": "/"
     },
     {
       "id": "ynab-com",
@@ -1719,10 +4180,136 @@
       "whereYouCanWork": "Financial ServicesPersonal budgeting and financial empowerment. Worldwide 4.9/5 ⭐ rating (60 reviews) Zip.co/"
     },
     {
+      "id": "zip-co",
+      "name": "zip.co",
+      "careersUrl": "https://zip.co/careers",
+      "whereYouCanWork": "Financial ServicesDigital payment and credit servicesUnited States, Australia, New Zealand 5% YoY growth (1003 → 1053 employees) 3.8/5 ⭐ rating (310 reviews) | 90% CEO approval Mindful/"
+    },
+    {
+      "id": "getmindful-com",
+      "name": "getmindful.com",
+      "careersUrl": "https://getmindful.com",
+      "whereYouCanWork": "/"
+    },
+    {
       "id": "jobs-medallia-com",
       "name": "jobs.medallia.com",
       "careersUrl": "https://jobs.medallia.com",
       "whereYouCanWork": "/Software DevelopmentCustomer experience and engagement solutions Worldwide-21% YoY growth (155 → 122 employees) 4.1/5 ⭐ rating (17 reviews) | 100% CEO approval Zup/"
+    },
+    {
+      "id": "zup-com-br",
+      "name": "zup.com.br",
+      "careersUrl": "https://zup.com.br",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "youcanbook-me",
+      "name": "youcanbook.me",
+      "careersUrl": "https://youcanbook.me/jobs",
+      "whereYouCanWork": "Software DevelopmentOnline scheduling and booking platformWorldwide14% YoY growth (29 → 33 employees) 4.1/5 ⭐ rating (13 reviews) Red Hat/"
+    },
+    {
+      "id": "rackspace-com",
+      "name": "rackspace.com",
+      "careersUrl": "https://rackspace.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "wellsfargo-com",
+      "name": "wellsfargo.com",
+      "careersUrl": "https://www.wellsfargo.com/about/careers",
+      "whereYouCanWork": "/Financial ServicesDiversified financial services and banking.Asia Pacific, Canada, Europe, Middle East and Africa, India and Philippines, United States 2% YoY growth (205290 → 209179 employees) 3.6/5 ⭐ rating (50,871 reviews) | 66% CEO approval ChainLink Labs/"
+    },
+    {
+      "id": "chainlinklabs-com",
+      "name": "chainlinklabs.com",
+      "careersUrl": "https://chainlinklabs.com/careers",
+      "whereYouCanWork": "Technology, Information and InternetOnchain finance and cross-chain interoperability. Worldwide27% YoY growth (490 → 623 employees) 4.3/5 ⭐ rating (57 reviews) | 76% CEO approval X-Team/"
+    },
+    {
+      "id": "x-team-com",
+      "name": "x-team.com",
+      "careersUrl": "https://x-team.com/careers",
+      "whereYouCanWork": "Staffing and RecruitingHire elite remote tech talentWorldwide-2% YoY growth (2999 → 2941 employees) 4.7/5 ⭐ rating (232 reviews) | 94% CEO approval Chef/"
+    },
+    {
+      "id": "chef-io",
+      "name": "chef.io",
+      "careersUrl": "https://www.chef.io/careers",
+      "whereYouCanWork": "Information Technology and ServicesContinuous automation for digital transformation. United States, United Kingdom, Germany -1% YoY growth (165 → 163 employees) 4.1/5 ⭐ rating (132 reviews) | 77% CEO approval Grubhub/"
+    },
+    {
+      "id": "grubhub-com",
+      "name": "grubhub.com",
+      "careersUrl": "https://www.grubhub.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "careers-grubhub-com",
+      "name": "careers.grubhub.com",
+      "careersUrl": "https://careers.grubhub.com",
+      "whereYouCanWork": "/Technology, Information and InternetFood delivery and marketplace platformUnited States2% YoY growth (6983 → 7122 employees) 3.5/5 ⭐ rating (1,777 reviews) | 57% CEO approval Episource/"
+    },
+    {
+      "id": "episource-com",
+      "name": "episource.com",
+      "careersUrl": "https://episource.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "go-episource-com",
+      "name": "go.episource.com",
+      "careersUrl": "https://go.episource.com/careers",
+      "whereYouCanWork": "IT Services and IT ConsultingRisk adjustment solutions for healthcare organizations. United States, India, Other Countries -2% YoY growth (3566 → 3487 employees) 3.4/5 ⭐ rating (440 reviews) Over/"
+    },
+    {
+      "id": "madewithover-com",
+      "name": "madewithover.com",
+      "careersUrl": "https://www.madewithover.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "spotify-com",
+      "name": "spotify.com",
+      "careersUrl": "https://www.spotify.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "lifeatspotify-com",
+      "name": "lifeatspotify.com",
+      "careersUrl": "https://www.lifeatspotify.com/jobs",
+      "whereYouCanWork": "MusiciansGlobal audio streaming service.Worldwide3% YoY growth (15108 → 15559 employees) 4.0/5 ⭐ rating (1,544 reviews) | 71% CEO approval Packlink/"
+    },
+    {
+      "id": "packlink-com",
+      "name": "packlink.com",
+      "careersUrl": "https://www.packlink.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "job-boards-greenhouse-io",
+      "name": "job-boards.greenhouse.io",
+      "careersUrl": "https://job-boards.greenhouse.io/packlink?t=cd464b543usTechnology",
+      "whereYouCanWork": ", Information and InternetOnline shipping service for individuals and businesses Spain-11% YoY growth (123 → 110 employees) 3.9/5 ⭐ rating (54 reviews) | 67% CEO approval Recurly/"
+    },
+    {
+      "id": "recurly-com",
+      "name": "recurly.com",
+      "careersUrl": "https://recurly.com/careers",
+      "whereYouCanWork": "/Software DevelopmentSubscription revenue management platformUnited States, Mexico, Colombia 10% YoY growth (281 → 310 employees) 3.7/5 ⭐ rating (172 reviews) | 75% CEO approval Lightbend/"
+    },
+    {
+      "id": "lightbend-com",
+      "name": "lightbend.com",
+      "careersUrl": "https://www.lightbend.com",
+      "whereYouCanWork": "/"
+    },
+    {
+      "id": "lightbend-applytojob-com",
+      "name": "lightbend.applytojob.com",
+      "careersUrl": "https://lightbend.applytojob.com/applySoftware",
+      "whereYouCanWork": "DevelopmentElastic app development platformUnited States, APAC 4.4/5 ⭐ rating (19 reviews) | 88% CEO approval Chess/"
     },
     {
       "id": "chess-com",
@@ -1737,10 +4324,334 @@
       "whereYouCanWork": "/Software DevelopmentArm-based software solutions and services.Worldwide-3% YoY growth (182 → 176 employees) 4.1/5 ⭐ rating (37 reviews) | 82% CEO approval Prisma/"
     },
     {
+      "id": "prisma-io",
+      "name": "prisma.io",
+      "careersUrl": "https://www.prisma.io/careers",
+      "whereYouCanWork": "Software DevelopmentDeveloper tools for data-rich applicationsWorldwide20% YoY growth (123 → 147 employees) Prisma Data: 4.5/5 ⭐ rating (9 reviews) | 82% CEO approval Prisma: 4.0/5 ⭐ rating (40 reviews) Reforge/"
+    },
+    {
       "id": "reforge-com",
       "name": "reforge.com",
       "careersUrl": "https://www.reforge.com/careersE-Learning",
       "whereYouCanWork": "ProvidersCareer advancement in Product and Growth.Worldwide-28% YoY growth (467 → 335 employees) 3.2/5 ⭐ rating (48 reviews) | 44% CEO approval SmugMug/"
+    },
+    {
+      "id": "smugmug-com",
+      "name": "smugmug.com",
+      "careersUrl": "https://www.smugmug.com/careers",
+      "whereYouCanWork": "PhotographyPhotography portfolio and showcaseWorldwide10% YoY growth (265 → 292 employees) 4.0/5 ⭐ rating (48 reviews) | 82% CEO approval CompanyCareer PageWork from ArgentinaDescription 10up/"
+    },
+    {
+      "id": "acleddata-com",
+      "name": "acleddata.com",
+      "careersUrl": "https://acleddata.com/careers",
+      "whereYouCanWork": "si Acquia/"
+    },
+    {
+      "id": "adapty-io",
+      "name": "adapty.io",
+      "careersUrl": "https://adapty.io/careers",
+      "whereYouCanWork": "si Adeva/"
+    },
+    {
+      "id": "alpaca-markets",
+      "name": "alpaca.markets",
+      "careersUrl": "https://alpaca.markets/hiringsi",
+      "whereYouCanWork": "Amplemarket/"
+    },
+    {
+      "id": "amplemarket-com",
+      "name": "amplemarket.com",
+      "careersUrl": "https://www.amplemarket.com/careers",
+      "whereYouCanWork": "si Anagram/"
+    },
+    {
+      "id": "jobs-ashbyhq-com",
+      "name": "jobs.ashbyhq.com",
+      "careersUrl": "https://jobs.ashbyhq.com/anagramsi",
+      "whereYouCanWork": "Ancient Gaming/"
+    },
+    {
+      "id": "careers-ancient-gg",
+      "name": "careers.ancient.gg",
+      "careersUrl": "https://careers.ancient.gg/si",
+      "whereYouCanWork": "Animalz/"
+    },
+    {
+      "id": "anrok-com",
+      "name": "anrok.com",
+      "careersUrl": "https://www.anrok.com/careers",
+      "whereYouCanWork": "Apollo/"
+    },
+    {
+      "id": "apollo-io",
+      "name": "apollo.io",
+      "careersUrl": "https://www.apollo.io/company/careers#open-rolessi",
+      "whereYouCanWork": "Appcues/"
+    },
+    {
+      "id": "appcues-com",
+      "name": "appcues.com",
+      "careersUrl": "https://www.appcues.com/companysiAppcues",
+      "whereYouCanWork": "provides user onboarding and product adoption solutions for businesses, helping teams enhance customer experience. Appinio/"
+    },
+    {
+      "id": "arc-dev",
+      "name": "arc.dev",
+      "careersUrl": "https://arc.dev/careers",
+      "whereYouCanWork": "argyle/"
+    },
+    {
+      "id": "arize-com",
+      "name": "arize.com",
+      "careersUrl": "https://arize.com/careers",
+      "whereYouCanWork": "si Artefactual Systems/"
+    },
+    {
+      "id": "ascendo-ai",
+      "name": "ascendo.ai",
+      "careersUrl": "https://www.ascendo.ai/careers",
+      "whereYouCanWork": "Ashby/"
+    },
+    {
+      "id": "ashbyhq-com",
+      "name": "ashbyhq.com",
+      "careersUrl": "https://www.ashbyhq.com/careers",
+      "whereYouCanWork": "si AstroPayastropay.com/careers/siPayment solutions provider for emerging markets. Audiense/"
+    },
+    {
+      "id": "awesomemotive-com",
+      "name": "awesomemotive.com",
+      "careersUrl": "https://awesomemotive.com/careers/siAwesomemotive",
+      "whereYouCanWork": "develops WordPress plugins and tools for small businesses to enhance their digital presence. Axelerant/"
+    },
+    {
+      "id": "careers-beehiiv-com",
+      "name": "careers.beehiiv.com",
+      "careersUrl": "https://careers.beehiiv.com/si",
+      "whereYouCanWork": "BeenVerified/"
+    },
+    {
+      "id": "bendingspoons-com",
+      "name": "bendingspoons.com",
+      "careersUrl": "https://bendingspoons.com/careers",
+      "whereYouCanWork": "si billigence/"
+    },
+    {
+      "id": "billigence-com",
+      "name": "billigence.com",
+      "careersUrl": "https://billigence.com/careers/#dream-jobsi",
+      "whereYouCanWork": "Bitovi/"
+    },
+    {
+      "id": "bitso-com",
+      "name": "bitso.com",
+      "careersUrl": "https://bitso.com/lp/careers",
+      "whereYouCanWork": "siCryptocurrency exchange platform. Bluesky Social/"
+    },
+    {
+      "id": "bsky-social",
+      "name": "bsky.social",
+      "careersUrl": "https://bsky.social/about/joinsi",
+      "whereYouCanWork": "Bonsai/"
+    },
+    {
+      "id": "chorus-one",
+      "name": "chorus.one",
+      "careersUrl": "https://chorus.one/careers",
+      "whereYouCanWork": "si Circle/"
+    },
+    {
+      "id": "circle-so",
+      "name": "circle.so",
+      "careersUrl": "https://circle.so/careers#open-rolessiCircle",
+      "whereYouCanWork": "is the world’s leading branded community platform Civo/"
+    },
+    {
+      "id": "clara-com",
+      "name": "clara.com",
+      "careersUrl": "https://clara.com/careers",
+      "whereYouCanWork": "si Clevertech/"
+    },
+    {
+      "id": "cloudbeds-com",
+      "name": "cloudbeds.com",
+      "careersUrl": "https://www.cloudbeds.com/careers/siCloudbeds",
+      "whereYouCanWork": "offers hospitality software to streamline operations for hotels and other accommodation providers. CloudLinux/"
+    },
+    {
+      "id": "cloudlinux-com",
+      "name": "cloudlinux.com",
+      "careersUrl": "https://www.cloudlinux.com/about-us-company-jobs/si",
+      "whereYouCanWork": "Provides a Linux distribution optimized for hosting service providers. co.dev/"
+    },
+    {
+      "id": "coinshift-xyz",
+      "name": "coinshift.xyz",
+      "careersUrl": "https://coinshift.xyz/careers",
+      "whereYouCanWork": "si Collabora/"
+    },
+    {
+      "id": "constructor-com",
+      "name": "constructor.com",
+      "careersUrl": "https://constructor.com/about/careers",
+      "whereYouCanWork": "siConstructor is an AI-powered search and product discovery platform for e-commerce businesses. Convert/"
+    },
+    {
+      "id": "crisp-chat",
+      "name": "crisp.chat",
+      "careersUrl": "https://crisp.chat/en/careers/si",
+      "whereYouCanWork": "Crossover/"
+    },
+    {
+      "id": "crowdbotics-com",
+      "name": "crowdbotics.com",
+      "careersUrl": "https://crowdbotics.com/careers",
+      "whereYouCanWork": "si Cruise"
+    },
+    {
+      "id": "search-careers-gm-com",
+      "name": "search-careers.gm.com",
+      "careersUrl": "https://search-careers.gm.com/en/?utm_source=gm",
+      "whereYouCanWork": ". com&utm_medium=organic siDevelops self-driving car technology. Customer.io/"
+    },
+    {
+      "id": "databento-com",
+      "name": "databento.com",
+      "careersUrl": "https://databento.com/careers",
+      "whereYouCanWork": "si DataCamp/"
+    },
+    {
+      "id": "deel-com",
+      "name": "deel.com",
+      "careersUrl": "https://www.deel.com/careers",
+      "whereYouCanWork": "si Doist/"
+    },
+    {
+      "id": "donyati-com",
+      "name": "donyati.com",
+      "careersUrl": "https://donyati.com/careers/siDonyati",
+      "whereYouCanWork": "is a consulting firm specializing in IT and data transformation services for businesses. DroneDeploy/"
+    },
+    {
+      "id": "elevenlabs-io",
+      "name": "elevenlabs.io",
+      "careersUrl": "https://elevenlabs.io/careers",
+      "whereYouCanWork": "si EngineYard (Support Team)"
+    },
+    {
+      "id": "eotlabs-io",
+      "name": "eotlabs.io",
+      "careersUrl": "https://www.eotlabs.io/about-us#careerssi",
+      "whereYouCanWork": "Epam/"
+    },
+    {
+      "id": "expert-thinking-co-uk",
+      "name": "expert-thinking.co.uk",
+      "careersUrl": "https://expert-thinking.co.uk/careers",
+      "whereYouCanWork": "/Expert Thinking is an IT services company that provides cloud, data, and application support to enterprises. Fairwinds/"
+    },
+    {
+      "id": "fiber-ai",
+      "name": "fiber.ai",
+      "careersUrl": "https://fiber.ai/careers",
+      "whereYouCanWork": "Fillout/"
+    },
+    {
+      "id": "fillout-com",
+      "name": "fillout.com",
+      "careersUrl": "https://fillout.com/careers",
+      "whereYouCanWork": "si FingerprintJS/"
+    },
+    {
+      "id": "firehydrant-io",
+      "name": "firehydrant.io",
+      "careersUrl": "https://firehydrant.io/careers",
+      "whereYouCanWork": "Flowing/"
+    },
+    {
+      "id": "fluentu-com",
+      "name": "fluentu.com",
+      "careersUrl": "https://www.fluentu.com/learn/remote-jobs-at-fluentu-join-",
+      "whereYouCanWork": "our-team/ siLanguage learning platform using real-world videos. Fly.io/"
+    },
+    {
+      "id": "funded-club",
+      "name": "funded.club",
+      "careersUrl": "https://funded.club/startupjobssiFunded.club",
+      "whereYouCanWork": "provides recruiting and HR solutions to help startups grow. Fundraise Up/"
+    },
+    {
+      "id": "fundraiseup-com",
+      "name": "fundraiseup.com",
+      "careersUrl": "https://fundraiseup.com/careers",
+      "whereYouCanWork": "si Gate.io/"
+    },
+    {
+      "id": "gate-io",
+      "name": "gate.io",
+      "careersUrl": "https://www.gate.io/careers",
+      "whereYouCanWork": "GetDex/"
+    },
+    {
+      "id": "virtasant-com",
+      "name": "virtasant.com",
+      "careersUrl": "https://www.virtasant.com/careers?src=gigstersi",
+      "whereYouCanWork": "GitLab/"
+    },
+    {
+      "id": "going-com",
+      "name": "going.com",
+      "careersUrl": "https://going.com/careers",
+      "whereYouCanWork": "Goinstacare/"
+    },
+    {
+      "id": "graphaware-com",
+      "name": "graphaware.com",
+      "careersUrl": "https://graphaware.com/careers/#open-positionssi",
+      "whereYouCanWork": "Graylog/"
+    },
+    {
+      "id": "happymammoth-com",
+      "name": "happymammoth.com",
+      "careersUrl": "https://happymammoth.com/careers",
+      "whereYouCanWork": "si Harvest/"
+    },
+    {
+      "id": "web-haystackapp-io",
+      "name": "web.haystackapp.io",
+      "careersUrl": "https://web.haystackapp.io/roles",
+      "whereYouCanWork": "Help Scout/"
+    },
+    {
+      "id": "esim-holafly-com",
+      "name": "esim.holafly.com",
+      "careersUrl": "https://esim.holafly.com/about-us/si",
+      "whereYouCanWork": "HomeBuddy/"
+    },
+    {
+      "id": "homebuddy-com",
+      "name": "homebuddy.com",
+      "careersUrl": "https://www.homebuddy.com/careers",
+      "whereYouCanWork": "si Honeybadger/"
+    },
+    {
+      "id": "ycombinator-com",
+      "name": "ycombinator.com",
+      "careersUrl": "https://www.ycombinator.com/companies/hotglue/jobs",
+      "whereYouCanWork": "si Hubstaff/"
+    },
+    {
+      "id": "hubstaff-com",
+      "name": "hubstaff.com",
+      "careersUrl": "https://hubstaff.com/jobs#hsds-open-positionssiworkforce",
+      "whereYouCanWork": "management tool that helps businesses reach new heights through better team, project, and time management. Human Made/"
+    },
+    {
+      "id": "instrumentl-com",
+      "name": "instrumentl.com",
+      "careersUrl": "https://www.instrumentl.com/careers",
+      "whereYouCanWork": "si Intevity/"
     },
     {
       "id": "intrado-jobs-net",
@@ -1749,10 +4660,616 @@
       "whereYouCanWork": "provides cloud-based technology to connect people and businesses worldwide. Intuition Machines, Inc/"
     },
     {
+      "id": "kake-co",
+      "name": "kake.co",
+      "careersUrl": "https://kake.co/jobs",
+      "whereYouCanWork": "si kea/"
+    },
+    {
+      "id": "keyrock-eu",
+      "name": "keyrock.eu",
+      "careersUrl": "https://keyrock.eu/careers/si",
+      "whereYouCanWork": "Kinsta/"
+    },
+    {
+      "id": "supertab-co",
+      "name": "supertab.co",
+      "careersUrl": "https://www.supertab.co/careerOne-click",
+      "whereYouCanWork": "digital purchase aggregation LeadIQ/"
+    },
+    {
+      "id": "lily-ai",
+      "name": "lily.ai",
+      "careersUrl": "https://www.lily.ai/careers",
+      "whereYouCanWork": "/ Linaro/"
+    },
+    {
+      "id": "magicmedia-studio",
+      "name": "magicmedia.studio",
+      "careersUrl": "https://magicmedia.studio/careers/si",
+      "whereYouCanWork": "Provides creative solutions in gaming, entertainment, and tech industries. MailerLite/"
+    },
+    {
+      "id": "app-pyjamahr-com",
+      "name": "app.pyjamahr.com",
+      "careersUrl": "https://app.pyjamahr.com/careers",
+      "whereYouCanWork": "? company=Mentorsity&company_uuid=0F28F503B4&utm_sour ce=LINKEDIN&isHeaderVisible=undefined Mentorsity is a platform focused on mentoring and skill development for professional growth. Merico/"
+    },
+    {
+      "id": "metabase-com",
+      "name": "metabase.com",
+      "careersUrl": "https://www.metabase.com/careers",
+      "whereYouCanWork": "si MetaLab/"
+    },
+    {
+      "id": "monetizemore-com",
+      "name": "monetizemore.com",
+      "careersUrl": "https://www.monetizemore.com/about-us/careers/si",
+      "whereYouCanWork": "Morgan & Morgan/"
+    },
+    {
+      "id": "forthepeople-com",
+      "name": "forthepeople.com",
+      "careersUrl": "https://www.forthepeople.com/careers/si",
+      "whereYouCanWork": "Muck Rack/"
+    },
+    {
+      "id": "nethermind-io",
+      "name": "nethermind.io",
+      "careersUrl": "https://www.nethermind.io/open-rolessi",
+      "whereYouCanWork": "Team of developers and researchers building Ethereum solutions and tools. NoRedInk/"
+    },
+    {
+      "id": "notabene-id",
+      "name": "notabene.id",
+      "careersUrl": "https://notabene.id/careers",
+      "whereYouCanWork": "si OCI (Oracle Cloud Infrastructure) oracle.com/careerssiCloud services platform offered by Oracle Corporation. Octopus Deploy/"
+    },
+    {
+      "id": "offsite-com",
+      "name": "offsite.com",
+      "careersUrl": "https://www.offsite.com/careers",
+      "whereYouCanWork": "siPlanning a team retreat? Offsite saves you time, money, and stress. Omniscient Digital/"
+    },
+    {
+      "id": "beomniscient-com",
+      "name": "beomniscient.com",
+      "careersUrl": "https://beomniscient.com/careers/si",
+      "whereYouCanWork": "Onebrief/"
+    },
+    {
+      "id": "onebrief-com",
+      "name": "onebrief.com",
+      "careersUrl": "https://www.onebrief.com/careers",
+      "whereYouCanWork": "si OneLocal/"
+    },
+    {
+      "id": "onelocal-com",
+      "name": "onelocal.com",
+      "careersUrl": "https://onelocal.com/careers",
+      "whereYouCanWork": "si OpenZeppelin/"
+    },
+    {
+      "id": "zinrec-intervieweb-it",
+      "name": "zinrec.intervieweb.it",
+      "careersUrl": "https://zinrec.intervieweb.it/oway/it/career",
+      "whereYouCanWork": "Owner.com/"
+    },
+    {
+      "id": "owner-com",
+      "name": "owner.com",
+      "careersUrl": "https://owner.com/careers",
+      "whereYouCanWork": "si Oyster HRoysterhr.com/careers/siGlobal employment platform for distributed teams. Parsely/"
+    },
+    {
+      "id": "pathward-com",
+      "name": "pathward.com",
+      "careersUrl": "https://www.pathward.com/about-us/people-culture/careers/siAt",
+      "whereYouCanWork": "Pathward, expanding financial access is the heart of our business. We work with diverse partners to deliver Banking-as-a-Service and commercial finance solutions for clients and customers that the traditional financial system can’t or won’t fully serve. Percona/"
+    },
+    {
+      "id": "phaidra-ai",
+      "name": "phaidra.ai",
+      "careersUrl": "https://phaidra.ai/careers",
+      "whereYouCanWork": "si Phantom/"
+    },
+    {
+      "id": "phantom-app",
+      "name": "phantom.app",
+      "careersUrl": "https://phantom.app/careers",
+      "whereYouCanWork": "si Pitch/"
+    },
+    {
+      "id": "pitch-com",
+      "name": "pitch.com",
+      "careersUrl": "https://pitch.com/jobs",
+      "whereYouCanWork": "Pitchup.com/"
+    },
+    {
+      "id": "pitchup-com",
+      "name": "pitchup.com",
+      "careersUrl": "https://www.pitchup.com/jobs/si",
+      "whereYouCanWork": "Planet/"
+    },
+    {
+      "id": "planet-com",
+      "name": "planet.com",
+      "careersUrl": "https://www.planet.com/careers",
+      "whereYouCanWork": "si Plex/"
+    },
+    {
+      "id": "portside-co",
+      "name": "portside.co",
+      "careersUrl": "https://portside.co/careers",
+      "whereYouCanWork": "si PostHog/"
+    },
+    {
+      "id": "posthog-com",
+      "name": "posthog.com",
+      "careersUrl": "https://posthog.com/careers",
+      "whereYouCanWork": "si Prisma/"
+    },
+    {
+      "id": "pulumi-com",
+      "name": "pulumi.com",
+      "careersUrl": "https://www.pulumi.com/careers/si",
+      "whereYouCanWork": "Quadrivia ai/"
+    },
+    {
+      "id": "app-screenloop-com",
+      "name": "app.screenloop.com",
+      "careersUrl": "https://app.screenloop.com/careers/quadrivia",
+      "whereYouCanWork": "/ QuestDB/"
+    },
+    {
+      "id": "remofirst-com",
+      "name": "remofirst.com",
+      "careersUrl": "https://www.remofirst.com/careers",
+      "whereYouCanWork": "si Remote Technologyremote.com/careerssi Provides global payroll, benefits, taxes, and compliance solutions for distributed teams. Renaissance/"
+    },
+    {
+      "id": "job-boards-eu-greenhouse-io",
+      "name": "job-boards.eu.greenhouse.io",
+      "careersUrl": "https://job-boards.eu.greenhouse.io/retraced",
+      "whereYouCanWork": "RevenueCat/"
+    },
+    {
+      "id": "revenuecat-com",
+      "name": "revenuecat.com",
+      "careersUrl": "https://www.revenuecat.com/careers",
+      "whereYouCanWork": "Rocket.Chat/"
+    },
+    {
+      "id": "scalemath-com",
+      "name": "scalemath.com",
+      "careersUrl": "https://www.scalemath.com/careers",
+      "whereYouCanWork": "si Scopic Software/"
+    },
+    {
+      "id": "screenloop-com",
+      "name": "screenloop.com",
+      "careersUrl": "https://screenloop.com/careers",
+      "whereYouCanWork": "si SecurityScorecard/"
+    },
+    {
+      "id": "wellfound-com",
+      "name": "wellfound.com",
+      "careersUrl": "https://wellfound.com/company/sendwave-2/jobs",
+      "whereYouCanWork": "Affordable international money transfers app Shippabo/"
+    },
+    {
+      "id": "singular-net",
+      "name": "singular.net",
+      "careersUrl": "https://www.singular.net/careers",
+      "whereYouCanWork": "si Smile.io/"
+    },
+    {
+      "id": "socialdiscoverygroup-com",
+      "name": "socialdiscoverygroup.com",
+      "careersUrl": "https://socialdiscoverygroup.com/si",
+      "whereYouCanWork": "Global technology company that builds and invests in social discovery businesses. SoftwareMill/"
+    },
+    {
+      "id": "solo-io",
+      "name": "solo.io",
+      "careersUrl": "https://www.solo.io/company/careers",
+      "whereYouCanWork": "si Sourcegraph/"
+    },
+    {
+      "id": "storyworth-com",
+      "name": "storyworth.com",
+      "careersUrl": "https://www.storyworth.com/careers",
+      "whereYouCanWork": "StreamNative/"
+    },
+    {
+      "id": "superside-com",
+      "name": "superside.com",
+      "careersUrl": "https://www.superside.com/careers",
+      "whereYouCanWork": "Surevine/"
+    },
+    {
+      "id": "tableau-com",
+      "name": "tableau.com",
+      "careersUrl": "https://tableau.com/careers",
+      "whereYouCanWork": "siTableau is a business intelligence software company that specializes in data visualization and analysis tools. TestGorilla/"
+    },
+    {
+      "id": "testrigor-com",
+      "name": "testrigor.com",
+      "careersUrl": "https://testrigor.com/careers",
+      "whereYouCanWork": "si Tether.io/"
+    },
+    {
+      "id": "tether-recruitee-com",
+      "name": "tether.recruitee.com",
+      "careersUrl": "https://tether.recruitee.com/si",
+      "whereYouCanWork": "Thanx/"
+    },
+    {
+      "id": "thanx-com",
+      "name": "thanx.com",
+      "careersUrl": "https://www.thanx.com/careers",
+      "whereYouCanWork": "si TheoremOne/"
+    },
+    {
+      "id": "time-doctor-breezy-hr",
+      "name": "time-doctor.breezy.hr",
+      "careersUrl": "https://time-doctor.breezy.hr/si",
+      "whereYouCanWork": "toggl/"
+    },
+    {
+      "id": "uberall-com",
+      "name": "uberall.com",
+      "careersUrl": "https://uberall.com/en/company/careers",
+      "whereYouCanWork": "si Unified/"
+    },
+    {
+      "id": "unified-com",
+      "name": "unified.com",
+      "careersUrl": "https://www.unified.com/careers/siA",
+      "whereYouCanWork": "best in class team of digital experts leveraging purpose built technology to deliver operational excellence and insights across paid social, programmatic, OTT and digital audio. Unreasonableunreasonablegroup.com/careers/Supports entrepreneurs tackling global challenges. Upwork Pro/"
+    },
+    {
+      "id": "verra-org",
+      "name": "verra.org",
+      "careersUrl": "https://verra.org/life-at-verra/si",
+      "whereYouCanWork": "Develops and manages standards for environmental and social markets. Vital/"
+    },
+    {
+      "id": "vital-io",
+      "name": "vital.io",
+      "careersUrl": "https://vital.io/careers",
+      "whereYouCanWork": "WebDevStudios/"
+    },
+    {
+      "id": "careers-getworkflex-com",
+      "name": "careers.getworkflex.com",
+      "careersUrl": "https://careers.getworkflex.com/siGlobal",
+      "whereYouCanWork": "travel compliance solved – on one platform! WP-Media/"
+    },
+    {
+      "id": "getzep-com",
+      "name": "getzep.com",
+      "careersUrl": "https://www.getzep.com/careers",
+      "whereYouCanWork": "Zup/"
+    },
+    {
+      "id": "remoterocketship-com",
+      "name": "remoterocketship.com",
+      "careersUrl": "https://www.remoterocketship.com",
+      "whereYouCanWork": "/ Recommended! Remote Rocketship is a job board focused only on remote roles, mostly in tech. It features job listings for programmers, designers, and other tech-related roles. ⭐ FlexJobs"
+    },
+    {
+      "id": "flexjobs-com",
+      "name": "flexjobs.com",
+      "careersUrl": "https://www.flexjobs.com",
+      "whereYouCanWork": "/Recommended! FlexJobs is a platform that specializes in remote and flexible job opportunities, connecting job seekers with legitimate remote job listings from reputable companies. ⭐ Growmotely"
+    },
+    {
+      "id": "growmotely-com",
+      "name": "growmotely.com",
+      "careersUrl": "https://www.growmotely.com",
+      "whereYouCanWork": "/Recommended! Growmotely is a platform that connects job seekers with remote work opportunities at startups and growing companies. It focuses on remote roles across different functions. ⭐ Jobgether"
+    },
+    {
+      "id": "weworkremotely-com",
+      "name": "weworkremotely.com",
+      "careersUrl": "https://weworkremotely.com",
+      "whereYouCanWork": "/Recommended! We Work Remotely is a remote job board that features remote job listings in programming, design, customer support, marketing, and other fields. Otta/"
+    },
+    {
+      "id": "otta-com",
+      "name": "otta.com",
+      "careersUrl": "https://otta.com/Otta.com",
+      "whereYouCanWork": "is a platform that helps job seekers discover and apply for remote job opportunities. It offers a range of remote roles across different sectors and career levels. RemoteOK/"
+    },
+    {
+      "id": "remoteok-io",
+      "name": "remoteok.io",
+      "careersUrl": "https://remoteok.io/RemoteOK",
+      "whereYouCanWork": "is a job board with a focus on remote tech and software development jobs. It features job listings for programmers, designers, and other tech-related roles. Dynamite Jobs/"
+    },
+    {
+      "id": "dynamitejobs-co",
+      "name": "dynamitejobs.co",
+      "careersUrl": "https://dynamitejobs.co",
+      "whereYouCanWork": "/Dynamite Jobs is a job board for remote job seekers looking for positions with mission-driven and innovative companies. It covers a wide range of remote job categories. Remotive Remote Jobs/"
+    },
+    {
+      "id": "remotive-io",
+      "name": "remotive.io",
+      "careersUrl": "https://remotive.io/remote-jobsRemotive",
+      "whereYouCanWork": "is a platform that curates remote job listings and offers resources and community support for remote workers. It covers a variety of remote job categories. FindAsync Async Remote Jobs/"
+    },
+    {
+      "id": "findasync-com",
+      "name": "findasync.com",
+      "careersUrl": "https://findasync.com/FindAsync",
+      "whereYouCanWork": "specializes in asynchronous remote job opportunities, allowing job seekers to find positions that offer flexibility in work hours and locations. NoCommute/"
+    },
+    {
+      "id": "nocommute-com",
+      "name": "nocommute.com",
+      "careersUrl": "https://nocommute.com/NoCommute",
+      "whereYouCanWork": "is a remote job board that helps individuals find remote work opportunities with companies that embrace remote work and telecommuting as part of their culture. letsworkremotely/"
+    },
+    {
+      "id": "letsworkremotely-com",
+      "name": "letsworkremotely.com",
+      "careersUrl": "https://letsworkremotely.com/letsworkremotely",
+      "whereYouCanWork": "is a job board for remote job seekers featuring a variety of remote positions in different industries and fields. Working Nomads/"
+    },
+    {
+      "id": "workingnomads-co",
+      "name": "workingnomads.co",
+      "careersUrl": "https://www.workingnomads.co",
+      "whereYouCanWork": "/Working Nomads curates remote job listings from various sources and provides a platform for job seekers to find remote job opportunities in different locations. JustRemote/"
+    },
+    {
+      "id": "justremote-co",
+      "name": "justremote.co",
+      "careersUrl": "https://justremote.co/JustRemote",
+      "whereYouCanWork": "is a job board specializing in remote job listings across various industries, including tech, design, marketing, and customer support. Pangian/"
+    },
+    {
+      "id": "pangian-com",
+      "name": "pangian.com",
+      "careersUrl": "https://pangian.com",
+      "whereYouCanWork": "/Pangian is a platform that connects remote job seekers with remote- friendly companies and offers resources for digital nomads and remote workers. Skip The Drive LLC/"
+    },
+    {
+      "id": "skipthedrive-com",
+      "name": "skipthedrive.com",
+      "careersUrl": "https://www.skipthedrive.com",
+      "whereYouCanWork": "/Skip The Drive LLC is a remote job board that compiles remote job listings in various industries and provides job seekers with opportunities to work from home or remotely. Remote.co/"
+    },
+    {
+      "id": "remote-co",
+      "name": "remote.co",
+      "careersUrl": "https://remote.co/Remote.co",
+      "whereYouCanWork": "is a platform that specializes in remote work and offers a range of remote job listings along with resources and insights for remote job seekers. TrueRemote/"
+    },
+    {
+      "id": "trueremote-co",
+      "name": "trueremote.co",
+      "careersUrl": "https://trueremote.co/TrueRemote",
+      "whereYouCanWork": "is a job board that features remote job opportunities, focusing on helping job seekers find roles that offer genuine remote work options and flexibility. Flexa/"
+    },
+    {
+      "id": "flexa-com",
+      "name": "flexa.com",
+      "careersUrl": "https://flexa.com",
+      "whereYouCanWork": "/Flexa is a platform that connects job seekers with remote and flexible job opportunities across various industries and career levels. remote.io/"
+    },
+    {
+      "id": "remote-io",
+      "name": "remote.io",
+      "careersUrl": "https://remote.io/remote.io",
+      "whereYouCanWork": "is a remote job board that provides job seekers with a wide range of remote job listings in various fields, including technology, marketing, and customer support. GoRemotely/"
+    },
+    {
+      "id": "goremotely-com",
+      "name": "goremotely.com",
+      "careersUrl": "https://goremotely.com/GoRemotely",
+      "whereYouCanWork": "is a job board that connects job seekers with remote job opportunities across various industries and fields, offering a wide range of remote positions. RemoteHub/"
+    },
+    {
+      "id": "remotehub-io",
+      "name": "remotehub.io",
+      "careersUrl": "https://remotehub.io/RemoteHub",
+      "whereYouCanWork": "is a platform that features remote job listings in technology, design, marketing, and more, providing job seekers with a variety of remote work options. Remote Tribe/"
+    },
+    {
+      "id": "remotetribe-io",
+      "name": "remotetribe.io",
+      "careersUrl": "https://remotetribe.io",
+      "whereYouCanWork": "/Remote Tribe is a job board that focuses on remote job opportunities for developers, designers, and other tech-related roles, offering remote positions in the tech industry. Remote Leaf/"
+    },
+    {
+      "id": "remoteleaf-com",
+      "name": "remoteleaf.com",
+      "careersUrl": "https://remoteleaf.com",
+      "whereYouCanWork": "/Remote Leaf is a remote job board that curates job listings for remote workers in various roles, helping job seekers find remote positions in different industries. Remote Work Junkie/"
+    },
+    {
+      "id": "remoteworkjunkie-com",
+      "name": "remoteworkjunkie.com",
+      "careersUrl": "https://remoteworkjunkie.com",
+      "whereYouCanWork": "/Remote Work Junkie is a platform that specializes in remote job listings, providing job seekers with remote work opportunities and resources to support remote work lifestyles. Remoters.me/"
+    },
+    {
       "id": "remoters-net",
       "name": "remoters.net",
       "careersUrl": "https://remoters.net/Remoters.me",
       "whereYouCanWork": "is a job board that caters to digital nomads and remote workers, offering remote job listings and resources for those seeking remote work opportunities worldwide. Citizen Remote/"
+    },
+    {
+      "id": "citizenremote-com",
+      "name": "citizenremote.com",
+      "careersUrl": "https://citizenremote.com",
+      "whereYouCanWork": "/Citizen Remote is a remote job board that focuses on remote-friendly companies and positions, helping job seekers find opportunities that support remote work and telecommuting. PeopleFirst Jobs/"
+    },
+    {
+      "id": "peoplefirst-jobs",
+      "name": "peoplefirst.jobs",
+      "careersUrl": "https://peoplefirst.jobs",
+      "whereYouCanWork": "/ PeopleFirst Jobs is a platform that features remote job opportunities with a focus on companies that prioritize employee well-being and work-life balance. DailyRemote/"
+    },
+    {
+      "id": "dailyremote-com",
+      "name": "dailyremote.com",
+      "careersUrl": "https://dailyremote.com/DailyRemote",
+      "whereYouCanWork": "is a job board that provides daily updates of remote job listings across various industries, offering a variety of remote work options for job seekers. Smooth Remote/"
+    },
+    {
+      "id": "smoothremote-com",
+      "name": "smoothremote.com",
+      "careersUrl": "https://smoothremote.com",
+      "whereYouCanWork": "/Smooth Remote is a job board that specializes in remote job listings and provides resources and tools for job seekers looking to transition to remote work. BeeFrii/"
+    },
+    {
+      "id": "beefrii-com",
+      "name": "beefrii.com",
+      "careersUrl": "https://beefrii.com/BeeFrii",
+      "whereYouCanWork": "is a platform that connects job seekers with remote job opportunities, including freelance and contract positions, across different industries and fields. Remotewx/"
+    },
+    {
+      "id": "remotewx-com",
+      "name": "remotewx.com",
+      "careersUrl": "https://remotewx.com",
+      "whereYouCanWork": "/Remotewx is a remote job board that features job listings for remote workers in various roles and industries, offering opportunities for remote work enthusiasts. Remotists/"
+    },
+    {
+      "id": "remotists-com",
+      "name": "remotists.com",
+      "careersUrl": "https://remotists.com",
+      "whereYouCanWork": "/Remotists is a job board that focuses on remote job opportunities in technology, design, marketing, and other fields, providing job seekers with a range of remote positions. No desk/"
+    },
+    {
+      "id": "nodesk-co",
+      "name": "nodesk.co",
+      "careersUrl": "https://nodesk.co/No",
+      "whereYouCanWork": "desk is a platform that curates remote job listings and provides resources for digital nomads and remote workers, offering a variety of remote work options. JobsPresso/"
+    },
+    {
+      "id": "jobspresso-co",
+      "name": "jobspresso.co",
+      "careersUrl": "https://jobspresso.co/Jobs",
+      "whereYouCanWork": "Presso is a remote job board that focuses on curating remote job listings in various fields, offering opportunities for remote workers and job seekers. Remote4Me/"
+    },
+    {
+      "id": "remote4me-com",
+      "name": "remote4me.com",
+      "careersUrl": "https://remote4me.com/Remote4Me",
+      "whereYouCanWork": "is a job board that aggregates remote job listings from different sources, providing job seekers with a wide range of remote work opportunities. Aijobs.NET/"
+    },
+    {
+      "id": "aijobs-net",
+      "name": "aijobs.net",
+      "careersUrl": "https://aijobs.net/Aijobs.NET",
+      "whereYouCanWork": "specializes in remote job listings related to artificial intelligence and machine learning, connecting job seekers with AI and tech companies offering remote positions. Pyjama Jobs/"
+    },
+    {
+      "id": "pyjamajobs-com",
+      "name": "pyjamajobs.com",
+      "careersUrl": "https://pyjamajobs.com",
+      "whereYouCanWork": "/Pyjama Jobs is a remote job board that caters to job seekers looking for remote work in a variety of fields, offering a diverse selection of remote job opportunities. Idealist/"
+    },
+    {
+      "id": "idealist-org",
+      "name": "idealist.org",
+      "careersUrl": "https://www.idealist.org/en",
+      "whereYouCanWork": "/Idealist is a platform that features remote and in-person job listings with a focus on nonprofit and socially conscious organizations, providing opportunities for those with a passion for social impact. Find Async/"
+    },
+    {
+      "id": "remotewoman-com",
+      "name": "remotewoman.com",
+      "careersUrl": "https://remotewoman.com",
+      "whereYouCanWork": "/Remote Woman is a job board dedicated to helping women find remote job opportunities, offering a range of remote positions across different industries. Remote Work Hub/"
+    },
+    {
+      "id": "remoteworkhub-com",
+      "name": "remoteworkhub.com",
+      "careersUrl": "https://remoteworkhub.com",
+      "whereYouCanWork": "/Remote Work Hub is a platform that curates remote job listings and provides resources and support for remote workers, helping job seekers find remote work opportunities. Skip the Drive/"
+    },
+    {
+      "id": "powertofly-com",
+      "name": "powertofly.com",
+      "careersUrl": "https://powertofly.com/PowertoFly",
+      "whereYouCanWork": "is a platform that connects job seekers, particularly women, with remote job opportunities in tech and other industries, focusing on diversity and inclusion. Wellfound/"
+    },
+    {
+      "id": "wellfound-io",
+      "name": "wellfound.io",
+      "careersUrl": "https://www.wellfound.io",
+      "whereYouCanWork": "/Wellfound is a job board that specializes in remote job opportunities, providing job seekers with a variety of remote positions in different fields and industries. Hire My Mom/"
+    },
+    {
+      "id": "hiremymom-com",
+      "name": "hiremymom.com",
+      "careersUrl": "https://www.hiremymom.com",
+      "whereYouCanWork": "/Hire My Mom is a platform that connects job-seeking mothers with remote job opportunities that offer flexibility and work-life balance. EU Remote Jobs/"
+    },
+    {
+      "id": "euremotejobs-com",
+      "name": "euremotejobs.com",
+      "careersUrl": "https://euremotejobs.com/EU",
+      "whereYouCanWork": "Remote Jobs is a job board that focuses on remote job listings for job seekers in Europe, offering remote work opportunities in various industries across the EU. Talenteum.Africa/"
+    },
+    {
+      "id": "talenteum-africa",
+      "name": "talenteum.africa",
+      "careersUrl": "https://talenteum.africa/Talenteum.Africa",
+      "whereYouCanWork": "is a platform that connects job seekers in Africa with remote work opportunities, particularly in the tech and digital sectors, fostering remote work in Africa. Fieldscope/"
+    },
+    {
+      "id": "fieldscope-io",
+      "name": "fieldscope.io",
+      "careersUrl": "https://www.fieldscope.io",
+      "whereYouCanWork": "/Fieldscope is a platform that connects job seekers with remote job opportunities, particularly in the tech and software development sectors. It offers a range of remote positions. Waw Asia/"
+    },
+    {
+      "id": "waw-asia",
+      "name": "waw.asia",
+      "careersUrl": "https://waw.asia",
+      "whereYouCanWork": "/Waw Asia is a job board that specializes in remote job listings for job seekers in Asia, offering remote work opportunities in various industries and fields across the continent. Built In/"
+    },
+    {
+      "id": "builtin-com",
+      "name": "builtin.com",
+      "careersUrl": "https://builtin.com",
+      "whereYouCanWork": "/Built In is a platform that features remote job listings in the tech industry, providing job seekers with opportunities in technology, startups, and digital roles. Dribbble/"
+    },
+    {
+      "id": "dribbble-com",
+      "name": "dribbble.com",
+      "careersUrl": "https://dribbble.com/jobs",
+      "whereYouCanWork": "/Dribbble is a community and job board for designers and creatives, featuring remote job listings for designers, illustrators, and other creative professionals. Tech Junction/"
+    },
+    {
+      "id": "techjunction-io",
+      "name": "techjunction.io",
+      "careersUrl": "https://www.techjunction.io",
+      "whereYouCanWork": "/Tech Junction is a remote job board that focuses on job listings in technology and IT, connecting job seekers with remote work opportunities in the tech industry. Jobsfactor .EU/"
+    },
+    {
+      "id": "jobsfactor-eu",
+      "name": "jobsfactor.eu",
+      "careersUrl": "https://jobsfactor.eu",
+      "whereYouCanWork": "/Jobsfactor .EU is a job board that specializes in remote job listings for job seekers in Europe, offering remote work opportunities in various industries across the EU. Tech Jobs for Good/"
+    },
+    {
+      "id": "techjobsforgood-com",
+      "name": "techjobsforgood.com",
+      "careersUrl": "https://www.techjobsforgood.com",
+      "whereYouCanWork": "/ Tech Jobs for Good is a platform that features remote job opportunities with a focus on tech jobs in socially conscious and environmentally responsible organizations. Escape the City/"
+    },
+    {
+      "id": "escapethecity-org",
+      "name": "escapethecity.org",
+      "careersUrl": "https://www.escapethecity.org",
+      "whereYouCanWork": "/Escape the City is a platform that helps job seekers find remote work opportunities and career changes, with a focus on work that aligns with personal values and lifestyle. LinkedIn/"
     }
   ]
 }

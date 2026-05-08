@@ -65,7 +65,7 @@ Convención recomendada: dos archivos, por ejemplo `cv-mio.pdf` y `laburosremot.
    npm run import-pdfs
    ```
 
-   Escribe `config/generated/cv-from-pdf.json` y `config/generated/companies-from-pdf.json`. El listado aplica un filtro por texto tipo columna **“Where you can work”**: el contexto tras cada URL en el PDF debe incluir **Worldwide**, **South America**, **LATAM**, **Argentina**, **Uruguay**, **Chile**, **Brasil** o **Brazil**, o **Paraguay** (como palabras, según el script).
+   Escribe `config/generated/cv-from-pdf.json` y `config/generated/companies-from-pdf.json`. El listado **no** filtra por región en el PDF: toma las URLs plausibles y guarda el texto que sigue a cada una como contexto (`whereYouCanWork`). El criterio de ubicación/modalidad lo aplica el **scan** (LLM), con `JOBSP_JOB_LOCATION_PREFERENCE` o las reglas por defecto en `scripts/scan.mjs`.
 
 6. **Levantar la UI (desarrollo)**
 

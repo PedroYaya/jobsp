@@ -4,9 +4,8 @@
  * escribe JSON solo en config/generated/ (cv-from-pdf.json, companies-from-pdf.json).
  *
  * Listado (laburos remotos): tras cada URL, el texto del PDF hasta el próximo link (~1200 chars)
- * se usa como proxy de la columna "Where you can work". Solo se conservan URLs cuyo tramo incluye
- * (sin importar mayúsculas) alguno de: Worldwide, South America, LATAM, Argentina, Uruguay,
- * Chile, Brasil/Brazil, Paraguay.
+ * se guarda en cada empresa como whereYouCanWork (contexto del PDF). No se filtra por región acá:
+ * el criterio geográfico lo aplica solo el scan (LLM), p. ej. JOBSP_JOB_LOCATION_PREFERENCE en scan.mjs.
  */
 import { createRequire } from 'node:module'
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
@@ -115,20 +114,11 @@ function isPlausibleUrl(u) {
   }
 }
 
-/** Texto tras el link en el PDF debe reflejar "Where you can work" (regiones admitidas). */
-function locationMatchesWhereYouCanWork(trail) {
-  const s = String(trail || '').toLowerCase()
-  if (/\bworldwide\b/.test(s)) return true
-  if (/south\s+america/.test(s)) return true
-  if (/\b(latam|argentina|uruguay|chile|brasil|brazil|paraguay)\b/.test(s)) return true
-  return false
-}
-
 /**
  * URLs únicas con el texto que sigue a cada una en el PDF (hasta el próximo http o 1200 chars).
- * Sirve para filtrar por columna "Where you can work" cuando el PDF concatena columnas.
+ * El tramo se guarda como contexto (whereYouCanWork); no filtra por región.
  */
-function extractUrlsWithWhereTrail(text) {
+function extractUrlsWithTrail(text) {
   const t = fixTypos(text)
   const re = /https?:\/\/[^\s\n]+/gi
   const byUrl = new Map()
@@ -151,13 +141,11 @@ function extractUrlsWithWhereTrail(text) {
         .replace(/[\r\n]+/g, ' ')
         .replace(/\s+/g, ' ')
         .trim()
-      const matches = locationMatchesWhereYouCanWork(trail)
       const prev = byUrl.get(u)
       if (!prev) {
-        byUrl.set(u, { url: u, trail, matches })
-      } else {
-        prev.matches = prev.matches || matches
-        if (matches && trail.length > (prev.trail || '').length) prev.trail = trail
+        byUrl.set(u, { url: u, trail })
+      } else if (trail.length > (prev.trail || '').length) {
+        prev.trail = trail
       }
     }
   }
@@ -195,10 +183,10 @@ function slug(s) {
     .slice(0, 60) || 'empresa'
 }
 
-/** Una URL por host: la de mayor score tipo careers (solo entradas que ya pasaron filtro Where). */
-function urlsToCompanies(whereRows) {
+/** Una URL por host: la de mayor score tipo careers. */
+function urlsToCompanies(rows) {
   const byHost = new Map()
-  for (const row of whereRows) {
+  for (const row of rows) {
     const url = row.url
     let host
     try {
@@ -271,31 +259,22 @@ async function main() {
   if (listName) {
     const buf = await readFile(join(pdfsDir, listName))
     const { text, pages } = await pdfText(buf)
-    const allRows = extractUrlsWithWhereTrail(text)
-    const passed = allRows.filter((r) => r.matches)
-    const companies = urlsToCompanies(passed)
+    const allRows = extractUrlsWithTrail(text)
+    const companies = urlsToCompanies(allRows)
     const listMeta = {
       sourceFile: listName,
       generatedAt,
       pages,
       urlsFound: allRows.map((r) => r.url),
-      whereYouCanWorkFilter: {
-        description:
-          'Solo URLs cuyo texto siguiente en el PDF incluye Worldwide, South America, LATAM, Argentina, Uruguay, Chile, Brasil/Brazil o Paraguay (palabras completas donde aplica)',
-        urlsUnique: allRows.length,
-        urlsKept: passed.length,
-        urlsDropped: allRows.length - passed.length,
-      },
+      urlRowsUnique: allRows.length,
       companies,
     }
     await writeFile(join(genDir, 'companies-from-pdf.json'), JSON.stringify(listMeta, null, 2), 'utf8')
     log(
-      `Listado → config/generated/companies-from-pdf.json (${companies.length} empresas tras filtro Where you can work; ${passed.length}/${allRows.length} URLs únicas con región admitida)`,
+      `Listado → config/generated/companies-from-pdf.json (${companies.length} empresas desde ${allRows.length} URLs únicas en el PDF; filtro geográfico solo en el scan LLM)`,
     )
-    if (allRows.length && !passed.length) {
-      log(
-        'ADVERTENCIA: ninguna URL pasó el filtro (revisá el PDF o ampliá el tramo de texto si la columna queda lejos del link).',
-      )
+    if (!allRows.length) {
+      log('ADVERTENCIA: no se encontraron URLs https plausibles en el PDF de listado.')
     }
   } else {
     log('No se encontró PDF de listado')

@@ -31,6 +31,15 @@ const companiesInReport = computed(() => {
   return list.filter((c) => c && Array.isArray(c.relevantRoles) && c.relevantRoles.length > 0)
 })
 
+/** Hay algo en disco/UI que valga la pena refrescar o borrar (post–reset vacío → false). */
+const hasPersistedScanData = computed(() => {
+  const scans = index.value?.scans
+  return (Array.isArray(scans) && scans.length > 0) || lastFinished.value != null || report.value != null
+})
+
+const canRefreshResults = computed(() => scanWaiting.value || hasPersistedScanData.value)
+const canResetGenerated = computed(() => hasPersistedScanData.value)
+
 async function loadIndex() {
   try {
     const idxRes = await fetch('/generated/index.json', { cache: 'no-store' })
@@ -296,15 +305,28 @@ function formatLastFinished(meta) {
           <button
             type="button"
             class="btn-start"
+            title="Arranca un scan nuevo usando config/generated/*-from-pdf.json. No vacía public/generated antes de correr (Reset sí borra reportes guardados)."
             :disabled="startBusy || scanWaiting || resetBusy"
             @click="startScanAgain"
           >
             {{ startBusy ? 'Arrancando…' : scanWaiting ? 'Scan en curso…' : 'Start again' }}
           </button>
-          <button type="button" class="btn-refresh" :disabled="loading || resetBusy" @click="refreshResults">
+          <button
+            type="button"
+            class="btn-refresh"
+            title="Recarga índice, último reporte y estado. Se deshabilita si no hay corridas ni scan en curso."
+            :disabled="loading || resetBusy || !canRefreshResults"
+            @click="refreshResults"
+          >
             Actualizar
           </button>
-          <button type="button" class="btn-reset" :disabled="resetBusy || scanWaiting" @click="resetScan">
+          <button
+            type="button"
+            class="btn-reset"
+            title="Vacía public/generated (reportes, índice, log). Distinto de Start: no arranca el scan solo."
+            :disabled="resetBusy || scanWaiting || !canResetGenerated"
+            @click="resetScan"
+          >
             {{ resetBusy ? 'Reseteando…' : 'Reset job scan' }}
           </button>
         </div>

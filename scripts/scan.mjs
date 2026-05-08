@@ -13,6 +13,8 @@
  * JOBSP_CANDIDATE_PROFILE (texto libre, perfil buscado; default fullstack con foco frontend)
  * JOBSP_MAX_DETAIL_VISITS=N (máx URLs de detalle a abrir por empresa, default 5)
  * JOBSP_LIST_TITLE_KEYWORDS=a,b (extra para ponderar títulos en el listado)
+ * JOBSP_JOB_LOCATION_PREFERENCE=texto libre (ubicación/modalidad; si no va, sobrescribe el criterio geográfico por defecto del LLM)
+ * Si la URL de careers da 404 (o página “not found”), el scan puede ir a la home del mismo sitio y buscar enlaces career/jobs (footer, nav).
  */
 import { readFile, writeFile, mkdir, appendFile, unlink } from 'node:fs/promises'
 import https from 'node:https'
@@ -186,51 +188,236 @@ async function launchBrowser() {
   return puppeteer.launch(opts)
 }
 
+function siteHomeUrl(url) {
+  try {
+    const u = new URL(String(url).trim())
+    return `${u.protocol}//${u.hostname}/`
+  } catch {
+    return null
+  }
+}
+
+/** HTTP ok pero cuerpo típico de 404 SPA o página de error corta. */
+function looksLikeSoft404(innerText, status) {
+  if (status >= 400) return true
+  const t = String(innerText || '').trim()
+  if (t.length < 120) return true
+  const head = t.slice(0, 4500).toLowerCase()
+  if (/\b404\b/.test(head) && /\b(not found|no encontrad|doesn'?t exist|could not be found|page introuvable)\b/.test(head))
+    return true
+  if (t.length < 700 && /\b404\b/.test(head)) return true
+  if (/\b(gone|this page isn'?t available|page removed|invalid url)\b/.test(head) && t.length < 2500) return true
+  return false
+}
+
+function careersPagePayloadUsable(status, innerText) {
+  const httpOk = status >= 200 && status < 400
+  if (!httpOk) return false
+  if (looksLikeSoft404(innerText, status)) return false
+  if (String(innerText || '').trim().length < 80) return false
+  return true
+}
+
+function careersLinkScore(href) {
+  const low = String(href || '').toLowerCase()
+  let s = 0
+  if (/\/(jobs|job|careers|join|hiring|positions|vacancies|life-at|team)\b/.test(low)) s += 45
+  if (/career|hiring|join-?us|open-?role|workable|greenhouse|lever\.|ashby|myworkdayjobs|bamboohr|smartrecruiters|icims|jobvite/.test(low))
+    s += 35
+  if (/linkedin\.|facebook\.|twitter\.|mailto:|tel:/.test(low)) s -= 80
+  return s
+}
+
+const MAX_CAREERS_RECOVERY_LINKS = 8
+
+/** Tras estar en home (o cualquier página del sitio), enlaces que podrían ser careers/jobs (mismo host). */
+async function collectCareersLinksFromRenderedPage(page) {
+  const origin = page.url()
+  return page.evaluate((pageUrl) => {
+    const out = []
+    const seen = new Set()
+    let base
+    try {
+      base = new URL(pageUrl)
+    } catch {
+      return out
+    }
+    const host = base.hostname
+    const roots = new Set()
+    for (const sel of [
+      'footer',
+      '[role="contentinfo"]',
+      'header',
+      '[role="banner"]',
+      'nav',
+      '[role="navigation"]',
+      '[class*="footer" i]',
+      '[id*="footer" i]',
+    ]) {
+      document.querySelectorAll(sel).forEach((el) => roots.add(el))
+    }
+    if (!roots.size) roots.add(document.body)
+    const consider = (root) => {
+      if (!root?.querySelectorAll) return
+      root.querySelectorAll('a[href]').forEach((a) => {
+        const raw = (a.getAttribute('href') || '').trim()
+        if (!raw || raw.startsWith('#') || raw.toLowerCase().startsWith('javascript:')) return
+        let abs
+        try {
+          abs = new URL(raw, base.origin).href
+        } catch {
+          return
+        }
+        let hostAbs
+        try {
+          hostAbs = new URL(abs).hostname
+        } catch {
+          return
+        }
+        if (hostAbs !== host) return
+        if (seen.has(abs)) return
+        const path = new URL(abs).pathname.toLowerCase()
+        const full = abs.toLowerCase()
+        const hint = `${path} ${full} ${(a.textContent || '').slice(0, 80).toLowerCase()}`
+        if (
+          /(career|\/jobs|\/job\/|\/job\b|hiring|join[\s_-]?(us|team)|open[\s_-]?roles?|we[\u2019']?re hiring|empleo|work[\s_-]with|life[\s_-]at|vacante|reclutamiento|equipo)/.test(
+            hint,
+          ) ||
+          /(greenhouse\.io|lever\.co|ashbyhq\.com|myworkdayjobs\.com|workable\.com|bamboohr\.com|smartrecruiters\.com|icims\.com|jobvite\.com)/.test(
+            full,
+          )
+        ) {
+          if (/(login|signin|signup|sign-up|privacy|terms|cookie|legal)(\/|$)/.test(path)) return
+          seen.add(abs)
+          out.push(abs)
+        }
+      })
+    }
+    for (const r of roots) consider(r)
+    if (out.length < 4 && document.body) consider(document.body)
+    return [...new Set(out)]
+  }, origin)
+}
+
 /**
  * Una pestaña nueva por URL: navega como Chrome, devuelve HTML + innerText del DOM renderizado.
  * finalUrl = location.href al final (tras postWait) — eso es lo que guardamos como URL de oferta si el aviso pasó verificación.
  * @param {string} [logCtx] — si viene, escribe en el log de corrida líneas [Chrome] para seguir el proceso (p. ej. detalle por aviso).
+ * @param {{ recover404FromSite?: boolean }} [opts] — si true y la URL inicial falla (404 / not found / error corto), probá la home y enlaces career del footer/nav (solo para la página principal de careers por empresa).
  */
-async function fetchCareersWithChrome(browser, url, logCtx = '') {
+async function fetchCareersWithChrome(browser, url, logCtx = '', opts = {}) {
+  const recover404FromSite = opts.recover404FromSite === true
   const navTimeout = Number(process.env.JOBSP_NAV_TIMEOUT_MS) || 45000
   const postWait = Math.min(8000, Math.max(0, Number(process.env.JOBSP_POST_WAIT_MS) || 2500))
 
   const page = await browser.newPage()
+  const logLine = (msg) => {
+    if (logCtx) log(`    [Chrome] ${logCtx} ${msg}`)
+    else log(`    [Chrome] ${msg}`)
+  }
+
   try {
     if (logCtx) log(`    [Chrome] ${logCtx} → goto: ${url}`)
+    else log(`    [Chrome] → goto: ${url}`)
     await page.setViewport({ width: 1365, height: 900 })
     await page.setUserAgent(
       'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     )
-    const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: navTimeout })
-    const status = response?.status() ?? 0
-    if (postWait) await new Promise((r) => setTimeout(r, postWait))
 
-    const innerText = await page.evaluate(() => {
-      try {
-        return document.body ? document.body.innerText : ''
-      } catch {
-        return ''
+    async function readAfterNavigation(response) {
+      const status = response?.status() ?? 0
+      if (postWait) await new Promise((r) => setTimeout(r, postWait))
+      const innerText = await page.evaluate(() => {
+        try {
+          return document.body ? document.body.innerText : ''
+        } catch {
+          return ''
+        }
+      })
+      const html = await page.content()
+      const finalUrl = page.url()
+      const innerStr = String(innerText || '').trim()
+      const usable = careersPagePayloadUsable(status, innerStr)
+      return {
+        ok: usable,
+        status,
+        html,
+        innerText: innerStr,
+        finalUrl,
       }
-    })
-    const html = await page.content()
-    const finalUrl = page.url()
-    const innerLen = String(innerText || '').trim().length
-    const ok = status >= 200 && status < 400
+    }
+
+    let response
+    try {
+      response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: navTimeout })
+    } catch (e) {
+      logLine(`← error navegación: ${String(e.message || e)}`)
+      return {
+        ok: false,
+        status: 0,
+        html: '',
+        innerText: '',
+        error: String(e.message || e),
+        finalUrl: url,
+      }
+    }
+
+    let result = await readAfterNavigation(response)
+    const innerLen = result.innerText.length
     if (logCtx) {
       log(
-        `    [Chrome] ${logCtx} ← listo: http=${status} finalUrl=${finalUrl} innerTextChars=${innerLen} postWaitMs=${postWait}`,
+        `    [Chrome] ${logCtx} ← listo: http=${result.status} finalUrl=${result.finalUrl} innerTextChars=${innerLen} postWaitMs=${postWait}`,
+      )
+    } else {
+      log(
+        `    [Chrome] ← listo: http=${result.status} finalUrl=${result.finalUrl} innerTextChars=${innerLen} postWaitMs=${postWait}`,
       )
     }
-    return {
-      ok,
-      status,
-      html,
-      innerText: String(innerText || '').trim(),
-      finalUrl,
+
+    if (result.ok || !recover404FromSite) {
+      return result
     }
+
+    const home = siteHomeUrl(url)
+    if (!home || home.replace(/\/$/, '') === String(url).replace(/\/$/, '')) {
+      return result
+    }
+
+    log(`    [Chrome] recovery: URL careers falló (http=${result.status}, usable=false) → probando home ${home} y enlaces footer/nav…`)
+    const tried = new Set([String(url).replace(/\/$/, '')])
+    try {
+      response = await page.goto(home, { waitUntil: 'domcontentloaded', timeout: navTimeout })
+    } catch (e) {
+      log(`    [Chrome] recovery: home falló: ${String(e.message || e)}`)
+      return result
+    }
+    await readAfterNavigation(response)
+    let candidates = await collectCareersLinksFromRenderedPage(page)
+    candidates = [...new Set(candidates)].sort((a, b) => careersLinkScore(b) - careersLinkScore(a))
+    candidates = candidates.slice(0, MAX_CAREERS_RECOVERY_LINKS)
+
+    for (const cand of candidates) {
+      const key = String(cand).replace(/\/$/, '')
+      if (tried.has(key)) continue
+      tried.add(key)
+      log(`    [Chrome] recovery → probando: ${cand}`)
+      try {
+        response = await page.goto(cand, { waitUntil: 'domcontentloaded', timeout: navTimeout })
+      } catch (e) {
+        log(`    [Chrome] recovery ← skip (${String(e.message || e).slice(0, 120)})`)
+        continue
+      }
+      const next = await readAfterNavigation(response)
+      if (next.ok) {
+        log(`    [Chrome] recovery OK: finalUrl=${next.finalUrl}`)
+        return next
+      }
+    }
+
+    log(`    [Chrome] recovery: sin candidato útil (${candidates.length} enlaces revisados)`)
+    return result
   } catch (e) {
-    if (logCtx) log(`    [Chrome] ${logCtx} ← error navegación: ${String(e.message || e)}`)
+    logLine(`← error: ${String(e.message || e)}`)
     return {
       ok: false,
       status: 0,
@@ -251,6 +438,24 @@ function candidateProfile() {
     'Perfil buscado: desarrollador/a fullstack con foco principal en frontend (JavaScript/TypeScript, React, Vue u otro framework web, UI, consumo de APIs). ' +
     'Aplican ingeniería fullstack web y roles con implementación de producto. ' +
     'No aplica liderar proyectos sin código, ni perfiles puramente de negocio o people management.'
+  )
+}
+
+/** Criterio de ubicación/modalidad para el LLM (shortlist + detalle + fallback listado). */
+function jobLocationBlock() {
+  const custom = process.env.JOBSP_JOB_LOCATION_PREFERENCE?.trim()
+  if (custom) {
+    return (
+      'Instrucción explícita del candidato sobre ubicación y modalidad (prioridad absoluta):\n' +
+      custom +
+      '\nSi un aviso contradice esto (oficina solo en otro país, “remote US-only”, “must relocate to…”, etc.), excluí el rol del shortlist o poné include=false en detalle y explicá la restricción en reason/redFlags.'
+    )
+  }
+  return (
+    'Por defecto el candidato prioriza Latinoamérica y/o trabajo remoto compatible con vivir en LATAM (sin reubicarse a hubs USA/Europa/Asia salvo que el propio aviso abra explícitamente remoto desde LATAM o “remote anywhere / work from anywhere” sin vetar la región). ' +
+    'Si el listado o el detalle indica presencial u híbrido solo en ciudades/países fuera de LATAM (p. ej. Chicago, Dublin, Krakow, Londres, Sydney, “office in San Francisco”) y no aclara remoto desde Argentina/LATAM ni remoto global sin restricción, el rol **no** encaja geográficamente: no shortlistear y en verificación de detalle include=false, citando en reason la ciudad/región o la frase restrictiva. ' +
+    'Si el puesto es 100% remoto sin restricción de país, o menciona LATAM/South America/Argentina/México/Brasil explícitamente como opción, puede ser apto aunque la empresa tenga oficinas en otros países. ' +
+    'Para otro criterio (p. ej. aceptar USA) definí JOBSP_JOB_LOCATION_PREFERENCE en .env con texto libre.'
   )
 }
 
@@ -309,9 +514,10 @@ async function openaiParseJson(model, system, user) {
 async function llmExtractOpeningsWithUrls(companyName, listUrl, pageText) {
   const model = process.env.OPENAI_MODEL || 'gpt-4o-mini'
   const system = `Sos un extractor de listados de empleo. Respondé SOLO JSON válido, sin markdown.
-Formato: {"openings":[{"title":"string","url":"string|null"}]}
+Formato: {"openings":[{"title":"string","url":"string|null","locationHint":"string|null"}]}
 - title: nombre del puesto o aviso.
 - url: SOLO si en el texto hay un enlace propio a ESE aviso (href de la fila/tarjeta: /jobs/…, ?gh_jid=, /o/, /position/, /job/, /careers/…/… con slug/id, etc.). Debe abrir el detalle de esa oferta, no la vista listado genérica.
+- locationHint: si en la misma fila/sección del listado aparece ciudad, país, región o modalidad (Remote, Hybrid, "United States", São Paulo, etc.), resumilo en pocas palabras; si no hay señal, null (no inventes).
 - Si el listado no muestra href por fila o solo repetirías la URL base de la página actual para muchas filas, usá null (no inventes ni reutilices la home de careers como url de cada fila).
 Máximo 45 filas. Si no hay listado reconocible: {"openings":[]}.`
 
@@ -327,14 +533,16 @@ ${pageText.slice(0, 24000)}`
   for (const row of raw) {
     const title = typeof row.title === 'string' ? row.title.trim() : ''
     const hrefRaw = typeof row.url === 'string' ? row.url.trim() : ''
+    const hintRaw = typeof row.locationHint === 'string' ? row.locationHint.trim() : ''
+    const locationHint = hintRaw ? hintRaw : null
     if (!title) continue
     if (!hrefRaw) {
-      out.push({ title, url: null })
+      out.push({ title, url: null, locationHint })
       continue
     }
     const abs = resolveJobHref(hrefRaw, listUrl)
-    if (abs) out.push({ title, url: abs })
-    else out.push({ title, url: null })
+    if (abs) out.push({ title, url: abs, locationHint })
+    else out.push({ title, url: null, locationHint })
   }
   return out
 }
@@ -342,6 +550,7 @@ ${pageText.slice(0, 24000)}`
 async function llmShortlistTechnicalRoles(openingsWithUrl, cvText, profile, maxShort) {
   const model = process.env.OPENAI_MODEL || 'gpt-4o-mini'
   const titleHints = listTitlePositiveCriteria()
+  const loc = jobLocationBlock()
   const system = `Sos filtro estricto (solo ingeniería de software alineada al perfil). Respondé SOLO JSON:
 {"shortlist":[{"title":"string","url":"string","why":"máx 140 chars español"}]}
 Máximo ${maxShort} ítems. Cada url DEBE ser exactamente una de las URLs del input (no inventar dominios).
@@ -349,6 +558,10 @@ Cada url tiene que ser enlace al DETALLE de ese aviso (página del puesto o URL 
 
 CRITERIO VISTA LISTADO (título del aviso):
 ${titleHints}
+
+UBICACIÓN / MODALIDAD (además del encaje técnico):
+${loc}
+Si el input trae "locationHint" por fila, usalo: si contradice el criterio geográfico anterior, NO incluyas esa URL en el shortlist (aunque el título sea “Fullstack” u otro rol técnico).
 
 INCLUIR solo si el título encaja con implementación / código según lo anterior y el perfil+CV.
 
@@ -370,7 +583,7 @@ ${profile}
 CV (extracto):
 ${cvText.slice(0, 9000)}
 
-Entradas (solo podés devolver URLs que aparezcan acá):
+Entradas (solo podés devolver URLs que aparezcan acá; cada ítem puede incluir title, url, locationHint):
 ${JSON.stringify(openingsWithUrl.slice(0, 65))}`
 
   const parsed = await openaiParseJson(model, system, user)
@@ -392,12 +605,17 @@ ${JSON.stringify(openingsWithUrl.slice(0, 65))}`
 
 async function llmVerifyDetailPage({ detailText, cvText, profile, listTitle, jobUrl }) {
   const model = process.env.OPENAI_MODEL || 'gpt-4o-mini'
+  const loc = jobLocationBlock()
   const system = `Sos auditor estricto aviso vs candidato. SOLO JSON:
 {"include":true|false,"title":"string","fit":"high|medium|low","reason":"español conciso","redFlags":"texto o vacío"}
 
 include=true SOLO si el TEXTO del aviso describe trabajo principalmente de ingeniería software (implementación) acorde al perfil y al CV.
 
-include=false si el detalle es gestión/PM/PO/ventas/people, "stakeholder" como rol principal sin stack, consulting funcional, o el título decía dev pero el cuerpo no.`
+include=false si el detalle es gestión/PM/PO/ventas/people, "stakeholder" como rol principal sin stack, consulting funcional, o el título decía dev pero el cuerpo no.
+
+UBICACIÓN Y MODALIDAD (leé el detalle: ciudad/oficina, país, "remote" con restricción, relocation, timezone hiring):
+${loc}
+include=false si el lugar o las restricciones de remote/reubicación incumplen ese criterio, aunque el stack encaje; en reason citá la frase o ubicación que lo determina (ej. "Chicago office", "US only", "must be in Ireland").`
 
   const user = `Perfil buscado:
 ${profile}
@@ -420,10 +638,13 @@ async function analyzeListPageFallbackStrict({ companyName, careersUrl, pageText
   const system = `No hay URLs de avisos parseables; analizás solo texto general de careers. SOLO JSON:
 {"relevantRoles":[{"title":"string","fit":"high|medium|low","reason":"","specificUrl":"string|null"}],"summary":"una línea"}
 
-Solo roles de ingeniería software (front/fullstack/web) si están explícitos. NO Project Manager, PM, PO, Scrum, ventas, marketing, HR. Si no hay señal dev clara: [].`
+Solo roles de ingeniería software (front/fullstack/web) si están explícitos. NO Project Manager, PM, PO, Scrum, ventas, marketing, HR. Si no hay señal dev clara: [].
+Respetá también ubicación/modalidad: no sugieras roles cuyo texto implique solo hubs fuera del criterio geográfico del candidato si no hay remoto LATAM-friendly explícito.`
 
   const user = `Empresa: ${companyName} · ${careersUrl}
 Perfil: ${profile}
+
+${jobLocationBlock()}
 
 CV:
 ${cvText.slice(0, 7000)}
@@ -489,7 +710,7 @@ async function analyzeWithListAndDetailPages(browser, { companyName, careersUrl,
     const s = shortlist[i]
     const detLabel = `detalle ${i + 1}/${shortlist.length} "${String(s.title || '').slice(0, 56)}"`
     log(`    Chrome detalle [${i + 1}/${shortlist.length}]`)
-    const det = await fetchCareersWithChrome(browser, s.url, detLabel)
+    const det = await fetchCareersWithChrome(browser, s.url, detLabel, { recover404FromSite: false })
     if (!det.ok) {
       log(`    detalle falló: ${det.error || det.status}`)
       continue
@@ -595,7 +816,7 @@ async function scanOneCompany(browser, c, idx, total, cvText, useLLM) {
   log(`[${n}/${total}] ${name}`)
   log(`  Chrome → ${url}`)
   const tFetch = Date.now()
-  const fetched = await fetchCareersWithChrome(browser, url)
+  const fetched = await fetchCareersWithChrome(browser, url, '', { recover404FromSite: true })
   const fetchMs = Date.now() - tFetch
   if (!fetched.ok) {
     log(`  falló descarga (${fetchMs}ms) status=${fetched.status} ${fetched.error || ''}`)
