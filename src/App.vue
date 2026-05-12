@@ -117,6 +117,11 @@ async function refreshLiveLog() {
 onMounted(async () => {
   await Promise.all([loadIndex(), loadLastFinished()])
   await loadReport()
+  // Si no hay latest.json pero quedó un live-progress.json con veredictos parciales,
+  // mostralos igual al recargar (en lugar del cartel "No hay reportes todavía…").
+  if (report.value == null) {
+    await loadLiveProgressIfPartial()
+  }
   void refreshLiveLog()
 })
 
